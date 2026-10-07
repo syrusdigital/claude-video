@@ -1,0 +1,17 @@
+{
+ "fps": 30,
+ "duration": 4.0,
+ "items": [
+  {
+   "tpl": "nameLowerThird",
+   "at": 0,
+   "dur": 4.0,
+   "cfg": {
+    "name": "George",
+    "title": "Owner, Frontline Services",
+    "x": 60,
+    "y": 1170
+   }
+  }
+ ]
+}

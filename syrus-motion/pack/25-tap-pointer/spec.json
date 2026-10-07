@@ -1,0 +1,17 @@
+{
+ "fps": 30,
+ "duration": 2.5,
+ "items": [
+  {
+   "tpl": "tapPointer",
+   "at": 0,
+   "dur": 2.5,
+   "cfg": {
+    "pre": "TAP",
+    "em": "GET QUOTE",
+    "x": 540,
+    "y": 1600
+   }
+  }
+ ]
+}

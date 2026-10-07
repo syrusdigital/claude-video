@@ -1,0 +1,50 @@
+{
+ "title": "Work Horse | Exterior | Free Estimate | Script 4",
+ "source": "Notion: SCRIPT 4 \u2014 Work Horse (Winner; CPL decaying \u2014 fresh visuals on the same words)",
+ "vo": {
+  "voice": "am_michael",
+  "speed": 1.12,
+  "lines": [
+   {
+    "id": "hook",
+    "text": "Hiring a painting contractor should not feel risky. But for most homeowners, it does.",
+    "after": 0.4
+   },
+   {
+    "id": "b1",
+    "text": "You are letting a crew work on your home's exterior for days. And most homeowners worry about the same things.",
+    "after": 0.3
+   },
+   {
+    "id": "b2",
+    "text": "Will they show up on time? Will they prep properly? Will they cut corners? Will the paint last?",
+    "after": 0.35
+   },
+   {
+    "id": "b3",
+    "text": "At Work Horse Pro Painting, our process is built to remove that uncertainty.",
+    "after": 0.25
+   },
+   {
+    "id": "b4",
+    "text": "From the start, everything is clearly included. The prep, the paint, the labor, and even a full pressure wash.",
+    "after": 0.3
+   },
+   {
+    "id": "b5",
+    "text": "You're working with a professional crew that communicates with you, shows up on time, and does the job the right way.",
+    "after": 0.3
+   },
+   {
+    "id": "b6",
+    "text": "This is how painting should be done. Simple. Predictable. And done right the first time.",
+    "after": 0.3
+   },
+   {
+    "id": "cta",
+    "text": "Click Get Quote to get a free, no-pressure exterior painting estimate you can actually trust.",
+    "after": 0.1
+   }
+  ]
+ }
+}

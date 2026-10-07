@@ -1,0 +1,18 @@
+{
+ "fps": 30,
+ "duration": 3.0,
+ "items": [
+  {
+   "tpl": "statCounter",
+   "at": 0,
+   "dur": 3.0,
+   "cfg": {
+    "value": 19,
+    "prefix": "",
+    "suffix": "",
+    "label": "YEARS IN BUSINESS",
+    "y": 620
+   }
+  }
+ ]
+}

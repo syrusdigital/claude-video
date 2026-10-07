@@ -1,0 +1,1 @@
+{ "fps": 30, "duration": 4, "bg": "#000000", "items": [ { "tpl": "beforeAfterWipe", "at": 0, "cfg": { "matte": true } } ] }

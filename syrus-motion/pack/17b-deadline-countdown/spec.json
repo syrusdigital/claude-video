@@ -1,0 +1,18 @@
+{
+ "fps": 30,
+ "duration": 3.0,
+ "items": [
+  {
+   "tpl": "deadline",
+   "at": 0,
+   "dur": 3.0,
+   "cfg": {
+    "mode": "countdown",
+    "days": 5,
+    "head": "OFFER ENDS",
+    "sub": "DAYS LEFT",
+    "y": 560
+   }
+  }
+ ]
+}

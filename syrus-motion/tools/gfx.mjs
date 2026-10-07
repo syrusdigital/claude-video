@@ -78,7 +78,9 @@ const run = (args) => { const r = spawnSync('ffmpeg', ['-y', '-hide_banner', '-l
 if (mode === 'opaque') {
   run([...seq, '-c:v', 'libx264', '-pix_fmt', 'yuv420p', '-crf', '18', '-preset', 'medium', '-movflags', '+faststart', out + '.mp4']);
 } else {
-  run([...seq, '-c:v', 'prores_ks', '-profile:v', '4444', '-pix_fmt', 'yuva444p10le', '-vendor', 'apl0', out + '.mov']);
+  // lossless PNG-in-MOV with alpha (Premiere / AE / FCP / DaVinci read it; ~8x smaller than ProRes 4444). --prores for ProRes 4444.
+  if (argv.includes('--prores')) run([...seq, '-c:v', 'prores_ks', '-profile:v', '4444', '-pix_fmt', 'yuva444p10le', '-vendor', 'apl0', out + '.mov']);
+  else run([...seq, '-c:v', 'png', '-pix_fmt', 'rgba', out + '.mov']);
   run([...seq, '-c:v', 'libvpx-vp9', '-pix_fmt', 'yuva420p', '-b:v', '0', '-crf', '30', '-row-mt', '1', '-deadline', 'good', '-cpu-used', '4', out + '.webm']);
   run(['-f', 'lavfi', '-i', `color=c=#7f8896:s=1080x1920:r=${O.fps}`, ...seq, '-filter_complex', '[0][1]overlay=shortest=1,scale=540:960,format=yuv420p', '-c:v', 'libx264', '-crf', '24', '-movflags', '+faststart', out + '-preview.mp4']);
 }

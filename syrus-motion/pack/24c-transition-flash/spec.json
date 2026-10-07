@@ -1,0 +1,14 @@
+{
+ "fps": 30,
+ "duration": 0.6,
+ "items": [
+  {
+   "tpl": "transitions",
+   "at": 0,
+   "dur": 0.6,
+   "cfg": {
+    "kind": "flash"
+   }
+  }
+ ]
+}

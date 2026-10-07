@@ -1,0 +1,1 @@
+{ "fps": 30, "duration": 5, "items": [ { "tpl": "materialTable", "at": 0, "cfg": { "mode": "ladder", "start": 0.5, "step": 1.0 } } ] }

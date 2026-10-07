@@ -1,0 +1,38 @@
+{
+ "fps": 30,
+ "duration": 6.0,
+ "items": [
+  {
+   "tpl": "dayTimeline",
+   "at": 0,
+   "dur": 6.0,
+   "cfg": {
+    "kicker": "YOUR BATHROOM REMODEL",
+    "days": 7,
+    "labels": [
+     {
+      "d": 1,
+      "s": "Demo"
+     },
+     {
+      "d": 2,
+      "s": "Plumbing"
+     },
+     {
+      "d": 4,
+      "s": "Walls"
+     },
+     {
+      "d": 6,
+      "s": "Vanity"
+     },
+     {
+      "d": 7,
+      "s": "Done"
+     }
+    ],
+    "y": 620
+   }
+  }
+ ]
+}

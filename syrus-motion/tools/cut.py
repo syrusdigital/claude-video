@@ -28,15 +28,41 @@ def sh(cmd, **kw):
     if r.returncode: sys.exit(f'FAILED: {" ".join(map(str, cmd))[:400]}')
 def ff(*args): sh(['ffmpeg', '-y', '-hide_banner', '-loglevel', 'error', *map(str, args)])
 
-# ---- 1. voiceover (cached on the script text)
+# ---- 1. voiceover: synthesized from A['vo'] (AI/VO ads), or the speaker's own audio from A['aroll'] (on-camera ads)
 vo_dir = os.path.join(BUILD, 'vo'); os.makedirs(vo_dir, exist_ok=True)
-V = A['vo']; vkey = hashlib.sha1(json.dumps(V, sort_keys=True).encode()).hexdigest()[:12]
-if '--force-vo' in sys.argv or not os.path.exists(os.path.join(vo_dir, vkey)):
+AROLL = A.get('aroll')
+if AROLL:
+    # each A-roll piece: { src, in, out, words: 'media/x.mp4.words.json' } — their real voice is the clock
+    words, lines, parts, t = [], [], [], float(A.get('lead', 0.0))
+    for k, r in enumerate(AROLL):
+        src = os.path.join(AD, r['src']); d = float(r['out']) - float(r['in'])
+        seg = os.path.join(BUILD, f'aroll{k:02d}.mp4'); parts.append(seg)
+        fx, fy, z = r.get('fx', 0.5), r.get('fy', 0.4), r.get('zoom', 1.0)
+        vf = (f"scale=1080*{z}:1920*{z}:force_original_aspect_ratio=increase,crop=1080:1920:(iw-1080)*{fx}:(ih-1920)*{fy},fps=30,"
+              f"{r.get('grade', 'eq=contrast=1.05:saturation=1.08')},format=yuv420p")
+        ff('-ss', r['in'], '-t', d, '-i', src, '-vf', vf, '-af', 'aresample=48000,aformat=channel_layouts=mono', '-c:v', 'libx264', '-crf', 17, '-preset', 'veryfast', '-c:a', 'pcm_s16le', seg.replace('.mp4', '.mov'))
+        os.replace(seg.replace('.mp4', '.mov'), seg)
+        W_ = json.load(open(os.path.join(AD, r['words']))) if r.get('words') else {'words': []}
+        for w in (W_['words'] if isinstance(W_, dict) else W_):
+            if float(r['in']) - 0.05 <= w['t0'] < float(r['out']):
+                words.append({'w': w['w'], 't0': round(t + w['t0'] - float(r['in']), 3), 't1': round(t + w['t1'] - float(r['in']), 3)})
+        lines.append({'id': r.get('id', f'a{k}'), 'text': r.get('text', ''), 't0': round(t, 3), 't1': round(t + d, 3)})
+        t += d
+    lst0 = os.path.join(BUILD, 'aroll.txt'); open(lst0, 'w').write(''.join(f"file '{p}'\n" for p in parts))
+    acat = os.path.join(BUILD, 'aroll.mp4'); ff('-f', 'concat', '-safe', 0, '-i', lst0, '-c:v', 'copy', '-c:a', 'pcm_s16le', acat.replace('.mp4', '.mov')); os.replace(acat.replace('.mp4', '.mov'), acat)
+    # clean the speech: rumble cut, gentle denoise and compression, then a light level match
+    ff('-i', acat, '-vn', '-af', 'highpass=f=80,afftdn=nf=-28,acompressor=threshold=-20dB:ratio=3:attack=8:release=120,loudnorm=I=-16:TP=-2', '-ar', 48000, '-ac', 1, os.path.join(vo_dir, 'vo.wav'))
+    VO = {'duration': round(t, 3), 'lines': lines, 'words': words}
+    json.dump(VO, open(os.path.join(vo_dir, 'vo.json'), 'w'), indent=1)
+    V = {}
+else:
+  V = A['vo']; vkey = hashlib.sha1(json.dumps(V, sort_keys=True).encode()).hexdigest()[:12]
+  if '--force-vo' in sys.argv or not os.path.exists(os.path.join(vo_dir, vkey)):
     json.dump({'lead': V.get('lead', 0.15), 'tail': 0.3, 'lines': V['lines']}, open(os.path.join(vo_dir, 'script.json'), 'w'))
     sh([sys.executable, os.path.join(HERE, 'vo.py'), os.path.join(vo_dir, 'script.json'), vo_dir, '--voice', V.get('voice', 'am_michael'), '--speed', str(V.get('speed', 1.1))], stderr=subprocess.DEVNULL)
     open(os.path.join(vo_dir, vkey), 'w').close()
-VO = json.load(open(os.path.join(vo_dir, 'vo.json')))
-DUR = round(VO['duration'] + float(A.get('tail', 1.2)), 3)
+  VO = json.load(open(os.path.join(vo_dir, 'vo.json')))
+DUR = round(VO['duration'] + float(A.get('tail', 0.0 if AROLL else 1.2)), 3)
 
 norm = lambda s: re.sub(r'[^a-z0-9$]', '', s.lower())
 def anchor(a):
@@ -53,10 +79,14 @@ def anchor(a):
     return float(base) + off
 
 # ---- 2. footage: one segment per shot, 1080x1920 @ 30fps
-shots = A['shots']; t = 0.0; segs = []
+# (on-camera ads: shots carry "at" anchors and become cutaways over the A-roll; the A-roll audio keeps running)
+shots = A.get('shots', []); t = 0.0; segs = []
+if AROLL:
+    for s_ in shots:
+        s_['_at'] = anchor(s_['at']) if 'at' in s_ else None
 for i, s in enumerate(shots):
-    start = t
-    end = DUR if i == len(shots) - 1 else (anchor(s['until']) if 'until' in s else t + float(s['len']))
+    start = s['_at'] if AROLL else t
+    end = (start + float(s['len'])) if AROLL else (DUR if i == len(shots) - 1 else (anchor(s['until']) if 'until' in s else t + float(s['len'])))
     ln = max(0.2, round(end - start, 3)); t = start + ln
     src = os.path.join(AD, s['src']); out = os.path.join(BUILD, f'seg{i:02d}.mp4'); segs.append(out)
     is_img = src.lower().endswith(('.jpg', '.jpeg', '.png', '.webp', '.heic'))
@@ -83,8 +113,19 @@ for i, s in enumerate(shots):
                   + f"fps={FPS},{grade},format=yuv420p")
         ff('-ss', s.get('in', 0), '-t', need + 0.2, '-i', src, '-filter_complex' if s.get('fit') == 'blur' else '-vf', vf, '-frames:v', nfr, '-an', '-c:v', 'libx264', '-crf', 17, '-preset', 'veryfast', out)
     s['_t0'], s['_len'] = start, ln
-lst = os.path.join(BUILD, 'segs.txt'); open(lst, 'w').write(''.join(f"file '{p}'\n" for p in segs))
-base = os.path.join(BUILD, 'base.mp4'); ff('-f', 'concat', '-safe', 0, '-i', lst, '-c', 'copy', base)
+base = os.path.join(BUILD, 'base.mp4')
+if AROLL:
+    # A-roll video with each cutaway laid over its window (pts shifted to its start)
+    ins, fc, last = ['-i', acat], [], '[0:v]'
+    for k, (p, s_) in enumerate(zip(segs, shots)):
+        ins += ['-i', p]
+        fc.append(f"[{k+1}:v]setpts=PTS-STARTPTS+{s_['_t0']}/TB[c{k}];{last}[c{k}]overlay=enable='between(t,{s_['_t0']},{s_['_t0'] + s_['_len'] - 0.001})':eof_action=pass[o{k}]")
+        last = f'[o{k}]'
+    if fc: ff(*ins, '-filter_complex', ';'.join(fc), '-map', last, '-an', '-c:v', 'libx264', '-crf', 17, '-preset', 'veryfast', '-t', DUR, base)
+    else: ff('-i', acat, '-an', '-c:v', 'copy', base)
+else:
+    lst = os.path.join(BUILD, 'segs.txt'); open(lst, 'w').write(''.join(f"file '{p}'\n" for p in segs))
+    ff('-f', 'concat', '-safe', 0, '-i', lst, '-c', 'copy', base)
 
 # ---- 3. graphics track: captions + items, one transparent pass
 items, hide, whoosh, hits, ticks = [], [], [], [], []

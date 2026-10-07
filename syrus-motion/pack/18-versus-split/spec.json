@@ -1,0 +1,21 @@
+{
+ "fps": 30,
+ "duration": 6.0,
+ "items": [
+  {
+   "tpl": "versusSplit",
+   "at": 0,
+   "dur": 6.0,
+   "cfg": {
+    "them": "Big showroom company",
+    "us": "Us",
+    "rows": [
+     "Price shown up front",
+     "One in-house team",
+     "Itemized estimate"
+    ],
+    "y": 330
+   }
+  }
+ ]
+}

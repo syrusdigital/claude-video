@@ -11,3 +11,7 @@ pack/*/*.mov
 pack/*/*-frames/
 ads/*/build/
 ads/*/media/
+ads/**/build/
+ads/**/media/
+ads/**/out/*.mp4
+pack/**/*-frames/

@@ -1,0 +1,1 @@
+{ "fps": 30, "duration": 2.5, "items": [ { "tpl": "hookText", "at": 0, "cfg": { "style": "type" } } ] }
