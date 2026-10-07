@@ -1,0 +1,731 @@
+{
+ "duration": 85.625,
+ "shots": [
+  {
+   "src": "../media/ai/ai-bath-Y18jESq4hOFB89_9UVMog.mp4",
+   "in": 0.5,
+   "len": 2.76,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.0,
+    1.07
+   ],
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01",
+   "_t0": 0.0,
+   "_len": 2.76
+  },
+  {
+   "src": "../media/stock/pexels-38746559.mp4",
+   "in": 5.0,
+   "len": 3.14,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.07,
+    1.0
+   ],
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01",
+   "_t0": 2.76,
+   "_len": 3.14
+  },
+  {
+   "src": "../media/ai/ai-bath-video.mp4",
+   "in": 0.0,
+   "len": 2.4,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.0,
+    1.07
+   ],
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01,unsharp=5:5:0.9:5:5:0.0",
+   "_t0": 5.9,
+   "_len": 2.4
+  },
+  {
+   "src": "../../vistaguard/media/stock/vg_calculator_bills.mp4",
+   "in": 4.5,
+   "len": 2.04,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.07,
+    1.0
+   ],
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01",
+   "_t0": 8.3,
+   "_len": 2.04
+  },
+  {
+   "src": "../media/stock/pexels-34236997.mp4",
+   "in": 4.0,
+   "len": 0.94,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.0,
+    1.07
+   ],
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01",
+   "_t0": 10.34,
+   "_len": 0.94
+  },
+  {
+   "src": "../media/ai/ai-bath-BVogbV0XGMQV15wPC8qmn.mp4",
+   "in": 0.0,
+   "len": 1.6,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.0,
+    1.07
+   ],
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01",
+   "_t0": 11.28,
+   "_len": 1.6
+  },
+  {
+   "src": "../media/ai/ai-bath-BVogbV0XGMQV15wPC8qmn.mp4",
+   "in": 2.5,
+   "len": 1.68,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.07,
+    1.0
+   ],
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01",
+   "_t0": 12.879999999999999,
+   "_len": 1.68
+  },
+  {
+   "src": "../media/ai/ai-bath-oxaDYK4RreD_c2OtOUDVs.mp4",
+   "in": 3.61,
+   "len": 1.52,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.0,
+    1.07
+   ],
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01",
+   "_t0": 14.559999999999999,
+   "_len": 1.52
+  },
+  {
+   "src": "../media/stock/pexels-36958639.mp4",
+   "in": 32.5,
+   "len": 2.63,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.0,
+    1.07
+   ],
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01",
+   "_t0": 16.08,
+   "_len": 2.63
+  },
+  {
+   "src": "../media/ai/ai-bath-6mCOgAptjPwZ-DSCAdJ4E.mp4",
+   "in": 0.5,
+   "len": 2.75,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.07,
+    1.0
+   ],
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01",
+   "_t0": 18.709999999999997,
+   "_len": 2.75
+  },
+  {
+   "src": "../media/stock/pexels-4155072.mp4",
+   "in": 0.5,
+   "len": 2.6,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.0,
+    1.07
+   ],
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01",
+   "_t0": 21.459999999999997,
+   "_len": 2.6
+  },
+  {
+   "src": "../media/stock/pexels-6694013.mp4",
+   "in": 12.0,
+   "len": 2.54,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.07,
+    1.0
+   ],
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01",
+   "_t0": 24.06,
+   "_len": 2.54
+  },
+  {
+   "src": "../media/stock/pexels-34236997.mp4",
+   "in": 1.5,
+   "len": 1.02,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.0,
+    1.07
+   ],
+   "whip": true,
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01",
+   "_t0": 26.599999999999998,
+   "_len": 1.02
+  },
+  {
+   "src": "../media/ai/ai-bath-f7RN0tTxAe-8Yx3LQTtj6.mp4",
+   "in": 0.0,
+   "len": 1.34,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.0,
+    1.07
+   ],
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01",
+   "_t0": 27.619999999999997,
+   "_len": 1.34
+  },
+  {
+   "src": "../media/stock/pexels-855672.mp4",
+   "in": 24.0,
+   "len": 1.34,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.07,
+    1.0
+   ],
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01",
+   "_t0": 28.959999999999997,
+   "_len": 1.34
+  },
+  {
+   "src": "../media/ai/ai-bath-VvAADAAeqs1TiigqEDlc.mp4",
+   "in": 0.0,
+   "len": 2.34,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.0,
+    1.07
+   ],
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01,unsharp=5:5:0.9:5:5:0.0",
+   "_t0": 30.299999999999997,
+   "_len": 2.34
+  },
+  {
+   "src": "../media/ai/ai-bath-VvAADAAeqs1TiigqEDlc.mp4",
+   "in": 3.21,
+   "len": 1.78,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.07,
+    1.0
+   ],
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01,unsharp=5:5:0.9:5:5:0.0",
+   "_t0": 32.64,
+   "_len": 1.78
+  },
+  {
+   "src": "../media/stock/pexels-24906852.mp4",
+   "in": 6.0,
+   "len": 1.84,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.0,
+    1.07
+   ],
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01",
+   "_t0": 34.42,
+   "_len": 1.84
+  },
+  {
+   "src": "../media/stock/pexels-24906849.mp4",
+   "in": 10.0,
+   "len": 2.08,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.07,
+    1.0
+   ],
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01",
+   "_t0": 36.260000000000005,
+   "_len": 2.08
+  },
+  {
+   "src": "../media/ai/ai-bath-nF5lGC6orko0IsARiHSA4.mp4",
+   "in": 3.5,
+   "len": 1.7,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.0,
+    1.07
+   ],
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01,unsharp=5:5:0.9:5:5:0.0",
+   "_t0": 38.34,
+   "_len": 1.7
+  },
+  {
+   "src": "../media/ai/ai-bath-6mCOgAptjPwZ-DSCAdJ4E.mp4",
+   "in": 5.0,
+   "len": 1.54,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.0,
+    1.07
+   ],
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01",
+   "_t0": 40.040000000000006,
+   "_len": 1.54
+  },
+  {
+   "src": "../media/stock/pexels-31739399.mp4",
+   "in": 0.0,
+   "len": 1.48,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.07,
+    1.0
+   ],
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01",
+   "_t0": 41.580000000000005,
+   "_len": 1.48
+  },
+  {
+   "src": "../media/ai/ai-bath-6mCOgAptjPwZ-DSCAdJ4E.mp4",
+   "in": 0.5,
+   "len": 1.672,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.0,
+    1.07
+   ],
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01",
+   "_t0": 43.06,
+   "_len": 1.672
+  },
+  {
+   "src": "../media/stock/pexels-24906850.mp4",
+   "in": 19.5,
+   "len": 1.528,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.07,
+    1.0
+   ],
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01",
+   "_t0": 44.732,
+   "_len": 1.528
+  },
+  {
+   "src": "../media/stock/pexels-4155072.mp4",
+   "in": 5.0,
+   "len": 1.6,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.0,
+    1.07
+   ],
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01",
+   "_t0": 46.26,
+   "_len": 1.6
+  },
+  {
+   "src": "../media/stock/pexels-6474171.mp4",
+   "in": 1.0,
+   "len": 2.02,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.0,
+    1.07
+   ],
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01",
+   "_t0": 47.86,
+   "_len": 2.02
+  },
+  {
+   "src": "../media/stock/pexels-6474087.mp4",
+   "in": 9.0,
+   "len": 2.36,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.0,
+    1.07
+   ],
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01",
+   "_t0": 49.88,
+   "_len": 2.36
+  },
+  {
+   "src": "../media/ai/ai-bath-UE9jPAYqWnkj9hrdR.mp4",
+   "in": 0.0,
+   "len": 2.26,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.07,
+    1.0
+   ],
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01",
+   "_t0": 52.24,
+   "_len": 2.26
+  },
+  {
+   "src": "../media/stock/pexels-7505107.mp4",
+   "in": 6.0,
+   "len": 2.22,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.0,
+    1.07
+   ],
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01",
+   "_t0": 54.5,
+   "_len": 2.22
+  },
+  {
+   "src": "../media/stock/pexels-36958639.mp4",
+   "in": 26.0,
+   "len": 2.42,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.0,
+    1.07
+   ],
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01",
+   "_t0": 56.72,
+   "_len": 2.42
+  },
+  {
+   "src": "../media/stock/pexels-34236995.mp4",
+   "in": 0.0,
+   "len": 2.56,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.07,
+    1.0
+   ],
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01",
+   "_t0": 59.14,
+   "_len": 2.56
+  },
+  {
+   "src": "../media/ai/ai-bath-Y18jESq4hOFB89_9UVMog.mp4",
+   "in": 4.0,
+   "len": 2.1,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.0,
+    1.07
+   ],
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01",
+   "_t0": 61.7,
+   "_len": 2.1
+  },
+  {
+   "src": "../media/stock/pexels-6694013.mp4",
+   "in": 2.0,
+   "len": 2.6,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.07,
+    1.0
+   ],
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01",
+   "_t0": 63.800000000000004,
+   "_len": 2.6
+  },
+  {
+   "src": "../media/ai/ai-bath-oxaDYK4RreD_c2OtOUDVs.mp4",
+   "in": 0.0,
+   "len": 1.78,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.0,
+    1.07
+   ],
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01",
+   "_t0": 66.4,
+   "_len": 1.78
+  },
+  {
+   "src": "../media/stock/pexels-6474171.mp4",
+   "in": 5.5,
+   "len": 2.18,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.07,
+    1.0
+   ],
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01",
+   "_t0": 68.18,
+   "_len": 2.18
+  },
+  {
+   "src": "../media/stock/pexels-28048584.mp4",
+   "in": 6.0,
+   "len": 1.88,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.0,
+    1.07
+   ],
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01",
+   "_t0": 70.36000000000001,
+   "_len": 1.88
+  },
+  {
+   "src": "../media/stock/pexels-7505112.mp4",
+   "in": 3.0,
+   "len": 1.54,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.0,
+    1.07
+   ],
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01",
+   "_t0": 72.24000000000001,
+   "_len": 1.54
+  },
+  {
+   "src": "../media/ai/ai-bath-UE9jPAYqWnkj9hrdR.mp4",
+   "in": 2.6,
+   "len": 1.56,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.07,
+    1.0
+   ],
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01",
+   "_t0": 73.78000000000002,
+   "_len": 1.56
+  },
+  {
+   "src": "../media/stock/pexels-38746559.mp4",
+   "in": 2.5,
+   "len": 1.78,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.0,
+    1.07
+   ],
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01",
+   "_t0": 75.34000000000002,
+   "_len": 1.78
+  },
+  {
+   "src": "../media/stock/pexels-4154236.mp4",
+   "in": 3.5,
+   "len": 2.34,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.07,
+    1.0
+   ],
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01",
+   "_t0": 77.12000000000002,
+   "_len": 2.34
+  },
+  {
+   "src": "../media/ai/ai-bath-nF5lGC6orko0IsARiHSA4.mp4",
+   "in": 0.0,
+   "len": 1.86,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.0,
+    1.07
+   ],
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01,unsharp=5:5:0.9:5:5:0.0",
+   "_t0": 79.46000000000002,
+   "_len": 1.86
+  },
+  {
+   "src": "../media/ai/ai-bath-Y18jESq4hOFB89_9UVMog.mp4",
+   "in": 0.5,
+   "len": 2.18,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.0,
+    1.07
+   ],
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01",
+   "_t0": 81.32000000000002,
+   "_len": 2.18
+  },
+  {
+   "src": "../media/stock/pexels-34236997.mp4",
+   "in": 4.0,
+   "len": 2.125,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.07,
+    1.0
+   ],
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01",
+   "_t0": 83.50000000000003,
+   "_len": 2.125
+  }
+ ],
+ "gfx": [
+  {
+   "tpl": "logoPill",
+   "at": 56.77,
+   "cfg": {
+    "name": "Luxury Home Renovations",
+    "y": 0.3
+   },
+   "dur": 2.2
+  },
+  {
+   "tpl": "ctaGlass",
+   "at": 81.22,
+   "cfg": {
+    "y": 0.56
+   },
+   "dur": 3.6
+  }
+ ],
+ "lines": [
+  {
+   "id": "hook",
+   "text": "Brand new full bathroom remodels, starting at just $14,995.",
+   "t0": 0.0,
+   "t1": 5.0
+  },
+  {
+   "id": "b1",
+   "text": "Most homeowners think a full bathroom remodel has to cost thirty thousand dollars.",
+   "t0": 5.9,
+   "t1": 9.74
+  },
+  {
+   "id": "b2",
+   "text": "It does not.",
+   "t0": 10.34,
+   "t1": 11.08
+  },
+  {
+   "id": "b3",
+   "text": "This is the whole bathroom, start to finish, taken down and built back new.",
+   "t0": 11.28,
+   "t1": 15.8
+  },
+  {
+   "id": "b4",
+   "text": "That is why it starts at $14,995, instead of the thirty thousand most companies will quote you for the exact same bathroom.",
+   "t0": 16.08,
+   "t1": 26.38
+  },
+  {
+   "id": "b5",
+   "text": "Here is what you get.",
+   "t0": 26.6,
+   "t1": 27.36
+  },
+  {
+   "id": "b6",
+   "text": "We take out the old bathroom and haul it away.",
+   "t0": 27.62,
+   "t1": 29.98
+  },
+  {
+   "id": "b7",
+   "text": "We put in a brand new shower or bathtub and waterproof it properly.",
+   "t0": 30.3,
+   "t1": 34.0
+  },
+  {
+   "id": "b8",
+   "text": "You get new wall surrounds, and you choose how they are finished, tile or acrylic, whichever you want.",
+   "t0": 34.42,
+   "t1": 39.84
+  },
+  {
+   "id": "b9",
+   "text": "You also get a brand new glass shower door, a new vanity, a new toilet, new flooring, and all new fixtures.",
+   "t0": 40.04,
+   "t1": 47.18
+  },
+  {
+   "id": "b10",
+   "text": "Labor and materials are both included.",
+   "t0": 47.86,
+   "t1": 49.64
+  },
+  {
+   "id": "b11",
+   "text": "The final price depends on the size of your bathroom and the materials you choose, and you get an honest number before we start.",
+   "t0": 49.88,
+   "t1": 56.36
+  },
+  {
+   "id": "b12",
+   "text": "At Luxury Home Renovations, we are a licensed bathroom remodeling contractor with 38 years of experience, licensed in both Tennessee and Georgia.",
+   "t0": 56.72,
+   "t1": 66.0
+  },
+  {
+   "id": "b13",
+   "text": "Our own crews do the work, not subcontractors, including the electrical and the plumbing.",
+   "t0": 66.4,
+   "t1": 71.82
+  },
+  {
+   "id": "b14",
+   "text": "And you pick your materials in person in our own showroom.",
+   "t0": 72.24,
+   "t1": 75.04
+  },
+  {
+   "id": "b15",
+   "text": "Your work is backed by a two year labor warranty, plus the full manufacturer warranties on your materials.",
+   "t0": 75.34,
+   "t1": 80.92
+  },
+  {
+   "id": "cta",
+   "text": "Click \"Get Quote\" to book your free design consultation.",
+   "t0": 81.32,
+   "t1": 84.5
+  }
+ ]
+}

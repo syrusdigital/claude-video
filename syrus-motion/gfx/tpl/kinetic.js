@@ -64,6 +64,8 @@ TPL.kinetic = {
     for (let i = 0; i < list.length; i++) if (list[i][0].t0 - 0.02 <= T) idx = i; else break;
     if (idx < 0) return;
     const ch = list[idx], next = list[idx + 1];
+    // a chunk that starts inside a hidden window stays hidden for its whole life (it must not pop in after the window)
+    if (c.hide.some(([a, b]) => ch[0].t0 >= a - 0.02 && ch[0].t0 < b)) return;
     const end = next ? next[0].t0 - 0.02 : ch[ch.length - 1].t1 + c.gap;
     if (T >= end) return;
     const hook = ch[0].t0 < c.hookEnd, k = me.keyIndex(ch, c), keyW = ch[k];
