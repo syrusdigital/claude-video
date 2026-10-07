@@ -303,7 +303,7 @@
   {
    "src": "../media/stock/pexels-38413569.mp4",
    "in": 1.5,
-   "len": 0.92,
+   "len": 0.9,
    "fx": 0.5,
    "fy": 0.5,
    "zoom": [
@@ -315,7 +315,7 @@
   {
    "src": "../media/stock/pexels-7646445.mp4",
    "in": 0.5,
-   "len": 2.16,
+   "len": 2.18,
    "fx": 0.5,
    "fy": 0.5,
    "zoom": [
@@ -387,7 +387,7 @@
   {
    "src": "../media/client/after-island-pendants.jpg",
    "in": 0.0,
-   "len": 2.04,
+   "len": 2.06,
    "fx": 0.5,
    "fy": 0.6,
    "zoom": [
@@ -399,7 +399,7 @@
   {
    "src": "../media/client/before-cherry-range.jpg",
    "in": 0.0,
-   "len": 1.96,
+   "len": 1.94,
    "fx": 0.5,
    "fy": 0.5,
    "zoom": [
@@ -435,7 +435,7 @@
   {
    "src": "../media/client/white-kitchen-range.jpg",
    "in": 0.0,
-   "len": 2.02,
+   "len": 2.0,
    "fx": 0.5,
    "fy": 0.5,
    "zoom": [
@@ -447,7 +447,7 @@
   {
    "src": "../media/stock/pexels-7424440.mp4",
    "in": 0.5,
-   "len": 1.5,
+   "len": 1.52,
    "fx": 0.5,
    "fy": 0.5,
    "zoom": [
@@ -483,7 +483,7 @@
   {
    "src": "../media/stock/pexels-39774498.mp4",
    "in": 5.5,
-   "len": 2.18,
+   "len": 2.16,
    "fx": 0.5,
    "fy": 0.5,
    "zoom": [
@@ -495,7 +495,7 @@
   {
    "src": "../media/client/after-waterfall-edge.jpg",
    "in": 0.0,
-   "len": 2.08,
+   "len": 2.1,
    "fx": 0.5,
    "fy": 0.7,
    "zoom": [
@@ -507,7 +507,7 @@
   {
    "src": "../media/stock/pexels-19227879.mp4",
    "in": 7.0,
-   "len": 2.0,
+   "len": 2.02,
    "fx": 0.5,
    "fy": 0.5,
    "zoom": [
@@ -519,7 +519,7 @@
   {
    "src": "../media/client/before-oak-gutted.jpg",
    "in": 0.0,
-   "len": 1.82,
+   "len": 1.8,
    "fx": 0.5,
    "fy": 0.5,
    "zoom": [
@@ -544,7 +544,7 @@
   {
    "src": "../media/client/before-cherry-counter.jpg",
    "in": 0.0,
-   "len": 1.8,
+   "len": 1.56,
    "fx": 0.5,
    "fy": 0.5,
    "zoom": [
@@ -556,7 +556,7 @@
   {
    "src": "../media/stock/pexels-36778243.mp4",
    "in": 6.0,
-   "len": 1.98,
+   "len": 1.96,
    "fx": 0.5,
    "fy": 0.5,
    "zoom": [
@@ -568,7 +568,7 @@
   {
    "src": "../media/client/after-white-kitchen-wide.png",
    "in": 0.0,
-   "len": 1.96,
+   "len": 1.76,
    "fx": 0.4,
    "fy": 0.5,
    "zoom": [
@@ -580,7 +580,7 @@
   {
    "src": "../media/client/after-black-marble-island-a.png",
    "in": 0.0,
-   "len": 2.56,
+   "len": 2.58,
    "fx": 0.6,
    "fy": 0.5,
    "zoom": [
@@ -592,7 +592,7 @@
   {
    "src": "../media/client/after-island-pendants.jpg",
    "in": 0.0,
-   "len": 2.3,
+   "len": 2.8,
    "fx": 0.5,
    "fy": 0.4,
    "zoom": [
@@ -604,7 +604,7 @@
   {
    "src": "../media/stock/pexels-39774505.mp4",
    "in": 5.5,
-   "len": 2.314,
+   "len": 2.299,
    "fx": 0.5,
    "fy": 0.5,
    "zoom": [
@@ -616,7 +616,7 @@
   {
    "src": "../media/client/after-waterfall-edge.jpg",
    "in": 0.0,
-   "len": 2.286,
+   "len": 2.241,
    "fx": 0.5,
    "fy": 0.5,
    "zoom": [
@@ -628,7 +628,7 @@
   {
    "src": "../media/stock/pexels-37674129.mp4",
    "in": 2.7,
-   "len": 2.52,
+   "len": 2.5,
    "fx": 0.5,
    "fy": 0.5,
    "zoom": [
@@ -640,7 +640,7 @@
   {
    "src": "../media/client/white-kitchen-range.jpg",
    "in": 0.0,
-   "len": 2.136,
+   "len": 2.156,
    "fx": 0.5,
    "fy": 0.5,
    "zoom": [
