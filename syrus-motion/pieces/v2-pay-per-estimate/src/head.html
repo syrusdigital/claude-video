@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Syrus — pay per estimate</title>
+<style>
+  html, body { margin: 0; height: 100%; background: #2a2620; overflow: hidden; }
+  body { display: flex; align-items: center; justify-content: center; }
+  canvas { height: min(100vh, calc(100vw * 16 / 9)); width: auto; aspect-ratio: 9 / 16; display: block; cursor: pointer; }
+</style>
+</head>
+<body>
+<canvas id="c" width="1080" height="1920"></canvas>
+<script>
+"use strict";
+// =====================================================================
+//  SYRUS V2 — "Pay per estimate". 9:16, 12.0s @ 120 BPM, 24fps, style syrus-riso (navy / sky / gold inks).
+//  Format: morph chain, 3 worlds, 1 shape morph + 1 hard cut on the payoff.
+//  The remodeler's phone fills with leads that go nowhere (a rush on 8ths, then 16ths); one gold card arrives —
+//  a real homeowner — and becomes the gold clipboard in their kitchen: the estimate gets written. Silence.
+//  Slam back to the same phone, quiet now, with one gold card: pay per estimate.
+//  Gold (the yellow plate) = the estimate, nothing else.
+// =====================================================================
+const FPS = 24, W = 1080, H = 1920;
+const BPM = 120, BEAT = 60 / BPM, E8 = BEAT / 2, E16 = BEAT / 4;
+const DURATION = 12.0;
+const NFRAMES = Math.round(DURATION * FPS);
+const LOOP_T = NFRAMES / FPS;
+const SAFE = { top: 240, bottom: 420, right: 140 };
+const PRINTF = '"Geist", "Inter", "Arial Black", "Helvetica Neue", Impact, "DejaVu Sans", sans-serif';
+const HAND = '"Ink Free", "Segoe Print", "Bradley Hand", "Comic Sans MS", cursive';
+const CX = 540;
+
+const ERA_LIST = [[0, 4, () => scenePhone(false)], [4, 8, () => sceneKitchen()], [8, 12, () => scenePhone(true)]];
+const SHOTS = [
+  ['leads',    0, 0.0, 4.0,  'junk leads pile up on the phone; one gold card arrives'],
+  ['estimate', 1, 4.0, 8.0,  'the gold card is the clipboard: measure, check, price; silence'],
+  ['pay',      2, 8.0, 12.0, 'slam: the same phone, quiet, one gold card — pay per estimate'],
+];
+const TIMELINE = {
+  width: W, height: H, fps: FPS, bpm: BPM, duration: DURATION, frames: NFRAMES, loop: LOOP_T, safe: SAFE,
+  format: 'morph-chain',
+  shots: SHOTS.map(([key, era, t0, t1, title], i) => ({ id: i + 1, key, era, t0, t1, title })),
+  cuts: [8.0],
+  morphs: [4.0],
+  cues: {
+    junk: [0.5, 1.0, 1.5, 1.75, 2.0, 2.125], strike: 2.5, gold: 3.0,
+    tape: 4.5, chk: 5.25, price: 6.5, silence: 7.25,
+    slam: 8.0, line: 8.5, brand: 9.5, hop: 8.0,
+  },
+  acts: [
+    { name: '1 Leads that go nowhere', role: 'peak',    t0: 0.0,  t1: 4.0 },
+    { name: '2 The estimate',          role: 'journey', t0: 4.0,  t1: 7.25 },
+    { name: 'silence',                 role: 'silence', t0: 7.25, t1: 8.0 },
+    { name: '3 Pay per estimate',      role: 'gift',    t0: 8.0,  t1: 12.0 },
+  ],
+  board: [
+    { t: 2.4,  title: '01 leads that go nowhere', sound: 'dull bonks, faster and faster', next: '' },
+    { t: 3.6,  title: '01 one gold card: a real homeowner', sound: 'a bright rising fifth', next: 'the gold card morphs into the clipboard' },
+    { t: 7.5,  title: '02 the estimate, written in their kitchen', sound: 'tape zip, pencil checks — then silence', next: 'hard cut on the loudest hit' },
+    { t: 10.5, title: '03 pay per estimate', sound: 'stab + sub, a flat chord', next: 'loops to the phone' },
+  ],
+  narration: [],
+};
+window.TIMELINE = TIMELINE;

@@ -1,0 +1,8 @@
+{
+  "name": "v2-pay-per-estimate",
+  "title": "Syrus — pay per estimate",
+  "format": { "width": 1080, "height": 1920, "fps": 24, "bpm": 120, "duration": 12.0, "frames": 288 },
+  "storyFormat": "morph chain (3 worlds, 1 shape morph, 1 hard cut on the payoff)",
+  "style": "syrus-riso",
+  "review": { "safe": { "top": 240, "bottom": 420, "right": 140 }, "refs": {} }
+}

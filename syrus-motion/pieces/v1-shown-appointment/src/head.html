@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Syrus — pay per shown appointment</title>
+<style>
+  html, body { margin: 0; height: 100%; background: #e9ebe4; overflow: hidden; }
+  body { display: flex; align-items: center; justify-content: center; }
+  canvas { height: min(100vh, calc(100vw * 16 / 9)); width: auto; aspect-ratio: 9 / 16; display: block; cursor: pointer; }
+</style>
+</head>
+<body>
+<canvas id="c" width="1080" height="1920"></canvas>
+<script>
+"use strict";
+// =====================================================================
+//  SYRUS V1 — "Pay per shown appointment". 9:16, 16.0s @ 120 BPM, 24fps, style syrus-iso.
+//  Format: morph chain across 4 worlds (a true process: ad -> qualified + booked -> shown -> what you pay for).
+//  Device: one gold thing travels the whole way — the tapped button becomes the booked slot, the slot becomes
+//  the front door, and the door is what you pay for. Gold means the appointment, nothing else.
+//  Ends where it starts (the phone on its plinth), changed: the ad is now the bill.
+// =====================================================================
+const FPS = 24, W = 1080, H = 1920;
+const BPM = 120, BEAT = 60 / BPM, E8 = BEAT / 2, E16 = BEAT / 4;
+const DURATION = 16.0;
+const NFRAMES = Math.round(DURATION * FPS);
+const LOOP_T = NFRAMES / FPS;
+const SAFE = { top: 240, bottom: 420, right: 140 };
+const CX = 540;
+const HAND = '"Segoe Print", "Bradley Hand", "Comic Sans MS", cursive';   // the storyboard title font (kit/board.js needs it)
+
+const ERA_LIST = [
+  [0, 4, () => scenePhone(false)],
+  [4, 8, () => sceneCalendar()],
+  [8, 12, () => sceneHouse()],
+  [12, 16, () => scenePhone(true)],
+];
+const SHOTS = [
+  ['ad',       0, 0.0, 4.0,  'a homeowner taps the ad; the button turns gold'],
+  ['booked',   1, 4.0, 8.0,  'the gold slot lands on the calendar; three checks; the bot hops on it'],
+  ['shown',    2, 8.0, 12.0, 'the van pulls up; the gold door opens; silence'],
+  ['pay',      3, 12.0, 16.0, 'slam: the same phone, now the bill — pay per shown appointment'],
+];
+const TIMELINE = {
+  width: W, height: H, fps: FPS, bpm: BPM, duration: DURATION, frames: NFRAMES, loop: LOOP_T, safe: SAFE,
+  format: 'morph-chain',
+  shots: SHOTS.map(([key, era, t0, t1, title], i) => ({ id: i + 1, key, era, t0, t1, title })),
+  cuts: [12.0],
+  morphs: [4.0, 8.0],
+  cues: {
+    plates: 0.05, phone: 0.25, card: 0.75, tap: 1.75, form: 2.25,
+    cal: 4.5, tiles: 4.75, slot: 4.75, chk: 5.25, hop: 6.5,
+    van: 8.5, park: 9.25, door: 10.0, silence: 11.25,
+    slam: 12.0, bill: 11.6, line: 12.5, brand: 13.5,
+  },
+  acts: [
+    { name: '1 The ad',            role: 'build',   t0: 0.0,   t1: 4.0 },
+    { name: '2 Qualified, booked', role: 'journey', t0: 4.0,   t1: 8.0 },
+    { name: '3 Shown',             role: 'peak',    t0: 8.0,   t1: 11.25 },
+    { name: 'silence',             role: 'silence', t0: 11.25, t1: 12.0 },
+    { name: '4 What you pay for',  role: 'gift',    t0: 12.0,  t1: 16.0 },
+  ],
+  board: [
+    { t: 2.6,  title: '01 the ad: a homeowner taps "Book free estimate"', sound: 'soft taps, a pluck on the tap', next: 'the gold button morphs into a calendar slot' },
+    { t: 7.0,  title: '02 we qualify it, we book it', sound: 'tiles tick in a wave, three checks', next: 'the gold slot morphs into the front door' },
+    { t: 11.5, title: '03 shown: the door opens', sound: 'van, a chime on the door — then silence', next: 'hard cut on the loudest hit' },
+    { t: 14.6, title: '04 pay per shown appointment', sound: 'the stab + sub, a flat chord', next: 'loops to the ad' },
+  ],
+  narration: [],
+};
+window.TIMELINE = TIMELINE;
