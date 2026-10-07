@@ -7,7 +7,8 @@ ad.json:
   "beats": [ { "at": "line:hook", "clips": ["client/a.mp4@0.3", "stock/b.mp4", "client/c.mp4@4 whip x0.5"] }, ... ]
 A beat runs from its "at" anchor to the next beat's (the first starts at 0, the last runs to the end). Its clips split
 the beat evenly, and every cut is snapped to the nearest spoken word onset (±0.3 s) so pictures change on words, as in
-the house edit. A clip is "path[@in] [whip] [xSPEED] [fx=0.3] [zoom=1.0:1.12]"; with no @in the catalog's best ranges
+the house edit. A clip is "path[@in] [whip] [flash] [punch[=0.1]] [xSPEED] [fx=0.3] [zoom=1.0:1.12]"; ad.json "punch": 0.08 puts an impact
+zoom on every hard cut (not whips, not the opener). With no @in the catalog's best ranges
 are used in turn. Low-res client footage (<720 px wide) gets a sharpen in its grade. Video shots drift on a slow push.
 """
 import json, os, re, subprocess, sys
@@ -52,6 +53,8 @@ def parse(spec):
         elif t.startswith('fx='): d['fx'] = float(t[3:])
         elif t.startswith('fy='): d['fy'] = float(t[3:])
         elif t.startswith('zoom='): d['zoom'] = [float(v) for v in t[5:].split(':')]
+        elif t == 'flash': d['flash'] = True
+        elif t.startswith('punch'): d['punch'] = float(t[6:] or 0.1) if t.startswith('punch=') else 0.1
     return d
 
 beats = A['beats']; starts = [0.0] + [anchor(b['at']) for b in beats[1:]]
@@ -73,6 +76,9 @@ for bi, b in enumerate(beats):
              'zoom': c.get('zoom', [1.0, 1.12] if is_img else [1.0, 1.07] if k % 2 == 0 else [1.07, 1.0])}
         if sp != 1.0: s['speed'] = sp
         if c.get('whip'): s['whip'] = True
+        pz = c.get('punch', 0 if c.get('whip') or (bi == 0 and k == 0) else A.get('punch', 0))   # "punch": every hard cut lands on an impact zoom
+        if pz: s['punch'] = pz
+        if c.get('flash'): s['flash'] = True
         w = info.get('w') or 1080
         g = 'eq=contrast=1.06:saturation=1.12:brightness=0.01'
         if min(w, info.get('h') or 1920) < 720: g += ',unsharp=5:5:0.9:5:5:0.0'

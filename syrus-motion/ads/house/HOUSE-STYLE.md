@@ -51,7 +51,31 @@ Stock is used only for metaphor lines:
 
 AI imagery is rare.
 
-## How the 10 new ads apply it
-- `gfx/tpl/kinetic.js` is the centred text, `gfx/tpl/cta-glass.js` is the CTA card and logo pill, and `tools/cut.py` handles whips, the real music bed and the end-with-VO timing.
-- VO: ElevenLabs "Michael", one take per ad. `tools/vo_ingest.py` cuts pauses to 0.12 s and paces the read to about 180–190 wpm.
+## Music: four tracks carry most of the winners
+Separating the voice out of the winners (demucs) shows that the same few stock tracks sit under winning ads across accounts:
+
+| Bed | Tempo | Under |
+|---|---|---|
+| Drive | 135 BPM | Vistaguard V3, Anyvision VID5 and VID7 |
+| Bright | 128 BPM | AMC V5, Innovative Interiors V3 |
+| Pulse | 120 BPM | Rob-Art V5 |
+| Groove | 115 BPM | Total Home Remodeling V1–V3, AMC V3 |
+
+`tools/bed_lift.py` turns a separated stem into an ad-ready bed in `ads/house/music/`:
+- It evens out the dips the old voice left.
+- It starts on a kick.
+- It loops on the bar, away from any whoosh baked into the original edit.
+
+The slower lo-fi beds (about 86 BPM, AMC V4 and Rob-Art V4/V6) also win, but the upbeat four are what we use now.
+
+## How the new ads apply it
+- `gfx/tpl/kinetic.js` is the centred text, `gfx/tpl/cta-glass.js` is the CTA card and logo pill, and `tools/cut.py` handles whips, impact zooms, flashes, the real music bed and the end-with-VO timing.
+- VO: ElevenLabs "Michael" on the v4 model, one take per ad. `tools/vo_ingest.py` cuts pauses to 0.12 s and adds a broadcast finish. It stretches only if a read is slower than about 185 wpm: two of the 12 got a light 4–5%.
+- Music: one of the four lifted beds, 8–9 dB under the voice.
+- The third "all-out" ad per client is cut for retention:
+  - about 1.4 s per shot;
+  - 4–7 zoom-blur whips;
+  - an impact zoom (`"punch"`) on every hard cut;
+  - a cut on every item the VO lists;
+  - an ending on the opening frame, so a replay loops cleanly.
 - Every ad is scored with `tools/study_ad.py`, the same meter used on the 21 winners. Results are in `ads/house/REPORT.md`.

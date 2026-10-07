@@ -106,8 +106,9 @@ def build_ads():
         if not mp4: print('  missing render:', n['dir']); continue
         src = os.path.join(ad_dir, 'out', mp4[0]); slug = os.path.basename(n['dir'])
         fit_mp4(src, os.path.join(out, 'd', slug + '.mp4')); poster(src, os.path.join(out, 'p', slug + '.jpg'), n.get('poster', 2.0))
-        D = dur(src)
-        ads.append({**n, 'slug': slug, 'title': A.get('title', slug), 'dur': round(D, 1), 'tc': tc(D), 'file': f'd/{slug}.mp4', 'name': mp4[0],
+        D = dur(src); bed = os.path.basename((A.get('music') or {}).get('file') or '')
+        bed = next((b['name'] for b in notes.get('beds', []) if b['file'] == bed), None)
+        ads.append({**n, 'music': bed, 'slug': slug, 'title': A.get('title', slug), 'dur': round(D, 1), 'tc': tc(D), 'file': f'd/{slug}.mp4', 'name': mp4[0],
                     'poster': f'p/{slug}.jpg', 'mb': round(os.path.getsize(os.path.join(out, 'd', slug + '.mp4')) / 1e6, 1)})
     open(os.path.join(out, 'index.html'), 'w').write(page('Syrus Ad Cuts', 'ads', '', {'kind': 'ads', 'clients': notes['clients'], 'ads': ads}))
     print('ads', len(ads), '->', out)
@@ -130,7 +131,7 @@ def build_masters():
 
 
 def build_house():
-    """The 10 house-style ads: gap list + measured house numbers + every ad scored + the videos by client."""
+    """The house-style ads (two per client plus an all-out third): gap list + measured house numbers + every ad scored + the videos by client + the music beds."""
     H = os.path.join(ROOT, 'ads', 'house'); out = os.path.join(OUT, 'house'); [os.makedirs(os.path.join(out, k), exist_ok=True) for k in 'dpa']
     notes = json.load(open(os.path.join(H, 'notes.json')))
     rep = json.load(open(os.path.join(H, 'report.json'))) if os.path.exists(os.path.join(H, 'report.json')) else {'house': {}, 'ads': []}
@@ -146,14 +147,19 @@ def build_house():
         if not mp4: print('  missing render:', n['dir']); continue
         src = os.path.join(ad_dir, 'out', mp4[0]); slug = n['dir'].replace('/', '-')
         fit_mp4(src, os.path.join(out, 'd', slug + '.mp4')); poster(src, os.path.join(out, 'p', slug + '.jpg'), n.get('poster', 2.0))
-        D = dur(src)
-        ads.append({**n, 'slug': slug, 'title': A.get('title', slug), 'dur': round(D, 1), 'tc': tc(D), 'file': f'd/{slug}.mp4', 'name': mp4[0],
+        D = dur(src); bed = os.path.basename((A.get('music') or {}).get('file') or '')
+        bed = next((b['name'] for b in notes.get('beds', []) if b['file'] == bed), None)
+        ads.append({**n, 'music': bed, 'slug': slug, 'title': A.get('title', slug), 'dur': round(D, 1), 'tc': tc(D), 'file': f'd/{slug}.mp4', 'name': mp4[0],
                     'poster': f'p/{slug}.jpg', 'mb': round(os.path.getsize(os.path.join(out, 'd', slug + '.mp4')) / 1e6, 1), 'score': score.get(n['dir'])})
     aud = []
     for f in sorted(os.listdir(os.path.join(H, 'vo-audition'))):
         if f.endswith('.mp3'): shutil.copy2(os.path.join(H, 'vo-audition', f), os.path.join(out, 'a', f)); aud.append({'file': f'a/{f}', 'name': f})
+    beds = []
+    for b in notes.get('beds', []):
+        shutil.copy2(os.path.join(H, 'music', b['file']), os.path.join(out, 'a', b['file'])); beds.append({**b, 'file': f"a/{b['file']}"})
     open(os.path.join(out, 'index.html'), 'w').write(page('Syrus House-Style Ads', 'house', '', {'kind': 'house', 'clients': notes['clients'], 'ads': ads,
-                                                                                         'gap': gap, 'house': rep['house'], 'audition': aud}))
+                                                                                         'gap': gap, 'house': rep['house'], 'audition': aud, 'beds': beds,
+                                                                                         'update': notes.get('update')}))
     print('house', len(ads), 'ads ->', out)
 
 

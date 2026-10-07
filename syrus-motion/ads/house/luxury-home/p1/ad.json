@@ -39,17 +39,17 @@
    }
   ],
   "engine": "elevenlabs",
-  "voice": "Michael (ElevenLabs Kysvuk17R9MDAP9l089v)",
-  "take": "nXGwYMf0cpFvPYpUb0CY",
-  "tempo": 1.124
+  "voice": "Michael (ElevenLabs v4, Kysvuk17R9MDAP9l089v)",
+  "take": "142G8yL8VDSQUv1i5QcS",
+  "tempo": 1.0
  },
  "media": "../media",
  "tail": 0.4,
  "music": {
-  "file": "../../music/bed-warm-88.mp3",
-  "in": 25,
-  "db": -10,
-  "duck": -2,
+  "file": "../../music/lift-totalhome-v1.mp3",
+  "in": 0,
+  "db": -9,
+  "duck": -2.5,
   "end": "end"
  },
  "captions": {
@@ -157,7 +157,7 @@
   {
    "src": "../media/ai/ai-bath-BVogbV0XGMQV15wPC8qmn.mp4",
    "in": 0.0,
-   "len": 2.0,
+   "len": 2.12,
    "fx": 0.5,
    "fy": 0.5,
    "zoom": [
@@ -168,8 +168,8 @@
   },
   {
    "src": "../media/ai/ai-bath-oxaDYK4RreD_c2OtOUDVs.mp4",
-   "in": 3.21,
-   "len": 1.92,
+   "in": 3.03,
+   "len": 2.1,
    "fx": 0.5,
    "fy": 0.5,
    "zoom": [
@@ -181,7 +181,7 @@
   {
    "src": "../media/ai/ai-bath-video.mp4",
    "in": 0.0,
-   "len": 1.84,
+   "len": 1.6,
    "fx": 0.5,
    "fy": 0.5,
    "zoom": [
@@ -193,7 +193,7 @@
   {
    "src": "../media/ai/ai-bath-8v_gHe12Eop_2RlAkInzX.mp4",
    "in": 0.0,
-   "len": 1.8,
+   "len": 1.46,
    "fx": 0.5,
    "fy": 0.5,
    "zoom": [
@@ -205,7 +205,7 @@
   {
    "src": "../media/stock/pexels-12568633.mp4",
    "in": 0.5,
-   "len": 2.06,
+   "len": 1.56,
    "fx": 0.5,
    "fy": 0.5,
    "zoom": [
@@ -217,7 +217,7 @@
   {
    "src": "../media/ai/ai-bath-f7RN0tTxAe-8Yx3LQTtj6.mp4",
    "in": 0.0,
-   "len": 1.5,
+   "len": 1.88,
    "fx": 0.5,
    "fy": 0.5,
    "zoom": [
@@ -229,7 +229,7 @@
   {
    "src": "../media/ai/ai-bath-8v_gHe12Eop_2RlAkInzX.mp4",
    "in": 3.2,
-   "len": 1.78,
+   "len": 1.48,
    "fx": 0.5,
    "fy": 0.5,
    "zoom": [
@@ -241,7 +241,7 @@
   {
    "src": "../media/stock/pexels-34236997.mp4",
    "in": 1.5,
-   "len": 1.94,
+   "len": 1.64,
    "fx": 0.5,
    "fy": 0.5,
    "zoom": [
@@ -253,7 +253,7 @@
   {
    "src": "../media/ai/ai-bath-BVogbV0XGMQV15wPC8qmn.mp4",
    "in": 0.0,
-   "len": 1.86,
+   "len": 1.62,
    "fx": 0.5,
    "fy": 0.5,
    "zoom": [
@@ -266,7 +266,7 @@
   {
    "src": "../media/stock/pexels-855672.mp4",
    "in": 5.0,
-   "len": 1.9,
+   "len": 1.56,
    "fx": 0.5,
    "fy": 0.5,
    "zoom": [
@@ -278,7 +278,7 @@
   {
    "src": "../media/ai/ai-bath-Y18jESq4hOFB89_9UVMog.mp4",
    "in": 0.5,
-   "len": 2.67,
+   "len": 2.5,
    "fx": 0.5,
    "fy": 0.5,
    "zoom": [
@@ -290,7 +290,7 @@
   {
    "src": "../media/ai/ai-bath-nF5lGC6orko0IsARiHSA4.mp4",
    "in": 0.0,
-   "len": 2.67,
+   "len": 2.0,
    "fx": 0.5,
    "fy": 0.5,
    "zoom": [
@@ -302,7 +302,7 @@
   {
    "src": "../media/stock/pexels-6474087.mp4",
    "in": 0.0,
-   "len": 2.0,
+   "len": 1.92,
    "fx": 0.5,
    "fy": 0.5,
    "zoom": [
@@ -314,7 +314,7 @@
   {
    "src": "../media/stock/pexels-24906850.mp4",
    "in": 2.0,
-   "len": 1.72,
+   "len": 1.78,
    "fx": 0.5,
    "fy": 0.5,
    "zoom": [
@@ -326,7 +326,7 @@
   {
    "src": "../media/stock/pexels-38746559.mp4",
    "in": 2.5,
-   "len": 2.2,
+   "len": 1.78,
    "fx": 0.5,
    "fy": 0.5,
    "zoom": [
@@ -338,7 +338,7 @@
   {
    "src": "../media/stock/pexels-4154236.mp4",
    "in": 0.5,
-   "len": 1.86,
+   "len": 1.68,
    "fx": 0.5,
    "fy": 0.5,
    "zoom": [
@@ -350,7 +350,7 @@
   {
    "src": "../media/ai/ai-bath-6mCOgAptjPwZ-DSCAdJ4E.mp4",
    "in": 5.0,
-   "len": 2.02,
+   "len": 1.7,
    "fx": 0.5,
    "fy": 0.5,
    "zoom": [
@@ -362,7 +362,7 @@
   {
    "src": "../media/stock/pexels-28048584.mp4",
    "in": 3.5,
-   "len": 3.86,
+   "len": 3.24,
    "fx": 0.5,
    "fy": 0.5,
    "zoom": [
@@ -374,7 +374,7 @@
   {
    "src": "../media/stock/pexels-31739399.mp4",
    "in": 0.0,
-   "len": 3.305,
+   "len": 2.784,
    "fx": 0.5,
    "fy": 0.5,
    "zoom": [

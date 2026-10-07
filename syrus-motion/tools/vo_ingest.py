@@ -40,9 +40,15 @@ idx = np.where(np.abs(wav) > 0.01)[0]; wav = wav[max(0, idx[0] - int(0.02 * SR))
 wav, _, _ = tighten(wav, SR, [], [], a.tighten)
 lines = A['vo']['lines']; nwords = sum(len(l['text'].split()) for l in lines)
 tempo = a.tempo or float(np.clip(a.wpm / (nwords / (len(wav) / SR / 60)), 1.0, 1.15))
-if tempo > 1.001:
-    with tempfile.NamedTemporaryFile(suffix='.wav') as t:
-        sf.write(t.name, wav, SR, subtype='PCM_16'); wav = decode(t.name, ['-af', f'rubberband=tempo={tempo:.4f}:pitchq=quality'])
+if tempo < 1.03: tempo = 1.0   # at pace already: no stretch at all (the cleanest sound)
+# crisp finish: the stretch (only when the read is slow) keeps transients and formants, then a broadcast voice chain:
+# rumble cut, a little less low-mid mud, presence + air, de-ess, gentle compression, limiter
+CHAIN = ('highpass=f=80,equalizer=f=260:width_type=o:width=1.0:g=-2.5,equalizer=f=3400:width_type=o:width=1.3:g=2.5,'
+         'highshelf=f=9000:g=2.5,deesser=i=0.35:m=0.5:f=0.5,acompressor=threshold=-20dB:ratio=3:attack=4:release=70:makeup=2.5,'
+         'alimiter=limit=0.95:level=false')
+af = (f'rubberband=tempo={tempo:.4f}:transients=crisp:detector=compound:window=short:formant=preserved:pitchq=quality,' if tempo > 1.01 else '') + CHAIN
+with tempfile.NamedTemporaryFile(suffix='.wav') as t:
+    sf.write(t.name, wav, SR, subtype='PCM_16'); wav = decode(t.name, ['-af', af])
 wav = np.concatenate([np.zeros(int(a.lead * SR), np.float32), wav, np.zeros(int(0.3 * SR), np.float32)])
 wav = wav / max(1e-6, np.abs(wav).max()) * 0.89
 

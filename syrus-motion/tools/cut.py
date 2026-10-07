@@ -14,7 +14,8 @@ usage: python3 tools/cut.py <ad-dir> [--force-vo] [--stills]
   "captions": { "y": 1240, "em": ["free"] }   # or { "style": "kinetic", "hookEnd": "line:hook.end", "em": [...], "places": [...] }
 }
 Music: { "file": "../music/bed.wav", "db": -11, "end": "end" } plays a real track (looped/trimmed, faded at "end");
-without "file" a bed is synthesized. A shot with "whip": true enters on a zoom-blur + whoosh (the house transition).
+without "file" a bed is synthesized. A shot with "whip": true enters on a zoom-blur + whoosh (the house transition);
+"punch": 0.1 lands the shot pushed in 10% and settles it in ~0.2 s (an impact cut), "flash": true pops it in from white.
 Anchors: number | "word:<w>" (first occurrence) | "word:<w>#2" | "line:<id>" (its start) | "line:<id>.end" | "end";
 any anchor may carry "+0.4" / "-0.2". Shots run back to back; the last shot stretches to the end.
 Outputs <ad-dir>/out/<slug>.mp4 and out/sheet.jpg (1 frame/2s contact sheet).
@@ -101,6 +102,9 @@ for i, s in enumerate(shots):
     is_img = src.lower().endswith(('.jpg', '.jpeg', '.png', '.webp', '.heic'))
     fx, fy = s.get('fx', 0.5), s.get('fy', 0.5); z0, z1 = s.get('zoom', [1.0, 1.1] if is_img else [1.0, 1.0])
     grade = s.get('grade', 'eq=contrast=1.05:saturation=1.1:brightness=0.01')
+    if s.get('flash'): grade = "eq=brightness='0.45*max(0,1-t/0.12)':eval=frame," + grade   # a white pop on the cut
+    pz = float(s.get('punch', 0))   # impact zoom: the shot lands pushed in by pz and settles over ~0.2 s
+    pk = f"+{pz}*exp(-{{n}}/4)" if pz else ''
     nfr = int(round(ln * FPS))
     # cache: a segment is only re-encoded when its source or settings change
     skey = hashlib.sha1(json.dumps([s, start, ln, os.path.getmtime(src)], sort_keys=True, default=str).encode()).hexdigest()[:12]
@@ -110,7 +114,7 @@ for i, s in enumerate(shots):
     for old in [f for f in os.listdir(BUILD) if f.startswith(f'seg{i:02d}.mp4.')]: os.remove(os.path.join(BUILD, old))
     if is_img:
         # Ken Burns: upscale 2x first so zoompan's integer steps don't jitter; zoom z0->z1, centred on (fx, fy)
-        zexpr = f"{z0}+({z1}-{z0})*on/{max(1, nfr - 1)}"
+        zexpr = f"{z0}+({z1}-{z0})*on/{max(1, nfr - 1)}" + pk.format(n='on')
         vf = (f"scale=2160:3840:force_original_aspect_ratio=increase,crop=2160:3840:(iw-2160)*{fx}:(ih-3840)*{fy},"
               f"zoompan=z='{zexpr}':x='(iw-iw/zoom)*{fx}':y='(ih-ih/zoom)*{fy}':d={nfr}:s=1080x1920:fps={FPS},{grade},format=yuv420p")
         ff('-loop', 1, '-i', src, '-vf', vf, '-frames:v', nfr, '-an', '-c:v', 'libx264', '-crf', 17, '-preset', 'veryfast', out)
@@ -122,8 +126,8 @@ for i, s in enumerate(shots):
         else:
             # a slow push on video: zoompan one output frame per input frame (d=1), on a 2x canvas so the steps don't jitter
             vf = (f"setpts=PTS/{sp},scale=1080:1920:force_original_aspect_ratio=increase,crop=1080:1920:(iw-1080)*{fx}:(ih-1920)*{fy},fps={FPS},"
-                  + (f"scale=2160:3840,zoompan=z='{z0}+({z1}-{z0})*in/{max(1, nfr - 1)}':d=1:x='(iw-iw/zoom)*{fx}':y='(ih-ih/zoom)*{fy}':s=1080x1920:fps={FPS},"
-                     if z1 != z0 else '')
+                  + (f"scale=2160:3840,zoompan=z='{z0}+({z1}-{z0})*in/{max(1, nfr - 1)}{pk.format(n='in')}':d=1:x='(iw-iw/zoom)*{fx}':y='(ih-ih/zoom)*{fy}':s=1080x1920:fps={FPS},"
+                     if z1 != z0 or pz else '')
                   + f"{grade},format=yuv420p")
         ff('-ss', s.get('in', 0), '-t', need + 0.2, '-i', src, '-filter_complex' if s.get('fit') == 'blur' else '-vf', vf, '-frames:v', nfr, '-an', '-c:v', 'libx264', '-crf', 17, '-preset', 'veryfast', out)
     s['_t0'], s['_len'] = start, ln
@@ -160,8 +164,11 @@ if WHIPS:
 # ---- 3. graphics track: captions + items, one transparent pass
 items, hide, whoosh, hits, ticks = [], [], [], [], []
 for g in A.get('gfx', []):
-    at = anchor(g['at']); it = {'tpl': g['tpl'], 'at': round(at, 3), 'cfg': g.get('cfg', {})}
+    at = anchor(g['at']); it = {'tpl': g['tpl'], 'at': round(at, 3), 'cfg': dict(g.get('cfg', {}))}
+    if 'until' in g: g = {**g, 'dur': round(anchor(g['until']) - at, 3)}   # "until": an anchor instead of a fixed length
     if 'dur' in g: it['dur'] = g['dur']
+    if any(isinstance(b, str) for b in it['cfg'].get('beats') or []):   # beats may be anchors ("line:b4"), relative to the item
+        it['cfg']['beats'] = [round(anchor(b) - at, 3) if isinstance(b, str) else b for b in it['cfg']['beats']]
     items.append(it)
     d = g.get('dur', g.get('cfg', {}).get('dur', 3.0))
     if g.get('hide', True): hide.append([round(at, 3), round(at + d, 3)])
@@ -172,7 +179,7 @@ whoosh += [round(w - 0.05, 3) for w in (WHIPS if not AROLL else [])]
 cap = A.get('captions', {})
 spec = {'fps': FPS, 'duration': DUR, 'brand': A.get('brand', {}), 'images': {},
         'items': ([{'tpl': 'kinetic' if cap.get('style') == 'kinetic' else 'captions', 'at': 0, 'dur': DUR,
-                    'cfg': {**{k: v for k, v in cap.items() if k not in ('style', 'on')}, 'words': VO['words'], 'hide': hide + cap.get('hide', []),
+                    'cfg': {**{k: v for k, v in cap.items() if k not in ('style', 'on')}, 'words': VO['words'], 'hide': hide + [[round(anchor(a), 3), round(anchor(b), 3)] for a, b in cap.get('hide', [])],
                             **({'hookEnd': anchor(cap['hookEnd'])} if 'hookEnd' in cap else {})}}] if cap.get('on', True) else []) + items}
 for k, p in A.get('images', {}).items():   # logos / photos the graphics draw, embedded
     import base64, mimetypes

@@ -88,6 +88,8 @@ h2 + .sub { margin: 0 0 18px; color: var(--mute); max-width: 70ch; }
 .aud { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 12px; }
 .aud .note audio { width: 100%; margin-top: 8px; }
 .pending { border-left: 4px solid var(--sky); }
+.tag { display: inline-block; vertical-align: 2px; margin-right: 8px; padding: 4px 8px; border-radius: 999px; background: var(--ink); color: var(--bg); font: 700 10.5px/1 var(--mono); letter-spacing: .08em; text-transform: uppercase; }
+.upd { border-left: 4px solid var(--ink); margin: 0 0 18px; } .upd ul { margin: 8px 0 0; padding-left: 18px; } .upd li { margin: 4px 0; }
 /* masters */
 .table { overflow-x: auto; border: 1px solid var(--line); border-radius: 12px; }
 table { border-collapse: collapse; width: 100%; min-width: 520px; font-size: 14px; }
@@ -154,6 +156,7 @@ footer { margin-top: 44px; color: var(--mute); font-size: 13px; border-top: 1px 
         </div>
       </header>
       <nav class="chips" aria-label="Filter">${G.map(([g, n]) => `<button class="chip" data-g="${g}" aria-pressed="false">${n}<span>${count(g)}</span></button>`).join('')}</nav>
+      ${D.update ? `<div class="note upd"><h4>${esc(D.update.title)}</h4><ul>${D.update.items.map((x) => `<li>${esc(x)}</li>`).join('')}</ul></div>` : ''}
       <p class="dlnote">Downloads work when this page is open in claude.ai.</p>
       <div class="grid" id="grid">${D.items.map((it) => `
         <article class="clip" data-group="${it.group}">
@@ -192,6 +195,7 @@ footer { margin-top: 44px; color: var(--mute); font-size: 13px; border-top: 1px 
         <p class="lede">${n} finished 9:16 ads cut from three clients' own footage, on their approved scripts. Voiceover ads use an AI voice; Twin Pines ads use their reps' real on-camera audio. Each needs the client checks listed under it before it runs.</p>
         <div class="facts"><span><b>${n}</b> ads</span><span><b>${D.clients.length}</b> clients</span><span>${link('pack', 'Motion pack')}</span></div>
       </header>
+      ${D.update ? `<div class="note upd"><h4>${esc(D.update.title)}</h4><ul>${D.update.items.map((x) => `<li>${esc(x)}</li>`).join('')}</ul></div>` : ''}
       <p class="dlnote">Downloads work when this page is open in claude.ai.</p>
       ${D.clients.map((c) => `
         <section class="client">
@@ -217,9 +221,10 @@ footer { margin-top: 44px; color: var(--mute); font-size: 13px; border-top: 1px 
       <header class="top">
         <div class="eyebrow">Syrus Digital · house-style ads</div>
         <h1>House <em>Style</em></h1>
-        <p class="lede">I measured ${H.n || 21} of our own winning ads for voice, music, sound effects, text and cutting, then rebuilt our pipeline to match. These are ${n} new ads in that style, two per client, each on its word-for-word winning or approved script, with ElevenLabs "Michael" on every voiceover. Every ad is scored with the same meter as the winners.</p>
+        <p class="lede">I measured ${H.n || 21} of our own winning ads for voice, music, sound effects, text and cutting, then rebuilt our pipeline to match. These are ${n} ads in that style: two per client, plus a third all-out cut built for retention. Each runs its word-for-word winning or approved script, voiced by ElevenLabs "Michael", over a music bed lifted from our own winners. Every ad is scored with the same meter as the winners.</p>
         <div class="facts"><span><b>${n}</b> ads ready</span><span><b>${ready.length}</b> clients</span><span>house median: <b>${H.wpm}</b> wpm · music <b>${H.floor}</b> dB under voice · <b>${H.sfx}</b> sfx · <b>${H.shot}s</b> shots · <b>${H.lufs}</b> LUFS</span></div>
       </header>
+      ${D.update ? `<div class="note upd"><h4>${esc(D.update.title)}</h4><ul>${D.update.items.map((x) => `<li>${esc(x)}</li>`).join('')}</ul></div>` : ''}
       <p class="dlnote">Downloads work when this page is open in claude.ai.</p>
       ${ready.map((c) => `
         <section class="client">
@@ -227,8 +232,8 @@ footer { margin-top: 44px; color: var(--mute); font-size: 13px; border-top: 1px 
           <div class="ads">${D.ads.filter((a) => a.client === c.id).map((a) => `
             <article class="ad">
               <div class="frame"><video controls playsinline preload="none" poster="${esc(a.poster)}" src="${esc(a.file)}"></video><span class="slate">${esc(a.tc)}</span></div>
-              <h3>${esc(a.label)}</h3>
-              <div class="meta">${esc(a.script)} · ${a.dur}s · ${a.mb} MB</div>
+              <h3>${a.tag ? `<span class="tag">${esc(a.tag)}</span>` : ''}${esc(a.label)}</h3>
+              <div class="meta">${esc(a.script)} · ${a.dur}s · ${a.mb} MB${a.music ? ` · music: ${esc(a.music)}` : ''}</div>
               ${sc(a.score)}
               <p class="flow">${esc(a.flow)}</p>
               ${a.confirm && a.confirm.length ? `<div class="confirm"><b>Confirm before launch</b><ul>${a.confirm.map((x) => `<li>${esc(x)}</li>`).join('')}</ul></div>` : ''}
@@ -243,6 +248,8 @@ footer { margin-top: 44px; color: var(--mute); font-size: 13px; border-top: 1px 
           ${D.gap.map((g) => `<tr><td>${g.n}</td><td class="what">${esc(g.what)}</td><td>${esc(g.ours.replace(/\*\*/g, ''))}</td><td>${esc(g.house.replace(/\*\*/g, ''))}</td><td>${esc(g.fix)}</td></tr>`).join('')}
         </tbody></table></div>
       </section>
+      ${D.beds && D.beds.length ? `<section class="client"><h2>Music beds</h2><p class="sub">Lifted from our own winning ads: the voice is removed, the dips it left are evened out, and each bed loops on the bar with no whooshes from the original edit.</p>
+        <div class="aud">${D.beds.map((b) => `<div class="note"><h4>${esc(b.name)}</h4><p>From ${esc(b.from)}. Used on ${esc(b.used)}.</p><audio controls preload="none" src="${esc(b.file)}"></audio></div>`).join('')}</div></section>` : ''}
       ${D.audition && D.audition.length ? `<section class="client"><h2>Voice audition</h2><p class="sub">File 0 is the real AMC V4 voice. 1 is Michael, the voice used on these ads. 2 and 3 are the alternates.</p>
         <div class="aud">${D.audition.map((x) => `<div class="note"><h4>${esc(x.name.replace(/\.mp3$/, '').replace(/-/g, ' '))}</h4><audio controls preload="none" src="${esc(x.file)}"></audio></div>`).join('')}</div></section>` : ''}
       <footer>Built with the Syrus ad compiler: word-timed shot plans (tools/house_build.py), centred kinetic type, real music beds and ElevenLabs voice, scored with tools/study_ad.py. Each ad's ad.json is in the repo, so a line, shot or graphic can be changed and the ad re-cut.</footer>`;
@@ -255,6 +262,7 @@ footer { margin-top: 44px; color: var(--mute); font-size: 13px; border-top: 1px 
         <h1>Motion <em>Masters</em></h1>
         <p class="lede">Lossless transparent masters (PNG-in-MOV with alpha, 1080×1920, 30 fps) for Premiere, After Effects and Final Cut. Each download is a .zip holding one .mov. Previews and notes are on the ${link('pack', 'motion pack page')}.</p>
       </header>
+      ${D.update ? `<div class="note upd"><h4>${esc(D.update.title)}</h4><ul>${D.update.items.map((x) => `<li>${esc(x)}</li>`).join('')}</ul></div>` : ''}
       <p class="dlnote">Downloads work when this page is open in claude.ai.</p>
       <div class="table"><table><thead><tr><th>#</th><th>Item</th><th>Size</th><th></th></tr></thead><tbody>
         ${D.items.map((m) => `<tr><td class="num">${esc(m.id.split('-')[0])}</td><td>${esc(m.title)}</td><td class="num">${m.mb} MB</td><td><button class="btn save primary" data-path="${esc(m.path)}" data-name="${esc(m.name)}">Download .zip</button></td></tr>`).join('')}

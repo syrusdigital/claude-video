@@ -7,14 +7,14 @@ This compares our first batch against the 21 measured winners (see HOUSE-STYLE.m
 
 The numbers for our ads come from their `ad.json` and timelines.
 
-| # | What | Our 9 ads | House (median of 21 winners) | Fixed in the 10 new ads by |
+| # | What | Our 9 ads | House (median of 21 winners) | Fixed in the new ads by |
 |---|---|---|---|---|
-| 1 | **Voice** | Kokoro TTS "am_michael", flat, 145–174 wpm, natural pauses left in | ElevenLabs-style male, 189 wpm, pauses cut to almost zero | ElevenLabs Michael, pauses ≤0.12 s, paced to ~180 wpm with a pitch-preserving stretch |
+| 1 | **Voice** | Kokoro TTS "am_michael", flat, 145–174 wpm, natural pauses left in | ElevenLabs-style male, 189 wpm, pauses cut to almost zero | ElevenLabs Michael (v4 model, crisper), pauses ≤0.12 s, reads at 185–212 wpm, 10 of 12 with no stretch |
 | 2 | **Where the text sits** | Bottom subtitles (y 1240–1500, 65–78% down) | **Centred** (47–52%), 1–3 words at a time | `kinetic` template |
 | 3 | **Text look** | ALL CAPS, one heavy weight (900) with a thick black outline, gold for prices/emphasis words | Light filler + heavy key word; serif italic for prices, places and premium words; white only | Same template: mixed weight, Playfair italic, white |
 | 4 | **Graphics load** | 6–14 graphic cards per ad: price cards, checklists, stamps, stat counters, trust badges, unit calculator… | Almost none: the hook price, one logo moment, the CTA. Graphics *are* the kinetic type | Only kinetic text + logo pill + CTA card (plus GC's required price table) |
 | 5 | **Sound effects** | **9–49 hits per ad** (WH1: 49) | **2** (0–6), whooshes on transitions and the CTA only | 2–4 per ad: whips + the CTA |
-| 6 | **Music** | Synthesized bed at −17 to −24 dB, ducked hard under the voice | Real stock bed ~11.7 dB under the voice, audible in the gaps, ends with the VO | Two real beds (vidIQ), set 10 dB under the voice, light 2 dB duck, cut at the last word |
+| 6 | **Music** | Synthesized bed at −17 to −24 dB, ducked hard under the voice | Real stock bed ~11.7 dB under the voice, audible in the gaps, ends with the VO | Beds lifted from our own winners (115–135 BPM), 8–9 dB under the voice, light 2.5 dB duck, cut at the last word |
 | 7 | **Hook** | `hookText` / `priceShock` cards, a separate graphic | Price is the first spoken word and lands big in gold serif; the line builds under it | Kinetic hook stack with the gold price pinned |
 | 8 | **CTA** | 4 s animated phone-tap card + "TAP GET QUOTE BELOW" + offer line | Glass "click / Get Quote / below" card, or caps + red arrow, under the VO's CTA; no end slate | `ctaGlass` (glass or caps) |
 | 9 | **Cutting pace** | AI/VO: 2.0–3.1 s per shot. On-camera TP: **4.7–5.3 s** | 2.2 s; on-camera winners (Vistaguard VID 2/3) cut every 1.2–1.7 s | 1.97–2.3 s, cuts snapped to spoken words, 2–3 zoom-blur whips |
