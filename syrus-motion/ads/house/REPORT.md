@@ -15,4 +15,4 @@ Every ad was scored with `tools/study_ad.py`, the same meter used on the 21 winn
 | rob-art/v1 · V1 · Why pay $40,000 | 77.6 s | 174 | 121 Hz | -14.1 dB | 0 | 2.28 s | 33 | -14.4 LUFS |
 
 Pace counts Whisper tokens (a price like "$1,995" counts as two), the same way the winners were measured.
-The SFX count includes the whooshes on the zoom-blur transitions and the CTA card; there are no other sound effects.
+SFX hits are what the detector finds: sharp transients away from words, which can include a music hit. The only effects these ads add are whooshes on the zoom-blur transitions and the CTA card.

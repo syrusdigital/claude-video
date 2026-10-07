@@ -42,6 +42,6 @@ L = ['# House-style ads: measured against the winners', '',
 for r in rows:
     L.append(f"| {r['dir']} · {r['label']} | {r['dur']} s | {r['wpm']} | {r['f0']} Hz | {r['floor']} dB | {r['sfx']} | {r['shot']} s | {r['cuts']} | {r['lufs']} LUFS |")
 L += ['', 'Pace counts Whisper tokens (a price like "$1,995" counts as two), the same way the winners were measured.',
-      'The SFX count includes the whooshes on the zoom-blur transitions and the CTA card; there are no other sound effects.']
+      'SFX hits are what the detector finds: sharp transients away from words, which can include a music hit. The only effects these ads add are whooshes on the zoom-blur transitions and the CTA card.']
 open(os.path.join(H, 'REPORT.md'), 'w').write('\n'.join(L) + '\n')
 print('->', os.path.join(H, 'REPORT.md'))
