@@ -4,3 +4,5 @@ pieces/*/review/
 pieces/*/index.html
 pieces/*/renders/*
 !pieces/*/renders/share.mp4
+overlays/*/frames-alpha/
+overlays/*/renders/*.mov
