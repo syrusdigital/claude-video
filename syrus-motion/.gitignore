@@ -7,3 +7,7 @@ pieces/*/renders/*
 overlays/*/frames-alpha/
 overlays/*/renders/*.mov
 catalog/media/
+pack/*/*.mov
+pack/*/*-frames/
+ads/*/build/
+ads/*/media/
