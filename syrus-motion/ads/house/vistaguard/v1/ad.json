@@ -294,8 +294,8 @@
    "grade": "hqdn3d=1.2:1.2:4:4,eq=contrast=1.06:saturation=1.12:brightness=0.01,unsharp=5:5:0.8:5:5:0.0"
   },
   {
-   "src": "../media/stock/vg_calculator_bills.mp4",
-   "in": 4.5,
+   "src": "../media/client/dec_062030.mp4",
+   "in": 9.5,
    "len": 2.24,
    "fx": 0.5,
    "fy": 0.5,
@@ -303,7 +303,8 @@
     1.07,
     1.0
    ],
-   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01"
+   "speed": 0.5,
+   "grade": "hqdn3d=1.2:1.2:4:4,eq=contrast=1.06:saturation=1.12:brightness=0.01,unsharp=5:5:0.8:5:5:0.0"
   },
   {
    "src": "../media/client/dec_062035.mp4",
@@ -320,7 +321,7 @@
   {
    "src": "../media/stock/vg_lakeside_neighborhood_aerial.mp4",
    "in": 6.5,
-   "len": 2.12,
+   "len": 1.68,
    "fx": 0.5,
    "fy": 0.5,
    "zoom": [
@@ -332,7 +333,7 @@
   {
    "src": "../media/client/oct_230836.mp4",
    "in": 9.0,
-   "len": 1.7,
+   "len": 2.12,
    "fx": 0.5,
    "fy": 0.5,
    "zoom": [
@@ -344,7 +345,7 @@
   {
    "src": "../media/stock/vg_calculator_bills.mp4",
    "in": 7.5,
-   "len": 1.64,
+   "len": 1.66,
    "fx": 0.5,
    "fy": 0.5,
    "zoom": [
@@ -454,7 +455,7 @@
   {
    "src": "../media/client/dec_062016.mp4",
    "in": 0.5,
-   "len": 1.42,
+   "len": 1.44,
    "fx": 0.4,
    "fy": 0.5,
    "zoom": [
@@ -466,7 +467,7 @@
   {
    "src": "../media/client/oct_232557.mp4",
    "in": 9.5,
-   "len": 1.66,
+   "len": 1.64,
    "fx": 0.5,
    "fy": 0.5,
    "zoom": [

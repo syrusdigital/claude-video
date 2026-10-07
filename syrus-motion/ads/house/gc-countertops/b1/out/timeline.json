@@ -1,10 +1,10 @@
 {
- "duration": 47.129,
+ "duration": 47.229,
  "shots": [
   {
    "src": "../media/client/IMG_2157.MOV",
    "in": 0.5,
-   "len": 2.12,
+   "len": 2.16,
    "fx": 0.5,
    "fy": 0.5,
    "zoom": [
@@ -13,7 +13,7 @@
    ],
    "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01",
    "_t0": 0.0,
-   "_len": 2.12
+   "_len": 2.16
   },
   {
    "src": "../media/client/IMG_4562.MOV",
@@ -26,7 +26,7 @@
     1.0
    ],
    "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01",
-   "_t0": 2.12,
+   "_t0": 2.16,
    "_len": 2.2
   },
   {
@@ -40,13 +40,13 @@
     1.07
    ],
    "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01",
-   "_t0": 4.32,
+   "_t0": 4.36,
    "_len": 1.74
   },
   {
    "src": "../media/client/IMG_3453.MOV",
    "in": 16.0,
-   "len": 1.78,
+   "len": 1.82,
    "fx": 0.5,
    "fy": 0.5,
    "zoom": [
@@ -54,13 +54,13 @@
     1.0
    ],
    "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01",
-   "_t0": 6.0600000000000005,
-   "_len": 1.78
+   "_t0": 6.1000000000000005,
+   "_len": 1.82
   },
   {
    "src": "../media/client/IMG_5432.MOV",
    "in": 0.5,
-   "len": 1.9,
+   "len": 1.86,
    "fx": 0.5,
    "fy": 0.5,
    "zoom": [
@@ -68,13 +68,13 @@
     1.07
    ],
    "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01",
-   "_t0": 7.840000000000001,
-   "_len": 1.9
+   "_t0": 7.920000000000001,
+   "_len": 1.86
   },
   {
    "src": "../../vistaguard/media/stock/vg_calculator_bills.mp4",
    "in": 4.5,
-   "len": 1.34,
+   "len": 1.48,
    "fx": 0.5,
    "fy": 0.5,
    "zoom": [
@@ -82,13 +82,13 @@
     1.07
    ],
    "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01",
-   "_t0": 9.74,
-   "_len": 1.34
+   "_t0": 9.780000000000001,
+   "_len": 1.48
   },
   {
    "src": "../media/client/IMG_8983.MOV",
    "in": 0.5,
-   "len": 1.48,
+   "len": 1.36,
    "fx": 0.5,
    "fy": 0.5,
    "zoom": [
@@ -96,13 +96,13 @@
     1.0
    ],
    "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01",
-   "_t0": 11.08,
-   "_len": 1.48
+   "_t0": 11.260000000000002,
+   "_len": 1.36
   },
   {
    "src": "../media/client/IMG_9391.MOV",
    "in": 0.0,
-   "len": 2.44,
+   "len": 2.42,
    "fx": 0.5,
    "fy": 0.5,
    "zoom": [
@@ -110,8 +110,8 @@
     1.07
    ],
    "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01",
-   "_t0": 12.56,
-   "_len": 2.44
+   "_t0": 12.620000000000001,
+   "_len": 2.42
   },
   {
    "src": "../media/client/IMG_1343.MOV",
@@ -124,13 +124,13 @@
     1.0
    ],
    "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01",
-   "_t0": 15.0,
+   "_t0": 15.040000000000001,
    "_len": 2.4
   },
   {
    "src": "../media/client/IMG_8418.MOV",
    "in": 7.0,
-   "len": 2.3,
+   "len": 2.38,
    "fx": 0.5,
    "fy": 0.5,
    "zoom": [
@@ -138,13 +138,13 @@
     1.07
    ],
    "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01",
-   "_t0": 17.4,
-   "_len": 2.3
+   "_t0": 17.44,
+   "_len": 2.38
   },
   {
    "src": "../media/client/IMG_5240.MOV",
    "in": 10.0,
-   "len": 2.84,
+   "len": 2.78,
    "fx": 0.5,
    "fy": 0.5,
    "zoom": [
@@ -152,8 +152,8 @@
     1.07
    ],
    "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01",
-   "_t0": 19.7,
-   "_len": 2.84
+   "_t0": 19.82,
+   "_len": 2.78
   },
   {
    "src": "../media/client/IMG_2745.MOV",
@@ -166,54 +166,12 @@
     1.0
    ],
    "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01",
-   "_t0": 22.54,
+   "_t0": 22.6,
    "_len": 2.36
   },
   {
    "src": "../media/client/IMG_8920.MOV",
    "in": 4.5,
-   "len": 2.66,
-   "fx": 0.5,
-   "fy": 0.5,
-   "zoom": [
-    1.0,
-    1.07
-   ],
-   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01",
-   "_t0": 24.9,
-   "_len": 2.66
-  },
-  {
-   "src": "../media/client/IMG_1850.mov",
-   "in": 10.0,
-   "len": 1.87,
-   "fx": 0.5,
-   "fy": 0.5,
-   "zoom": [
-    1.0,
-    1.07
-   ],
-   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01",
-   "_t0": 27.56,
-   "_len": 1.87
-  },
-  {
-   "src": "../media/client/IMG_9523.MOV",
-   "in": 8.0,
-   "len": 1.89,
-   "fx": 0.5,
-   "fy": 0.5,
-   "zoom": [
-    1.07,
-    1.0
-   ],
-   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01",
-   "_t0": 29.43,
-   "_len": 1.89
-  },
-  {
-   "src": "../media/client/IMG_7435.MOV",
-   "in": 0.5,
    "len": 2.68,
    "fx": 0.5,
    "fy": 0.5,
@@ -222,8 +180,50 @@
     1.07
    ],
    "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01",
-   "_t0": 31.32,
+   "_t0": 24.96,
    "_len": 2.68
+  },
+  {
+   "src": "../media/client/IMG_1850.mov",
+   "in": 10.0,
+   "len": 1.82,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.0,
+    1.07
+   ],
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01",
+   "_t0": 27.64,
+   "_len": 1.82
+  },
+  {
+   "src": "../media/client/IMG_9523.MOV",
+   "in": 8.0,
+   "len": 1.92,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.07,
+    1.0
+   ],
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01",
+   "_t0": 29.46,
+   "_len": 1.92
+  },
+  {
+   "src": "../media/client/IMG_7435.MOV",
+   "in": 0.5,
+   "len": 2.66,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.0,
+    1.07
+   ],
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01",
+   "_t0": 31.380000000000003,
+   "_len": 2.66
   },
   {
    "src": "../media/client/IMG_8983.MOV",
@@ -237,7 +237,7 @@
    ],
    "whip": true,
    "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01",
-   "_t0": 34.0,
+   "_t0": 34.040000000000006,
    "_len": 1.28
   },
   {
@@ -251,7 +251,7 @@
     1.0
    ],
    "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01",
-   "_t0": 35.28,
+   "_t0": 35.32000000000001,
    "_len": 1.32
   },
   {
@@ -265,7 +265,7 @@
     1.07
    ],
    "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01",
-   "_t0": 36.6,
+   "_t0": 36.64000000000001,
    "_len": 1.44
   },
   {
@@ -279,13 +279,13 @@
     1.07
    ],
    "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01",
-   "_t0": 38.04,
+   "_t0": 38.080000000000005,
    "_len": 1.88
   },
   {
    "src": "../media/client/IMG_4219.MOV",
    "in": 0.5,
-   "len": 1.66,
+   "len": 1.72,
    "fx": 0.5,
    "fy": 0.5,
    "zoom": [
@@ -293,13 +293,13 @@
     1.0
    ],
    "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01",
-   "_t0": 39.92,
-   "_len": 1.66
+   "_t0": 39.96000000000001,
+   "_len": 1.72
   },
   {
    "src": "../media/client/IMG_1079.MOV",
    "in": 16.0,
-   "len": 1.8,
+   "len": 1.68,
    "fx": 0.5,
    "fy": 0.5,
    "zoom": [
@@ -307,13 +307,13 @@
     1.07
    ],
    "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01",
-   "_t0": 41.58,
-   "_len": 1.8
+   "_t0": 41.68000000000001,
+   "_len": 1.68
   },
   {
    "src": "../media/client/IMG_2342.MOV",
    "in": 10.0,
-   "len": 1.94,
+   "len": 2.02,
    "fx": 0.5,
    "fy": 0.5,
    "zoom": [
@@ -321,13 +321,13 @@
     1.07
    ],
    "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01",
-   "_t0": 43.379999999999995,
-   "_len": 1.94
+   "_t0": 43.36000000000001,
+   "_len": 2.02
   },
   {
    "src": "../media/client/IMG_7435.MOV",
    "in": 23.5,
-   "len": 1.809,
+   "len": 1.849,
    "fx": 0.5,
    "fy": 0.5,
    "zoom": [
@@ -335,23 +335,51 @@
     1.0
    ],
    "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01",
-   "_t0": 45.31999999999999,
-   "_len": 1.809
+   "_t0": 45.38000000000001,
+   "_len": 1.849
   }
  ],
  "gfx": [
   {
-   "tpl": "logoPill",
-   "at": 12.65,
+   "tpl": "quoteSheet",
+   "at": 9.78,
    "cfg": {
-    "name": "GC Countertops",
-    "y": 0.3
+    "title": "QUOTE",
+    "sub": "Kitchen countertops",
+    "lines": [
+     "Countertops",
+     "Removal",
+     "Install"
+    ],
+    "beats": [
+     0,
+     0.12,
+     0.24
+    ],
+    "markups": [
+     1.46,
+     1.76,
+     2.1
+    ],
+    "circleAt": 2.3,
+    "caption": "NO GUESSING.|*NO INFLATED QUOTES.*",
+    "captionAt": 0.05
    },
-   "dur": 2.2
+   "dur": 2.84
+  },
+  {
+   "tpl": "logoCard",
+   "at": 12.69,
+   "cfg": {
+    "img": "logo",
+    "y": 0.32,
+    "h": 470
+   },
+   "dur": 2.4
   },
   {
    "tpl": "materialTable",
-   "at": 19.35,
+   "at": 19.47,
    "cfg": {
     "kicker": "STARTING PRICES",
     "cols": [
@@ -361,8 +389,8 @@
     "y": 520,
     "beats": [
      0.35,
-     3.19,
-     5.55
+     3.13,
+     5.49
     ],
     "rows": [
      {
@@ -388,16 +416,27 @@
      }
     ]
    },
-   "dur": 8.21
+   "dur": 8.17
   },
   {
    "tpl": "ctaGlass",
-   "at": 43.28,
+   "at": 43.26,
    "cfg": {
     "y": 0.56,
     "top": "tap"
    },
    "dur": 4.0
+  },
+  {
+   "tpl": "logoCard",
+   "at": 43.26,
+   "cfg": {
+    "img": "logo",
+    "y": 0.27,
+    "sweep": false,
+    "h": 280
+   },
+   "dur": 3.969
   }
  ],
  "lines": [
@@ -405,73 +444,73 @@
    "id": "hook",
    "text": "Get brand-new kitchen countertops starting at just $30 per square foot.",
    "t0": 0.0,
-   "t1": 4.1
+   "t1": 4.16
   },
   {
    "id": "b1",
    "text": "Georgia homeowners love this because it finally gives you a simple, honest way to price your countertops.",
-   "t0": 4.32,
-   "t1": 9.46
+   "t0": 4.36,
+   "t1": 9.54
   },
   {
    "id": "b2",
    "text": "You don't have to guess, and we don't give you inflated quotes.",
-   "t0": 9.74,
-   "t1": 12.22
+   "t0": 9.78,
+   "t1": 12.26
   },
   {
    "id": "b3",
    "text": "At GC Countertops, we give you a clear price per square foot, so you know what your new countertops will cost before the job even starts.",
-   "t0": 12.56,
-   "t1": 19.34
+   "t0": 12.62,
+   "t1": 19.42
   },
   {
    "id": "b4",
    "text": "Granite starts at just $30 per square foot.",
-   "t0": 19.7,
-   "t1": 22.2
+   "t0": 19.82,
+   "t1": 22.28
   },
   {
    "id": "b5",
    "text": "Quartz starts at $55 per square foot.",
-   "t0": 22.54,
-   "t1": 24.7
+   "t0": 22.6,
+   "t1": 24.76
   },
   {
    "id": "b6",
    "text": "And marble starts at $65 per square foot.",
-   "t0": 24.9,
-   "t1": 27.42
+   "t0": 24.96,
+   "t1": 27.46
   },
   {
    "id": "b7",
    "text": "Your final price just depends on the size of your kitchen and the material you pick.",
-   "t0": 27.56,
-   "t1": 31.08
+   "t0": 27.64,
+   "t1": 31.14
   },
   {
    "id": "b8",
    "text": "And we handle everything from start to finish.",
-   "t0": 31.32,
-   "t1": 33.64
+   "t0": 31.38,
+   "t1": 33.7
   },
   {
    "id": "b9",
    "text": "We take out your old countertops and install your new ones, with all the labor included.",
-   "t0": 34.0,
-   "t1": 37.72
+   "t0": 34.04,
+   "t1": 37.8
   },
   {
    "id": "b10",
    "text": "We've been installing countertops across Georgia for over 10 years, and we're fully licensed and insured.",
-   "t0": 38.04,
-   "t1": 42.9
+   "t0": 38.08,
+   "t1": 42.96
   },
   {
    "id": "cta",
    "text": "Tap \"Get Quote\" to book your free in-home measurement and estimate.",
-   "t0": 43.38,
-   "t1": 46.22
+   "t0": 43.36,
+   "t1": 46.28
   }
  ]
 }
