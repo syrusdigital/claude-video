@@ -250,7 +250,7 @@ footer { margin-top: 44px; color: var(--mute); font-size: 13px; border-top: 1px 
       </section>
       ${D.beds && D.beds.length ? `<section class="client"><h2>Music beds</h2><p class="sub">Lifted from our own winning ads: the voice is removed, the dips it left are evened out, and each bed loops on the bar with no whooshes from the original edit.</p>
         <div class="aud">${D.beds.map((b) => `<div class="note"><h4>${esc(b.name)}</h4><p>From ${esc(b.from)}. Used on ${esc(b.used)}.</p><audio controls preload="none" src="${esc(b.file)}"></audio></div>`).join('')}</div></section>` : ''}
-      ${D.audition && D.audition.length ? `<section class="client"><h2>Voice audition</h2><p class="sub">File 0 is the real AMC V4 voice. 1 is Michael, the voice used on these ads. 2 and 3 are the alternates.</p>
+      ${D.audition && D.audition.length ? `<section class="client"><h2>Voice audition</h2><p class="sub">File 0 is the real AMC V4 voice. 1 is Michael, the voice used on these ads. 2 and 3 are the alternates. 4 and 5 are the voice fix: the same 14 seconds of Vistaguard V6, as ElevenLabs delivered it (boxy) and after the EQ matched to the winners' voice.</p>
         <div class="aud">${D.audition.map((x) => `<div class="note"><h4>${esc(x.name.replace(/\.mp3$/, '').replace(/-/g, ' '))}</h4><audio controls preload="none" src="${esc(x.file)}"></audio></div>`).join('')}</div></section>` : ''}
       <footer>Built with the Syrus ad compiler: word-timed shot plans (tools/house_build.py), centred kinetic type, real music beds and ElevenLabs voice, scored with tools/study_ad.py. Each ad's ad.json is in the repo, so a line, shot or graphic can be changed and the ad re-cut.</footer>`;
   }
