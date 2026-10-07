@@ -59,7 +59,7 @@ TPL.hookText = {
       lines = lines.slice(0, 4);
       const sizes = lines.map((l) => Math.min(c.maxSize, fitSize(l, 400, c.maxW, { weight: 900 })));
       const H = sizes.reduce((a, s) => a + s * 0.9, 0) + 16 * (lines.length - 1);
-      let jolt = 0; const ts = lines.map((_, i) => 0.05 + i * 0.3);
+      let jolt = 0; const ts = lines.map((_, i) => 0.05 + i * (c.lineStep ?? 0.3));   // cfg.lineStep: seconds between lines (time them to the VO)
       ts.forEach((ti) => { const d = t - ti - 0.07; if (d > 0 && d < 0.22) jolt += Math.sin(d * 75) * 11 * (1 - d / 0.22); });
       let y = c.y - H / 2 + jolt;
       lines.forEach((l, i) => {

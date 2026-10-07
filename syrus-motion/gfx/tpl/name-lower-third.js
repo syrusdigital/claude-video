@@ -1,5 +1,5 @@
 // name-lower-third — presenter super for on-camera ads: a gold accent bar grows, a navy card wipes out of it, the name
-// slides in, the title follows; holds still, then wipes back into the bar and the bar closes. "George" /
+// slides in, the title follows; holds (one soft shine at ~1.6s), then wipes back into the bar and the bar closes. "George" /
 // "Owner, Frontline Services". Left-aligned at cfg.x (or cfg.align 'right'). ~4s — stretch the hold with dur.
 TPL.nameLowerThird = {
   dur: 4.0,
@@ -28,6 +28,12 @@ TPL.nameLowerThird = {
       const tx = right ? E.W - c.x - BAR - PX : cx0 + PX, al = right ? 'right' : 'left', dir = right ? 1 : -1;
       text(c.name, tx + dir * (1 - nk) * 60, y + 50 + ns * 0.73, ns, B.ink, { ...NO, align: al, shadow: false, alpha: clamp(nk * 1.5) });
       text(c.title, tx, y + 50 + ns * 0.73 + 34 + ts * 0.73 + (1 - tk) * 30, ts, B.sky, { ...TO, align: al, shadow: false, alpha: clamp(tk * 1.5) });
+      const su = seg(tt, 1.45, 2.05);   // a soft shine across the card mid-hold
+      if (su > 0 && su < 1) {
+        const x1 = right ? E.W - c.x - BAR - cw : cx0, gx = lerp(x1 - 140, x1 + cw + 140, easeIO(su)), g = ctx.createLinearGradient(gx - 80, 0, gx + 80, 0);
+        g.addColorStop(0, 'rgba(255,255,255,0)'); g.addColorStop(0.5, 'rgba(255,255,255,0.16)'); g.addColorStop(1, 'rgba(255,255,255,0)');
+        ctx.save(); ctx.transform(1, 0, -0.4, 1, 0.4 * (y + ch / 2), 0); ctx.fillStyle = g; ctx.fillRect(gx - 80, y - 10, 160, ch + 20); ctx.restore();
+      }
       ctx.restore();
     }
     if (barK > 0.002) {

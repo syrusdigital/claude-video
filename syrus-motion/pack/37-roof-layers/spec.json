@@ -1,0 +1,3 @@
+{ "fps": 30, "duration": 12, "bg": "#0B1424", "items": [
+  { "tpl": "sceneRoofLayers", "at": 0, "cfg": {} }
+] }

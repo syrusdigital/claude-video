@@ -93,6 +93,12 @@ for i, s in enumerate(shots):
     fx, fy = s.get('fx', 0.5), s.get('fy', 0.5); z0, z1 = s.get('zoom', [1.0, 1.1] if is_img else [1.0, 1.0])
     grade = s.get('grade', 'eq=contrast=1.05:saturation=1.1:brightness=0.01')
     nfr = int(round(ln * FPS))
+    # cache: a segment is only re-encoded when its source or settings change
+    skey = hashlib.sha1(json.dumps([s, start, ln, os.path.getmtime(src)], sort_keys=True, default=str).encode()).hexdigest()[:12]
+    stamp = out + '.' + skey
+    if os.path.exists(out) and os.path.exists(stamp):
+        s['_t0'], s['_len'] = start, ln; continue
+    for old in [f for f in os.listdir(BUILD) if f.startswith(f'seg{i:02d}.mp4.')]: os.remove(os.path.join(BUILD, old))
     if is_img:
         # Ken Burns: upscale 2x first so zoompan's integer steps don't jitter; zoom z0->z1, centred on (fx, fy)
         zexpr = f"{z0}+({z1}-{z0})*on/{max(1, nfr - 1)}"
@@ -105,14 +111,14 @@ for i, s in enumerate(shots):
             vf = (f"setpts=PTS/{sp},split[a][b];[a]scale=1080:1920:force_original_aspect_ratio=increase,crop=1080:1920,boxblur=24:2,eq=brightness=-0.12[bg];"
                   f"[b]scale=1080:-2[fg];[bg][fg]overlay=(W-w)/2:(H-h)/2,fps={FPS},{grade},format=yuv420p")
         else:
-            zz = z1 if z1 != z0 else z0
-            # a slow push on video: scale up by zz over the shot via scale+crop with a time-varying crop window
-            cw, ch = f"1080/({z0}+({z1}-{z0})*t/{ln})", f"1920/({z0}+({z1}-{z0})*t/{ln})"
-            vf = (f"setpts=PTS/{sp},scale=1080:1920:force_original_aspect_ratio=increase,crop=1080:1920:(iw-1080)*{fx}:(ih-1920)*{fy},"
-                  + (f"scale=2160:3840,crop=w='2*{cw}':h='2*{ch}':x='(iw-ow)*{fx}':y='(ih-oh)*{fy}',scale=1080:1920," if z1 != z0 else '')
-                  + f"fps={FPS},{grade},format=yuv420p")
+            # a slow push on video: zoompan one output frame per input frame (d=1), on a 2x canvas so the steps don't jitter
+            vf = (f"setpts=PTS/{sp},scale=1080:1920:force_original_aspect_ratio=increase,crop=1080:1920:(iw-1080)*{fx}:(ih-1920)*{fy},fps={FPS},"
+                  + (f"scale=2160:3840,zoompan=z='{z0}+({z1}-{z0})*in/{max(1, nfr - 1)}':d=1:x='(iw-iw/zoom)*{fx}':y='(ih-ih/zoom)*{fy}':s=1080x1920:fps={FPS},"
+                     if z1 != z0 else '')
+                  + f"{grade},format=yuv420p")
         ff('-ss', s.get('in', 0), '-t', need + 0.2, '-i', src, '-filter_complex' if s.get('fit') == 'blur' else '-vf', vf, '-frames:v', nfr, '-an', '-c:v', 'libx264', '-crf', 17, '-preset', 'veryfast', out)
     s['_t0'], s['_len'] = start, ln
+    open(stamp, 'w').close()
 base = os.path.join(BUILD, 'base.mp4')
 if AROLL:
     # A-roll video with each cutaway laid over its window (pts shifted to its start)

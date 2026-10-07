@@ -1,0 +1,396 @@
+{
+ "title": "Elite Craft - Bath - Biggest Offer 9995 - Script 1",
+ "source": "Notion: Script 1: High-Intent Bathroom Remodel ($9,995) \u2014 Elite Craft (Approved)",
+ "vo": {
+  "voice": "am_michael",
+  "speed": 1.12,
+  "lines": [
+   {
+    "id": "hook",
+    "text": "Stop scrolling, Long Island homeowners. This is the biggest bathroom remodeling offer we've ever run.",
+    "after": 0.35
+   },
+   {
+    "id": "b1",
+    "text": "For a limited time only, Elite Craft Renovations is offering complete bathroom remodels at just nine thousand, nine hundred ninety-five dollars.",
+    "after": 0.3
+   },
+   {
+    "id": "b2",
+    "text": "That's right. A brand-new bathroom, fully remodeled, for under ten thousand dollars.",
+    "after": 0.3
+   },
+   {
+    "id": "b3",
+    "text": "Most companies charge two to three times that amount, but we're making it affordable without sacrificing quality.",
+    "after": 0.25
+   },
+   {
+    "id": "b4",
+    "text": "Our crews show up on time, protect your home, and deliver flawless results that not only look amazing, but last for years to come.",
+    "after": 0.25
+   },
+   {
+    "id": "b5",
+    "text": "No mess. No delays. No hidden costs.",
+    "after": 0.3
+   },
+   {
+    "id": "b6",
+    "text": "This isn't just about a new bathroom. It's about peace of mind, knowing you chose a trusted local Long Island company with years of experience and a reputation for doing things right.",
+    "after": 0.3
+   },
+   {
+    "id": "cta",
+    "text": "Spots for this offer are extremely limited. Click Get Quote below to schedule your free estimate and inspection.",
+    "after": 0.1
+   }
+  ]
+ },
+ "music": {
+  "bpm": 104,
+  "key": "D",
+  "mood": "warm",
+  "db": -17,
+  "stop": [
+   "word:at-0.05",
+   "word:$9+0.05"
+  ],
+  "riser": [
+   "word:Spots",
+   "word:Click"
+  ]
+ },
+ "tail": 1.2,
+ "images": {
+  "before": "../media/initial-images/IMG_9542.JPEG",
+  "after": "../media/stills/northport-master-after.jpg"
+ },
+ "shots": [
+  {
+   "src": "../media/northport/IMG_9869.MP4",
+   "in": 4.0,
+   "until": "word:Homeowners",
+   "zoom": [
+    1.0,
+    1.08
+   ]
+  },
+  {
+   "src": "../media/northport/IMG_9868_1_.MP4",
+   "in": 2.2,
+   "until": "word:biggest"
+  },
+  {
+   "src": "../media/initial-video/IMG_9863.MOV",
+   "in": 0.1,
+   "until": "word:offer",
+   "zoom": [
+    1.0,
+    1.06
+   ]
+  },
+  {
+   "src": "../media/stacy/WhatsApp_Video_2025-10-12_at_19.07.34_0e97a636.mp4",
+   "in": 20.6,
+   "until": "line:b1"
+  },
+  {
+   "src": "../media/dorothy/IMG_0328.MOV",
+   "in": 0.0,
+   "until": "word:Elite"
+  },
+  {
+   "src": "../media/initial-video/IMG_9871.MP4",
+   "in": 0.0,
+   "until": "word:offering",
+   "zoom": [
+    1.0,
+    1.06
+   ]
+  },
+  {
+   "src": "../media/initial-video/IMG_8811.MOV",
+   "in": 0.1,
+   "until": "word:at",
+   "speed": 0.9
+  },
+  {
+   "src": "../media/initial-images/IMG_4151.JPEG",
+   "until": "line:b2",
+   "zoom": [
+    1.0,
+    1.12
+   ],
+   "fy": 0.45
+  },
+  {
+   "src": "../media/initial-images/IMG_9542.JPEG",
+   "until": "line:b3",
+   "zoom": [
+    1.04,
+    1.04
+   ]
+  },
+  {
+   "src": "../media/stacy/WhatsApp_Video_2025-10-12_at_19.07.34_0e97a636.mp4",
+   "in": 9.6,
+   "until": "word:but"
+  },
+  {
+   "src": "../media/dorothy/IMG_0326.MOV",
+   "in": 0.1,
+   "until": "word:without"
+  },
+  {
+   "src": "../media/initial-video/IMG_9871.MP4",
+   "in": 3.0,
+   "until": "line:b4",
+   "speed": 0.9
+  },
+  {
+   "src": "../media/dorothy/IMG_4217.MOV",
+   "in": 0.0,
+   "until": "word:protect"
+  },
+  {
+   "src": "../media/northport/IMG_9763.MP4",
+   "in": 0.0,
+   "until": "word:deliver"
+  },
+  {
+   "src": "../media/dorothy/IMG_4289.MOV",
+   "in": 0.0,
+   "until": "word:look",
+   "speed": 0.9
+  },
+  {
+   "src": "../media/dorothy/IMG_0374.MOV",
+   "in": 0.2,
+   "until": "word:last"
+  },
+  {
+   "src": "../media/northport/IMG_9869.MP4",
+   "in": 0.0,
+   "until": "line:b5",
+   "zoom": [
+    1.0,
+    1.06
+   ]
+  },
+  {
+   "src": "../media/initial-images/IMG_3271.JPEG",
+   "until": "line:b6",
+   "zoom": [
+    1.0,
+    1.1
+   ],
+   "fy": 0.5
+  },
+  {
+   "src": "../media/initial-images/IMG_3275.JPEG",
+   "until": "word:It's",
+   "zoom": [
+    1.0,
+    1.1
+   ],
+   "fy": 0.4
+  },
+  {
+   "src": "../media/stacy/WhatsApp_Video_2025-10-12_at_19.07.34_0e97a636.mp4",
+   "in": 16.8,
+   "until": "word:knowing"
+  },
+  {
+   "src": "../media/adam/WhatsApp_Image_2025-10-08_at_20.18.54_1d638b36.jpg",
+   "until": "word:Long#2",
+   "zoom": [
+    1.0,
+    1.08
+   ]
+  },
+  {
+   "src": "../media/initial-video/68918121034__1DC63514-13FB-4171-97F2-88D3D53513EB.MOV",
+   "in": 0.1,
+   "until": "word:years#2"
+  },
+  {
+   "src": "../media/initial-images/IMG_3273.JPEG",
+   "until": "word:reputation",
+   "zoom": [
+    1.06,
+    1.0
+   ]
+  },
+  {
+   "src": "../media/northport/IMG_9868_1_.MP4",
+   "in": 0.0,
+   "until": "line:cta"
+  },
+  {
+   "src": "../media/initial-video/69047778338__DD5D3A1A-2306-4605-A9B3-1DF6A6AD5311.MOV",
+   "in": 0.1,
+   "until": "word:limited#2"
+  },
+  {
+   "src": "../media/initial-images/IMG_3276.JPEG",
+   "zoom": [
+    1.0,
+    1.14
+   ],
+   "fy": 0.45
+  }
+ ],
+ "gfx": [
+  {
+   "tpl": "locationSuper",
+   "at": "word:Long-0.15",
+   "dur": 2.2,
+   "cfg": {
+    "place": "LONG ISLAND",
+    "who": "HOMEOWNERS"
+   },
+   "hide": false
+  },
+  {
+   "tpl": "hookText",
+   "at": "word:biggest-0.15",
+   "dur": 2.7,
+   "cfg": {
+    "style": "highlight",
+    "text": "THE BIGGEST BATHROOM OFFER WE'VE EVER RUN",
+    "mark": "BIGGEST",
+    "y": 820
+   }
+  },
+  {
+   "tpl": "priceCard",
+   "at": "word:$9-0.6",
+   "dur": 4.0,
+   "cfg": {
+    "kicker": "COMPLETE BATHROOM REMODEL",
+    "pre": "just",
+    "price": 9995,
+    "note": "Limited time offer"
+   },
+   "sfx": [
+    "whoosh",
+    [
+     "hit",
+     1.45
+    ]
+   ]
+  },
+  {
+   "tpl": "photoBeforeAfter",
+   "at": "line:b2-0.05",
+   "dur": 5.3,
+   "cfg": {
+    "before": "before",
+    "after": "after",
+    "badge": "",
+    "fyB": 0.5,
+    "fyA": 0.5
+   },
+   "hide": false,
+   "sfx": [
+    "whoosh",
+    [
+     "whoosh",
+     0.9
+    ],
+    [
+     "hit",
+     4.9
+    ]
+   ]
+  },
+  {
+   "tpl": "hookText",
+   "at": "word:two-0.1",
+   "dur": 2.9,
+   "cfg": {
+    "style": "stack",
+    "text": "MOST COMPANIES: 2-3X THE PRICE",
+    "lines": [
+     "MOST COMPANIES",
+     "2-3X THE PRICE"
+    ],
+    "y": 760
+   }
+  },
+  {
+   "tpl": "hookText",
+   "at": "line:b5-0.1",
+   "dur": 2.85,
+   "cfg": {
+    "style": "stack",
+    "text": "NO MESS. NO DELAYS. NO HIDDEN COSTS.",
+    "lines": [
+     "NO MESS.",
+     "NO DELAYS.",
+     "NO HIDDEN COSTS."
+    ],
+    "lineStep": 0.72,
+    "maxSize": 150,
+    "y": 800
+   },
+   "sfx": [
+    [
+     "hit",
+     0.1
+    ],
+    [
+     "hit",
+     0.82
+    ],
+    [
+     "hit",
+     1.54
+    ]
+   ]
+  },
+  {
+   "tpl": "locationSuper",
+   "at": "word:trusted-0.2",
+   "dur": 3.4,
+   "cfg": {
+    "place": "LONG ISLAND",
+    "who": "TRUSTED LOCAL COMPANY"
+   },
+   "hide": false
+  },
+  {
+   "tpl": "discountStamp",
+   "at": "word:Spots-0.05",
+   "dur": 2.9,
+   "cfg": {
+    "big": "LIMITED SPOTS",
+    "small": "",
+    "y": 760
+   },
+   "sfx": [
+    [
+     "hit",
+     0.1
+    ]
+   ]
+  },
+  {
+   "tpl": "getQuoteEnd",
+   "at": "word:Click-0.1",
+   "dur": 5.2,
+   "cfg": {
+    "line2": "Free estimate & inspection"
+   }
+  }
+ ],
+ "captions": {
+  "y": 1240,
+  "em": [
+   "biggest",
+   "limited",
+   "free"
+  ]
+ }
+}

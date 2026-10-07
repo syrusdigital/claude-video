@@ -67,14 +67,14 @@ TPL.sceneKit = {
     for (const part of String(str).split('|')) {
       const words = part.split(/\s+/).filter(Boolean); let cur = [];
       for (const w of words) {
-        const test = cur.concat(w).join(' ').replace(/[*~]/g, '');
+        const test = cur.concat(w).join(' ').replace(/[*~^]/g, '');
         if (cur.length && measure(test, size, o) > maxW) { lines.push(cur); cur = [w]; } else cur.push(w);
       }
       if (cur.length) lines.push(cur);
     }
     return lines;
   },
-  // caption block: words pop up one after another (stagger), *word* = accent (gold, payoff only), ~word~ = sky.
+  // caption block: words pop up one after another (stagger), *word* = accent (gold, payoff only), ~word~ = sky, ^word^ = bad (red).
   // o: size(64) maxW(920) lh(1.12) align('center') x(540) kicker stagger(0.06) t1(exit time) color weight shadow
   caption(t, t0, str, y, E, o = {}) {
     if (t < t0 || !str) return y;
@@ -88,18 +88,18 @@ TPL.sceneKit = {
       yy += (o.kickerSize ?? 40) * 0.6 + size * 0.95;
     }
     const lines = K.wrap(str, size, maxW, { weight: wt });
-    let wi = 0, goldOn = false, skyOn = false;
+    let wi = 0, goldOn = false, skyOn = false, redOn = false;
     lines.forEach((ws, li) => {
-      const plain = ws.map((w) => w.replace(/[*~]/g, ''));
+      const plain = ws.map((w) => w.replace(/[*~^]/g, ''));
       const full = measure(plain.join(' '), size, { weight: wt }), sp = measure(' ', size, { weight: wt });
       const al = o.align ?? 'center', x0 = al === 'center' ? (o.x ?? 540) - full / 2 : al === 'right' ? (o.x ?? 540) - full : (o.x ?? 540);
       let x = x0;
       ws.forEach((w, i) => {
         const p = K.pop(t, t0 + wi * (o.stagger ?? 0.06), 260, 20); wi++;
-        if (w.startsWith('*')) goldOn = true; if (w.startsWith('~')) skyOn = true;
-        const gold = goldOn || o.gold, sky = skyOn;
-        if (/\*[.,!?:;]*$/.test(w)) goldOn = false; if (/~[.,!?:;]*$/.test(w)) skyOn = false;
-        const col = gold ? E.B.accent : sky ? E.B.sky : (o.color ?? E.B.ink);
+        if (w.startsWith('*')) goldOn = true; if (w.startsWith('~')) skyOn = true; if (w.startsWith('^')) redOn = true;
+        const gold = goldOn || o.gold, sky = skyOn, red = redOn;
+        if (/\*[.,!?:;]*$/.test(w)) goldOn = false; if (/~[.,!?:;]*$/.test(w)) skyOn = false; if (/\^[.,!?:;]*$/.test(w)) redOn = false;
+        const col = gold ? E.B.accent : sky ? E.B.sky : red ? E.B.bad : (o.color ?? E.B.ink);
         if (p > 0.001) text(plain[i], x, yy + li * lh + (1 - clamp(p)) * 26, size, col, { weight: wt, shadow: o.shadow ?? false, alpha: clamp(p * 1.6) * exitA, stroke: o.stroke, strokeColor: o.strokeColor });
         x += measure(plain[i], size, { weight: wt }) + sp;
       });
