@@ -131,9 +131,12 @@ if P.get('vo'):
     if sr != SR: v = np.interp(np.linspace(0, len(v) - 1, int(len(v) * SR / sr)), np.arange(len(v)), v)
     vo[: min(N, len(v))] = v[: min(N, len(v))]
     # envelope: RMS over 60 ms, smoothed, so the music dips while the voice speaks
-    w = int(0.06 * SR); e = np.sqrt(np.convolve(vo ** 2, np.ones(w) / w, mode='same'))
+    def movavg(x, w):   # centred moving average in O(N) (np.convolve with a long box is O(N*w): minutes on a busy box)
+        w = max(1, int(w)); c = np.cumsum(np.concatenate([[0.0], x])); y = (c[w:] - c[:-w]) / w
+        pl = (w - 1) // 2; return np.concatenate([np.full(pl, y[0]), y, np.full(len(x) - len(y) - pl, y[-1])])
+    w = int(0.06 * SR); e = np.sqrt(np.maximum(movavg(vo ** 2, w), 0))
     speaking = (e > 0.02).astype(float)
-    k = int(0.25 * SR); speaking = np.convolve(speaking, np.ones(k) / k, mode='same')
+    k = int(0.25 * SR); speaking = movavg(speaking, k)
     duck = 10 ** (P.get('duck_db', -9) / 20)
     music *= 1 - (1 - duck) * np.clip(speaking, 0, 1)
 mg = 10 ** (P.get('music_db', -18) / 20)
