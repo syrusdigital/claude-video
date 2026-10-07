@@ -101,7 +101,7 @@
   {
    "at": "line:hook",
    "clips": [
-    "client/after-black-marble-island-a.jpeg",
+    "client/after-black-marble-island-a.png",
     "stock/pexels-39774505.mp4@0.5",
     "client/after-island-pendants.jpg"
    ]
@@ -109,7 +109,7 @@
   {
    "at": "line:b1",
    "clips": [
-    "client/after-white-kitchen-wide.jpg",
+    "client/after-white-kitchen-wide.png",
     "client/white-kitchen-range.jpg fy=0.4"
    ]
   },
@@ -124,7 +124,7 @@
    "clips": [
     "stock/pexels-7646445.mp4@0.5",
     "stock/pexels-8293311.mp4@3.5",
-    "client/before-cherry-a.jpg"
+    "client/before-cherry-a.png"
    ]
   },
   {
@@ -135,7 +135,7 @@
     "client/before-cherry-sink.jpg",
     "client/after-island-pendants.jpg fy=0.6",
     "client/before-cherry-range.jpg",
-    "client/after-black-marble-island-a.jpeg fx=0.4",
+    "client/after-black-marble-island-a.png fx=0.4",
     "client/after-waterfall-edge.jpg",
     "client/white-kitchen-range.jpg"
    ]
@@ -168,13 +168,13 @@
     "client/before-oak-prep.jpg",
     "client/before-cherry-counter.jpg",
     "stock/pexels-36778243.mp4@6.0",
-    "client/after-white-kitchen-wide.jpg fx=0.4"
+    "client/after-white-kitchen-wide.png fx=0.4"
    ]
   },
   {
    "at": "line:b9",
    "clips": [
-    "client/after-black-marble-island-a.jpeg fx=0.6",
+    "client/after-black-marble-island-a.png fx=0.6",
     "client/after-island-pendants.jpg fy=0.4"
    ]
   },
@@ -214,7 +214,7 @@
  ],
  "shots": [
   {
-   "src": "../media/client/after-black-marble-island-a.jpeg",
+   "src": "../media/client/after-black-marble-island-a.png",
    "in": 0.0,
    "len": 2.1,
    "fx": 0.5,
@@ -250,7 +250,7 @@
    "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01"
   },
   {
-   "src": "../media/client/after-white-kitchen-wide.jpg",
+   "src": "../media/client/after-white-kitchen-wide.png",
    "in": 0.0,
    "len": 2.9,
    "fx": 0.5,
@@ -310,7 +310,7 @@
    "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01"
   },
   {
-   "src": "../media/client/before-cherry-a.jpg",
+   "src": "../media/client/before-cherry-a.png",
    "in": 0.0,
    "len": 2.32,
    "fx": 0.5,
@@ -382,7 +382,7 @@
    "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01"
   },
   {
-   "src": "../media/client/after-black-marble-island-a.jpeg",
+   "src": "../media/client/after-black-marble-island-a.png",
    "in": 0.0,
    "len": 2.3,
    "fx": 0.4,
@@ -539,7 +539,7 @@
    "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01"
   },
   {
-   "src": "../media/client/after-white-kitchen-wide.jpg",
+   "src": "../media/client/after-white-kitchen-wide.png",
    "in": 0.0,
    "len": 1.94,
    "fx": 0.4,
@@ -551,7 +551,7 @@
    "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01"
   },
   {
-   "src": "../media/client/after-black-marble-island-a.jpeg",
+   "src": "../media/client/after-black-marble-island-a.png",
    "in": 0.0,
    "len": 2.66,
    "fx": 0.6,

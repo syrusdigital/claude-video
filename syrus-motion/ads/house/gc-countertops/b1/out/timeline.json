@@ -344,9 +344,8 @@
    "tpl": "logoPill",
    "at": 14.15,
    "cfg": {
-    "img": "gclogo",
-    "y": 0.3,
-    "imgH": 130
+    "name": "GC Countertops",
+    "y": 0.3
    },
    "dur": 2.2
   },
