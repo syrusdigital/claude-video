@@ -47,7 +47,7 @@
    "dir": "elite-craft/ec3-painting-997",
    "label": "$997 house painting",
    "script": "Painting Script 1 (Winner)",
-   "poster": 1.6,
+   "poster": 2.9,
    "flow": "\"Get your home professionally painted\" + $997 price card \u2192 crew at the house \u2192 checklist: no mess, no surprises, quality work \u2192 local Long Island team \u2192 \"Interior. Exterior. Or both.\" \u2192 finished homes \u2192 Get Quote end card.",
    "confirm": [
     "The $997 starting price is still running.",
@@ -92,6 +92,44 @@
    "confirm": [
     "The farmhouse sage-to-white change is subtle on a phone screen.",
     "Shots showing the \"Bumpa's Barn\" sign were left out on purpose."
+   ]
+  },
+  {
+   "client": "twin-pines",
+   "dir": "twin-pines/tp1-free-inspection",
+   "label": "Free 15-minute roof inspection",
+   "script": "Omnipresence script 11 (Nate Stern, on camera)",
+   "poster": 7.5,
+   "flow": "\"When's the last time you got your roof inspected?\" \u2192 Nate's name super + FREE INSPECTIONS stamp \u2192 \"roofs wear down\u2026 too late\" over worn shakes and exposed decking \u2192 quick / thorough / free badges over the roof walk \u2192 \"15-minute inspection could save you thousands\" \u2192 Get Quote end card over a finished home.",
+   "confirm": [
+    "Nate says \"call\" but the end card says \"Tap Get Quote below\". Add the phone number, or keep the Get Quote CTA.",
+    "The free 15-minute inspection is still offered (footage is from 2025).",
+    "Crew B-roll and finished-home photos are Twin Pines' own crews and jobs."
+   ]
+  },
+  {
+   "client": "twin-pines",
+   "dir": "twin-pines/tp2-local-founder",
+   "label": "Local founder, not storm chasers",
+   "script": "2025 Video 2 (Nate Stern, on camera)",
+   "poster": 13.0,
+   "flow": "\"Hey, Wisconsin homeowners\" + location super \u2192 \"Nate Stern, Founder\" \u2192 25+ YEARS counter \u2192 \"local family-owned\" \u2192 Storm chasers vs Twin Pines, each row landing as he says it \u2192 fair pricing / top quality \u2192 FREE INSPECTION & QUOTE stamp \u2192 \"Click Get Quote below\" with a tap pointer \u2192 \"Thank you.\"",
+   "confirm": [
+    "\"Over 25 years\" and the Founder title are still accurate.",
+    "The free inspection and estimate is still offered."
+   ]
+  },
+  {
+   "client": "twin-pines",
+   "dir": "twin-pines/tp3-roofs-not-equal",
+   "label": "Not all roofs are created equal",
+   "script": "Omnipresence script 3 (Nate in his truck)",
+   "poster": 1.0,
+   "flow": "Cold open \"Not all roofs are created equal\" \u2192 name super \u2192 \"the cheapest option\u2026\" \u2192 roof-layers animation on \"quality products\" \u2192 lifespan card (3-tab shorter, dimensional up to 30+ years, metal & synthetic up to 50+) landing on his words \u2192 your budget / local climate / how long you'll stay \u2192 \"an educated investment\" \u2192 end card.",
+   "confirm": [
+    "Lifespans are phrased \"up to\", as Nate says them. There's no metal-roof footage, so that row uses a drawn swatch.",
+    "Nate looks down (reading) in one take; a cutaway covers most of it.",
+    "Nate says \"call\" at the end; same CTA question as TP1."
    ]
   }
  ]
