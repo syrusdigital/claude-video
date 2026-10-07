@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>Overlay — unit-price calculator</title>
+<style>html,body{margin:0;background:repeating-conic-gradient(#ccc 0 25%,#eee 0 50%) 0 0/40px 40px}canvas{height:100vh;display:block;margin:0 auto}</style>
+</head><body><canvas id="c" width="1080" height="1920"></canvas>
+<script src="../_lib/overlay.js"></script>
+<script>
+// =====================================================================
+//  OVERLAY: unit-price calculator — the rate lands, the quantity counts up while a grid of unit tiles fills,
+//  then "= total" lands in gold. For "$6.50 per square foot … a 1,500 sq ft roof = $9,750",
+//  "$125 per opening — count the openings and multiply", "$30 per sq ft granite". 5.0s @ 30fps.
+// =====================================================================
+const CONFIG = {
+  kicker: 'YOUR ROOF, ALL-IN',
+  rate: 6.5, rateDp: 2, unit: 'sq ft',
+  qty: 1500, qtyLabel: '1,500 sq ft roof',
+  grid: { cols: 10, rows: 6 },        // the tiles that fill as the quantity counts
+  beats: { rate: 0.1, qty: 0.9, total: 2.9 },
+  brand: {},
+};
+const FPS = 30, DUR = 5.0;
+function renderFrame(t) {
+  frameStart();
+  const B = CONFIG.beats, cw = 900, cx0 = (W - cw) / 2, top = 520;
+  const up = spring(t - 0.0, 200, 21) * (1 - easeOut((t - (DUR - 0.35)) / 0.35));
+  if (up <= 0.001) return;
+  ctx.globalAlpha = clamp(up * 1.5);
+  const y0 = top + (1 - up) * 120, ch = 960;
+  card(cx0, y0, cw, ch, 40, BRAND.card);
+  text(CONFIG.kicker, cx0 + 60, y0 + 92, 36, BRAND.sky, { spacing: 6, weight: 700, shadow: false });
+  // line 1: the rate
+  const r = spring(t - B.rate, 260, 20);
+  if (r > 0.001) {
+    ctx.save(); ctx.globalAlpha *= clamp(r); ctx.translate(0, (1 - r) * 30);
+    const w = text(money(CONFIG.rate, CONFIG.rateDp), cx0 + 60, y0 + 210, 110, BRAND.ink, { weight: 900, shadow: false });
+    text('per ' + CONFIG.unit, cx0 + 80 + w, y0 + 210, 46, BRAND.sky, { weight: 600, shadow: false });
+    ctx.restore();
+  }
+  // line 2: × quantity, counting up, with the tile grid filling under it
+  const q = clamp((t - B.qty) / 1.6), qe = easeIO(q);
+  if (t > B.qty) {
+    const n = Math.round(CONFIG.qty * qe);
+    text('×', cx0 + 60, y0 + 330, 84, BRAND.accent, { weight: 900, shadow: false });
+    text(n.toLocaleString('en-US') + ' ' + CONFIG.unit, cx0 + 140, y0 + 330, 84, BRAND.ink, { weight: 900, shadow: false });
+    const { cols, rows } = CONFIG.grid, gx = cx0 + 60, gy = y0 + 380, gw = cw - 120, cell = gw / cols, gh = cell * rows * 0.62, tiles = cols * rows;
+    const lit = qe * tiles;
+    for (let j = 0; j < rows; j++) for (let i = 0; i < cols; i++) {
+      const k = j * cols + i, a = clamp(lit - k);
+      rrect(gx + i * cell + 4, gy + j * (gh / rows) + 4, cell - 8, gh / rows - 8, 8);
+      ctx.fillStyle = a > 0 ? `rgba(102,194,255,${0.25 + 0.6 * a})` : 'rgba(248,248,244,0.08)'; ctx.fill();
+    }
+    text(CONFIG.qtyLabel, cx0 + 60, gy + gh + 46, 32, BRAND.sky, { weight: 600, shadow: false, alpha: clamp((t - B.qty - 1.2) / 0.3) });
+  }
+  // line 3: = total, in gold, landing on a spring
+  const tt = spring(t - B.total, 300, 17);
+  if (tt > 0.001) {
+    const total = CONFIG.rate * CONFIG.qty, gy = y0 + ch - 64;
+    ctx.save(); ctx.globalAlpha *= clamp(tt * 2); ctx.translate(cx0 + 60, gy); const s = 1 + (1 - clamp(tt)) * 0.5; ctx.scale(s, s);
+    text('= ' + money(total), 0, 0, 130, BRAND.accent, { weight: 900, shadow: false });
+    ctx.restore();
+  }
+}
+boot(renderFrame, FPS, DUR);
+</script></body></html>

@@ -1,0 +1,197 @@
+<title>Editor Motion Library</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;800&family=Geist+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: a working catalog — findings strip, a row of 9:16 sample players, then the idea list as scannable rows with a pick box each. */
+:root {
+  --bg: #f6f6f1; --surface: #ffffff; --fg: #0c1c33; --muted: #5d6b80; --line: #dfe3e8;
+  --navy: #002f6c; --gold: #ffd700; --gold-ink: #8a6d00; --sky: #1f7fc4; --bad: #c62f3f; --good: #1d7a4c;
+  --chip: #eef1f5;
+  --display: "Geist", "Inter", system-ui, sans-serif; --body: "Geist", system-ui, sans-serif; --mono: "Geist Mono", ui-monospace, monospace;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg: #07111f; --surface: #0e1c31; --fg: #eef2f7; --muted: #9aa8bb; --line: #1d2e47;
+  --navy: #66c2ff; --gold: #ffd700; --gold-ink: #ffd700; --sky: #66c2ff; --bad: #ff6b78; --good: #4fd18b; --chip: #142640; color-scheme: dark; } }
+:root[data-theme="dark"] {
+  --bg: #07111f; --surface: #0e1c31; --fg: #eef2f7; --muted: #9aa8bb; --line: #1d2e47;
+  --navy: #66c2ff; --gold: #ffd700; --gold-ink: #ffd700; --sky: #66c2ff; --bad: #ff6b78; --good: #4fd18b; --chip: #142640; color-scheme: dark; }
+* { box-sizing: border-box; }
+body { background: var(--bg); color: var(--fg); font: 16px/1.55 var(--body); margin: 0; }
+.wrap { max-width: 1120px; margin: 0 auto; padding-inline: 20px; padding-block: 40px 80px; display: grid; gap: 56px; }
+h1, h2, h3 { font-family: var(--display); text-wrap: balance; margin: 0; }
+h1 { font-size: clamp(34px, 5vw, 54px); font-weight: 800; letter-spacing: -0.02em; line-height: 1.05; }
+h2 { font-size: 26px; font-weight: 800; letter-spacing: -0.01em; }
+h3 { font-size: 18px; font-weight: 600; }
+p { margin: 0; max-width: 68ch; }
+.eyebrow { font: 500 12px/1 var(--mono); letter-spacing: 0.14em; text-transform: uppercase; color: var(--muted); }
+.lede { font-size: 18px; color: var(--muted); }
+header { display: grid; gap: 16px; }
+header h1 span { background: linear-gradient(transparent 68%, var(--gold) 68%, var(--gold) 90%, transparent 90%); }
+section { display: grid; gap: 20px; }
+.findings { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line); border-radius: 14px; overflow: hidden; }
+.finding { background: var(--surface); padding: 20px; display: grid; gap: 6px; align-content: start; min-width: 0; }
+.finding b { font: 800 30px/1 var(--display); font-variant-numeric: tabular-nums; color: var(--navy); }
+.finding span { color: var(--muted); font-size: 14px; }
+.players { display: grid; grid-template-columns: repeat(auto-fill, minmax(190px, 1fr)); gap: 16px; }
+figure { margin: 0; display: grid; gap: 8px; min-width: 0; }
+video { width: 100%; aspect-ratio: 9 / 16; max-width: 100%; border-radius: 12px; background: #0b1424; display: block; }
+figcaption { font-size: 13px; color: var(--muted); }
+figcaption b { color: var(--fg); font-weight: 600; display: block; font-size: 14px; }
+.group { display: grid; gap: 4px; }
+.group > p { color: var(--muted); }
+.idea { display: grid; grid-template-columns: 44px 1fr; gap: 14px; padding: 20px 0; border-top: 1px solid var(--line); }
+.idea:last-child { border-bottom: 1px solid var(--line); }
+.pick { width: 28px; height: 28px; margin-top: 2px; accent-color: var(--navy); cursor: pointer; }
+.idea-body { display: grid; gap: 8px; min-width: 0; }
+.idea-head { display: flex; flex-wrap: wrap; align-items: baseline; gap: 8px 12px; }
+.num { font: 500 13px var(--mono); color: var(--muted); font-variant-numeric: tabular-nums; }
+.chip { font: 500 12px/1 var(--mono); padding: 5px 8px; border-radius: 999px; background: var(--chip); color: var(--muted); white-space: nowrap; }
+.chip.first { background: var(--gold); color: #1b1600; }
+.chip.built { background: var(--navy); color: var(--bg); }
+.meta { display: grid; grid-template-columns: max-content 1fr; gap: 4px 14px; font-size: 14px; }
+.meta dt { color: var(--muted); font: 500 12px/1.8 var(--mono); text-transform: uppercase; letter-spacing: 0.08em; }
+.meta dd { margin: 0; min-width: 0; }
+.guard { color: var(--bad); }
+.bar { position: sticky; bottom: 0; z-index: 2; background: var(--surface); border-top: 1px solid var(--line); padding: 12px 20px calc(12px + env(safe-area-inset-bottom, 0px)); display: flex; flex-wrap: wrap; gap: 10px 16px; align-items: center; justify-content: center; }
+.bar output { font: 500 14px var(--mono); color: var(--muted); }
+button { font: 600 15px var(--body); padding: 10px 18px; border-radius: 10px; border: 0; background: var(--navy); color: var(--bg); cursor: pointer; }
+button:focus-visible, .pick:focus-visible { outline: 3px solid var(--gold); outline-offset: 2px; }
+.cols { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px; }
+.panel { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 22px; display: grid; gap: 12px; align-content: start; min-width: 0; }
+.panel ul, .panel ol { margin: 0; padding-left: 20px; display: grid; gap: 8px; font-size: 15px; }
+code { font: 13px var(--mono); background: var(--chip); padding: 1px 5px; border-radius: 5px; }
+@media (prefers-reduced-motion: reduce) { video { animation: none; } }
+</style>
+
+<div class="wrap">
+  <header>
+    <div class="eyebrow">Syrus Digital · fulfillment · for review with Eddie, then the editors</div>
+    <h1>A motion library <span>built from our own ads</span></h1>
+    <p class="lede">I went through what we actually run: 267 scripts in Notion, the live ad library across client accounts, and the editor notes in OpenBrain. Below are 20 animations we can make in code and hand to Wojtek and Maanov, ranked by how often our ads need them and how badly the footage is missing. Three are already built and shown on real client footage.</p>
+  </header>
+
+  <section aria-labelledby="h-found">
+    <div class="eyebrow">What the research found</div>
+    <h2 id="h-found">Our ads all need the same graphics, and editors build them by hand every time</h2>
+    <div class="findings">
+      <div class="finding"><b>~95%</b><span>of client creative is AI voiceover over B-roll. The picture has to carry the whole ad.</span></div>
+      <div class="finding"><b>$23.60</b><span>CPL on the best ad in the portfolio (American Made Coatings, $1,995 floors): a hard price in the first 2 seconds over real trade footage.</span></div>
+      <div class="finding"><b>9 videos</b><span>blocked for Luxury Home Renovations because the client never sent footage. Iron Ram ran on stock only.</span></div>
+      <div class="finding"><b>0</b><span>animated checklists, calculators, before/after wipes or service-area maps in the ads I could watch. The voiceover says "multiply by" and the screen shows a stock photo.</span></div>
+    </div>
+  </section>
+
+  <section aria-labelledby="h-built">
+    <div class="eyebrow">Built today · on real footage from our ads</div>
+    <h2 id="h-built">Working samples</h2>
+    <p>The three overlays have a transparent background. Editors drop them on any clip in Premiere, CapCut or DaVinci. Each renders in under 10 seconds, so a new client offer is a same-day variant. The last two are full-frame inserts in two different looks.</p>
+    <div class="players">
+      <figure><video src="media/price-shock.mp4" autoplay muted loop playsinline preload="metadata"></video><figcaption><b>#1 Price shock</b>Anyvision kitchen footage, $17,995 offer</figcaption></figure>
+      <figure><video src="media/price-reveal.mp4" autoplay muted loop playsinline preload="metadata"></video><figcaption><b>#2 Starting-at card</b>Innovative bathroom footage, $14,995 package</figcaption></figure>
+      <figure><video src="media/unit-calculator.mp4" autoplay muted loop playsinline preload="metadata"></video><figcaption><b>#3 Unit-price calculator</b>Frontline's $6.50 / sq ft offer</figcaption></figure>
+      <figure><video src="media/insert-iso.mp4" autoplay muted loop playsinline preload="metadata"></video><figcaption><b>Full-frame look A: clean isometric</b>Recolor per client</figcaption></figure>
+      <figure><video src="media/insert-riso.mp4" autoplay muted loop playsinline preload="metadata"></video><figcaption><b>Full-frame look B: print texture</b>Warmer, more editorial</figcaption></figure>
+    </div>
+  </section>
+
+  <section aria-labelledby="h-a">
+    <div class="group"><div class="eyebrow">Group A · overlays that sit on real footage</div>
+      <h2 id="h-a">Drop-on graphics</h2>
+      <p>Our winners use real job footage, so these upgrade the footage instead of replacing it. Every one has a settings block for the client's colors, offer and wording.</p></div>
+    <div id="list-a"></div>
+  </section>
+
+  <section aria-labelledby="h-b">
+    <div class="group"><div class="eyebrow">Group B · animated B-roll for when footage is thin</div>
+      <h2 id="h-b">Full-frame inserts</h2>
+      <p>For new clients with no footage, LHR-type stalls, and the "90% video, 10% photos" rule. These replace stock cash-counting, generic CGI kitchens, and the AI time-lapses editors are already trading.</p></div>
+    <div id="list-b"></div>
+  </section>
+
+  <section aria-labelledby="h-rules">
+    <div class="eyebrow">How it would run</div>
+    <h2 id="h-rules">Guardrails and delivery</h2>
+    <div class="cols">
+      <div class="panel"><h3>Built into every template</h3><ul>
+        <li>Claims are per-client switches, set from OpenBrain: LHR shows no star ratings, no BBB badge and no geo call-out, and says "labor" warranty. GC never names the slab supplier.</li>
+        <li>No fake reviews or invented app screens. Real Google ratings only when the client has them.</li>
+        <li>Financing stays off for LHR, Midwest, Vistaguard and GC. Anywhere else, a monthly payment appears only with the full disclosure line (TILA/Reg Z). "$0 down options available" is the safe default.</li>
+        <li>Roofing: no "free roof", "we pay your deductible" or "we handle your claim". Illinois ads carry the license line.</li>
+        <li>"10 homes", "7 days" and "this month" are variables the client confirms before launch.</li>
+        <li>One price per ad, except a deliberate ladder ad.</li>
+      </ul></div>
+      <div class="panel"><h3>What editors receive</h3><ul>
+        <li>1080×1920, 30 fps. Overlays as ProRes 4444 with alpha (<code>.mov</code>) and WebM alpha for CapCut. Inserts as MP4.</li>
+        <li>One Drive folder per client with every variant pre-rendered in their colors, named by offer: <code>GC_price-shock_$1995.mov</code>.</li>
+        <li>Beat times are listed for each file so it lines up with the voiceover.</li>
+        <li>A new offer means a new row in a sheet. I re-render the set in minutes, not hours of After Effects.</li>
+        <li>A short editor guide: which template fits which script beat (hook, offer, inclusions, process, proof, CTA).</li>
+      </ul></div>
+      <div class="panel"><h3>Decisions for you</h3><ol>
+        <li>Pick 10 to build first (tick the boxes, then copy your picks).</li>
+        <li>Brand: every client in their own colors, or one neutral house look? I recommend client colors for overlays and a neutral look for inserts.</li>
+        <li>Full-frame look: A (clean isometric) or B (print texture) as the default?</li>
+        <li>Pilot client: LHR (blocked on footage) or GC Countertops (new vertical, explicit table request)?</li>
+      </ol></div>
+    </div>
+  </section>
+</div>
+
+<div class="bar" role="region" aria-label="Your picks">
+  <output id="count">0 picked</output>
+  <button id="copy" type="button">Copy my picks</button>
+</div>
+
+<script>
+const IDEAS = {
+  a: [
+    { n: 1, name: 'Price shock stack', chip: 'built', what: '"WHY PAY $40,000 / $50,000 / OR EVEN $60,000?" stacks in red on the voiceover beats, gets struck through, falls away, and "STARTING AT JUST $17,995" slams in gold.', ev: 'This is the hook in the AI/VO template that carries about 80% of client spend. Anyvision and Vistaguard build it by hand each time, with a different glitch effect every time.', who: 'Anyvision, Bellport, ATX, LHR, Midwest, Yellow Hat, Vistaguard, Silver Spur' },
+    { n: 2, name: '"Starting at" price card', chip: 'built', what: 'A lower-third card springs up, the price rolls up like an odometer and lands, and a gold underline wipes under it.', ev: 'About 90% of our hooks name a price. Every top performer shows it inside the first 2 to 5 seconds.', who: 'Every price-led client' },
+    { n: 3, name: 'Unit-price calculator', chip: 'built', what: 'The rate lands, the quantity counts up while a grid fills, and "= $9,750" lands in gold. Covers $/sq ft, $/opening and $/sq ft by material.', ev: 'The Work Horse voiceover says "count the openings and multiply by $125" over stock stills ($45 to $50 CPL). Frontline\'s $6.50/sq ft ad is their best at $45, and its "1,500 sq ft = $9,750" never appears on screen.', who: 'Frontline, Work Horse, GC Countertops, AMC, Garage Force, Elite Craft' },
+    { n: 4, name: '"What\'s included" checklist with icon set', chip: 'first', what: 'Items tick in one by one, synced to the voiceover. Each gets a small animated icon: vanity, toilet, walk-in shower, glass door, wall surround, flooring, fixtures, lighting, cabinets, countertops, backsplash, tear-out, haul-away, cleanup.', ev: 'Innovative\'s "Here\'s exactly what\'s included" is the only bathroom Winner ($28.80 CPL), and its items show only as caption words over unrelated stock. Inclusion lists appear in most bath and kitchen scripts.', who: 'Innovative, LHR, Midwest, Bellport, Anytime, Silver Spur, Yellow Hat, Frontline' },
+    { n: 5, name: 'Material and tier table', chip: 'first', what: 'Granite / quartz / marble rows slide in with $/sq ft. The same template does a tier ladder: wet-area $9,995 → full remodel $14,995.', ev: 'This is an explicit editor instruction in the GC Countertops B1 script ("editors show the three materials as an on-screen comparison table"). Ladder ads are the one allowed exception to one price per ad.', who: 'GC Countertops, Silver Spur, Midwest, Yellow Hat' },
+    { n: 6, name: 'Before/after wipe kit', chip: 'first', what: 'An animated divider with a handle and BEFORE / AFTER pills. The editor stacks the two clips underneath, and the divider sweeps on a spring and settles. Also a "Tub to shower in 1 day" badge.', ev: 'Five Star\'s B4+After is a working format ($52.88 CPL) but only as a static image. No downloaded video had a wipe. The showcase ads promise before/afters.', who: 'Five Star, LHR, Knapp, Work Horse, AMC' },
+    { n: 7, name: 'Showcase slot counter', chip: 'first', what: '"Only 10 showcase homes": a row of 10 house icons, a few already taken, plus the qualifier checkboxes from the lead form (5+ years old · full remodel or conversion · start within 30 days).', ev: 'LHR P1 and GC B3 are built on the 5-/10-home showcase ad (300+ leads in the original). Scarcity currently never shows visually.', who: 'LHR, GC Countertops, Twin Pines ("first 10 homeowners")', guard: 'The count and window must be client-confirmed.' },
+    { n: 8, name: 'Get Quote end card', chip: 'first', what: 'A phone shape, the Get Quote button gets tapped, and an arrow points down: "Tap Get Quote below". Same motion every time, in the client\'s colors.', ev: 'Every ad ends this way. Today each editor builds it differently: frosted-glass cards, red arrows, typewriter text.', who: 'All clients' },
+    { n: 9, name: 'Service-area map', chip: 'next', what: 'The county outline draws, a pin drops, and the call-out lands: "SNOHOMISH & KING COUNTY HOMEOWNERS". Uses public-domain Census county shapes.', ev: 'Geo call-out is the first line of most hooks and of every geo-variant, but it is plain text today.', who: 'Anyvision, Bellport, Vistaguard, Frontline, Twin Pines, Midwest', guard: 'Off for LHR. Never name another metro.' },
+    { n: 10, name: 'Trust badge set', chip: 'next', what: 'Years-in-business counter ("since 2012" counts up), licensed & insured seal, labor warranty seal, in-house crew badge. Each is a separate file.', ev: 'Every script has a trust stack. Only a Google review card appears on screen today.', who: 'All clients', guard: 'Per-client claim switches. No invented reviews, ever.' },
+    { n: 11, name: 'Compliant financing card', chip: 'later', what: 'Two modes: the safe line "$0 down options available", or a full payment card with the required disclosure line underneath.', ev: 'Five or more accounts sell a monthly payment. Frontline data says unit price beats monthly ($45 vs $60 to $70 CPL), so this ranks lower.', who: 'Frontline, Anyvision, Rob-Art, Anytime', guard: 'Banned for LHR, Midwest, Vistaguard, GC. TILA rules apply.' },
+  ],
+  b: [
+    { n: 12, name: 'Tub to walk-in shower, in a day', chip: 'first', what: 'A cutaway bathroom time-lapse: the tub lifts out, the wall surround slides in, the glass door swings shut, and a wall clock runs 8 AM → 5 PM.', ev: 'This is the hardest footage to source and the most requested bath offer. Editors are already making AI time-lapses (MiniMax) and trading libraries.', who: 'LHR, Yellow Hat, Midwest, Five Star, Silver Spur', guard: 'Never depict the viewer\'s limitation. "Tile or acrylic" stays the client\'s choice.' },
+    { n: 13, name: 'Kitchen comes together', chip: 'first', what: 'An empty room, then the cabinets drop in, the countertop slab slides on, the backsplash tiles ripple across, and the pendants switch on. Each step can sync to an inclusion line.', ev: 'LHR\'s 4 kitchen videos are blocked on footage. Anyvision and Rob-Art lean on generic CGI kitchens ($93 to $104 CPL).', who: 'LHR, Anyvision, Rob-Art, Bellport, ATX, Anytime' },
+    { n: 14, name: 'Full bathroom build-up', chip: 'next', what: 'The same build sequence for a full bath: demo, plumbing, shower walls, vanity, flooring, lighting.', ev: 'About 71 bath scripts. Iron Ram ran entirely on stock.', who: 'Iron Ram, Bulldog, Innovative, Midwest, LHR' },
+    { n: 15, name: '"No middleman" price chain', chip: 'first', what: 'Manufacturer → distributor → showroom → salesperson → you, with a markup tag stacking at each hop. Then the direct path, and the price drops to the client\'s number.', ev: 'This replaces the stock cash-counting shot (AMC) and the "big showrooms and TV ads" villain beat in the price-anchor template.', who: 'Bellport, Vistaguard, GC, AMC, Anyvision', guard: 'Only for clients whose model really is direct.' },
+    { n: 16, name: 'The real process timeline', chip: 'next', what: 'In-home estimate → itemized quote → pick materials in the showroom → install → final walkthrough, with a van and house icons moving along a path. Roofing version: inspect → photograph → written report.', ev: 'Veer\'s rule is estimate first, showroom second. "Done in 1-2 days" and "seven days" claims have no visual today.', who: 'LHR, Bellport, Golden Plush, Midwest, Frontline', guard: 'No insurance-claim promises in the roofing version.' },
+    { n: 17, name: '"See it before it\'s built" reveal', chip: 'next', what: 'A room draws itself in line art, then fills in to a finished, colored room. This is the promise behind "see your new kitchen in 3D".', ev: 'Anyvision, Rob-Art, Bellport, Golden Plush and Anytime promise 3D design. Editors use generic CGI or a stock hand sketching, and those ads run $93 to $111 CPL.', who: 'Anyvision, Rob-Art, Bellport, Golden Plush, Anytime', guard: 'Illustration only. Never a fake design-app screen.' },
+    { n: 18, name: 'Trade cutaways', chip: 'next', what: 'Layer-by-layer explainers. Floor coating: grind, base coat, flake broadcast, topcoat. Roof: deck, underlayment, shingles. Shower: grout lines versus seamless wall panels. Impact window: laminated glass.', ev: 'Floor coatings are the best performers on the roster (AMC $23.60, Garage Force $12 to $14). Their process beat is the one most often shown with stock.', who: 'AMC, Garage Force, Frontline, Twin Pines, Vistaguard, bath clients', guard: 'Each claim checked against the client\'s actual product.' },
+    { n: 19, name: 'One team vs. three subcontractors', chip: 'later', what: 'Split screen: on one side a calendar with plumber, tile setter and electrician double-booking; on the other, one crew moving through the job in order.', ev: 'Rob-Art V2 says "3 different subcontractors" and Midwest pitches "one team". Both lines are caption-only today.', who: 'Rob-Art, Midwest, LHR' },
+    { n: 20, name: 'Seasonal and deadline stingers', chip: 'later', what: '2-second transitions: a calendar page flips to "this month only", snow drifts in for "before winter pricing ends", a hurricane-season bumper for South Florida windows.', ev: 'Time-bound CTAs are part of Veer\'s SMART split, but they are voiceover-only today.', who: 'Frontline, Twin Pines, Vistaguard, any promo month', guard: 'Only real deadlines.' },
+  ],
+};
+const CHIP = { built: 'Built', first: 'Build first', next: 'Next', later: 'Later' };
+const esc = (s) => s.replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+let picked = new Set();
+try { picked = new Set(JSON.parse(localStorage.getItem('motion-picks') || '[]')); } catch {}
+function row(i) {
+  return `<article class="idea"><input class="pick" type="checkbox" id="pick-${i.n}" data-n="${i.n}" aria-label="Pick ${esc(i.name)}" ${picked.has(i.n) ? 'checked' : ''}>
+  <div class="idea-body"><div class="idea-head"><span class="num">#${String(i.n).padStart(2, '0')}</span><h3>${esc(i.name)}</h3><span class="chip ${i.chip}">${CHIP[i.chip]}</span></div>
+  <p>${esc(i.what)}</p>
+  <dl class="meta"><dt>Why</dt><dd>${esc(i.ev)}</dd><dt>For</dt><dd>${esc(i.who)}</dd>${i.guard ? `<dt>Rule</dt><dd class="guard">${esc(i.guard)}</dd>` : ''}</dl></div></article>`;
+}
+document.getElementById('list-a').innerHTML = IDEAS.a.map(row).join('');
+document.getElementById('list-b').innerHTML = IDEAS.b.map(row).join('');
+const all = [...IDEAS.a, ...IDEAS.b], count = document.getElementById('count'), btn = document.getElementById('copy');
+const sync = () => { count.textContent = `${picked.size} picked`; try { localStorage.setItem('motion-picks', JSON.stringify([...picked])); } catch {} };
+document.addEventListener('change', (e) => { const n = Number(e.target.dataset?.n); if (!n) return; e.target.checked ? picked.add(n) : picked.delete(n); sync(); });
+btn.addEventListener('click', async () => {
+  const list = all.filter((i) => picked.has(i.n)).map((i) => `#${i.n} ${i.name}`);
+  const txt = list.length ? `Motion library picks (${list.length}): ${list.join('; ')}` : 'No picks yet';
+  try { await navigator.clipboard.writeText(txt); btn.textContent = 'Copied'; }
+  catch { count.textContent = txt; }
+  setTimeout(() => { btn.textContent = 'Copy my picks'; }, 1600);
+});
+sync();
+</script>
