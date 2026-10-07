@@ -43,7 +43,9 @@ if AROLL:
         fx, fy, z = r.get('fx', 0.5), r.get('fy', 0.4), r.get('zoom', 1.0)
         vf = (f"scale=1080*{z}:1920*{z}:force_original_aspect_ratio=increase,crop=1080:1920:(iw-1080)*{fx}:(ih-1920)*{fy},fps=30,"
               f"{r.get('grade', 'eq=contrast=1.05:saturation=1.08')},format=yuv420p")
-        ff('-ss', r['in'], '-t', d + 0.1, '-i', src, '-vf', vf, '-af', f'aresample=48000,aformat=channel_layouts=mono,apad,atrim=end_sample={nfr_a * 48000 // FPS}',
+        # 8 ms fades at both edges: a cut through wind rumble is a step in the waveform, which clicks at the join
+        ff('-ss', r['in'], '-t', d + 0.1, '-i', src, '-vf', vf, '-af', f'aresample=48000,aformat=channel_layouts=mono,apad,atrim=end_sample={nfr_a * 48000 // FPS},'
+           f'afade=t=in:d=0.008,afade=t=out:st={d - 0.008:.4f}:d=0.008',
            '-frames:v', nfr_a, '-c:v', 'libx264', '-crf', 17, '-preset', 'veryfast', '-c:a', 'pcm_s16le', seg.replace('.mp4', '.mov'))
         os.replace(seg.replace('.mp4', '.mov'), seg)
         W_ = json.load(open(os.path.join(AD, r['words']))) if r.get('words') else {'words': []}

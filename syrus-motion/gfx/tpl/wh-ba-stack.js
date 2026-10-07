@@ -20,11 +20,11 @@ TPL.whBaStack = {
   },
   draw(t, c, E) {
     const B = E.B, me = TPL.whBaStack, n = c.pairs.length;
-    ctx.globalAlpha = 1 - easeOut((t - (c.dur - 0.25)) / 0.25);
+    ctx.globalAlpha = Math.min(clamp(t / 0.12), 1 - easeOut((t - (c.dur - 0.25)) / 0.25));
     ctx.fillStyle = c.bg || B.dark; ctx.fillRect(0, 0, E.W, E.H);
     const k = Math.min(n - 1, Math.floor(t / c.each)), lt = t - k * c.each, P = c.pairs[k];
     const pw = 1000, x0 = (E.W - pw) / 2, yT = c.top, yB = c.top + c.ph + c.gap, ph = c.ph;
-    const tin = spring(t, 200, 21), slide = (1 - tin) * 1100;
+    const tin = spring(t, 340, 26), slide = (1 - tin) * 1100;
     const span = k === n - 1 ? c.dur - k * c.each : c.each, z = 1.03 + 0.06 * clamp(lt / span);
     // top: BEFORE
     at(-slide, 0, 1, 0, () => {

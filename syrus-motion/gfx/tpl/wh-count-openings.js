@@ -31,10 +31,10 @@ TPL.whCountOpenings = {
       const pr = money(c.rate), ps = 150, pw = measure(pr, ps, { weight: 900 }), gap = 26;
       const lw = Math.max(measure(c.per.split(' ')[0], 54, { weight: 900 }), measure(c.per.split(' ').slice(1).join(' '), 54, { weight: 900 }));
       const tx = E.W / 2 - (pw + gap + lw) / 2, base = y0 + 238;
-      const k = spring(t - Bt.head - 0.25, 320, 16);
+      const k = spring(t - Bt.head - 0.12, 320, 16);
       at(tx + pw / 2, base - 52, 0.6 + 0.4 * k, 0, () => text(pr, 0, 52, ps, B.accent, { align: 'center', weight: 900, shadow: false, alpha: clamp(k * 2) }));
       const words = c.per.split(' '), l1 = words[0], l2 = words.slice(1).join(' ');
-      withAlpha(clamp((t - Bt.head - 0.45) / 0.25), () => {
+      withAlpha(clamp((t - Bt.head - 0.3) / 0.25), () => {
         text(l1, tx + pw + gap, base - 62, 54, B.ink, { weight: 900, shadow: false });
         text(l2, tx + pw + gap, base, 54, B.ink, { weight: 900, shadow: false });
       });

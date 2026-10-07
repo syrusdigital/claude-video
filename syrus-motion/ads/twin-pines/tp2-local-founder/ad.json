@@ -268,7 +268,7 @@
    "cfg": {
     "big": "FREE",
     "small": "INSPECTION & QUOTE",
-    "y": 470,
+    "y": 430,
     "rot": -6
    },
    "sfx": [
@@ -283,7 +283,7 @@
    "at": "word:Click-0.1",
    "dur": 2.5,
    "cfg": {},
-   "hide": false
+   "hide": true
   }
  ],
  "captions": {
