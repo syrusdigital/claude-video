@@ -1,0 +1,22 @@
+{
+ "fps": 30,
+ "duration": 5.0,
+ "items": [
+  {
+   "tpl": "unitCalc",
+   "at": 0,
+   "cfg": {
+    "kicker": "CABINET PAINTING",
+    "rate": 125,
+    "rateDp": 0,
+    "unit": "opening",
+    "qty": 24,
+    "qtyLabel": "24 openings",
+    "grid": {
+     "cols": 6,
+     "rows": 4
+    }
+   }
+  }
+ ]
+}

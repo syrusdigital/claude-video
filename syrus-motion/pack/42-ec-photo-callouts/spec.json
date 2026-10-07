@@ -1,0 +1,45 @@
+{
+ "fps": 30,
+ "duration": 7.0,
+ "bg": "#000000",
+ "imageFiles": {
+  "after": "../../ads/elite-craft/media/initial-images/IMG_3271.JPEG"
+ },
+ "items": [
+  {
+   "tpl": "photoCallouts",
+   "at": 0,
+   "cfg": {
+    "items": [
+     {
+      "at": [
+       350,
+       900
+      ],
+      "label": "FRAMELESS GLASS",
+      "side": "left",
+      "y": 640
+     },
+     {
+      "at": [
+       600,
+       990
+      ],
+      "label": "BUILT-IN BENCH",
+      "side": "right",
+      "y": 1250
+     },
+     {
+      "at": [
+       960,
+       640
+      ],
+      "label": "LED MIRROR",
+      "side": "right",
+      "y": 420
+     }
+    ]
+   }
+  }
+ ]
+}

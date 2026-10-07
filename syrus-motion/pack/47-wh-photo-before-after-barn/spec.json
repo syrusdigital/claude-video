@@ -1,0 +1,18 @@
+{
+ "fps": 30,
+ "duration": 6.0,
+ "bg": "#000000",
+ "imageFiles": {
+  "before": "../../ads/work-horse/media/previous-work/IMG_3492.JPG",
+  "after": "../../ads/work-horse/media/previous-work/IMG_3480.JPG"
+ },
+ "items": [
+  {
+   "tpl": "photoBeforeAfter",
+   "at": 0,
+   "cfg": {
+    "badge": "SAME BARN. FRESH PAINT."
+   }
+  }
+ ]
+}

@@ -1,0 +1,16 @@
+{
+ "fps": 30,
+ "duration": 6.0,
+ "bg": "#000000",
+ "imageFiles": {
+  "after": "../../ads/elite-craft/media/initial-images/IMG_3275.JPEG",
+  "lines": "../../ads/elite-craft/media/stills/lines-3275.png"
+ },
+ "items": [
+  {
+   "tpl": "photoBlueprint",
+   "at": 0,
+   "cfg": {}
+  }
+ ]
+}

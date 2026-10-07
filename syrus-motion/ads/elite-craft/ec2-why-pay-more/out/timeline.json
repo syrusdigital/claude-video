@@ -1,0 +1,302 @@
+{
+ "duration": 41.412,
+ "shots": [
+  {
+   "src": "../media/stacy/WhatsApp_Image_2025-10-12_at_19.07.30_a2aeef45.jpg",
+   "until": "word:for",
+   "zoom": [
+    1.08,
+    1.0
+   ],
+   "grade": "eq=contrast=1.05:saturation=1.1:brightness=-0.07",
+   "_t0": 0.0,
+   "_len": 1.41
+  },
+  {
+   "src": "../media/initial-video/IMG_9862.MOV",
+   "in": 0.1,
+   "until": "word:when",
+   "speed": 0.9,
+   "grade": "eq=contrast=1.05:saturation=1.1:brightness=-0.07",
+   "_t0": 1.41,
+   "_len": 1.88
+  },
+  {
+   "src": "../media/stacy/WhatsApp_Image_2025-10-12_at_19.07.30_7473dca4.jpg",
+   "until": "word:stunning",
+   "zoom": [
+    1.0,
+    1.06
+   ],
+   "grade": "eq=contrast=1.05:saturation=1.1:brightness=-0.07",
+   "_t0": 3.29,
+   "_len": 1.3
+  },
+  {
+   "src": "../media/initial-video/IMG_9859.MOV",
+   "in": 0.1,
+   "until": "word:just",
+   "grade": "eq=contrast=1.05:saturation=1.1:brightness=-0.07",
+   "_t0": 4.59,
+   "_len": 1.22
+  },
+  {
+   "src": "../media/initial-images/IMG_3252.JPEG",
+   "until": "line:b1",
+   "zoom": [
+    1.0,
+    1.1
+   ],
+   "fy": 0.4,
+   "grade": "eq=contrast=1.05:saturation=1.1:brightness=-0.07",
+   "_t0": 5.81,
+   "_len": 3.805
+  },
+  {
+   "src": "../media/dorothy/IMG_0327.MOV",
+   "in": 0.2,
+   "until": "word:countless",
+   "speed": 0.8,
+   "_t0": 9.615,
+   "_len": 2.32
+  },
+  {
+   "src": "../media/initial-video/IMG_7986.MOV",
+   "in": 0.6,
+   "until": "word:transform",
+   "speed": 0.95,
+   "_t0": 11.935,
+   "_len": 1.84
+  },
+  {
+   "src": "../media/dorothy/IMG_4219.JPG",
+   "until": "line:b2",
+   "zoom": [
+    1.04,
+    1.04
+   ],
+   "_t0": 13.775,
+   "_len": 4.829
+  },
+  {
+   "src": "../media/initial-video/68918107362__D54CCAE9-94B1-41DB-ACF7-BE0FEAC37E20.MOV",
+   "in": 0.1,
+   "until": "word:handle",
+   "_t0": 18.604,
+   "_len": 1.52
+  },
+  {
+   "src": "../media/dorothy/13F85D42-CEE3-4394-B1E9-08B17A03C5D5.mov",
+   "in": 0.2,
+   "until": "word:On",
+   "_t0": 20.124,
+   "_len": 1.18
+  },
+  {
+   "src": "../media/initial-images/IMG_1586.JPEG",
+   "until": "line:b3",
+   "zoom": [
+    1.0,
+    1.1
+   ],
+   "fy": 0.45,
+   "_t0": 21.304,
+   "_len": 2.734
+  },
+  {
+   "src": "../media/adam/IMG_0112.MOV",
+   "in": 0.1,
+   "until": "word:work",
+   "_t0": 24.037999999999997,
+   "_len": 1.16
+  },
+  {
+   "src": "../media/adam/IMG_0113.MOV",
+   "in": 0.0,
+   "until": "word:deliver",
+   "speed": 0.95,
+   "_t0": 25.197999999999997,
+   "_len": 1.04
+  },
+  {
+   "src": "../media/dorothy/IMG_0373.MOV",
+   "in": 0.1,
+   "until": "word:proud",
+   "_t0": 26.237999999999996,
+   "_len": 1.12
+  },
+  {
+   "src": "../media/initial-video/IMG_9865.MOV",
+   "in": 0.2,
+   "until": "line:b4",
+   "fy": 0.3,
+   "_t0": 27.357999999999997,
+   "_len": 1.323
+  },
+  {
+   "src": "../media/initial-images/IMG_9862.JPEG",
+   "until": "line:cta",
+   "zoom": [
+    1.0,
+    1.1
+   ],
+   "fy": 0.4,
+   "_t0": 28.680999999999997,
+   "_len": 4.305
+  },
+  {
+   "src": "../media/initial-images/IMG_9863.JPEG",
+   "until": "word:see",
+   "zoom": [
+    1.0,
+    1.08
+   ],
+   "fy": 0.4,
+   "_t0": 32.986,
+   "_len": 3.34
+  },
+  {
+   "src": "../media/initial-images/IMG_9861.JPEG",
+   "zoom": [
+    1.0,
+    1.12
+   ],
+   "fx": 0.35,
+   "_t0": 36.32599999999999,
+   "_len": 5.086
+  }
+ ],
+ "gfx": [
+  {
+   "tpl": "priceShock",
+   "at": 0.1,
+   "cfg": {
+    "lead": "WHY PAY",
+    "anchors": [
+     "$20,000?"
+    ],
+    "reveal": "SAME RESULTS FOR JUST",
+    "price": "$9,995",
+    "y": 520,
+    "beats": {
+     "anchors": [
+      0.35
+     ],
+     "strike": 3.1,
+     "drop": 3.7,
+     "reveal": 5.45
+    },
+    "leadSize": 96,
+    "anchorSize": 200,
+    "anchorY": 230
+   },
+   "dur": 9.5
+  },
+  {
+   "tpl": "locationSuper",
+   "at": 12.235,
+   "cfg": {
+    "place": "LONG ISLAND",
+    "who": "HOMEOWNERS"
+   },
+   "dur": 2.6
+  },
+  {
+   "tpl": "photoProgress",
+   "at": 13.675,
+   "cfg": {
+    "imgs": [
+     "d_demo",
+     "d_tile",
+     "d_done"
+    ],
+    "labels": [
+     "DEMO",
+     "TILE",
+     "DONE"
+    ]
+   },
+   "dur": 4.95
+  },
+  {
+   "tpl": "hookText",
+   "at": 21.204,
+   "cfg": {
+    "style": "stack",
+    "text": "ON TIME. ON BUDGET. ZERO HEADACHES.",
+    "lines": [
+     "ON TIME.",
+     "ON BUDGET.",
+     "ZERO HEADACHES."
+    ],
+    "lineStep": 0.72,
+    "maxSize": 150,
+    "y": 800
+   },
+   "dur": 2.8
+  },
+  {
+   "tpl": "priceCard",
+   "at": 29.781,
+   "cfg": {
+    "kicker": "COMPLETE BATHROOM REMODEL",
+    "pre": "just",
+    "price": 9995,
+    "note": "Limited time offer"
+   },
+   "dur": 3.2
+  },
+  {
+   "tpl": "getQuoteEnd",
+   "at": 32.886,
+   "cfg": {
+    "line2": "Free estimate"
+   },
+   "dur": 4.6
+  },
+  {
+   "tpl": "tapPointer",
+   "at": 38.606,
+   "cfg": {},
+   "dur": 2.8
+  }
+ ],
+ "lines": [
+  {
+   "id": "hook",
+   "text": "Why pay twenty thousand dollars for a bathroom remodel, when you can get the same stunning results for just nine thousand, nine hundred ninety-five dollars?",
+   "t0": 0.15,
+   "t1": 9.265
+  },
+  {
+   "id": "b1",
+   "text": "At Elite Craft Renovations, we've helped countless Long Island homeowners transform their outdated bathrooms, without the massive price tag.",
+   "t0": 9.615,
+   "t1": 18.304
+  },
+  {
+   "id": "b2",
+   "text": "From design to finish, we handle it all. On time, on budget, and with zero headaches.",
+   "t0": 18.604,
+   "t1": 23.788
+  },
+  {
+   "id": "b3",
+   "text": "We prep properly, work clean, and deliver results you'll be proud to show off.",
+   "t0": 24.038,
+   "t1": 28.381
+  },
+  {
+   "id": "b4",
+   "text": "And right now, you can lock in this exclusive offer for a limited time.",
+   "t0": 28.681,
+   "t1": 32.686
+  },
+  {
+   "id": "cta",
+   "text": "Click Get Quote below to schedule your free estimate, and see how easy it can be to get the bathroom you've always wanted.",
+   "t0": 32.986,
+   "t1": 39.812
+  }
+ ]
+}

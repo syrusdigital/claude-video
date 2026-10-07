@@ -1,0 +1,25 @@
+{
+ "fps": 30,
+ "duration": 5.0,
+ "bg": "#000000",
+ "imageFiles": {
+  "after": "../../ads/elite-craft/media/dorothy/IMG_0326.JPG"
+ },
+ "items": [
+  {
+   "tpl": "photoLoupe",
+   "at": 0,
+   "cfg": {
+    "target": [
+     470,
+     540
+    ],
+    "from": [
+     560,
+     1250
+    ],
+    "label": "HAND-SET MOSAIC NICHE"
+   }
+  }
+ ]
+}

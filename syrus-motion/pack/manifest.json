@@ -1,0 +1,422 @@
+[
+ {
+  "id": "01-price-shock",
+  "title": "Price shock",
+  "group": "overlay",
+  "what": "\"WHY PAY $40,000 / $50,000 / OR EVEN $60,000?\" stacks in red, gets struck through and falls away; the real price slams in gold.",
+  "use": "Centre frame over B-roll on the price-anchor line. Swap the numbers in spec.json for the client's script."
+ },
+ {
+  "id": "02-price-card",
+  "title": "Price card",
+  "group": "overlay",
+  "what": "Navy card: kicker, \"starting at\", price counts up and lands with a gold underline.",
+  "use": "Lower-middle on the line where the VO says the price. Sits above the Reels caption zone."
+ },
+ {
+  "id": "03-unit-calc",
+  "title": "Unit calculator",
+  "group": "overlay",
+  "what": "Rate lands, the quantity counts up while a tile grid fills, the total lands in gold. Set up as $125 per cabinet opening.",
+  "use": "For per-unit offers (per opening, per sq ft, per window)."
+ },
+ {
+  "id": "04-checklist",
+  "title": "What's included",
+  "group": "overlay",
+  "what": "Card with title and gold price; inclusions arrive one per beat, each with a drawn icon, each ticks.",
+  "use": "Under the VO listing what the package includes. 18 built-in icons."
+ },
+ {
+  "id": "05-material-table",
+  "title": "Material price table",
+  "group": "overlay",
+  "what": "Countertop prices with drawn stone swatches: granite, quartz, marble.",
+  "use": "Over countertop footage, one row per VO beat."
+ },
+ {
+  "id": "05b-tier-ladder",
+  "title": "Tier ladder",
+  "group": "overlay",
+  "what": "Two packages stacked as a ladder: wet-area from $9,995, full remodel from $14,995.",
+  "use": "Two-package ads."
+ },
+ {
+  "id": "06-before-after-wipe",
+  "title": "Before/after wipe UI",
+  "group": "overlay",
+  "what": "Divider with a handle sweeps in, BEFORE / AFTER pills, optional badge. Includes a matte file that follows the divider.",
+  "use": "Before clip under the left half, after clip on the right; use the matte as a track matte on the after clip."
+ },
+ {
+  "id": "06b-before-after-label",
+  "title": "Before/after stacked label",
+  "group": "overlay",
+  "what": "Horizontal split line with BEFORE above and AFTER below.",
+  "use": "For top/bottom stacked before/after clips."
+ },
+ {
+  "id": "07-slot-counter",
+  "title": "Spots left",
+  "group": "overlay",
+  "what": "Houses get stamped TAKEN, \"3 SPOTS LEFT\" lands in gold, qualifier boxes tick.",
+  "use": "Scarcity beat. Numbers must be the client's real ones."
+ },
+ {
+  "id": "08-get-quote-end",
+  "title": "Get Quote end card",
+  "group": "overlay",
+  "what": "Phone rises, its Get Quote button is tapped, \"TAP GET QUOTE BELOW\", offer pill, big gold arrow.",
+  "use": "Last 4 seconds of any ad."
+ },
+ {
+  "id": "09-service-map",
+  "title": "Service area map",
+  "group": "overlay",
+  "what": "Abstract map draws on, area traced, pin drops, radius pulses, county label.",
+  "use": "The service-area line. Change the label per client."
+ },
+ {
+  "id": "10a-trust-years",
+  "title": "Trust seal: years",
+  "group": "overlay",
+  "what": "Seal counts up to the years in business, \"IN BUSINESS SINCE\".",
+  "use": "Upper third on the credibility line. Client-confirmed numbers only."
+ },
+ {
+  "id": "10b-trust-licensed",
+  "title": "Trust seal: licensed",
+  "group": "overlay",
+  "what": "Shield seal, \"LICENSED & INSURED\".",
+  "use": "Upper third. Only for clients who are."
+ },
+ {
+  "id": "10c-trust-warranty",
+  "title": "Trust seal: warranty",
+  "group": "overlay",
+  "what": "Ribboned seal with the warranty length.",
+  "use": "Upper third. Client-confirmed warranty only."
+ },
+ {
+  "id": "10d-trust-inhouse",
+  "title": "Trust seal: in-house crew",
+  "group": "overlay",
+  "what": "Crew seal, \"IN-HOUSE CREW / NO SUBCONTRACTORS\".",
+  "use": "Only for clients without subcontractors."
+ },
+ {
+  "id": "11-financing-safe",
+  "title": "Financing line",
+  "group": "overlay",
+  "what": "\"$0 DOWN / OPTIONS AVAILABLE\" pill; disclosure line only when supplied.",
+  "use": "The compliant financing mention. Not for LHR, Midwest, Vistaguard or GC."
+ },
+ {
+  "id": "12a-hook-highlight",
+  "title": "Hook: highlight",
+  "group": "overlay",
+  "what": "Words land one by one, a gold marker swipes behind the price.",
+  "use": "First 2 seconds."
+ },
+ {
+  "id": "12b-hook-stack",
+  "title": "Hook: stack",
+  "group": "overlay",
+  "what": "Full-width lines slam in, alternating white and gold.",
+  "use": "First 2 seconds, or any punchy list (\"No mess. No delays. No hidden costs.\")."
+ },
+ {
+  "id": "12c-hook-type",
+  "title": "Hook: typewriter",
+  "group": "overlay",
+  "what": "Typewriter with a gold cursor, last word punches up.",
+  "use": "First 2 seconds."
+ },
+ {
+  "id": "13-location-super",
+  "title": "Location super",
+  "group": "overlay",
+  "what": "Navy tab slides in with a pin: \"SUFFOLK COUNTY / HOMEOWNERS\".",
+  "use": "Top third when the VO calls out the area."
+ },
+ {
+  "id": "14-callout",
+  "title": "Callout",
+  "group": "overlay",
+  "what": "Pulsing dot, a leader line draws out to a label.",
+  "use": "Move the layer so the dot sits on the feature."
+ },
+ {
+  "id": "15a-annotate-circle",
+  "title": "Annotate: circle",
+  "group": "overlay",
+  "what": "Sketchy gold loop.",
+  "use": "Move onto the subject."
+ },
+ {
+  "id": "15b-annotate-arrow",
+  "title": "Annotate: arrow",
+  "group": "overlay",
+  "what": "Curved gold arrow drawn in.",
+  "use": "Move onto the subject."
+ },
+ {
+  "id": "15c-annotate-x",
+  "title": "Annotate: X",
+  "group": "overlay",
+  "what": "Red X over a \"before\" problem.",
+  "use": "Move onto the problem."
+ },
+ {
+  "id": "16-discount-stamp",
+  "title": "Offer stamp",
+  "group": "overlay",
+  "what": "Gold-ink rubber stamp drops, squashes and rings out.",
+  "use": "On the offer line. Copy must be the client's real offer."
+ },
+ {
+  "id": "17-deadline",
+  "title": "Deadline calendar",
+  "group": "overlay",
+  "what": "Calendar flips to the end date, gold marker circles it.",
+  "use": "Only for real deadlines."
+ },
+ {
+  "id": "17b-deadline-countdown",
+  "title": "Days-left countdown",
+  "group": "overlay",
+  "what": "Calendar flips 8-7-6 to \"5 DAYS LEFT\".",
+  "use": "Only for real deadlines."
+ },
+ {
+  "id": "18-versus-split",
+  "title": "Us vs them",
+  "group": "overlay",
+  "what": "\"Big showroom company\" vs \"Us\"; each row gets X on theirs and a tick on ours.",
+  "use": "Comparison beats. Rows must be true for the client."
+ },
+ {
+  "id": "19-process-steps",
+  "title": "Process steps",
+  "group": "overlay",
+  "what": "Five steps build down the screen with icons; finished steps tick.",
+  "use": "The \"how it works\" section, one step per VO beat."
+ },
+ {
+  "id": "20-stat-counter",
+  "title": "Stat counter",
+  "group": "overlay",
+  "what": "Odometer roll-up to a number with a label.",
+  "use": "Proof points. Client-confirmed numbers only."
+ },
+ {
+  "id": "21-badge-line",
+  "title": "Badge row",
+  "group": "overlay",
+  "what": "Three navy badges with gold ticks pop in across the top.",
+  "use": "Over B-roll while the VO lists perks."
+ },
+ {
+  "id": "22-name-lower-third",
+  "title": "Name lower third",
+  "group": "overlay",
+  "what": "Gold bar, navy card wipes out with name and title.",
+  "use": "On-camera intros (owners, reps)."
+ },
+ {
+  "id": "23-day-timeline",
+  "title": "Day timeline",
+  "group": "overlay",
+  "what": "Day 1 to Day 7 bar fills, ends gold on \"Done\".",
+  "use": "\"Done in X days\" claims (client-confirmed)."
+ },
+ {
+  "id": "24a-transition-whip",
+  "title": "Transition: whip",
+  "group": "transition",
+  "what": "Light streaks and a white band sweep across. 0.6s.",
+  "use": "Cut on the middle frame."
+ },
+ {
+  "id": "24b-transition-brand-wipe",
+  "title": "Transition: brand wipe",
+  "group": "transition",
+  "what": "Diagonal navy panel with a gold trail. 0.8s.",
+  "use": "Cut on the middle frame."
+ },
+ {
+  "id": "24c-transition-flash",
+  "title": "Transition: flash",
+  "group": "transition",
+  "what": "Warm white flash with bloom. 0.6s.",
+  "use": "Cut on the middle frame."
+ },
+ {
+  "id": "24d-transition-shape-iris",
+  "title": "Transition: iris",
+  "group": "transition",
+  "what": "Navy field closes through a gold-rimmed square, then opens. 0.8s.",
+  "use": "Cut on the middle frame."
+ },
+ {
+  "id": "25-tap-pointer",
+  "title": "Tap pointer",
+  "group": "overlay",
+  "what": "Drawn hand taps twice under \"TAP GET QUOTE\".",
+  "use": "Over the CTA. Check the tap point against the real button placement."
+ },
+ {
+  "id": "26-qualify-quiz",
+  "title": "Do you qualify?",
+  "group": "overlay",
+  "what": "Three questions tick YES, then \"YOU QUALIFY / TAP GET QUOTE\".",
+  "use": "End of an ad."
+ },
+ {
+  "id": "30-tub-to-shower",
+  "title": "Tub to shower",
+  "group": "explainer",
+  "what": "Bathroom cutaway: tub lifts out, walls and glass go in, clock runs 8 AM to 5 PM.",
+  "use": "Walk-in shower offers with no install footage. \"In a day\" must be client-confirmed."
+ },
+ {
+  "id": "31-kitchen-build",
+  "title": "Kitchen build",
+  "group": "explainer",
+  "what": "Plan lines, then cabinets, quartz, backsplash and pendants build in.",
+  "use": "Kitchen inclusion lists."
+ },
+ {
+  "id": "32-bath-build",
+  "title": "Bathroom build",
+  "group": "explainer",
+  "what": "Demo to studs, plumbing, tile, vanity, floor and lights, with six labels.",
+  "use": "Full bathroom remodels."
+ },
+ {
+  "id": "33-no-middleman",
+  "title": "No middleman",
+  "group": "explainer",
+  "what": "Price chain stacks markups to $21,000, collapses to Manufacturer > Us > You.",
+  "use": "\"Direct pricing\" hooks. Prices are placeholders."
+ },
+ {
+  "id": "34-process",
+  "title": "Process road",
+  "group": "explainer",
+  "what": "A van drives a road through five stations; camera pulls back.",
+  "use": "\"How it works\" sections."
+ },
+ {
+  "id": "35-see-it-first",
+  "title": "See it first",
+  "group": "explainer",
+  "what": "The kitchen draws itself in line art, then fills with colour.",
+  "use": "Design-consultation offers."
+ },
+ {
+  "id": "36-floor-layers",
+  "title": "Garage floor layers",
+  "group": "explainer",
+  "what": "Slab cutaway: grind, base coat, flake, topcoat.",
+  "use": "Garage coating clients."
+ },
+ {
+  "id": "37-roof-layers",
+  "title": "Roof layers",
+  "group": "explainer",
+  "what": "Roof cutaway from rafters to ridge cap, each layer labelled.",
+  "use": "Roofing process and quality angles."
+ },
+ {
+  "id": "38-one-team",
+  "title": "One team",
+  "group": "explainer",
+  "what": "Split screen: three trades clash vs one crew finishing.",
+  "use": "Clients with in-house crews only."
+ },
+ {
+  "id": "39-leads-leak",
+  "title": "Leads leak",
+  "group": "syrus",
+  "what": "Leads spill out of four holes; Syrus patches each; slots book gold.",
+  "use": "Syrus's own ads."
+ },
+ {
+  "id": "40-speed-to-lead",
+  "title": "Speed to lead",
+  "group": "syrus",
+  "what": "New lead, stopwatch races, \"Syrus calls in under 5 minutes\", slot books.",
+  "use": "Syrus's own ads."
+ },
+ {
+  "id": "41-ec-photo-before-after",
+  "title": "Elite Craft before/after",
+  "group": "client-footage",
+  "what": "Northport master bath: the before photo holds, a divider reveals the after.",
+  "use": "Elite Craft ads only."
+ },
+ {
+  "id": "42-ec-photo-callouts",
+  "title": "Elite Craft feature callouts",
+  "group": "client-footage",
+  "what": "Slow push on a finished shower; frameless glass, bench and LED mirror get labels.",
+  "use": "Elite Craft ads only."
+ },
+ {
+  "id": "43-ec-photo-blueprint",
+  "title": "Elite Craft blueprint reveal",
+  "group": "client-footage",
+  "what": "The finished vanity appears as blueprint line art, then the real photo sweeps in.",
+  "use": "Elite Craft ads only."
+ },
+ {
+  "id": "44-ec-photo-gallery",
+  "title": "Elite Craft project gallery",
+  "group": "client-footage",
+  "what": "Five finished bathrooms fly in as cards; the last opens to full frame.",
+  "use": "Elite Craft ads only."
+ },
+ {
+  "id": "45-ec-photo-loupe",
+  "title": "Elite Craft detail loupe",
+  "group": "client-footage",
+  "what": "A loupe glides onto the hand-set mosaic niche and magnifies it.",
+  "use": "Elite Craft ads only."
+ },
+ {
+  "id": "46-ec-photo-progress",
+  "title": "Elite Craft demo to done",
+  "group": "client-footage",
+  "what": "One shower: demo, tile, done, on a progress bar.",
+  "use": "Elite Craft ads only."
+ },
+ {
+  "id": "47-wh-photo-before-after-barn",
+  "title": "Work Horse barn before/after",
+  "group": "client-footage",
+  "what": "Brown barn to red with black trim, same angle.",
+  "use": "Work Horse ads only."
+ },
+ {
+  "id": "48-wh-photo-before-after-cabin",
+  "title": "Work Horse cabin before/after",
+  "group": "client-footage",
+  "what": "Weathered cabin to new dark stain, same angle.",
+  "use": "Work Horse ads only."
+ },
+ {
+  "id": "50-syrus-shown-appointment",
+  "title": "Pay per shown appointment",
+  "group": "syrus",
+  "what": "Animated explainer for Syrus's pay-per-shown-appointment model.",
+  "use": "Syrus's own ads."
+ },
+ {
+  "id": "51-syrus-pay-per-estimate",
+  "title": "Pay per estimate",
+  "group": "syrus",
+  "what": "Animated explainer for Syrus's pay-per-estimate model.",
+  "use": "Syrus's own ads."
+ }
+]

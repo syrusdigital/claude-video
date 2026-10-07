@@ -1,0 +1,18 @@
+{
+ "fps": 30,
+ "duration": 6.0,
+ "bg": "#000000",
+ "imageFiles": {
+  "before": "../../ads/work-horse/media/sept25/6770433740524745296.JPG",
+  "after": "../../ads/work-horse/media/sept25/8759477115647303105.JPG"
+ },
+ "items": [
+  {
+   "tpl": "photoBeforeAfter",
+   "at": 0,
+   "cfg": {
+    "badge": "WEATHERED TO NEW STAIN"
+   }
+  }
+ ]
+}

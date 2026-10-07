@@ -4,7 +4,8 @@
 TPL.versusSplit = {
   dur: 6.0,
   // rows must be true of the client vs the competitor type (no named competitors, no invented stats)
-  defaults: { them: 'Big showroom company', us: 'Us', rows: ['Price shown up front', 'One in-house team', 'Itemized estimate'], y: 330, beat: 0.1, rowStart: 1.0, rowStep: 1.15 },
+  // cfg.rowAt (optional): explicit start time per row, seconds from item start (time each row to its VO beat); null = rowStart + i * rowStep
+  defaults: { them: 'Big showroom company', us: 'Us', rows: ['Price shown up front', 'One in-house team', 'Itemized estimate'], y: 330, beat: 0.1, rowStart: 1.0, rowStep: 1.15, rowAt: null },
   mix(a, b, u) {
     const p = (h) => [1, 3, 5].map((i) => parseInt(h.slice(i, i + 2), 16)), A = p(a), Z = p(b);
     return `rgb(${A.map((v, i) => Math.round(lerp(v, Z[i], u))).join(',')})`;
@@ -27,7 +28,7 @@ TPL.versusSplit = {
     const pw = 465, gap = 30, xl = (E.W - 2 * pw - gap) / 2, xr = xl + pw + gap, HEAD = 250, PITCH = 186;
     const ph = HEAD + n * PITCH + 24, y0 = c.y;
     const step = Math.min(c.rowStep, (c.dur - 1.9 - c.rowStart) / Math.max(1, n));
-    const rowT = (i) => c.rowStart + i * step, winT = rowT(n - 1) + 0.95;
+    const rowT = (i) => (c.rowAt && c.rowAt[i] != null ? c.rowAt[i] : c.rowStart + i * step), winT = rowT(n - 1) + 0.95;
     const win = easeOut(seg(t, winT, winT + 0.45));
     const sl = spring(t - c.beat, 210, 21), sr = spring(t - c.beat - 0.12, 210, 21);
     ctx.globalAlpha = fade;

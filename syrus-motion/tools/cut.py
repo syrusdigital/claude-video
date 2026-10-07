@@ -35,16 +35,20 @@ if AROLL:
     # each A-roll piece: { src, in, out, words: 'media/x.mp4.words.json' } — their real voice is the clock
     words, lines, parts, t = [], [], [], float(A.get('lead', 0.0))
     for k, r in enumerate(AROLL):
-        src = os.path.join(AD, r['src']); d = float(r['out']) - float(r['in'])
+        src = os.path.join(AD, r['src'])
+        # whole frames, and exactly that much audio: a piece's video and audio must be the same length, or every join
+        # shifts the picture against the voice (the concat keeps audio gapless) and lip sync drifts through the ad
+        nfr_a = max(1, round((float(r['out']) - float(r['in'])) * FPS)); d = nfr_a / FPS
         seg = os.path.join(BUILD, f'aroll{k:02d}.mp4'); parts.append(seg)
         fx, fy, z = r.get('fx', 0.5), r.get('fy', 0.4), r.get('zoom', 1.0)
         vf = (f"scale=1080*{z}:1920*{z}:force_original_aspect_ratio=increase,crop=1080:1920:(iw-1080)*{fx}:(ih-1920)*{fy},fps=30,"
               f"{r.get('grade', 'eq=contrast=1.05:saturation=1.08')},format=yuv420p")
-        ff('-ss', r['in'], '-t', d, '-i', src, '-vf', vf, '-af', 'aresample=48000,aformat=channel_layouts=mono', '-c:v', 'libx264', '-crf', 17, '-preset', 'veryfast', '-c:a', 'pcm_s16le', seg.replace('.mp4', '.mov'))
+        ff('-ss', r['in'], '-t', d + 0.1, '-i', src, '-vf', vf, '-af', f'aresample=48000,aformat=channel_layouts=mono,apad,atrim=end_sample={nfr_a * 48000 // FPS}',
+           '-frames:v', nfr_a, '-c:v', 'libx264', '-crf', 17, '-preset', 'veryfast', '-c:a', 'pcm_s16le', seg.replace('.mp4', '.mov'))
         os.replace(seg.replace('.mp4', '.mov'), seg)
         W_ = json.load(open(os.path.join(AD, r['words']))) if r.get('words') else {'words': []}
         for w in (W_['words'] if isinstance(W_, dict) else W_):
-            if float(r['in']) - 0.05 <= w['t0'] < float(r['out']):
+            if float(r['in']) - 0.05 <= w['t0'] < float(r['in']) + d:
                 words.append({'w': w['w'], 't0': round(t + w['t0'] - float(r['in']), 3), 't1': round(t + w['t1'] - float(r['in']), 3)})
         lines.append({'id': r.get('id', f'a{k}'), 'text': r.get('text', ''), 't0': round(t, 3), 't1': round(t + d, 3)})
         t += d
@@ -123,6 +127,8 @@ base = os.path.join(BUILD, 'base.mp4')
 if AROLL:
     # A-roll video with each cutaway laid over its window (pts shifted to its start)
     ins, fc, last = ['-i', acat], [], '[0:v]'
+    if DUR > VO['duration']:   # "tail": hold the last A-roll frame so the end card / a last cutaway has room
+        fc.append(f"[0:v]tpad=stop_mode=clone:stop_duration={DUR - VO['duration'] + 0.1:.3f}[a0]"); last = '[a0]'
     for k, (p, s_) in enumerate(zip(segs, shots)):
         ins += ['-i', p]
         fc.append(f"[{k+1}:v]setpts=PTS-STARTPTS+{s_['_t0']}/TB[c{k}];{last}[c{k}]overlay=enable='between(t,{s_['_t0']},{s_['_t0'] + s_['_len'] - 0.001})':eof_action=pass[o{k}]")

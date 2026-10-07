@@ -5,16 +5,16 @@
 // then the divider settles and the after takes the frame. cfg.before / cfg.after = image names.
 TPL.photoBeforeAfter = {
   dur: 6.0,
-  defaults: { before: 'before', after: 'after', badge: '', split: 0.5, fyB: 0.5, fyA: 0.5 },
+  defaults: { before: 'before', after: 'after', badge: '', split: 0.5, fyB: 0.5, fyA: 0.5, fxB: 0.5, fxA: 0.5 },   // fxB/fxA: optional horizontal framing
   draw(t, c, E) {
     const zb = 1.04 + 0.04 * seg(t, 0, c.dur), za = 1.1 - 0.06 * seg(t, 0, c.dur);
-    drawCover(IMGS[c.before], 0, 0, E.W, E.H, { zoom: zb, fy: c.fyB });
+    drawCover(IMGS[c.before], 0, 0, E.W, E.H, { zoom: zb, fy: c.fyB, fx: c.fxB });
     // the divider: in from the right edge, past the middle, back to split, then on to the left edge (after wins)
     const u1 = easeIO(seg(t, 0.9, 2.3)), u2 = easeIO(seg(t, 3.8, 4.8));
     const x = lerp(E.W, E.W * c.split, u1) * (1 - u2);
     if (x < E.W) {
       ctx.save(); ctx.beginPath(); ctx.rect(x, 0, E.W - x, E.H); ctx.clip();
-      drawCover(IMGS[c.after], 0, 0, E.W, E.H, { zoom: za, fy: c.fyA });
+      drawCover(IMGS[c.after], 0, 0, E.W, E.H, { zoom: za, fy: c.fyA, fx: c.fxA });
       ctx.restore();
       if (x > 2) {
         ctx.save(); ctx.shadowColor = 'rgba(0,0,0,0.5)'; ctx.shadowBlur = 24; ctx.fillStyle = '#fff'; ctx.fillRect(x - 4, 0, 8, E.H); ctx.restore();
