@@ -1,0 +1,110 @@
+{
+ "house": {
+  "dur": 55.9,
+  "wpm": 189.2,
+  "f0": 130.1,
+  "floor": -11.7,
+  "sfx": 2,
+  "shot": 2.2,
+  "lufs": -14.3,
+  "n": 21
+ },
+ "ads": [
+  {
+   "dir": "vistaguard/v1",
+   "label": "V1 \u00b7 Two to three times cheaper",
+   "dur": 54.8,
+   "wpm": 182,
+   "f0": 120,
+   "floor": -10.8,
+   "sfx": 6,
+   "shot": 2.11,
+   "cuts": 25,
+   "lufs": -13.8
+  },
+  {
+   "dir": "vistaguard/v6",
+   "label": "V6 \u00b7 Check the bottom of that quote",
+   "dur": 54.2,
+   "wpm": 185,
+   "f0": 120,
+   "floor": -10.3,
+   "sfx": 3,
+   "shot": 2.26,
+   "cuts": 23,
+   "lufs": -14.0
+  },
+  {
+   "dir": "gc-countertops/a1",
+   "label": "A1 \u00b7 $1,995 direct, fair price",
+   "dur": 53.0,
+   "wpm": 184,
+   "f0": 118,
+   "floor": -10.8,
+   "sfx": 0,
+   "shot": 2.31,
+   "cuts": 22,
+   "lufs": -14.1
+  },
+  {
+   "dir": "gc-countertops/b1",
+   "label": "B1 \u00b7 $30 per square foot + price table",
+   "dur": 55.2,
+   "wpm": 176,
+   "f0": 119,
+   "floor": -11.0,
+   "sfx": 2,
+   "shot": 2.4,
+   "cuts": 22,
+   "lufs": -14.4
+  },
+  {
+   "dir": "luxury-home/p1",
+   "label": "P1 \u00b7 Seven-day showcase",
+   "dur": 40.9,
+   "wpm": 193,
+   "f0": 129,
+   "floor": -10.0,
+   "sfx": 2,
+   "shot": 2.15,
+   "cuts": 18,
+   "lufs": -13.9
+  },
+  {
+   "dir": "luxury-home/f1",
+   "label": "F1 \u00b7 $14,995 full bathroom, what's included",
+   "dur": 85.6,
+   "wpm": 165,
+   "f0": 120,
+   "floor": -12.7,
+   "sfx": 6,
+   "shot": 2.2,
+   "cuts": 38,
+   "lufs": -13.9
+  },
+  {
+   "dir": "rob-art/v5",
+   "label": "V5 \u00b7 $19,995 that's crazy",
+   "dur": 82.7,
+   "wpm": 178,
+   "f0": 119,
+   "floor": -12.5,
+   "sfx": 1,
+   "shot": 1.97,
+   "cuts": 41,
+   "lufs": -14.3
+  },
+  {
+   "dir": "rob-art/v1",
+   "label": "V1 \u00b7 Why pay $40,000",
+   "dur": 77.6,
+   "wpm": 174,
+   "f0": 121,
+   "floor": -14.1,
+   "sfx": 0,
+   "shot": 2.28,
+   "cuts": 33,
+   "lufs": -14.4
+  }
+ ]
+}

@@ -71,9 +71,9 @@
  "media": "../media",
  "tail": 0.4,
  "music": {
-  "file": "../../music/bed-drive-100.mp3",
-  "in": 0,
-  "db": -10.5,
+  "file": "../../music/bed-warm-88.mp3",
+  "in": 25,
+  "db": -10,
   "duck": -2,
   "end": "end"
  },
