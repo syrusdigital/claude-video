@@ -17,8 +17,8 @@
    "_len": 1.7
   },
   {
-   "src": "../media/stock/vg_filling_form.mp4",
-   "in": 0.3,
+   "src": "../media/client/dec_062030.mp4",
+   "in": 1.0,
    "len": 1.98,
    "fx": 0.5,
    "fy": 0.5,
@@ -26,13 +26,14 @@
     1.07,
     1.0
    ],
-   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01",
+   "speed": 0.5,
+   "grade": "hqdn3d=1.2:1.2:4:4,eq=contrast=1.06:saturation=1.12:brightness=0.01,unsharp=5:5:0.8:5:5:0.0",
    "_t0": 1.7,
    "_len": 1.98
   },
   {
-   "src": "../media/stock/vg_calculator_bills.mp4",
-   "in": 4.5,
+   "src": "../media/client/dec_062021.mp4",
+   "in": 9.0,
    "len": 1.8,
    "fx": 0.5,
    "fy": 0.5,
@@ -40,7 +41,7 @@
     1.0,
     1.07
    ],
-   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01",
+   "grade": "hqdn3d=1.2:1.2:4:4,eq=contrast=1.06:saturation=1.12:brightness=0.01,unsharp=5:5:0.8:5:5:0.0",
    "_t0": 3.6799999999999997,
    "_len": 1.8
   },
@@ -203,7 +204,7 @@
   {
    "src": "../media/client/oct_232557.mp4",
    "in": 9.5,
-   "len": 1.98,
+   "len": 2.0,
    "fx": 0.5,
    "fy": 0.5,
    "zoom": [
@@ -212,12 +213,12 @@
    ],
    "grade": "hqdn3d=1.2:1.2:4:4,eq=contrast=1.06:saturation=1.12:brightness=0.01,unsharp=5:5:0.8:5:5:0.0",
    "_t0": 26.919999999999998,
-   "_len": 1.98
+   "_len": 2.0
   },
   {
    "src": "../media/stock/vg_storm_palms.mp4",
    "in": 0.5,
-   "len": 2.26,
+   "len": 2.24,
    "fx": 0.5,
    "fy": 0.5,
    "zoom": [
@@ -225,8 +226,8 @@
     1.07
    ],
    "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01",
-   "_t0": 28.9,
-   "_len": 2.26
+   "_t0": 28.919999999999998,
+   "_len": 2.24
   },
   {
    "src": "../media/client/oct_231645.mp4",
@@ -245,7 +246,7 @@
   {
    "src": "../media/stock/vg_lakeside_neighborhood_aerial.mp4",
    "in": 0.5,
-   "len": 2.16,
+   "len": 2.2,
    "fx": 0.5,
    "fy": 0.5,
    "zoom": [
@@ -254,12 +255,12 @@
    ],
    "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01",
    "_t0": 33.04,
-   "_len": 2.16
+   "_len": 2.2
   },
   {
    "src": "../media/client/oct_230836.mp4",
    "in": 5.5,
-   "len": 2.02,
+   "len": 1.98,
    "fx": 0.5,
    "fy": 0.5,
    "zoom": [
@@ -267,8 +268,8 @@
     1.0
    ],
    "grade": "hqdn3d=1.2:1.2:4:4,eq=contrast=1.06:saturation=1.12:brightness=0.01,unsharp=5:5:0.8:5:5:0.0",
-   "_t0": 35.2,
-   "_len": 2.02
+   "_t0": 35.24,
+   "_len": 1.98
   },
   {
    "src": "../media/client/dec_062038.mp4",
@@ -281,7 +282,7 @@
     1.07
    ],
    "grade": "hqdn3d=1.2:1.2:4:4,eq=contrast=1.06:saturation=1.12:brightness=0.01,unsharp=5:5:0.8:5:5:0.0",
-   "_t0": 37.220000000000006,
+   "_t0": 37.22,
    "_len": 2.2
   },
   {
@@ -295,7 +296,7 @@
     1.0
    ],
    "grade": "hqdn3d=1.2:1.2:4:4,eq=contrast=1.06:saturation=1.12:brightness=0.01,unsharp=5:5:0.8:5:5:0.0",
-   "_t0": 39.42000000000001,
+   "_t0": 39.42,
    "_len": 2.08
   },
   {
@@ -309,7 +310,7 @@
     1.07
    ],
    "grade": "hqdn3d=1.2:1.2:4:4,eq=contrast=1.06:saturation=1.12:brightness=0.01,unsharp=5:5:0.8:5:5:0.0",
-   "_t0": 41.50000000000001,
+   "_t0": 41.5,
    "_len": 1.92
   },
   {
@@ -323,7 +324,7 @@
     1.07
    ],
    "grade": "hqdn3d=1.2:1.2:4:4,eq=contrast=1.06:saturation=1.12:brightness=0.01,unsharp=5:5:0.8:5:5:0.0",
-   "_t0": 43.42000000000001,
+   "_t0": 43.42,
    "_len": 2.38
   },
   {
@@ -337,7 +338,7 @@
     1.0
    ],
    "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01",
-   "_t0": 45.80000000000001,
+   "_t0": 45.800000000000004,
    "_len": 1.959
   }
  ],
@@ -414,7 +415,7 @@
       "icon": "truck"
      },
      {
-      "label": "Window company",
+      "label": "Dealer",
       "icon": "store"
      },
      {
@@ -428,6 +429,7 @@
      3
     ],
     "symbols": true,
+    "markupText": "+ MARKUP",
     "symbolFinal": "DIRECT",
     "direct": {
      "label": "VistaGuard",
@@ -451,7 +453,7 @@
   },
   {
    "tpl": "logoCard",
-   "at": 17.23,
+   "at": 19.5,
    "cfg": {
     "img": "logo",
     "y": 0.32,
@@ -521,13 +523,13 @@
    "id": "b6",
    "text": "We've been installing impact windows in your neighborhood across South Florida for over thirty years, we're licensed and insured, and every job carries a lifetime warranty on our products and materials.",
    "t0": 33.04,
-   "t1": 43.02
+   "t1": 43.04
   },
   {
    "id": "cta",
    "text": "Click Get Quote below to book your free in-home inspection and estimate.",
    "t0": 43.42,
-   "t1": 46.82
+   "t1": 46.8
   }
  ]
 }
