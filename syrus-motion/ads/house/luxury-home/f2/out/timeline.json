@@ -341,7 +341,7 @@
     1.0,
     1.07
    ],
-   "whip": true,
+   "punch": 0.08,
    "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01",
    "_t0": 25.6,
    "_len": 0.82
@@ -888,17 +888,17 @@
      "lighting": 13.26,
      "cans": 13.56,
      "decor": 13.76,
-     "final": 12.98,
-     "sheen": 13.58
+     "final": 13.63,
+     "sheen": 14.08
     }
    },
-   "dur": 13.98
+   "dur": 14.98
   },
   {
    "tpl": "sceneOneTeam",
    "at": 27.66,
    "cfg": {
-    "left": "PLUMBER, TILE GUY,|ELECTRICIAN",
+    "left": "PLUMBER, TILE,|ELECTRICIAN",
     "right": "ONE PROFESSIONAL|TEAM",
     "final": "ONE TEAM.|*ONE POINT OF CONTACT.*"
    },
