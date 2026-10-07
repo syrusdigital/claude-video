@@ -1,10 +1,10 @@
 {
- "duration": 40.905,
+ "duration": 36.404,
  "shots": [
   {
    "src": "../media/ai/ai-bath-BVogbV0XGMQV15wPC8qmn.mp4",
    "in": 0.0,
-   "len": 2.0,
+   "len": 2.12,
    "fx": 0.5,
    "fy": 0.5,
    "zoom": [
@@ -13,12 +13,12 @@
    ],
    "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01",
    "_t0": 0.0,
-   "_len": 2.0
+   "_len": 2.12
   },
   {
    "src": "../media/ai/ai-bath-oxaDYK4RreD_c2OtOUDVs.mp4",
-   "in": 3.21,
-   "len": 1.92,
+   "in": 3.03,
+   "len": 2.1,
    "fx": 0.5,
    "fy": 0.5,
    "zoom": [
@@ -26,13 +26,13 @@
     1.0
    ],
    "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01",
-   "_t0": 2.0,
-   "_len": 1.92
+   "_t0": 2.12,
+   "_len": 2.1
   },
   {
    "src": "../media/ai/ai-bath-video.mp4",
    "in": 0.0,
-   "len": 1.84,
+   "len": 1.6,
    "fx": 0.5,
    "fy": 0.5,
    "zoom": [
@@ -40,13 +40,13 @@
     1.07
    ],
    "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01,unsharp=5:5:0.9:5:5:0.0",
-   "_t0": 3.92,
-   "_len": 1.84
+   "_t0": 4.220000000000001,
+   "_len": 1.6
   },
   {
    "src": "../media/ai/ai-bath-8v_gHe12Eop_2RlAkInzX.mp4",
    "in": 0.0,
-   "len": 1.8,
+   "len": 1.46,
    "fx": 0.5,
    "fy": 0.5,
    "zoom": [
@@ -54,13 +54,13 @@
     1.0
    ],
    "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01,unsharp=5:5:0.9:5:5:0.0",
-   "_t0": 5.76,
-   "_len": 1.8
+   "_t0": 5.82,
+   "_len": 1.46
   },
   {
    "src": "../media/stock/pexels-12568633.mp4",
    "in": 0.5,
-   "len": 2.06,
+   "len": 1.56,
    "fx": 0.5,
    "fy": 0.5,
    "zoom": [
@@ -68,13 +68,13 @@
     1.07
    ],
    "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01",
-   "_t0": 7.56,
-   "_len": 2.06
+   "_t0": 7.28,
+   "_len": 1.56
   },
   {
    "src": "../media/ai/ai-bath-f7RN0tTxAe-8Yx3LQTtj6.mp4",
    "in": 0.0,
-   "len": 1.5,
+   "len": 1.88,
    "fx": 0.5,
    "fy": 0.5,
    "zoom": [
@@ -82,13 +82,13 @@
     1.0
    ],
    "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01",
-   "_t0": 9.62,
-   "_len": 1.5
+   "_t0": 8.84,
+   "_len": 1.88
   },
   {
    "src": "../media/ai/ai-bath-8v_gHe12Eop_2RlAkInzX.mp4",
    "in": 3.2,
-   "len": 1.78,
+   "len": 1.48,
    "fx": 0.5,
    "fy": 0.5,
    "zoom": [
@@ -96,13 +96,13 @@
     1.07
    ],
    "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01,unsharp=5:5:0.9:5:5:0.0",
-   "_t0": 11.12,
-   "_len": 1.78
+   "_t0": 10.719999999999999,
+   "_len": 1.48
   },
   {
    "src": "../media/stock/pexels-34236997.mp4",
    "in": 1.5,
-   "len": 1.94,
+   "len": 1.64,
    "fx": 0.5,
    "fy": 0.5,
    "zoom": [
@@ -110,13 +110,13 @@
     1.0
    ],
    "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01",
-   "_t0": 12.899999999999999,
-   "_len": 1.94
+   "_t0": 12.2,
+   "_len": 1.64
   },
   {
    "src": "../media/ai/ai-bath-BVogbV0XGMQV15wPC8qmn.mp4",
    "in": 0.0,
-   "len": 1.86,
+   "len": 1.62,
    "fx": 0.5,
    "fy": 0.5,
    "zoom": [
@@ -125,13 +125,13 @@
    ],
    "whip": true,
    "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01",
-   "_t0": 14.839999999999998,
-   "_len": 1.86
+   "_t0": 13.84,
+   "_len": 1.62
   },
   {
    "src": "../media/stock/pexels-855672.mp4",
    "in": 5.0,
-   "len": 1.9,
+   "len": 1.56,
    "fx": 0.5,
    "fy": 0.5,
    "zoom": [
@@ -139,13 +139,13 @@
     1.0
    ],
    "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01",
-   "_t0": 16.7,
-   "_len": 1.9
+   "_t0": 15.46,
+   "_len": 1.56
   },
   {
    "src": "../media/ai/ai-bath-Y18jESq4hOFB89_9UVMog.mp4",
    "in": 0.5,
-   "len": 2.67,
+   "len": 2.5,
    "fx": 0.5,
    "fy": 0.5,
    "zoom": [
@@ -153,13 +153,13 @@
     1.07
    ],
    "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01",
-   "_t0": 18.599999999999998,
-   "_len": 2.67
+   "_t0": 17.02,
+   "_len": 2.5
   },
   {
    "src": "../media/ai/ai-bath-nF5lGC6orko0IsARiHSA4.mp4",
    "in": 0.0,
-   "len": 2.67,
+   "len": 2.0,
    "fx": 0.5,
    "fy": 0.5,
    "zoom": [
@@ -167,13 +167,13 @@
     1.0
    ],
    "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01,unsharp=5:5:0.9:5:5:0.0",
-   "_t0": 21.269999999999996,
-   "_len": 2.67
+   "_t0": 19.52,
+   "_len": 2.0
   },
   {
    "src": "../media/stock/pexels-6474087.mp4",
    "in": 0.0,
-   "len": 2.0,
+   "len": 1.92,
    "fx": 0.5,
    "fy": 0.5,
    "zoom": [
@@ -181,13 +181,13 @@
     1.07
    ],
    "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01",
-   "_t0": 23.939999999999998,
-   "_len": 2.0
+   "_t0": 21.52,
+   "_len": 1.92
   },
   {
    "src": "../media/stock/pexels-24906850.mp4",
    "in": 2.0,
-   "len": 1.72,
+   "len": 1.78,
    "fx": 0.5,
    "fy": 0.5,
    "zoom": [
@@ -195,13 +195,13 @@
     1.0
    ],
    "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01",
-   "_t0": 25.939999999999998,
-   "_len": 1.72
+   "_t0": 23.439999999999998,
+   "_len": 1.78
   },
   {
    "src": "../media/stock/pexels-38746559.mp4",
    "in": 2.5,
-   "len": 2.2,
+   "len": 1.78,
    "fx": 0.5,
    "fy": 0.5,
    "zoom": [
@@ -209,13 +209,13 @@
     1.07
    ],
    "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01",
-   "_t0": 27.659999999999997,
-   "_len": 2.2
+   "_t0": 25.22,
+   "_len": 1.78
   },
   {
    "src": "../media/stock/pexels-4154236.mp4",
    "in": 0.5,
-   "len": 1.86,
+   "len": 1.68,
    "fx": 0.5,
    "fy": 0.5,
    "zoom": [
@@ -223,13 +223,13 @@
     1.0
    ],
    "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01",
-   "_t0": 29.859999999999996,
-   "_len": 1.86
+   "_t0": 27.0,
+   "_len": 1.68
   },
   {
    "src": "../media/ai/ai-bath-6mCOgAptjPwZ-DSCAdJ4E.mp4",
    "in": 5.0,
-   "len": 2.02,
+   "len": 1.7,
    "fx": 0.5,
    "fy": 0.5,
    "zoom": [
@@ -237,13 +237,13 @@
     1.07
    ],
    "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01",
-   "_t0": 31.719999999999995,
-   "_len": 2.02
+   "_t0": 28.68,
+   "_len": 1.7
   },
   {
    "src": "../media/stock/pexels-28048584.mp4",
    "in": 3.5,
-   "len": 3.86,
+   "len": 3.24,
    "fx": 0.5,
    "fy": 0.5,
    "zoom": [
@@ -251,13 +251,13 @@
     1.07
    ],
    "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01",
-   "_t0": 33.739999999999995,
-   "_len": 3.86
+   "_t0": 30.38,
+   "_len": 3.24
   },
   {
    "src": "../media/stock/pexels-31739399.mp4",
    "in": 0.0,
-   "len": 3.305,
+   "len": 2.784,
    "fx": 0.5,
    "fy": 0.5,
    "zoom": [
@@ -265,14 +265,14 @@
     1.0
    ],
    "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01",
-   "_t0": 37.599999999999994,
-   "_len": 3.305
+   "_t0": 33.62,
+   "_len": 2.784
   }
  ],
  "gfx": [
   {
    "tpl": "logoPill",
-   "at": 4.05,
+   "at": 4.35,
    "cfg": {
     "name": "Luxury Home Renovations",
     "y": 0.3
@@ -281,7 +281,7 @@
   },
   {
    "tpl": "ctaGlass",
-   "at": 33.64,
+   "at": 30.28,
    "cfg": {
     "y": 0.56,
     "top": "hit"
@@ -294,43 +294,43 @@
    "id": "hook",
    "text": "A bathroom remodel done in seven days. Sounds awesome, right?",
    "t0": 0.0,
-   "t1": 3.68
+   "t1": 3.96
   },
   {
    "id": "b1",
    "text": "At Luxury Home Renovations, we are looking for 10 homes with outdated bathrooms that we can remodel at a discounted rate, in return for using the before and after videos on our website.",
-   "t0": 3.92,
-   "t1": 14.6
+   "t0": 4.22,
+   "t1": 13.52
   },
   {
    "id": "b2",
    "text": "To qualify, your bathroom has to be five years or older.",
-   "t0": 14.84,
-   "t1": 18.28
+   "t0": 13.84,
+   "t1": 16.8
   },
   {
    "id": "b3",
    "text": "You have to be looking for either a full bathroom remodel or a tub to shower conversion.",
-   "t0": 18.6,
-   "t1": 23.5
+   "t0": 17.02,
+   "t1": 21.24
   },
   {
    "id": "b4",
    "text": "And you have to be ready to get started within the next 30 days.",
-   "t0": 23.94,
-   "t1": 27.24
+   "t0": 21.52,
+   "t1": 24.84
   },
   {
    "id": "b5",
    "text": "We are only looking for 10 homeowners for this showcase, so if you think your bathroom might be a good fit...",
-   "t0": 27.66,
-   "t1": 33.44
+   "t0": 25.22,
+   "t1": 30.14
   },
   {
    "id": "cta",
    "text": "Hit the \"Get Quote\" button below, answer a few short questions, and we will contact you to see if you qualify.",
-   "t0": 33.74,
-   "t1": 39.78
+   "t0": 30.38,
+   "t1": 35.36
   }
  ]
 }
