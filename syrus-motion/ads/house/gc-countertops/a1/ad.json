@@ -303,7 +303,7 @@
   {
    "src": "../media/client/IMG_0238.MOV",
    "in": 0.5,
-   "len": 2.39,
+   "len": 2.1,
    "fx": 0.5,
    "fy": 0.5,
    "zoom": [
@@ -315,7 +315,7 @@
   {
    "src": "../media/client/IMG_4219.MOV",
    "in": 0.5,
-   "len": 2.39,
+   "len": 2.68,
    "fx": 0.5,
    "fy": 0.5,
    "zoom": [
@@ -339,7 +339,7 @@
   {
    "src": "../media/stock/pexels-3773485.mp4",
    "in": 0.0,
-   "len": 1.6,
+   "len": 1.62,
    "fx": 0.5,
    "fy": 0.5,
    "zoom": [
@@ -351,7 +351,7 @@
   {
    "src": "../media/client/IMG_8920.MOV",
    "in": 0.5,
-   "len": 1.78,
+   "len": 1.76,
    "fx": 0.5,
    "fy": 0.5,
    "zoom": [
@@ -436,7 +436,7 @@
   {
    "src": "../media/client/IMG_8418.MOV",
    "in": 1.0,
-   "len": 1.26,
+   "len": 1.28,
    "fx": 0.5,
    "fy": 0.5,
    "zoom": [
@@ -448,7 +448,7 @@
   {
    "src": "../media/client/IMG_1850.mov",
    "in": 0.5,
-   "len": 1.78,
+   "len": 1.76,
    "fx": 0.5,
    "fy": 0.5,
    "zoom": [
@@ -581,7 +581,7 @@
   {
    "src": "../media/client/IMG_4219.MOV",
    "in": 4.5,
-   "len": 2.42,
+   "len": 2.44,
    "fx": 0.5,
    "fy": 0.5,
    "zoom": [
@@ -593,7 +593,7 @@
   {
    "src": "../media/client/IMG_7435.MOV",
    "in": 23.5,
-   "len": 2.12,
+   "len": 2.08,
    "fx": 0.5,
    "fy": 0.5,
    "zoom": [
@@ -605,7 +605,7 @@
   {
    "src": "../media/client/IMG_0238.MOV",
    "in": 4.5,
-   "len": 2.26,
+   "len": 2.28,
    "fx": 0.5,
    "fy": 0.5,
    "zoom": [

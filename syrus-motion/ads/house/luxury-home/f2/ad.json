@@ -125,7 +125,7 @@
   {
    "tpl": "sceneBathBuild",
    "at": "line:b3",
-   "until": "line:b4",
+   "until": "line:b4+1.0",
    "cfg": {
     "steps": {
      "demo": "Old bath out",
@@ -153,8 +153,8 @@
      "lighting": "word:fixtures",
      "cans": "word:fixtures+0.3",
      "decor": "word:fixtures+0.5",
-     "final": "line:b3.end-0.6",
-     "sheen": "line:b3.end"
+     "final": "line:b3.end+0.05",
+     "sheen": "line:b3.end+0.5"
     }
    },
    "scene": true,
@@ -166,7 +166,7 @@
    "until": "line:b7",
    "fit": 12.0,
    "cfg": {
-    "left": "PLUMBER, TILE GUY,|ELECTRICIAN",
+    "left": "PLUMBER, TILE,|ELECTRICIAN",
     "right": "ONE PROFESSIONAL|TEAM",
     "final": "ONE TEAM.|*ONE POINT OF CONTACT.*"
    },
@@ -341,7 +341,7 @@
   {
    "at": "line:b4",
    "clips": [
-    "stock/pexels-34236997.mp4@1.5 whip",
+    "stock/pexels-34236997.mp4@1.5",
     "ai/ai-bath-Y18jESq4hOFB89_9UVMog.mp4@4.0"
    ]
   },
