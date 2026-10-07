@@ -1,0 +1,300 @@
+{
+ "title": "Twin Pines - Local Family-Owned Not Storm Chasers - TP2",
+ "source": "Client on-camera footage: y25-v2 (Nate Stern, founder, at the Twin Pines yard), WhatsApp 2025-07-31",
+ "aroll": [
+  {
+   "id": "hook",
+   "src": "../media/y25-v2/wa-2025-07-31-212940.mp4",
+   "in": 0.96,
+   "out": 4.61,
+   "words": "words/wa-2025-07-31-212940.mp4.words.json",
+   "zoom": 1.0,
+   "fy": 0.4
+  },
+  {
+   "id": "years",
+   "src": "../media/y25-v2/wa-2025-07-31-212940.mp4",
+   "in": 5.04,
+   "out": 10.04,
+   "words": "words/wa-2025-07-31-212940.mp4.words.json",
+   "zoom": 1.05,
+   "fy": 0.3
+  },
+  {
+   "id": "local",
+   "src": "../media/y25-v2/wa-2025-07-31-212932.mp4",
+   "in": 0.94,
+   "out": 2.94,
+   "words": "words/wa-2025-07-31-212932.mp4.words.json",
+   "zoom": 1.0,
+   "fy": 0.4
+  },
+  {
+   "id": "storm",
+   "src": "../media/y25-v2/wa-2025-07-31-212932.mp4",
+   "in": 3.37,
+   "out": 5.79,
+   "words": "words/wa-2025-07-31-212932.mp4.words.json",
+   "zoom": 1.0,
+   "fy": 0.4
+  },
+  {
+   "id": "nopushy",
+   "src": "../media/y25-v2/wa-2025-07-31-212930.mp4",
+   "in": 0.47,
+   "out": 4.94,
+   "words": "words/wa-2025-07-31-212930.mp4.words.json",
+   "zoom": 1.0,
+   "fy": 0.4
+  },
+  {
+   "id": "fair",
+   "src": "../media/y25-v2/wa-2025-07-31-212929.mp4",
+   "in": 1.52,
+   "out": 6.54,
+   "words": "words/wa-2025-07-31-212929.mp4.words.json",
+   "zoom": 1.05,
+   "fy": 0.3
+  },
+  {
+   "id": "wear",
+   "src": "../media/y25-v2/wa-2025-07-31-212926.mp4",
+   "in": 1.48,
+   "out": 7.59,
+   "words": "words/wa-2025-07-31-212926.mp4.words.json",
+   "zoom": 1.0,
+   "fy": 0.4
+  },
+  {
+   "id": "cta",
+   "src": "../media/y25-v2/wa-2025-07-31-212923.mp4",
+   "in": 1.37,
+   "out": 5.7,
+   "words": "words/wa-2025-07-31-212923.mp4.words.json",
+   "zoom": 1.05,
+   "fy": 0.3
+  }
+ ],
+ "tail": 0.0,
+ "music": {
+  "bpm": 96,
+  "key": "G",
+  "mood": "warm",
+  "db": -24,
+  "duck": -6
+ },
+ "shots": [
+  {
+   "src": "../media/images/img-0230.jpg",
+   "at": "word:For-0.06",
+   "len": 1.3,
+   "zoom": [
+    1.0,
+    1.06
+   ],
+   "fy": 0.45
+  },
+  {
+   "src": "../media/images/img-0080.jpg",
+   "at": "word:to-0.08",
+   "len": 1.22,
+   "zoom": [
+    1.02,
+    1.08
+   ],
+   "fy": 0.5
+  },
+  {
+   "src": "../media/omni-multi/wa-2025-07-25-024007.mp4",
+   "in": 0.0,
+   "at": "line:storm",
+   "len": 3.7
+  },
+  {
+   "src": "../media/omni-multi/wa-2025-07-25-024003.mp4",
+   "in": 0.0,
+   "at": "line:storm+3.7",
+   "len": 3.7
+  },
+  {
+   "src": "../media/omni-multi/wa-2025-07-25-024011.mp4",
+   "in": 6.4,
+   "at": "word:top-0.1",
+   "len": 1.37,
+   "zoom": [
+    1.0,
+    1.05
+   ]
+  },
+  {
+   "src": "../media/omni-s1/wa-2025-08-05-234439.mp4",
+   "in": 5.6,
+   "at": "line:wear",
+   "len": 1.75,
+   "zoom": [
+    1.0,
+    1.06
+   ]
+  },
+  {
+   "src": "../media/images/img-0178.jpg",
+   "at": "word:peace-0.1",
+   "len": 1.0,
+   "zoom": [
+    1.0,
+    1.06
+   ],
+   "fy": 0.5
+  },
+  {
+   "src": "../media/omni-multi/wa-2025-07-25-035845.mp4",
+   "in": 18.4,
+   "at": "word:for#2-0.08",
+   "len": 2.1,
+   "zoom": [
+    1.0,
+    1.05
+   ]
+  }
+ ],
+ "gfx": [
+  {
+   "tpl": "locationSuper",
+   "at": "word:Wisconsin-0.2",
+   "dur": 1.5,
+   "cfg": {
+    "place": "WISCONSIN",
+    "who": "HOMEOWNERS",
+    "y": 300
+   },
+   "hide": false
+  },
+  {
+   "tpl": "nameLowerThird",
+   "at": "word:I'm-0.1",
+   "dur": 2.6,
+   "cfg": {
+    "name": "Nate Stern",
+    "title": "Founder, Twin Pines Home Improvements",
+    "y": 1300
+   }
+  },
+  {
+   "tpl": "statCounter",
+   "at": "word:For-0.06",
+   "dur": 1.35,
+   "cfg": {
+    "value": 25,
+    "suffix": "+",
+    "label": "YEARS",
+    "beat": 0.05,
+    "count": 0.75,
+    "y": 640
+   },
+   "sfx": [
+    [
+     "hit",
+     0.8
+    ]
+   ]
+  },
+  {
+   "tpl": "versusSplit",
+   "at": "line:storm",
+   "dur": 7.4,
+   "cfg": {
+    "them": "Storm chasers",
+    "us": "Twin Pines",
+    "rows": [
+     "Local & family-owned",
+     "No pushy sales tactics",
+     "No out-of-state crews",
+     "No inflated pricing"
+    ],
+    "rowAt": [
+     0.9,
+     3.1,
+     4.75,
+     5.8
+    ],
+    "y": 330
+   },
+   "sfx": [
+    "whoosh",
+    [
+     "tick",
+     1.6
+    ],
+    [
+     "tick",
+     3.8
+    ],
+    [
+     "tick",
+     5.45
+    ],
+    [
+     "tick",
+     6.5
+    ]
+   ]
+  },
+  {
+   "tpl": "badgeLine",
+   "at": "word:fair-0.15",
+   "dur": 2.5,
+   "cfg": {
+    "items": [
+     "FAIR PRICING",
+     "TOP QUALITY WORK"
+    ],
+    "y": 300,
+    "stagger": 1.0
+   },
+   "hide": false,
+   "sfx": [
+    [
+     "tick",
+     0.15
+    ],
+    [
+     "tick",
+     1.15
+    ]
+   ]
+  },
+  {
+   "tpl": "discountStamp",
+   "at": "word:free-0.05",
+   "dur": 2.0,
+   "cfg": {
+    "big": "FREE",
+    "small": "INSPECTION & QUOTE",
+    "y": 470,
+    "rot": -6
+   },
+   "sfx": [
+    [
+     "hit",
+     0.17
+    ]
+   ]
+  },
+  {
+   "tpl": "tapPointer",
+   "at": "word:Click-0.1",
+   "dur": 2.5,
+   "cfg": {},
+   "hide": false
+  }
+ ],
+ "captions": {
+  "y": 1450,
+  "em": [
+   "free",
+   "local",
+   "family-owned",
+   "storm"
+  ]
+ }
+}

@@ -9,13 +9,14 @@
     "kicker": "CABINET PAINTING",
     "rate": 125,
     "rateDp": 0,
-    "unit": "opening",
+    "unit": "openings",
     "qty": 24,
-    "qtyLabel": "24 openings",
+    "qtyLabel": "doors + drawer fronts",
     "grid": {
      "cols": 6,
      "rows": 4
-    }
+    },
+    "per": "opening"
    }
   }
  ]
