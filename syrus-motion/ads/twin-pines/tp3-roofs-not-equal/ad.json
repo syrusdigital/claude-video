@@ -62,8 +62,8 @@
    "in": 0.0,
    "out": 4.12,
    "words": "words/wa-2025-08-06-220828.mp4.words.json",
-   "zoom": 1.05,
-   "fy": 0.6
+   "zoom": 1.08,
+   "fy": 1.0
   },
   {
    "id": "dim",
@@ -71,8 +71,8 @@
    "in": 0.0,
    "out": 5.85,
    "words": "words/wa-2025-08-06-220829.mp4.words.json",
-   "zoom": 1.0,
-   "fy": 0.5
+   "zoom": 1.08,
+   "fy": 1.0
   },
   {
    "id": "metal",
@@ -80,8 +80,8 @@
    "in": 0.91,
    "out": 10.25,
    "words": "words/wa-2025-08-06-220846.mp4.words.json",
-   "zoom": 1.05,
-   "fy": 0.6
+   "zoom": 1.08,
+   "fy": 1.0
   },
   {
    "id": "every",
@@ -89,8 +89,8 @@
    "in": 0.4,
    "out": 7.85,
    "words": "words/wa-2025-08-06-220848.mp4.words.json",
-   "zoom": 1.0,
-   "fy": 0.5
+   "zoom": 1.08,
+   "fy": 1.0
   },
   {
    "id": "decide",
@@ -98,8 +98,8 @@
    "in": 1.33,
    "out": 2.68,
    "words": "words/wa-2025-08-06-220855.mp4.words.json",
-   "zoom": 1.05,
-   "fy": 0.6
+   "zoom": 1.08,
+   "fy": 1.0
   },
   {
    "id": "decide2",
@@ -107,8 +107,8 @@
    "in": 3.16,
    "out": 7.25,
    "words": "words/wa-2025-08-06-220855.mp4.words.json",
-   "zoom": 1.0,
-   "fy": 0.5
+   "zoom": 1.08,
+   "fy": 1.0
   },
   {
    "id": "brand",
@@ -116,8 +116,8 @@
    "in": 7.85,
    "out": 10.3,
    "words": "words/wa-2025-08-06-220855.mp4.words.json",
-   "zoom": 1.05,
-   "fy": 0.6
+   "zoom": 1.08,
+   "fy": 1.0
   },
   {
    "id": "cta",
@@ -125,8 +125,8 @@
    "in": 10.72,
    "out": 14.7,
    "words": "words/wa-2025-08-06-220855.mp4.words.json",
-   "zoom": 1.0,
-   "fy": 0.5
+   "zoom": 1.08,
+   "fy": 1.0
   }
  ],
  "tail": 1.0,
@@ -175,14 +175,14 @@
    ]
   },
   {
-   "src": "../media/images/img-0224.jpg",
-   "at": "word:metal-0.1",
-   "len": 2.6,
+   "src": "../media/omni-s10/wa-2025-08-19-212731-4.mp4",
+   "in": 2.6,
+   "at": "line:metal",
+   "len": 1.9,
    "zoom": [
     1.0,
-    1.07
-   ],
-   "fy": 0.5
+    1.05
+   ]
   },
   {
    "src": "../media/images/img-0230.jpg",
@@ -196,7 +196,7 @@
   },
   {
    "src": "../media/omni-multi/wa-2025-07-25-035845.mp4",
-   "in": 19.0,
+   "in": 23.0,
    "at": "word:we'll-0.08",
    "len": 2.0,
    "zoom": [
@@ -211,7 +211,7 @@
    "len": 2.0
   },
   {
-   "src": "../media/images/img-0080.jpg",
+   "src": "../media/images/img-0180.jpg",
    "at": "line:cta",
    "len": 5.0,
    "zoom": [
@@ -317,7 +317,7 @@
     "items": [
      "YOUR BUDGET",
      "LOCAL CLIMATE",
-     "HOW LONG YOU'LL STAY"
+     "HOW LONG YOU PLAN TO STAY"
     ],
     "y": 300,
     "stagger": 0.9
@@ -354,14 +354,14 @@
   {
    "tpl": "getQuoteEnd",
    "at": "line:cta-0.05",
-   "dur": 5.0,
+   "dur": 5.4,
    "cfg": {
     "line2": "Choose the right roof"
    }
   }
  ],
  "captions": {
-  "y": 1450,
+  "y": 1500,
   "em": [
    "30",
    "50",

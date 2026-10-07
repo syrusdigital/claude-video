@@ -266,13 +266,13 @@
    "_len": 3.158
   },
   {
-   "src": "../media/previous-work/IMG_3541.JPG",
+   "src": "../media/sept25/6296927871037440421.JPG",
    "until": "word:without#2",
    "zoom": [
     1.0,
     1.1
    ],
-   "fx": 0.62,
+   "fx": 0.5,
    "fy": 0.5,
    "_t0": 68.498,
    "_len": 1.88
@@ -297,14 +297,14 @@
    "_len": 2.173
   },
   {
-   "src": "../media/client/IMG_2619.jpg",
+   "src": "../media/sept25/4389575807402975032.JPG",
    "until": "end",
    "zoom": [
     1.0,
-    1.08
+    1.1
    ],
-   "fx": 0.45,
-   "fy": 0.35,
+   "fx": 0.5,
+   "fy": 0.45,
    "_t0": 74.431,
    "_len": 5.161
   }
@@ -457,11 +457,12 @@
     "lines": [
      "NO GUESSING.",
      "NO INFLATED QUOTES.",
-     "NO CONFUSING BREAKDOWNS."
+     "NO CONFUSING",
+     "BREAKDOWNS."
     ],
-    "lineStep": 1.28,
+    "lineStep": 1.05,
     "maxSize": 140,
-    "y": 800
+    "y": 820
    },
    "dur": 4.4
   },
@@ -503,11 +504,11 @@
      5.5
     ]
    },
-   "dur": 6.3
+   "dur": 6.93
   },
   {
    "tpl": "whBaStack",
-   "at": 40.955,
+   "at": 41.555,
    "cfg": {
     "pairs": [
      {
@@ -519,14 +520,14 @@
       "tag": "CABINETS"
      }
     ],
-    "each": 3.35,
-    "wipe": 1.25,
-    "wipeDur": 0.6,
+    "each": 2.67,
+    "wipe": 0.5,
+    "wipeDur": 0.5,
     "top": 220,
     "ph": 720,
     "gap": 28
    },
-   "dur": 3.35
+   "dur": 2.67
   },
   {
    "tpl": "priceCard",

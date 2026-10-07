@@ -48,8 +48,8 @@
    "_len": 4.34
   },
   {
-   "src": "../media/omni-multi/wa-2025-07-25-024003.mp4",
-   "in": 0.2,
+   "src": "../media/omni-multi/wa-2025-07-25-024007.mp4",
+   "in": 3.4,
    "at": "word:15-0.12",
    "len": 3.18,
    "zoom": [
@@ -82,11 +82,11 @@
     "style": "highlight",
     "text": "WHEN'S THE LAST TIME YOU GOT YOUR ROOF INSPECTED?",
     "mark": "INSPECTED?",
-    "step": 0.16,
+    "step": 0.14,
     "size": 104,
     "y": 450
    },
-   "dur": 2.15
+   "dur": 2.45
   },
   {
    "tpl": "nameLowerThird",
@@ -104,7 +104,7 @@
    "cfg": {
     "big": "FREE",
     "small": "INSPECTIONS",
-    "y": 470,
+    "y": 430,
     "rot": -6
    },
    "dur": 2.0
@@ -146,7 +146,7 @@
    "cfg": {
     "line2": "Free 15-minute inspection"
    },
-   "dur": 3.4
+   "dur": 3.75
   }
  ],
  "lines": [

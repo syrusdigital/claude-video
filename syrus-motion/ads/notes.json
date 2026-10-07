@@ -53,6 +53,46 @@
     "The $997 starting price is still running.",
     "Painting footage is thin (4 short clips), so the middle uses Elite Craft's finished interiors and exteriors from their \"initial images\" folder. Confirm those are their projects."
    ]
+  },
+  {
+   "client": "work-horse",
+   "dir": "work-horse/wh1-count-the-openings",
+   "label": "Cabinets: $125 per opening",
+   "script": "Cabinet Script 2 (Winner, $45.47 CPL)",
+   "poster": 2.6,
+   "flow": "\"$125 per opening\" card from 0.1s, gold markers count 15 doors and drawers in a kitchen \u2192 \"Simple. Predictable. Upfront.\" over the team \u2192 calculator 15 \u00d7 $125 = $1,875 \u2192 \"No guessing / no inflated quotes / no confusing breakdowns\" \u2192 prep checklist \u2192 cabinet before/after \u2192 30+ years, NH \u00b7 MA \u00b7 ME, family motto, 1-year craftsmanship warranty \u2192 Get Quote end card.",
+   "confirm": [
+    "The hook's counting photo is a kitchen where Work Horse painted walls and ceiling, not the cabinets. It's framed as \"your kitchen\", never as their result.",
+    "The cabinet before/after pair (IMG_3527 \u2192 3537) is a likely match, not certain.",
+    "$1,875 is an example (15 \u00d7 $125) and is labelled that way.",
+    "A family photo with what look like minors appears on the family-motto line. Get the client's OK or swap it.",
+    "1-year craftsmanship warranty per the client's Jan 2026 revision; seasonal words were removed from the script."
+   ]
+  },
+  {
+   "client": "work-horse",
+   "dir": "work-horse/wh2-room-997",
+   "label": "Rooms: $997 flat",
+   "script": "Room Script 4 (Approved, $48.31 CPL)",
+   "poster": 7.0,
+   "flow": "\"Most painters charge $2,000+\" struck through \u2192 \"$997 flat\" as the room cuts from before to after \u2192 crew \u2192 room reveal video + $997 card \u2192 what's included checklist, item by item over matching footage \u2192 \"No fine print / no hidden upsells / no extra fees\" \u2192 stacked before/afters \u2192 family-owned 30 years, NH \u00b7 MA \u00b7 ME \u2192 Get Quote end card.",
+   "confirm": [
+    "What \"guaranteed\" covers, and that the $2,000+ competitor figure can be backed up (both are in the script).",
+    "A family photo with what look like minors appears late in the ad. Get the client's OK or swap it.",
+    "\"Before our calendar fills up\" stays as VO only; no numbers are shown."
+   ]
+  },
+  {
+   "client": "work-horse",
+   "dir": "work-horse/wh3-not-risky",
+   "label": "Exterior: not risky",
+   "script": "Exterior Script 4 (Winner, CPL decaying, fresh visuals)",
+   "poster": 3.0,
+   "flow": "Free exterior estimate + full pressure wash badges, \"Hiring a painter should not feel risky\" over a peeling gable \u2192 the four worries stack in one by one \u2192 they flip to answers \u2192 barn before/after wipe \u2192 everything included \u2192 team with communicates / on time / right way \u2192 before/after montage (barn, cabin, farmhouse) \u2192 Get Quote end card.",
+   "confirm": [
+    "The farmhouse sage-to-white change is subtle on a phone screen.",
+    "Shots showing the \"Bumpa's Barn\" sign were left out on purpose."
+   ]
   }
  ]
 }

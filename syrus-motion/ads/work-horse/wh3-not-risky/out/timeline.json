@@ -1,77 +1,5 @@
 {
- "title": "Work Horse | Exterior | Free Estimate | Script 4",
- "source": "Notion: SCRIPT 4 — Work Horse (Winner; CPL decaying — fresh visuals on the same words)",
- "vo": {
-  "voice": "am_michael",
-  "speed": 1.12,
-  "lines": [
-   {
-    "id": "hook",
-    "text": "Hiring a painting contractor should not feel risky. But for most homeowners, it does.",
-    "after": 0.4
-   },
-   {
-    "id": "b1",
-    "text": "You are letting a crew work on your home's exterior for days. And most homeowners worry about the same things.",
-    "after": 0.3
-   },
-   {
-    "id": "b2",
-    "text": "Will they show up on time? Will they prep properly? Will they cut corners? Will the paint last?",
-    "after": 0.35
-   },
-   {
-    "id": "b3",
-    "text": "At Work Horse Pro Painting, our process is built to remove that uncertainty.",
-    "after": 0.25
-   },
-   {
-    "id": "b4",
-    "text": "From the start, everything is clearly included. The prep, the paint, the labor, and even a full pressure wash.",
-    "after": 0.3
-   },
-   {
-    "id": "b5",
-    "text": "You're working with a professional crew that communicates with you, shows up on time, and does the job the right way.",
-    "after": 0.3
-   },
-   {
-    "id": "b6",
-    "text": "This is how painting should be done. Simple. Predictable. And done right the first time.",
-    "after": 0.3
-   },
-   {
-    "id": "cta",
-    "text": "Click Get Quote to get a free, no-pressure exterior painting estimate you can actually trust.",
-    "after": 0.1
-   }
-  ]
- },
- "music": {
-  "bpm": 96,
-  "key": "A",
-  "mood": "drive",
-  "db": -18,
-  "stop": [
-   "line:b5.end",
-   "line:b6"
-  ],
-  "riser": [
-   "word:Simple",
-   "word:Click"
-  ]
- },
- "tail": 1.2,
- "images": {
-  "bsB": "../media/previous-work/IMG_3490.JPG",
-  "bsA": "../media/previous-work/IMG_3482.JPG",
-  "b1": "../media/previous-work/IMG_3492.JPG",
-  "a1": "../media/previous-work/IMG_3480.JPG",
-  "b2": "../media/sept25/6770433740524745296.JPG",
-  "a2": "../media/sept25/8759477115647303105.JPG",
-  "b3": "../media/sept25/att.0TrHf0aMZ0IONsAFBjFulJ6O12rCaqC9MBhPE7O2CZ0.JPG",
-  "a3": "../media/sept25/2893293949386494720.JPG"
- },
+ "duration": 47.761,
  "shots": [
   {
    "src": "../media/previous-work/IMG_3553.JPG",
@@ -81,7 +9,9 @@
     1.12
    ],
    "fx": 0.5,
-   "fy": 0.3
+   "fy": 0.3,
+   "_t0": 0.0,
+   "_len": 3.27
   },
   {
    "src": "../media/sept25/att.vkzJcbw6lYi9t_kc6HUf-2q7VQtjcr6DJmsQpwIHkrk.JPG",
@@ -91,7 +21,9 @@
     1.1
    ],
    "fx": 0.5,
-   "fy": 0.4
+   "fy": 0.4,
+   "_t0": 3.27,
+   "_len": 2.243
   },
   {
    "src": "../media/sept25/att.qkDDaLvWbZ6sj77B9C3h8DuINqDDODZASNRZCWO8XlQ.JPG",
@@ -101,7 +33,9 @@
     1.1
    ],
    "fx": 0.5,
-   "fy": 0.5
+   "fy": 0.5,
+   "_t0": 5.513,
+   "_len": 1.82
   },
   {
    "src": "../media/previous-work/IMG_3486.JPG",
@@ -111,7 +45,9 @@
     1.1
    ],
    "fx": 0.5,
-   "fy": 0.5
+   "fy": 0.5,
+   "_t0": 7.333,
+   "_len": 1.52
   },
   {
    "src": "../media/previous-work/IMG_3567.JPG",
@@ -121,7 +57,9 @@
     1.12
    ],
    "fx": 0.45,
-   "fy": 0.5
+   "fy": 0.5,
+   "_t0": 8.853,
+   "_len": 0.92
   },
   {
    "src": "../media/previous-work/IMG_3524.JPG",
@@ -131,7 +69,9 @@
     1.12
    ],
    "fx": 0.5,
-   "fy": 0.4
+   "fy": 0.4,
+   "_t0": 9.773,
+   "_len": 2.02
   },
   {
    "src": "../media/sept25/6682858002919255625.JPG",
@@ -141,7 +81,9 @@
     1.1
    ],
    "fx": 0.5,
-   "fy": 0.5
+   "fy": 0.5,
+   "_t0": 11.793,
+   "_len": 2.84
   },
   {
    "src": "../media/previous-work/IMG_3566.JPG",
@@ -151,7 +93,9 @@
     1.1
    ],
    "fx": 0.5,
-   "fy": 0.5
+   "fy": 0.5,
+   "_t0": 14.633,
+   "_len": 2.701
   },
   {
    "src": "../media/sept25/1650064316005776367.JPG",
@@ -161,7 +105,9 @@
     1.0
    ],
    "fx": 0.5,
-   "fy": 0.45
+   "fy": 0.45,
+   "_t0": 17.334,
+   "_len": 2.0
   },
   {
    "src": "../media/previous-work/IMG_3482.JPG",
@@ -171,7 +117,9 @@
     1.1
    ],
    "fx": 0.5,
-   "fy": 0.5
+   "fy": 0.5,
+   "_t0": 19.334,
+   "_len": 5.739
   },
   {
    "src": "../media/sept25/778288993153260278.JPG",
@@ -181,7 +129,9 @@
     1.1
    ],
    "fx": 0.5,
-   "fy": 0.5
+   "fy": 0.5,
+   "_t0": 25.073,
+   "_len": 1.28
   },
   {
    "src": "../media/sept25/att.1QkqSD6XbvQwOQKuix85152K1IyRy-qnziCkJqKZino.JPG",
@@ -191,7 +141,9 @@
     1.1
    ],
    "fx": 0.5,
-   "fy": 0.45
+   "fy": 0.45,
+   "_t0": 26.353,
+   "_len": 2.311
   },
   {
    "src": "../media/client/IMG_2614.jpg",
@@ -201,7 +153,9 @@
     1.1
    ],
    "fx": 0.42,
-   "fy": 0.3
+   "fy": 0.3,
+   "_t0": 28.664,
+   "_len": 1.94
   },
   {
    "src": "../media/client/IMG_2629.jpg",
@@ -211,7 +165,9 @@
     1.08
    ],
    "fx": 0.5,
-   "fy": 0.3
+   "fy": 0.3,
+   "_t0": 30.604000000000003,
+   "_len": 1.38
   },
   {
    "src": "../media/client/IMG_2613.jpg",
@@ -221,7 +177,9 @@
     1.1
    ],
    "fx": 0.5,
-   "fy": 0.4
+   "fy": 0.4,
+   "_t0": 31.984,
+   "_len": 1.76
   },
   {
    "src": "../media/sept25/att.OR1rzwMV4Gg4JBVeP2m_Msv9Pf44Yc_-Q6UjdSrxOzU.JPG",
@@ -231,7 +189,9 @@
     1.1
    ],
    "fx": 0.5,
-   "fy": 0.5
+   "fy": 0.5,
+   "_t0": 33.744,
+   "_len": 1.829
   },
   {
    "src": "../media/sept25/2893293949386494720.JPG",
@@ -241,7 +201,9 @@
     1.06
    ],
    "fx": 0.5,
-   "fy": 0.5
+   "fy": 0.5,
+   "_t0": 35.573,
+   "_len": 5.275
   },
   {
    "src": "../media/sept25/5626880323858746298.JPG",
@@ -251,7 +213,9 @@
     1.1
    ],
    "fx": 0.5,
-   "fy": 0.5
+   "fy": 0.5,
+   "_t0": 40.848,
+   "_len": 3.68
   },
   {
    "src": "../media/sept25/5348610694122948255.JPG",
@@ -261,14 +225,15 @@
     1.08
    ],
    "fx": 0.6,
-   "fy": 0.4
+   "fy": 0.4,
+   "_t0": 44.528,
+   "_len": 3.233
   }
  ],
  "gfx": [
   {
    "tpl": "badgeLine",
    "at": 0.15,
-   "dur": 4.9,
    "cfg": {
     "items": [
      "FREE EXTERIOR ESTIMATE",
@@ -278,30 +243,22 @@
     "beat": 0.05,
     "stagger": 0.35
    },
-   "hide": false
+   "dur": 4.9
   },
   {
    "tpl": "hookText",
    "at": 0.05,
-   "dur": 3.15,
    "cfg": {
     "style": "highlight",
     "text": "HIRING A PAINTER SHOULD NOT FEEL RISKY",
     "mark": "RISKY",
     "y": 960
    },
-   "sfx": [
-    "whoosh",
-    [
-     "hit",
-     1.15
-    ]
-   ]
+   "dur": 3.15
   },
   {
    "tpl": "whWorryFlip",
-   "at": "line:b2-0.1",
-   "dur": 7.75,
+   "at": 11.693,
    "cfg": {
     "beats": {
      "q": [
@@ -315,49 +272,11 @@
     },
     "y": 450
    },
-   "sfx": [
-    [
-     "tick",
-     0.15000000000000002
-    ],
-    [
-     "tick",
-     1.71
-    ],
-    [
-     "tick",
-     2.9899999999999998
-    ],
-    [
-     "tick",
-     4.37
-    ],
-    [
-     "whoosh",
-     5.72
-    ],
-    [
-     "hit",
-     5.9
-    ],
-    [
-     "tick",
-     6.18
-    ],
-    [
-     "tick",
-     6.46
-    ],
-    [
-     "tick",
-     6.74
-    ]
-   ]
+   "dur": 7.75
   },
   {
    "tpl": "photoBeforeAfter",
-   "at": "word:process-0.1",
-   "dur": 5.05,
+   "at": 19.334,
    "cfg": {
     "before": "bsB",
     "after": "bsA",
@@ -365,22 +284,11 @@
     "fyB": 0.5,
     "fyA": 0.5
    },
-   "sfx": [
-    "whoosh",
-    [
-     "whoosh",
-     0.9
-    ],
-    [
-     "hit",
-     2.3
-    ]
-   ]
+   "dur": 5.05
   },
   {
    "tpl": "checklist",
-   "at": "word:prep#2-0.65",
-   "dur": 4.25,
+   "at": 24.423,
    "cfg": {
     "kicker": "FROM THE START",
     "title": "Everything included",
@@ -411,30 +319,11 @@
      2.78
     ]
    },
-   "sfx": [
-    "whoosh",
-    [
-     "tick",
-     0.77
-    ],
-    [
-     "tick",
-     1.47
-    ],
-    [
-     "tick",
-     2.05
-    ],
-    [
-     "tick",
-     2.9499999999999997
-    ]
-   ]
+   "dur": 4.25
   },
   {
    "tpl": "badgeLine",
-   "at": "word:communicates-0.15",
-   "dur": 4.95,
+   "at": 30.454,
    "cfg": {
     "items": [
      "COMMUNICATES WITH YOU",
@@ -445,26 +334,11 @@
     "beat": 0.1,
     "stagger": 1.5
    },
-   "hide": false,
-   "sfx": [
-    [
-     "tick",
-     0.1
-    ],
-    [
-     "tick",
-     1.6
-    ],
-    [
-     "tick",
-     3.1
-    ]
-   ]
+   "dur": 4.95
   },
   {
    "tpl": "whBaStack",
-   "at": "line:b6-0.1",
-   "dur": 5.3,
+   "at": 35.473,
    "cfg": {
     "pairs": [
      {
@@ -497,59 +371,73 @@
     "ph": 720,
     "gap": 28
    },
-   "sfx": [
-    "whoosh",
-    [
-     "hit",
-     0.6
-    ],
-    [
-     "whoosh",
-     1.75
-    ],
-    [
-     "hit",
-     2.35
-    ],
-    [
-     "whoosh",
-     3.5
-    ],
-    [
-     "hit",
-     4.1
-    ]
-   ]
+   "dur": 5.3
   },
   {
    "tpl": "getQuoteEnd",
-   "at": "word:Click-0.1",
-   "dur": 3.8,
+   "at": 40.748,
    "cfg": {
     "line2": "Free, no-pressure estimate"
-   }
+   },
+   "dur": 3.8
   },
   {
    "tpl": "tapPointer",
-   "at": "word:estimate+0.25",
-   "dur": 3.15,
+   "at": 44.578,
    "cfg": {
     "textY": 1470
    },
-   "hide": false
+   "dur": 3.15
   }
  ],
- "captions": {
-  "y": 1240,
-  "em": [
-   "risky",
-   "free",
-   "pressure",
-   "professional",
-   "right",
-   "simple",
-   "predictable",
-   "trust"
-  ]
- }
+ "lines": [
+  {
+   "id": "hook",
+   "text": "Hiring a painting contractor should not feel risky. But for most homeowners, it does.",
+   "t0": 0.15,
+   "t1": 5.113
+  },
+  {
+   "id": "b1",
+   "text": "You are letting a crew work on your home's exterior for days. And most homeowners worry about the same things.",
+   "t0": 5.513,
+   "t1": 11.493
+  },
+  {
+   "id": "b2",
+   "text": "Will they show up on time? Will they prep properly? Will they cut corners? Will the paint last?",
+   "t0": 11.793,
+   "t1": 16.985
+  },
+  {
+   "id": "b3",
+   "text": "At Work Horse Pro Painting, our process is built to remove that uncertainty.",
+   "t0": 17.334,
+   "t1": 21.923
+  },
+  {
+   "id": "b4",
+   "text": "From the start, everything is clearly included. The prep, the paint, the labor, and even a full pressure wash.",
+   "t0": 22.173,
+   "t1": 28.364
+  },
+  {
+   "id": "b5",
+   "text": "You're working with a professional crew that communicates with you, shows up on time, and does the job the right way.",
+   "t0": 28.664,
+   "t1": 35.273
+  },
+  {
+   "id": "b6",
+   "text": "This is how painting should be done. Simple. Predictable. And done right the first time.",
+   "t0": 35.573,
+   "t1": 40.548
+  },
+  {
+   "id": "cta",
+   "text": "Click Get Quote to get a free, no-pressure exterior painting estimate you can actually trust.",
+   "t0": 40.848,
+   "t1": 46.161
+  }
+ ]
 }

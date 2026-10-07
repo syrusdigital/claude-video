@@ -31,19 +31,14 @@
    "src": "../media/omni-multi/wa-2025-07-25-024007.mp4",
    "in": 0.0,
    "at": "line:storm",
-   "len": 3.7,
+   "len": 7.4,
+   "zoom": [
+    1.0,
+    1.04
+   ],
    "_at": 10.667,
    "_t0": 10.667,
-   "_len": 3.7
-  },
-  {
-   "src": "../media/omni-multi/wa-2025-07-25-024003.mp4",
-   "in": 0.0,
-   "at": "line:storm+3.7",
-   "len": 3.7,
-   "_at": 14.367,
-   "_t0": 14.367,
-   "_len": 3.7
+   "_len": 7.4
   },
   {
    "src": "../media/omni-multi/wa-2025-07-25-024011.mp4",
@@ -86,7 +81,7 @@
   },
   {
    "src": "../media/omni-multi/wa-2025-07-25-035845.mp4",
-   "in": 18.4,
+   "in": 22.4,
    "at": "word:for#2-0.08",
    "len": 2.1,
    "zoom": [
@@ -173,7 +168,7 @@
    "cfg": {
     "big": "FREE",
     "small": "INSPECTION & QUOTE",
-    "y": 470,
+    "y": 430,
     "rot": -6
    },
    "dur": 2.0
