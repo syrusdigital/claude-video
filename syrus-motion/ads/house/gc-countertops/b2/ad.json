@@ -74,7 +74,7 @@
  "music": {
   "file": "../../music/lift-anyvision-vid5.mp3",
   "in": 0,
-  "db": -8,
+  "db": -8.75,
   "duck": -2.5,
   "end": "end"
  },
