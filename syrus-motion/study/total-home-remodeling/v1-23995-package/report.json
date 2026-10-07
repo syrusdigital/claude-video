@@ -1,0 +1,63 @@
+{
+ "label": "Total Home Remodeling | V1 | AI/VO | 4.01.26 | $23,995 Package | $112.58, 1 lead, $112.58 CPL",
+ "file": "/home/user/claude-video/syrus-motion/study/total-home-remodeling/v1-23995-package/video.mp4",
+ "duration": 51.97,
+ "size": "360x640",
+ "voice": {
+  "words": 144,
+  "wpm": 167.8,
+  "pitch_hz": 152.4,
+  "voice_guess": "male",
+  "first_word_at": 0.0,
+  "first_money_at": 38.46,
+  "first_money_word": "$23",
+  "hook_5s": "Here's what's included in our full kitchen remodel package and what it's going to cost you.",
+  "text": "Here's what's included in our full kitchen remodel package and what it's going to cost you. Our complete kitchen remodel package includes brand new cabinets in any material and style you want. It also includes your choice of countertop. You can go with quartz, granite, epoxy, or butcher block, completely your call. And it includes new flooring. You choose from epoxy, vinyl, or hardwood. Whatever fits your home best, everything you just heard, cabinets, countertops, and flooring comes with full installation. Materials and labor are both included in one price, and every install is backed by a two -year warranty covering both labor and materials. So what does all of that cost? $23 ,995, one fixed price, all -inclusive price. We are a local Missouri -based, licensed contractor with over 20 years of experience. Click, get quote below, for your free in -home estimate."
+ },
+ "music": {
+  "present": true,
+  "floor_rel_db": -7.7,
+  "after_vo_db": -38.7,
+  "bed_db_rel_voice": -1.9,
+  "voice_dbfs": -20.6,
+  "bed_dbfs": -22.5,
+  "tempo_bpm_rough": 115.4,
+  "tempo_confidence": 0.125
+ },
+ "sfx": {
+  "hits": [
+   18.27,
+   49.41
+  ],
+  "hit_count": 2,
+  "hits_per_min": 2.3,
+  "hits_on_cuts": 0,
+  "swells": []
+ },
+ "picture": {
+  "cuts": 15,
+  "cut_times": [
+   4.97,
+   8.1,
+   12.77,
+   16.37,
+   19.83,
+   22.7,
+   26.0,
+   28.1,
+   32.17,
+   34.57,
+   36.57,
+   38.33,
+   41.0,
+   46.4,
+   48.77
+  ],
+  "avg_shot_s": 3.25,
+  "median_shot_s": 3.16
+ },
+ "loudness": {
+  "integrated_lufs": -22.0,
+  "lra": 2.1
+ }
+}

@@ -1,0 +1,69 @@
+{
+ "label": "ii",
+ "file": "/tmp/claude-0/-home-user-claude-video/86bef682-bd32-512e-865c-114efa7d78fb/scratchpad/study/ii_14495.mp4",
+ "duration": 53.25,
+ "size": "360x640",
+ "voice": {
+  "words": 170,
+  "wpm": 192.8,
+  "pitch_hz": 134.5,
+  "voice_guess": "male",
+  "first_word_at": 0.0,
+  "first_money_at": 36.92,
+  "first_money_word": "thousand",
+  "hook_5s": "here's exactly what's included in our full bathroom remodel package and what it's going to cost you our",
+  "text": "here's exactly what's included in our full bathroom remodel package and what it's going to cost you our complete bathroom remodel package includes a brand new walk -in shower or bathtub it includes full waterproofing and custom tile installation professionally done from start to finish it also includes a brand new glass shower door to complete the space and on top of that you get a new modern toilet a brand new vanity and a lighted mirror everything you just heard demolition materials and installation is included in one price no hidden costs no surprise add -ons and every project is backed by a warranty on both labor and materials so what does all of that cost fourteen thousand four hundred ninety five dollars that's it one fixed price for an all -inclusive bathroom remodel at innovative interiors we're a licensed local south orange county company with over 20 years of experience and a 4 .9 star rating on google click get quote to schedule your free in -home estimate"
+ },
+ "music": {
+  "present": true,
+  "floor_rel_db": -9.7,
+  "after_vo_db": null,
+  "bed_db_rel_voice": null,
+  "voice_dbfs": -24.8,
+  "bed_dbfs": null,
+  "tempo_bpm_rough": 166.7,
+  "tempo_confidence": 0.047
+ },
+ "sfx": {
+  "hits": [
+   29.07,
+   50.47,
+   50.79
+  ],
+  "hit_count": 3,
+  "hits_per_min": 3.4,
+  "hits_on_cuts": 1,
+  "swells": []
+ },
+ "picture": {
+  "cuts": 20,
+  "cut_times": [
+   5.17,
+   7.43,
+   8.9,
+   9.93,
+   11.37,
+   13.03,
+   15.1,
+   17.17,
+   18.47,
+   19.57,
+   22.4,
+   24.87,
+   25.57,
+   26.43,
+   28.97,
+   30.07,
+   36.53,
+   42.8,
+   46.37,
+   48.17
+  ],
+  "avg_shot_s": 2.54,
+  "median_shot_s": 2.07
+ },
+ "loudness": {
+  "integrated_lufs": -23.7,
+  "lra": 2.6
+ }
+}

@@ -1,0 +1,63 @@
+{
+ "label": "Vistaguard | VID | 2 | 8.14.26 (on-camera) | $1,097, 11 leads, $99.76 CPL",
+ "file": "/home/user/claude-video/syrus-motion/study/vistaguard/vid-2-8-14-26/video.mp4",
+ "duration": 32.49,
+ "size": "720x1280",
+ "voice": {
+  "words": 124,
+  "wpm": 231.9,
+  "pitch_hz": 164.9,
+  "voice_guess": "male",
+  "first_word_at": 0.0,
+  "first_money_at": null,
+  "first_money_word": null,
+  "hook_5s": "The biggest mistakes homeowners make is not the windows they purchase, it's the company they choose to install them. Impact windows",
+  "text": "The biggest mistakes homeowners make is not the windows they purchase, it's the company they choose to install them. Impact windows only perform as well as the installation. If measurements are off, if prep is rushed, or if corners are cut, even the best windows won't deliver the results that you expect. At Bisteca, we handle everything in -house. From the inspection to the install, we pride ourselves with our clear timeline, clean up professional work, communication will never step out of the way. That's what homeowners trust us. We don't just install windows, we've managed the entire project the right way. If you consider impact windows, click get a quote for a free fur estimate, and see how a stress -free process works."
+ },
+ "music": {
+  "present": true,
+  "floor_rel_db": -20.3,
+  "after_vo_db": null,
+  "bed_db_rel_voice": -13.2,
+  "voice_dbfs": -14.4,
+  "bed_dbfs": -27.6,
+  "tempo_bpm_rough": 93.8,
+  "tempo_confidence": 0.06
+ },
+ "sfx": {
+  "hits": [],
+  "hit_count": 0,
+  "hits_per_min": 0.0,
+  "hits_on_cuts": 0,
+  "swells": []
+ },
+ "picture": {
+  "cuts": 18,
+  "cut_times": [
+   3.3,
+   3.9,
+   4.6,
+   4.7,
+   4.73,
+   6.97,
+   10.47,
+   10.5,
+   10.57,
+   15.07,
+   16.6,
+   18.73,
+   24.47,
+   25.77,
+   26.4,
+   27.93,
+   28.8,
+   30.27
+  ],
+  "avg_shot_s": 1.71,
+  "median_shot_s": 1.47
+ },
+ "loudness": {
+  "integrated_lufs": -14.1,
+  "lra": 2.1
+ }
+}

@@ -1,0 +1,9 @@
+# American Made Coatings | V4 | AI/VO | 4.06.26 + 6.17.26 relaunch (same file) | $8,819, 405 leads, $21.78 CPL
+78.21s · 720x1280 · -14.2 LUFS
+- **Voice:** male (~130.1 Hz), 187.7 wpm, first word at 0.0s, first money at 0.0s ("$1")
+- **Hook (0-5s):** $1 ,995 for a concrete floor coating? That's crazy.
+- **Music:** yes · floor -12.1 dB vs voice (≈ minus how far the music sits under the voice; VO-only reads below -30) · gap bed -8.8 dB · after VO -48.4 dBFS · tempo ~85.7 (conf 0.153)
+- **SFX:** 3 hits (2.3/min), 0 on cuts · swells []
+- **Picture:** 31 cuts, avg shot 2.44s (median 1.35s)
+
+$1 ,995 for a concrete floor coating? That's crazy. Garage floor coatings, patios, pool decks, or any other concrete floor coatings are like $7 ,000 to $12 ,000 usually. Right? Sort of. But not really. It has to do with the size, the prep work, and the materials. Thing is, there's a fair price. And there's pricing that's so insanely inflated, I don't know how some of these contractors sleep at night. At American Made Coatings, here's how we run our business. First and foremost, we do amazing work. We don't settle for anything less. No corner cutting, no cheap materials, and we've been doing this for 18 years. But there's more. Because we're a local company and we run things efficiently, we don't have a ton of overhead. Unlike the big companies with sales teams, offices, and ads everywhere, guess who pays for all of that? Yeah, you do. That's not how we do things. So we can do something really simple. We can install high -quality concrete floor coatings for garages, patios, pool decks, and more. That look great and actually last without charging you way more than it should cost. The best work. The right materials. At a fair price. So you don't just feel good about the result. You feel good about what you paid. Simple. Click Get Quote to book a quick phone consultation. We'll give you a fair, honest estimate that fits your budget without any pressure.

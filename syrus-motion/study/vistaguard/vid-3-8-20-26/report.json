@@ -1,0 +1,63 @@
+{
+ "label": "Vistaguard | VID | 3 | 8.20.26 (on-camera) | $254, 0 leads",
+ "file": "/home/user/claude-video/syrus-motion/study/vistaguard/vid-3-8-20-26/video.mp4",
+ "duration": 22.68,
+ "size": "720x1280",
+ "voice": {
+  "words": 89,
+  "wpm": 238.6,
+  "pitch_hz": 141.6,
+  "voice_guess": "male",
+  "first_word_at": 0.0,
+  "first_money_at": null,
+  "first_money_word": null,
+  "hook_5s": "Your windows might be the most expensive problem in your house. Not because they break, because they quietly drain energy",
+  "text": "Your windows might be the most expensive problem in your house. Not because they break, because they quietly drain energy every single day. All windows let air escape. They force your AC to work overtime and raise your electricity bill month after month. Most homeowners don't connect the dots, and if your windows older than 15 years old, they cost you way more than you think. Fixing this one issue can completely change how your home feels. Click the quote below so you can get a free, fair estimate."
+ },
+ "music": {
+  "present": true,
+  "floor_rel_db": -19.6,
+  "after_vo_db": null,
+  "bed_db_rel_voice": -16.6,
+  "voice_dbfs": -14.2,
+  "bed_dbfs": -30.8,
+  "tempo_bpm_rough": 157.9,
+  "tempo_confidence": 0.056
+ },
+ "sfx": {
+  "hits": [],
+  "hit_count": 0,
+  "hits_per_min": 0.0,
+  "hits_on_cuts": 0,
+  "swells": []
+ },
+ "picture": {
+  "cuts": 18,
+  "cut_times": [
+   2.6,
+   3.7,
+   5.37,
+   6.37,
+   6.43,
+   6.5,
+   6.57,
+   7.73,
+   9.83,
+   11.93,
+   13.53,
+   15.5,
+   16.93,
+   17.7,
+   18.47,
+   19.93,
+   21.8,
+   22.33
+  ],
+  "avg_shot_s": 1.19,
+  "median_shot_s": 1.16
+ },
+ "loudness": {
+  "integrated_lufs": -14.1,
+  "lra": 2.2
+ }
+}

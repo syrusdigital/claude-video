@@ -1,0 +1,70 @@
+{
+ "label": "Vistaguard | V2 | AI/VO | 10.12.25 | $30,536, 1001 leads, $30.51 CPL",
+ "file": "/home/user/claude-video/syrus-motion/study/vistaguard/v2-aivo-10-12-25/video.mp4",
+ "duration": 45.69,
+ "size": "720x1280",
+ "voice": {
+  "words": 121,
+  "wpm": 160.9,
+  "pitch_hz": 129.0,
+  "voice_guess": "male",
+  "first_word_at": 0.0,
+  "first_money_at": 0.64,
+  "first_money_word": "$15",
+  "hook_5s": "Why pay $15 ,000 or more for impact windows when you can get the same protection",
+  "text": "Why pay $15 ,000 or more for impact windows when you can get the same protection starting at just $4 ,995? At VistaGuard, we've helped thousands of South Florida homeowners protect their families and their properties with hurricane -rated impact windows and doors. From start to finish, we handle everything. On time, on budget, and without the stress. We prep properly, work clean, and deliver results you can trust to hold up when the storms roll in. And for limited time, installation and labor are included completely free. That's an extra $1 ,000 or more in savings on top of our already unbeatable prices. Click get quote below to book your free inspection and lock in this limited time offer today."
+ },
+ "music": {
+  "present": true,
+  "floor_rel_db": -13.8,
+  "after_vo_db": -50.4,
+  "bed_db_rel_voice": -9.1,
+  "voice_dbfs": -14.2,
+  "bed_dbfs": -23.3,
+  "tempo_bpm_rough": 75.0,
+  "tempo_confidence": 0.034
+ },
+ "sfx": {
+  "hits": [
+   16.79,
+   40.43
+  ],
+  "hit_count": 2,
+  "hits_per_min": 2.6,
+  "hits_on_cuts": 0,
+  "swells": []
+ },
+ "picture": {
+  "cuts": 22,
+  "cut_times": [
+   8.23,
+   9.87,
+   10.73,
+   11.53,
+   12.3,
+   13.03,
+   16.3,
+   21.23,
+   22.83,
+   23.03,
+   23.13,
+   23.37,
+   23.43,
+   23.47,
+   28.93,
+   30.23,
+   31.3,
+   32.23,
+   33.13,
+   34.13,
+   37.07,
+   43.67
+  ],
+  "avg_shot_s": 1.99,
+  "median_shot_s": 1.0
+ },
+ "loudness": {
+  "integrated_lufs": -14.3,
+  "lra": 1.8
+ }
+}

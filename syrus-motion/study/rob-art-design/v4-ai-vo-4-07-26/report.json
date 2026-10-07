@@ -1,0 +1,88 @@
+{
+ "label": "Rob-Art Design | V4 | AI/VO | 4.07.26 | $20,310.79, 235 leads, $86.43 CPL",
+ "file": "/home/user/claude-video/syrus-motion/study/rob-art-design/v4-ai-vo-4-07-26/video.mp4",
+ "duration": 55.89,
+ "size": "720x1280",
+ "voice": {
+  "words": 175,
+  "wpm": 189.2,
+  "pitch_hz": 129.0,
+  "voice_guess": "male",
+  "first_word_at": 0.0,
+  "first_money_at": 0.0,
+  "first_money_word": "$349",
+  "hook_5s": "$349 a month for a brand new kitchen remodel. That's less than what most New",
+  "text": "$349 a month for a brand new kitchen remodel. That's less than what most New Jersey homeowners spend on their car payment, gym membership, and takeout coffee combined. And yet people keep putting off remodeling their kitchen because they think they can't afford it. Here's the reality. You can afford it. You just need to stop thinking about it as a $19 ,995 one -time payment and start thinking about it as $349 a month. We offer flexible financing at Rob Art Design, which means you can get a fully custom kitchen remodel at a monthly payment that fits your budget with zero pressure to have it all up front. We'll sit down with you, walk you through different design options at different price points, and show you exactly what the monthly payment looks like based on what you choose. We've been remodeling kitchens for New Jersey homeowners since 2012, and every project comes with a 12 -month workmanship warranty on everything we build. Click Get Quote Below and let's get your new kitchen started."
+ },
+ "music": {
+  "present": true,
+  "floor_rel_db": -15.0,
+  "after_vo_db": null,
+  "bed_db_rel_voice": -9.1,
+  "voice_dbfs": -14.3,
+  "bed_dbfs": -23.4,
+  "tempo_bpm_rough": 85.7,
+  "tempo_confidence": 0.102
+ },
+ "sfx": {
+  "hits": [
+   2.83,
+   10.33,
+   35.67,
+   51.33,
+   52.67,
+   53.19
+  ],
+  "hit_count": 6,
+  "hits_per_min": 6.4,
+  "hits_on_cuts": 0,
+  "swells": []
+ },
+ "picture": {
+  "cuts": 36,
+  "cut_times": [
+   1.83,
+   3.6,
+   3.7,
+   5.07,
+   7.63,
+   8.6,
+   11.43,
+   12.4,
+   13.8,
+   15.03,
+   15.1,
+   15.17,
+   16.37,
+   19.9,
+   21.23,
+   22.47,
+   23.67,
+   24.7,
+   26.13,
+   27.0,
+   28.73,
+   30.4,
+   31.97,
+   33.57,
+   35.4,
+   36.53,
+   37.3,
+   39.1,
+   42.07,
+   43.23,
+   44.13,
+   49.17,
+   50.7,
+   52.23,
+   54.13,
+   54.93
+  ],
+  "avg_shot_s": 1.51,
+  "median_shot_s": 1.37
+ },
+ "loudness": {
+  "integrated_lufs": -14.2,
+  "lra": 1.9
+ }
+}

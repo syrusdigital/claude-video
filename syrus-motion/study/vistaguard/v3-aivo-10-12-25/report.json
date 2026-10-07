@@ -1,0 +1,65 @@
+{
+ "label": "Vistaguard | V3 | AI/VO | 10.12.25 | $2,327, 84 leads, $27.70 CPL",
+ "file": "/home/user/claude-video/syrus-motion/study/vistaguard/v3-aivo-10-12-25/video.mp4",
+ "duration": 40.79,
+ "size": "720x1280",
+ "voice": {
+  "words": 109,
+  "wpm": 163.3,
+  "pitch_hz": 145.5,
+  "voice_guess": "male",
+  "first_word_at": 0.0,
+  "first_money_at": 2.08,
+  "first_money_word": "$15",
+  "hook_5s": "Most homeowners think impact windows cost $15 ,000 or more. And honestly, with",
+  "text": "Most homeowners think impact windows cost $15 ,000 or more. And honestly, with most companies, they do. But not with VistaGuard. We're offering impact windows starting at just $4 ,995. And for a limited time, installation is completely free. That's $1 ,000 or more in savings right there. And here's the best part. With our financing plans, you can protect your home with payments as low as $99 a month, often less than your monthly cable bill. No hidden fees. No surprise costs. Just hurricane grade protection that fits your budget. Click at quote now to schedule your free inspection and lock in this special before hurricane season hits."
+ },
+ "music": {
+  "present": true,
+  "floor_rel_db": -13.4,
+  "after_vo_db": -45.5,
+  "bed_db_rel_voice": -6.4,
+  "voice_dbfs": -13.2,
+  "bed_dbfs": -19.6,
+  "tempo_bpm_rough": 89.6,
+  "tempo_confidence": 0.061
+ },
+ "sfx": {
+  "hits": [],
+  "hit_count": 0,
+  "hits_per_min": 0.0,
+  "hits_on_cuts": 0,
+  "swells": []
+ },
+ "picture": {
+  "cuts": 20,
+  "cut_times": [
+   4.03,
+   4.07,
+   6.67,
+   8.3,
+   12.83,
+   12.93,
+   12.97,
+   19.2,
+   22.43,
+   24.43,
+   25.7,
+   26.47,
+   27.23,
+   28.23,
+   31.27,
+   36.97,
+   38.53,
+   39.5,
+   40.3,
+   40.63
+  ],
+  "avg_shot_s": 1.94,
+  "median_shot_s": 1.27
+ },
+ "loudness": {
+  "integrated_lufs": -14.2,
+  "lra": 2.7
+ }
+}

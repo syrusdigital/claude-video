@@ -1,0 +1,9 @@
+# Rob-Art Design | V5 | AI/VO | 4.07.26 | $1,574.50, 22 leads, $71.57 CPL
+77.8s · 360x640 · -22.5 LUFS
+- **Voice:** male (~130.1 Hz), 188.2 wpm, first word at 0.0s, first money at 0.0s ("$19")
+- **Hook (0-5s):** $19 ,995 for a premium kitchen remodel? That's crazy.
+- **Music:** yes · floor -12.3 dB vs voice (≈ minus how far the music sits under the voice; VO-only reads below -30) · gap bed -7.9 dB · after VO None dBFS · tempo ~120.0 (conf 0.093)
+- **SFX:** 3 hits (2.3/min), 0 on cuts · swells []
+- **Picture:** 40 cuts, avg shot 1.9s (median 1.5s)
+
+$19 ,995 for a premium kitchen remodel? That's crazy. Premium kitchen remodels are like $40 ,000 usually, right? Sort of. But not really. It has to do with the size, the layout, the materials you choose, and what actually needs to be done. Thing is, there's a fair price. And there's pricing that's so insanely ridiculous that I don't know how these remodeling contractors sleep at night. At Rob Ark Design, here's how we run our business. First and foremost, we do amazing work. We don't settle for anything less. No corner cutting, no junky materials. And we only work with our in -house local New Jersey crews. But there's more. Because we're a small local company that we run really well, we don't have a ton of overhead. Unlike the big bloated companies who have fancy offices and TV commercials and billboards, guess who pays for all of that? Yep. You. That's not at all how we do things. So we can do something really awesome. We can do amazing work. We do beautiful, fully custom kitchen remodels, real design drawings, personal material selection, one in -house team managing everything without charging you 200 % more than it should really cost. The best work, the best materials, at fair prices. So you can not only have peace of mind, but also save money. Simple. Click get quote below if you're interested in a consultation and a fair, honest estimate for your kitchen remodel.

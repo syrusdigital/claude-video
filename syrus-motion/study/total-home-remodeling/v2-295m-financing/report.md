@@ -1,0 +1,9 @@
+# Total Home Remodeling | V2 | AI/VO | 4.01.26 | $295/m Financing | $605.62, 19 leads, $31.87 CPL
+44.71s · 720x1280 · -14.2 LUFS
+- **Voice:** male (~145.5 Hz), 191.1 wpm, first word at 0.0s, first money at 1.76s ("$295")
+- **Hook (0-5s):** Get a complete kitchen remodel for just $295 a month, with zero down.
+- **Music:** yes · floor -7.9 dB vs voice (≈ minus how far the music sits under the voice; VO-only reads below -30) · gap bed -1.6 dB · after VO None dBFS · tempo ~115.4 (conf 0.1)
+- **SFX:** 1 hits (1.3/min), 1 on cuts · swells []
+- **Picture:** 16 cuts, avg shot 2.63s (median 2.33s)
+
+Get a complete kitchen remodel for just $295 a month, with zero down. That's not a partial remodel. That's our price for a full kitchen remodel. Cabinets in any style you choose, your pick of countertop and quartz, granite, epoxy, or butcher block, and new flooring in epoxy, vinyl, or hardwood. Materials and labor are both included. One fixed price, broken into manageable monthly payments, so you don't have to wait years before getting the kitchen your home deserves. At Total Home Remodeling Company, we have been serving Missouri homeowners for over 20 years. We're a licensed local contractor, and every install we do is backed by a two -year warranty on both labor and materials. A brand new kitchen with premium materials is much more affordable than you think. Click get quote below for your free estimate and financing details.

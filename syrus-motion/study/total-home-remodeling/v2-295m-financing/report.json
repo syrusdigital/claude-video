@@ -1,0 +1,63 @@
+{
+ "label": "Total Home Remodeling | V2 | AI/VO | 4.01.26 | $295/m Financing | $605.62, 19 leads, $31.87 CPL",
+ "file": "/home/user/claude-video/syrus-motion/study/total-home-remodeling/v2-295m-financing/video.mp4",
+ "duration": 44.71,
+ "size": "720x1280",
+ "voice": {
+  "words": 141,
+  "wpm": 191.1,
+  "pitch_hz": 145.5,
+  "voice_guess": "male",
+  "first_word_at": 0.0,
+  "first_money_at": 1.76,
+  "first_money_word": "$295",
+  "hook_5s": "Get a complete kitchen remodel for just $295 a month, with zero down.",
+  "text": "Get a complete kitchen remodel for just $295 a month, with zero down. That's not a partial remodel. That's our price for a full kitchen remodel. Cabinets in any style you choose, your pick of countertop and quartz, granite, epoxy, or butcher block, and new flooring in epoxy, vinyl, or hardwood. Materials and labor are both included. One fixed price, broken into manageable monthly payments, so you don't have to wait years before getting the kitchen your home deserves. At Total Home Remodeling Company, we have been serving Missouri homeowners for over 20 years. We're a licensed local contractor, and every install we do is backed by a two -year warranty on both labor and materials. A brand new kitchen with premium materials is much more affordable than you think. Click get quote below for your free estimate and financing details."
+ },
+ "music": {
+  "present": true,
+  "floor_rel_db": -7.9,
+  "after_vo_db": null,
+  "bed_db_rel_voice": -1.6,
+  "voice_dbfs": -12.7,
+  "bed_dbfs": -14.3,
+  "tempo_bpm_rough": 115.4,
+  "tempo_confidence": 0.1
+ },
+ "sfx": {
+  "hits": [
+   8.83
+  ],
+  "hit_count": 1,
+  "hits_per_min": 1.3,
+  "hits_on_cuts": 1,
+  "swells": []
+ },
+ "picture": {
+  "cuts": 16,
+  "cut_times": [
+   3.77,
+   4.97,
+   6.4,
+   8.73,
+   10.57,
+   11.63,
+   14.9,
+   15.6,
+   18.13,
+   20.2,
+   23.13,
+   26.5,
+   28.1,
+   31.07,
+   32.83,
+   35.63
+  ],
+  "avg_shot_s": 2.63,
+  "median_shot_s": 2.33
+ },
+ "loudness": {
+  "integrated_lufs": -14.2,
+  "lra": 1.4
+ }
+}

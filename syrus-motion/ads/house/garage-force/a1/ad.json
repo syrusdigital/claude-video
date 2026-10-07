@@ -1,0 +1,121 @@
+{
+ "title": "Garage Force of Miami A1 house",
+ "vo": {
+  "lines": [
+   {
+    "id": "hook",
+    "text": "$1,095 for a brand-new garage floor coating? That's crazy.",
+    "after": 0.05
+   },
+   {
+    "id": "b1",
+    "text": "Most floor coating companies charge twelve to fifteen thousand dollars to coat garage floors, patios, driveways.",
+    "after": 0.05
+   },
+   {
+    "id": "b2",
+    "text": "Right?",
+    "after": 0.05
+   },
+   {
+    "id": "b3",
+    "text": "Well\u2026 sort of.",
+    "after": 0.05
+   },
+   {
+    "id": "b4",
+    "text": "It comes down to the size, the prep work, and the materials.",
+    "after": 0.05
+   },
+   {
+    "id": "b5",
+    "text": "But here's the thing\u2026",
+    "after": 0.05
+   },
+   {
+    "id": "b6",
+    "text": "There's a fair price.",
+    "after": 0.05
+   },
+   {
+    "id": "b7",
+    "text": "And then there's pricing so crazy high, I don't know how some of these guys sleep at night.",
+    "after": 0.05
+   },
+   {
+    "id": "b8",
+    "text": "At Garage Force, here's how we do it.",
+    "after": 0.05
+   },
+   {
+    "id": "b9",
+    "text": "First, we do amazing work.",
+    "after": 0.05
+   },
+   {
+    "id": "b10",
+    "text": "No corner cutting.",
+    "after": 0.05
+   },
+   {
+    "id": "b11",
+    "text": "No cheap materials.",
+    "after": 0.05
+   },
+   {
+    "id": "b12",
+    "text": "We use premium, state-of-the-art floor coatings, that are 20 times stronger than epoxy, in any color you want.",
+    "after": 0.05
+   },
+   {
+    "id": "b13",
+    "text": "And because we're a small local team, we don't carry all that overhead.",
+    "after": 0.05
+   },
+   {
+    "id": "b14",
+    "text": "The big companies with offices, sales teams, and ads everywhere?",
+    "after": 0.05
+   },
+   {
+    "id": "b15",
+    "text": "Guess who pays for that.",
+    "after": 0.05
+   },
+   {
+    "id": "b16",
+    "text": "You do.",
+    "after": 0.05
+   },
+   {
+    "id": "b17",
+    "text": "That's not how we do it.",
+    "after": 0.05
+   },
+   {
+    "id": "b18",
+    "text": "So we keep it simple: top-quality floor coatings that look great and actually last, without charging you way more than you should pay.",
+    "after": 0.05
+   },
+   {
+    "id": "b19",
+    "text": "The best work, the best materials, at a fair price.",
+    "after": 0.05
+   },
+   {
+    "id": "b20",
+    "text": "And most of our projects are completed in one day, backed by a lifetime warranty on material and craftsmanship.",
+    "after": 0.05
+   },
+   {
+    "id": "cta",
+    "text": "Click \"Get Quote\" to book a quick phone consultation. We'll give you a fair, honest estimate that fits your budget, with no pressure, and no pushy in-home sales visit.",
+    "after": 0.05
+   }
+  ],
+  "engine": "elevenlabs",
+  "voice": "Michael (ElevenLabs Kysvuk17R9MDAP9l089v)",
+  "take": "LhdO7LqRETHeCqGHIuQf",
+  "tempo": 1.15
+ }
+}

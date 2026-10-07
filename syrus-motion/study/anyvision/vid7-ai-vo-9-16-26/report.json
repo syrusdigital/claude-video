@@ -1,0 +1,88 @@
+{
+ "label": "Anyvision | VID 7 | AI/VO | 9.16.26 | $220.84, 1 lead, $220.84 CPL",
+ "file": "/home/user/claude-video/syrus-motion/study/anyvision/vid7-ai-vo-9-16-26/video.mp4",
+ "duration": 66.84,
+ "size": "720x1280",
+ "voice": {
+  "words": 221,
+  "wpm": 199.8,
+  "pitch_hz": 120.3,
+  "voice_guess": "male",
+  "first_word_at": 0.0,
+  "first_money_at": 25.02,
+  "first_money_word": "$17",
+  "hook_5s": "Here's something most homeowners never find out. The contractor remodeling your kitchen usually doesn't own",
+  "text": "Here's something most homeowners never find out. The contractor remodeling your kitchen usually doesn't own a single thing that goes into it. They order your cabinets and countertop from a supplier and add their cut on top. You pay for it and you never see it on the quote. At Any Vision Home Remodeling, we skip that completely. We import our own materials directly and we make your countertop ourselves. That is a big part of how a full kitchen remodel with us starts at just $17 ,995 and a partial starts at $14 ,495. It also means you're not getting a few photos texted to you and being told to pick one. You come into our showroom right here in Snohomish in King County. You see everything in person and our in -house kitchen designer sits down and designs your kitchen with you. And if anything ever comes up after the job, you know exactly where to find us. That's not always true with a contractor working out of his truck. We've been remodeling kitchens here for over 20 years, licensed and insured, with a 12 -month craftsmanship warranty. We're going to take care of you and get you the best possible price on premium materials. Click Get Quote to book your free design consultation. Honest pricing and no pressure."
+ },
+ "music": {
+  "present": true,
+  "floor_rel_db": -12.2,
+  "after_vo_db": null,
+  "bed_db_rel_voice": -6.8,
+  "voice_dbfs": -14.5,
+  "bed_dbfs": -21.4,
+  "tempo_bpm_rough": 136.4,
+  "tempo_confidence": 0.05
+ },
+ "sfx": {
+  "hits": [
+   35.69,
+   61.71
+  ],
+  "hit_count": 2,
+  "hits_per_min": 1.8,
+  "hits_on_cuts": 0,
+  "swells": []
+ },
+ "picture": {
+  "cuts": 40,
+  "cut_times": [
+   2.5,
+   6.5,
+   6.73,
+   6.83,
+   6.87,
+   8.5,
+   9.77,
+   11.37,
+   12.27,
+   12.9,
+   13.93,
+   14.07,
+   14.17,
+   14.27,
+   15.8,
+   17.27,
+   20.13,
+   21.33,
+   24.37,
+   27.67,
+   31.37,
+   33.0,
+   35.17,
+   38.6,
+   40.4,
+   43.33,
+   43.47,
+   45.23,
+   47.33,
+   50.2,
+   51.87,
+   53.63,
+   54.7,
+   60.97,
+   61.17,
+   61.2,
+   61.27,
+   62.7,
+   64.43,
+   65.6
+  ],
+  "avg_shot_s": 1.63,
+  "median_shot_s": 1.53
+ },
+ "loudness": {
+  "integrated_lufs": -14.3,
+  "lra": 1.5
+ }
+}

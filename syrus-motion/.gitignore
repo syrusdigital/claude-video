@@ -16,3 +16,5 @@ ads/**/media/
 ads/**/out/*.mp4
 pack/**/*-frames/
 pack/**/*.html
+study/**/*.mp4
+study/**/*.wav

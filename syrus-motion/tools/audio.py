@@ -88,6 +88,16 @@ for b in range(bars):
         if mood != 'warm' or k in (0, 2): add(music, tb, K, 0.32)
         add(music, tb + BEAT / 2, Hh, 0.035)
         if mood == 'drive': add(music, tb, Hh, 0.02)
+# ---- or a real track: loudness-matched, looped if short, trimmed to the ad
+if P.get('music_file'):
+    m, msr = sf.read(P['music_file'])
+    if m.ndim > 1: m = m.mean(axis=1)
+    if msr != SR: m = np.interp(np.linspace(0, len(m) - 1, int(len(m) * SR / msr)), np.arange(len(m)), m)
+    m = m[int(float(P.get('music_in', 0)) * SR):]   # skip a soft intro: house beds are at full energy from frame one
+    reps = int(np.ceil(N / len(m))); music = np.tile(m, reps)[:N]
+    if P.get('music_end') is not None:   # the house edit: the bed ends with the voice
+        ie = int(min(DUR, P['music_end']) * SR); nf0 = int(0.35 * SR)
+        music[ie:] = 0; music[max(0, ie - nf0):ie] *= np.linspace(1, 0, len(music[max(0, ie - nf0):ie]))
 # ---- music drop-outs ("stop": silence before a payoff) and a fade at the end
 gain = np.ones(N)
 if P.get('stop'):
@@ -140,7 +150,13 @@ if P.get('vo'):
     duck = 10 ** (P.get('duck_db', -9) / 20)
     music *= 1 - (1 - duck) * np.clip(speaking, 0, 1)
 mg = 10 ** (P.get('music_db', -18) / 20)
-music = music / max(1e-6, np.abs(music).max()) * mg
+if P.get('music_file'):
+    # db is relative to the voice: the bed's RMS sits that far under the VO's speaking RMS (house ads: about -10 to -12)
+    vr = np.sqrt(np.mean(vo[np.abs(vo) > 0.01] ** 2)) if np.any(np.abs(vo) > 0.01) else 0.1
+    live = music[np.abs(music) > 1e-4]; mr = np.sqrt(np.mean(live ** 2)) if len(live) else 1.0
+    music = music / max(1e-6, mr) * vr * 0.9 * mg
+else:
+    music = music / max(1e-6, np.abs(music).max()) * mg
 mix = vo * 0.9 + music + sfx * 0.6
 L = mix + np.roll(music, 240) * 0.15       # a touch of width on the music
 R = mix - np.roll(music, 240) * 0.15

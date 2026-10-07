@@ -1,0 +1,71 @@
+{
+ "title": "GC Countertops B1 house",
+ "vo": {
+  "lines": [
+   {
+    "id": "hook",
+    "text": "Get brand-new kitchen countertops starting at just $30 per square foot.",
+    "after": 0.05
+   },
+   {
+    "id": "b1",
+    "text": "Georgia homeowners love this because it finally gives you a simple, honest way to price your countertops.",
+    "after": 0.05
+   },
+   {
+    "id": "b2",
+    "text": "You don't have to guess, and we don't give you inflated quotes.",
+    "after": 0.05
+   },
+   {
+    "id": "b3",
+    "text": "At GC Countertops, we give you a clear price per square foot, so you know what your new countertops will cost before the job even starts.",
+    "after": 0.05
+   },
+   {
+    "id": "b4",
+    "text": "Granite starts at just $30 per square foot.",
+    "after": 0.05
+   },
+   {
+    "id": "b5",
+    "text": "Quartz starts at $55 per square foot.",
+    "after": 0.05
+   },
+   {
+    "id": "b6",
+    "text": "And marble starts at $65 per square foot.",
+    "after": 0.05
+   },
+   {
+    "id": "b7",
+    "text": "Your final price just depends on the size of your kitchen and the material you pick.",
+    "after": 0.05
+   },
+   {
+    "id": "b8",
+    "text": "And we handle everything from start to finish.",
+    "after": 0.05
+   },
+   {
+    "id": "b9",
+    "text": "We take out your old countertops and install your new ones, with all the labor included.",
+    "after": 0.05
+   },
+   {
+    "id": "b10",
+    "text": "We've been installing countertops across Georgia for over 10 years, and we're fully licensed and insured.",
+    "after": 0.05
+   },
+   {
+    "id": "cta",
+    "text": "Tap \"Get Quote\" to book your free in-home measurement and estimate.",
+    "after": 0.05
+   }
+  ],
+  "voice": "am_fenrir",
+  "speed": 1.06,
+  "tighten": 0.12,
+  "lead": 0.1
+ }
+}

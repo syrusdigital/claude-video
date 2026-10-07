@@ -1,0 +1,46 @@
+{
+ "title": "Luxury Home Renovations P1 house",
+ "vo": {
+  "lines": [
+   {
+    "id": "hook",
+    "text": "A bathroom remodel done in seven days. Sounds awesome, right?",
+    "after": 0.05
+   },
+   {
+    "id": "b1",
+    "text": "At Luxury Home Renovations, we are looking for 10 homes with outdated bathrooms that we can remodel at a discounted rate, in return for using the before and after videos on our website.",
+    "after": 0.05
+   },
+   {
+    "id": "b2",
+    "text": "To qualify, your bathroom has to be five years or older.",
+    "after": 0.05
+   },
+   {
+    "id": "b3",
+    "text": "You have to be looking for either a full bathroom remodel or a tub to shower conversion.",
+    "after": 0.05
+   },
+   {
+    "id": "b4",
+    "text": "And you have to be ready to get started within the next 30 days.",
+    "after": 0.05
+   },
+   {
+    "id": "b5",
+    "text": "We are only looking for 10 homeowners for this showcase, so if you think your bathroom might be a good fit...",
+    "after": 0.05
+   },
+   {
+    "id": "cta",
+    "text": "Hit the \"Get Quote\" button below, answer a few short questions, and we will contact you to see if you qualify.",
+    "after": 0.05
+   }
+  ],
+  "engine": "elevenlabs",
+  "voice": "Michael (ElevenLabs Kysvuk17R9MDAP9l089v)",
+  "take": "nXGwYMf0cpFvPYpUb0CY",
+  "tempo": 1.124
+ }
+}

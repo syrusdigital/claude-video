@@ -1,0 +1,61 @@
+{
+ "title": "Vistaguard Windows & Roofing V1 house",
+ "vo": {
+  "lines": [
+   {
+    "id": "hook",
+    "text": "If you just got quoted twenty thousand dollars or more for brand-new impact windows, you're paying two to three times more than you have to.",
+    "after": 0.05
+   },
+   {
+    "id": "b1",
+    "text": "Here in South Florida, most window companies don't source their own windows.",
+    "after": 0.05
+   },
+   {
+    "id": "b2",
+    "text": "They buy them from a manufacturer and add their own profit on top.",
+    "after": 0.05
+   },
+   {
+    "id": "b3",
+    "text": "Then they hire an outside crew to install them, and that crew charges its own price too.",
+    "after": 0.05
+   },
+   {
+    "id": "b4",
+    "text": "You end up paying extra twice.",
+    "after": 0.05
+   },
+   {
+    "id": "b5",
+    "text": "At VistaGuard, we source our impact windows straight from the manufacturer, and our own crew installs them.",
+    "after": 0.05
+   },
+   {
+    "id": "b6",
+    "text": "No broker in the middle, and no separate labor bill, because our installation is free.",
+    "after": 0.05
+   },
+   {
+    "id": "b7",
+    "text": "Same hurricane rating, two to three times less than what you were just quoted.",
+    "after": 0.05
+   },
+   {
+    "id": "b8",
+    "text": "We've been installing windows in your neighborhood all across South Florida for over thirty years, we're licensed and insured, and every job carries a lifetime warranty on our products and materials.",
+    "after": 0.05
+   },
+   {
+    "id": "cta",
+    "text": "Click Get Quote below to book your free in-home inspection and estimate.",
+    "after": 0.05
+   }
+  ],
+  "voice": "am_fenrir",
+  "speed": 1.06,
+  "tighten": 0.12,
+  "lead": 0.1
+ }
+}

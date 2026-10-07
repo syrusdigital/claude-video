@@ -1,0 +1,96 @@
+{
+ "title": "Luxury Home Renovations F1 house",
+ "vo": {
+  "lines": [
+   {
+    "id": "hook",
+    "text": "Brand new full bathroom remodels, starting at just $14,995.",
+    "after": 0.05
+   },
+   {
+    "id": "b1",
+    "text": "Most homeowners think a full bathroom remodel has to cost thirty thousand dollars.",
+    "after": 0.05
+   },
+   {
+    "id": "b2",
+    "text": "It does not.",
+    "after": 0.05
+   },
+   {
+    "id": "b3",
+    "text": "This is the whole bathroom, start to finish, taken down and built back new.",
+    "after": 0.05
+   },
+   {
+    "id": "b4",
+    "text": "That is why it starts at $14,995, instead of the thirty thousand most companies will quote you for the exact same bathroom.",
+    "after": 0.05
+   },
+   {
+    "id": "b5",
+    "text": "Here is what you get.",
+    "after": 0.05
+   },
+   {
+    "id": "b6",
+    "text": "We take out the old bathroom and haul it away.",
+    "after": 0.05
+   },
+   {
+    "id": "b7",
+    "text": "We put in a brand new shower or bathtub and waterproof it properly.",
+    "after": 0.05
+   },
+   {
+    "id": "b8",
+    "text": "You get new wall surrounds, and you choose how they are finished, tile or acrylic, whichever you want.",
+    "after": 0.05
+   },
+   {
+    "id": "b9",
+    "text": "You also get a brand new glass shower door, a new vanity, a new toilet, new flooring, and all new fixtures.",
+    "after": 0.05
+   },
+   {
+    "id": "b10",
+    "text": "Labor and materials are both included.",
+    "after": 0.05
+   },
+   {
+    "id": "b11",
+    "text": "The final price depends on the size of your bathroom and the materials you choose, and you get an honest number before we start.",
+    "after": 0.05
+   },
+   {
+    "id": "b12",
+    "text": "At Luxury Home Renovations, we are a licensed bathroom remodeling contractor with 38 years of experience, licensed in both Tennessee and Georgia.",
+    "after": 0.05
+   },
+   {
+    "id": "b13",
+    "text": "Our own crews do the work, not subcontractors, including the electrical and the plumbing.",
+    "after": 0.05
+   },
+   {
+    "id": "b14",
+    "text": "And you pick your materials in person in our own showroom.",
+    "after": 0.05
+   },
+   {
+    "id": "b15",
+    "text": "Your work is backed by a two year labor warranty, plus the full manufacturer warranties on your materials.",
+    "after": 0.05
+   },
+   {
+    "id": "cta",
+    "text": "Click \"Get Quote\" to book your free design consultation.",
+    "after": 0.05
+   }
+  ],
+  "voice": "am_fenrir",
+  "speed": 1.06,
+  "tighten": 0.12,
+  "lead": 0.1
+ }
+}

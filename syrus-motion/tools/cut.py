@@ -11,8 +11,10 @@ usage: python3 tools/cut.py <ad-dir> [--force-vo] [--stills]
   "shots": [ { "src": "media/a.mp4", "in": 2.0, "len": 2.2 | "until": "<anchor>", "fit": "cover"|"blur",
                "fx": 0.5, "fy": 0.5, "zoom": [1.0, 1.08], "speed": 1.0 }, ... ],   # photos (.jpg/.png) get Ken Burns from "zoom"
   "gfx": [ { "tpl": "priceShock", "at": "<anchor>", "dur": 4.5, "cfg": {...}, "hide": true, "sfx": ["whoosh", ["hit", 2.75]] }, ... ],
-  "captions": { "y": 1240, "em": ["free"] }
+  "captions": { "y": 1240, "em": ["free"] }   # or { "style": "kinetic", "hookEnd": "line:hook.end", "em": [...], "places": [...] }
 }
+Music: { "file": "../music/bed.wav", "db": -11, "end": "end" } plays a real track (looped/trimmed, faded at "end");
+without "file" a bed is synthesized. A shot with "whip": true enters on a zoom-blur + whoosh (the house transition).
 Anchors: number | "word:<w>" (first occurrence) | "word:<w>#2" | "line:<id>" (its start) | "line:<id>.end" | "end";
 any anchor may carry "+0.4" / "-0.2". Shots run back to back; the last shot stretches to the end.
 Outputs <ad-dir>/out/<slug>.mp4 and out/sheet.jpg (1 frame/2s contact sheet).
@@ -64,7 +66,8 @@ if AROLL:
 else:
   V = A['vo']; vkey = hashlib.sha1(json.dumps(V, sort_keys=True).encode()).hexdigest()[:12]
   if '--force-vo' in sys.argv or not os.path.exists(os.path.join(vo_dir, vkey)):
-    json.dump({'lead': V.get('lead', 0.15), 'tail': 0.3, 'lines': V['lines']}, open(os.path.join(vo_dir, 'script.json'), 'w'))
+    json.dump({'lead': V.get('lead', 0.15), 'tail': V.get('vo_tail', 0.3), 'lines': V['lines'],
+               **{k: V[k] for k in ('engine', 'tighten', 'voice_id', 'voice_settings', 'model') if k in V}}, open(os.path.join(vo_dir, 'script.json'), 'w'))
     sh([sys.executable, os.path.join(HERE, 'vo.py'), os.path.join(vo_dir, 'script.json'), vo_dir, '--voice', V.get('voice', 'am_michael'), '--speed', str(V.get('speed', 1.1))], stderr=subprocess.DEVNULL)
     open(os.path.join(vo_dir, vkey), 'w').close()
   VO = json.load(open(os.path.join(vo_dir, 'vo.json')))
@@ -140,6 +143,19 @@ if AROLL:
 else:
     lst = os.path.join(BUILD, 'segs.txt'); open(lst, 'w').write(''.join(f"file '{p}'\n" for p in segs))
     ff('-f', 'concat', '-safe', 0, '-i', lst, '-c', 'copy', base)
+# whips (the house transition): a shot with "whip": true enters on a zoom-blur — a heavy blur that resolves over ~0.2 s
+# around the cut, with a punch of scale — and gets a whoosh in the mix
+WHIPS = [round(s_['_t0'], 3) for s_ in shots if s_.get('whip')]
+if WHIPS:
+    win = '+'.join(f"between(t,{w - 0.07:.3f},{w + 0.17:.3f})" for w in WHIPS)
+    sig = '+'.join(f"between(t,{w - 0.07:.3f},{w + 0.17:.3f})*(1-abs(t-{w:.3f})/0.17)" for w in WHIPS)
+    wb = os.path.join(BUILD, 'base_whip.mp4')
+    # scale punch: zoom 1 -> 1.12 -> 1 across the window; blur via a small-scale round trip (cheap, strong, smooth)
+    ff('-i', base, '-filter_complex',
+       f"[0:v]split[a][b];[b]scale=270:480,gblur=sigma=6,scale=1080:1920[bl];[a][bl]overlay=enable='{win}'[m];"
+       f"[m]scale=w='1080*(1+0.12*({sig}))':h='1920*(1+0.12*({sig}))':eval=frame,crop=1080:1920,format=yuv420p[v]",
+       '-map', '[v]', '-c:v', 'libx264', '-crf', 17, '-preset', 'veryfast', wb)
+    os.replace(wb, base)
 
 # ---- 3. graphics track: captions + items, one transparent pass
 items, hide, whoosh, hits, ticks = [], [], [], [], []
@@ -152,9 +168,12 @@ for g in A.get('gfx', []):
     for e in g.get('sfx', ['whoosh']):
         kind, off = (e, 0.0) if isinstance(e, str) else (e[0], float(e[1]))
         {'whoosh': whoosh, 'hit': hits, 'tick': ticks}[kind].append(round(at + off, 3))
+whoosh += [round(w - 0.05, 3) for w in (WHIPS if not AROLL else [])]
 cap = A.get('captions', {})
 spec = {'fps': FPS, 'duration': DUR, 'brand': A.get('brand', {}), 'images': {},
-        'items': ([{'tpl': 'captions', 'at': 0, 'dur': DUR, 'cfg': {**cap, 'words': VO['words'], 'hide': hide + cap.get('hide', [])}}] if cap.get('on', True) else []) + items}
+        'items': ([{'tpl': 'kinetic' if cap.get('style') == 'kinetic' else 'captions', 'at': 0, 'dur': DUR,
+                    'cfg': {**{k: v for k, v in cap.items() if k not in ('style', 'on')}, 'words': VO['words'], 'hide': hide + cap.get('hide', []),
+                            **({'hookEnd': anchor(cap['hookEnd'])} if 'hookEnd' in cap else {})}}] if cap.get('on', True) else []) + items}
 for k, p in A.get('images', {}).items():   # logos / photos the graphics draw, embedded
     import base64, mimetypes
     spec['images'][k] = f"data:{mimetypes.guess_type(p)[0] or 'image/png'};base64," + base64.b64encode(open(os.path.join(AD, p), 'rb').read()).decode()
@@ -164,7 +183,8 @@ sh(['node', os.path.join(HERE, 'gfx.mjs'), sp, trk, '--mode', 'track'])
 
 # ---- 4. audio
 mu = A.get('music', {})
-plan = {'duration': DUR, 'bpm': mu.get('bpm', 104), 'key': mu.get('key', 'D'), 'mood': mu.get('mood', 'warm'), 'music_db': mu.get('db', -18),
+plan = {'music_file': os.path.join(AD, mu['file']) if mu.get('file') else None, 'music_end': anchor(mu['end']) if mu.get('end') else None, 'music_in': mu.get('in', 0),
+        'duration': DUR, 'bpm': mu.get('bpm', 104), 'key': mu.get('key', 'D'), 'mood': mu.get('mood', 'warm'), 'music_db': mu.get('db', -18),
         'duck_db': mu.get('duck', -9), 'vo': os.path.join(vo_dir, 'vo.wav'), 'whoosh': whoosh, 'hits': hits, 'ticks': ticks,
         'riser': [anchor(x) for x in mu['riser']] if mu.get('riser') else None, 'stop': [anchor(x) for x in mu['stop']] if mu.get('stop') else None}
 json.dump(plan, open(os.path.join(BUILD, 'audio.json'), 'w'))

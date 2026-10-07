@@ -1,0 +1,66 @@
+{
+ "label": "Anyvision | V4 | AI/VO | 6.25.26 | $3,465.52, 37 leads, $93.66 CPL",
+ "file": "/home/user/claude-video/syrus-motion/study/anyvision/v4-ai-vo-6-25-26/video.mp4",
+ "duration": 62.74,
+ "size": "720x1280",
+ "voice": {
+  "words": 193,
+  "wpm": 186.1,
+  "pitch_hz": 126.0,
+  "voice_guess": "male",
+  "first_word_at": 0.0,
+  "first_money_at": 1.86,
+  "first_money_word": "$295",
+  "hook_5s": "Get a complete kitchen remodel for just $295 a month with zero down. That's not",
+  "text": "Get a complete kitchen remodel for just $295 a month with zero down. That's not a partial remodel. That's our price for a full kitchen remodel. Cabinets in any style you choose, your pick of countertop and quartz, granite, epoxy, or butcher block, and new flooring in epoxy, vinyl, or hardwood. Materials and labor are both included. One fixed price broken into manageable monthly payments so you don't have to wait years before getting the kitchen your home deserves. At Any Vision Home Remodeling, we serve homeowners in greater Seattle and surrounding areas. We're a trusted local remodeling company with hundreds of happy homeowners across the area, and every project we do is backed by warranty coverage on both labor and materials. We also walk you through material selection personally and create custom 3D kitchen renderings during the consultation process so you can actually see your new kitchen before moving forward. No pressure, no inflated pricing, just honest remodeling work built around your style and your budget. A brand new kitchen with premium materials may be much more affordable than you think. Click Get Quote Below for your free estimate and financing details."
+ },
+ "music": {
+  "present": true,
+  "floor_rel_db": -9.0,
+  "after_vo_db": -48.8,
+  "bed_db_rel_voice": -5.8,
+  "voice_dbfs": -14.8,
+  "bed_dbfs": -20.5,
+  "tempo_bpm_rough": 127.7,
+  "tempo_confidence": 0.094
+ },
+ "sfx": {
+  "hits": [
+   58.33
+  ],
+  "hit_count": 1,
+  "hits_per_min": 1.0,
+  "hits_on_cuts": 0,
+  "swells": []
+ },
+ "picture": {
+  "cuts": 19,
+  "cut_times": [
+   6.2,
+   8.4,
+   10.2,
+   15.37,
+   17.73,
+   20.0,
+   22.97,
+   24.27,
+   26.37,
+   28.1,
+   35.53,
+   38.0,
+   39.83,
+   42.37,
+   49.07,
+   49.9,
+   51.03,
+   56.7,
+   58.9
+  ],
+  "avg_shot_s": 3.14,
+  "median_shot_s": 2.32
+ },
+ "loudness": {
+  "integrated_lufs": -14.3,
+  "lra": 1.6
+ }
+}

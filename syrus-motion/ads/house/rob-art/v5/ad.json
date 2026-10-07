@@ -1,0 +1,131 @@
+{
+ "title": "Rob-Art Design V5 house",
+ "vo": {
+  "lines": [
+   {
+    "id": "hook",
+    "text": "$19,995 for a premium kitchen remodel? That's crazy. Premium kitchen remodels are like $40,000 usually, right?",
+    "after": 0.05
+   },
+   {
+    "id": "b1",
+    "text": "Sort of.",
+    "after": 0.05
+   },
+   {
+    "id": "b2",
+    "text": "But not really.",
+    "after": 0.05
+   },
+   {
+    "id": "b3",
+    "text": "It has to do with the size, the layout, the materials you choose, and what actually needs to be done.",
+    "after": 0.05
+   },
+   {
+    "id": "b4",
+    "text": "Thing is, there's a fair price.",
+    "after": 0.05
+   },
+   {
+    "id": "b5",
+    "text": "And there's pricing that's so insanely ridiculous that I don't know how these remodeling contractors sleep at night.",
+    "after": 0.05
+   },
+   {
+    "id": "b6",
+    "text": "At Rob-Art Design, here's how we run our business.",
+    "after": 0.05
+   },
+   {
+    "id": "b7",
+    "text": "First and foremost, we do amazing work.",
+    "after": 0.05
+   },
+   {
+    "id": "b8",
+    "text": "We don't settle for anything less.",
+    "after": 0.05
+   },
+   {
+    "id": "b9",
+    "text": "No corner cutting, no junky materials.",
+    "after": 0.05
+   },
+   {
+    "id": "b10",
+    "text": "And we only work with our in-house local New Jersey crews.",
+    "after": 0.05
+   },
+   {
+    "id": "b11",
+    "text": "But there's more.",
+    "after": 0.05
+   },
+   {
+    "id": "b12",
+    "text": "Because we're a small local company that we run really well, we don't have a ton of overhead.",
+    "after": 0.05
+   },
+   {
+    "id": "b13",
+    "text": "Unlike the big bloated companies who have fancy offices and TV commercials and billboards, guess who pays for all of that?",
+    "after": 0.05
+   },
+   {
+    "id": "b14",
+    "text": "Yep.",
+    "after": 0.05
+   },
+   {
+    "id": "b15",
+    "text": "You.",
+    "after": 0.05
+   },
+   {
+    "id": "b16",
+    "text": "That's not at all how we do things.",
+    "after": 0.05
+   },
+   {
+    "id": "b17",
+    "text": "So we can do something really awesome.",
+    "after": 0.05
+   },
+   {
+    "id": "b18",
+    "text": "We can do amazing work.",
+    "after": 0.05
+   },
+   {
+    "id": "b19",
+    "text": "We do beautiful, fully custom kitchen remodels, real design drawings, personal material selection, one in-house team managing everything without charging you 200% more than it should really cost.",
+    "after": 0.05
+   },
+   {
+    "id": "b20",
+    "text": "The best work, the best materials, at fair prices.",
+    "after": 0.05
+   },
+   {
+    "id": "b21",
+    "text": "So you can not only have peace of mind, but also save money.",
+    "after": 0.05
+   },
+   {
+    "id": "b22",
+    "text": "Simple.",
+    "after": 0.05
+   },
+   {
+    "id": "cta",
+    "text": "Click Get Quote below if you're interested in a consultation and a fair, honest estimate for your kitchen remodel.",
+    "after": 0.05
+   }
+  ],
+  "voice": "am_fenrir",
+  "speed": 1.06,
+  "tighten": 0.12,
+  "lead": 0.1
+ }
+}
