@@ -1,0 +1,818 @@
+{
+ "title": "Work Horse | Cabinets | $125 per Opening | Script 2",
+ "source": "Notion: SCRIPT 2: CABINET PAINTING — Work Horse (Winner, $45.47 CPL). Seasonal wording removed (\"this New Year\", \"in 2026\", \"New Year Pricing\"); 1-year craftsmanship warranty per client revision 2026-01-10.",
+ "vo": {
+  "voice": "am_michael",
+  "speed": 1.12,
+  "lines": [
+   {
+    "id": "hook",
+    "text": "Your cabinet painting price is simple. Count the openings, and multiply by one hundred twenty-five dollars.",
+    "after": 0.35
+   },
+   {
+    "id": "b1",
+    "text": "Homeowners are finally getting cabinet pricing that actually makes sense, because at Work Horse Pro Painting, we made the process simple, predictable, and totally upfront.",
+    "after": 0.25
+   },
+   {
+    "id": "b2",
+    "text": "If you want to know what it will cost to repaint your cabinets, just count the openings, and multiply by one hundred twenty-five dollars.",
+    "after": 0.3
+   },
+   {
+    "id": "b3",
+    "text": "No guessing. No inflated quotes. No confusing breakdowns. Your price is clear before we even walk in the door.",
+    "after": 0.3
+   },
+   {
+    "id": "b4",
+    "text": "This special covers everything from start to finish, including full prep, sanding, degreasing, priming, and a premium finish that makes your cabinets look brand new, without spending thousands of dollars on replacements.",
+    "after": 0.3
+   },
+   {
+    "id": "b5",
+    "text": "With over thirty years of experience serving homeowners in New Hampshire, Massachusetts, and Maine, and a motto that says it all, let our family treat you like family, you'll get clean, precise results you'll actually love walking into.",
+    "after": 0.25
+   },
+   {
+    "id": "b6",
+    "text": "And every cabinet project comes with a one-year craftsmanship warranty, so your investment is protected long after we leave.",
+    "after": 0.25
+   },
+   {
+    "id": "b7",
+    "text": "If you want a clean, modern look without a massive renovation, this is the smartest way to do it.",
+    "after": 0.3
+   },
+   {
+    "id": "cta",
+    "text": "Tap Get Quote to book your free, fair cabinet painting estimate.",
+    "after": 0.1
+   }
+  ]
+ },
+ "music": {
+  "bpm": 100,
+  "key": "D",
+  "mood": "warm",
+  "db": -18,
+  "stop": [
+   "word:multiply-0.05",
+   "word:$125+0.05"
+  ],
+  "riser": [
+   "word:smartest",
+   "word:Tap"
+  ]
+ },
+ "tail": 1.2,
+ "images": {
+  "cabB": "../media/previous-work/IMG_3527.JPG",
+  "cabA": "../media/previous-work/IMG_3537.JPG"
+ },
+ "shots": [
+  {
+   "src": "../media/previous-work/IMG_3554.JPG",
+   "until": "line:b1",
+   "zoom": [
+    1.0,
+    1.06
+   ],
+   "fx": 0.525,
+   "fy": 0.5
+  },
+  {
+   "src": "../media/client/IMG_2610.jpg",
+   "until": "word:actually",
+   "zoom": [
+    1.04,
+    1.14
+   ],
+   "fx": 0.5,
+   "fy": 0.35
+  },
+  {
+   "src": "../media/client/IMG_2606.jpg",
+   "until": "word:Work",
+   "zoom": [
+    1.0,
+    1.1
+   ],
+   "fx": 0.6,
+   "fy": 0.45
+  },
+  {
+   "src": "../media/sept25/1650064316005776367.JPG",
+   "until": "word:we",
+   "zoom": [
+    1.12,
+    1.0
+   ],
+   "fx": 0.5,
+   "fy": 0.45
+  },
+  {
+   "src": "../media/client/IMG_2614.jpg",
+   "until": "line:b2",
+   "zoom": [
+    1.0,
+    1.12
+   ],
+   "fx": 0.42,
+   "fy": 0.3
+  },
+  {
+   "src": "../media/previous-work/IMG_3528.JPG",
+   "until": "word:just-0.75",
+   "zoom": [
+    1.0,
+    1.12
+   ],
+   "fx": 0.35,
+   "fy": 0.3
+  },
+  {
+   "src": "../media/video3/8187638200705877976.JPG",
+   "until": "line:b3",
+   "zoom": [
+    1.0,
+    1.06
+   ],
+   "fx": 0.5,
+   "fy": 0.5
+  },
+  {
+   "src": "../media/sept25/1669666799162967131.JPG",
+   "until": "word:no#3",
+   "zoom": [
+    1.0,
+    1.1
+   ],
+   "fx": 0.5,
+   "fy": 0.5
+  },
+  {
+   "src": "../media/video3/4552406157660962095.JPG",
+   "until": "word:Your#3",
+   "zoom": [
+    1.05,
+    1.15
+   ],
+   "fx": 0.4,
+   "fy": 0.4
+  },
+  {
+   "src": "../media/client/IMG_2608.jpg",
+   "until": "word:walk",
+   "zoom": [
+    1.0,
+    1.1
+   ],
+   "fx": 0.5,
+   "fy": 0.4
+  },
+  {
+   "src": "../media/client/IMG_2613.jpg",
+   "until": "line:b4",
+   "zoom": [
+    1.0,
+    1.1
+   ],
+   "fx": 0.5,
+   "fy": 0.4
+  },
+  {
+   "src": "../media/video3/1420180187363072478.JPG",
+   "until": "word:full",
+   "zoom": [
+    1.0,
+    1.1
+   ],
+   "fx": 0.5,
+   "fy": 0.6
+  },
+  {
+   "src": "../media/sept25/att.U24-XcS6EW_yo4Huqo2zNjUN05qJhfChCUeMnicWSHk.JPG",
+   "until": "word:degreasing",
+   "zoom": [
+    1.05,
+    1.15
+   ],
+   "fx": 0.5,
+   "fy": 0.5
+  },
+  {
+   "src": "../media/sept25/att.Z9gm4sFwD-Z8poezprEqe2K_ehVFx9-HdLjKljpGdRo.JPG",
+   "until": "word:thousands",
+   "zoom": [
+    1.0,
+    1.1
+   ],
+   "fx": 0.5,
+   "fy": 0.5
+  },
+  {
+   "src": "../media/sept25/att.1QkqSD6XbvQwOQKuix85152K1IyRy-qnziCkJqKZino.JPG",
+   "until": "line:b5",
+   "zoom": [
+    1.0,
+    1.1
+   ],
+   "fx": 0.5,
+   "fy": 0.4
+  },
+  {
+   "src": "../media/client/IMG_2624.jpg",
+   "until": "word:New#2-0.25",
+   "zoom": [
+    1.0,
+    1.08
+   ],
+   "fx": 0.5,
+   "fy": 0.3
+  },
+  {
+   "src": "../media/sept25/82237169880313645.JPG",
+   "until": "word:motto-0.22",
+   "zoom": [
+    1.0,
+    1.1
+   ],
+   "fx": 0.5,
+   "fy": 0.5
+  },
+  {
+   "src": "../media/client/IMG_3590.jpg",
+   "until": "word:you'll",
+   "zoom": [
+    1.0,
+    1.08
+   ],
+   "fx": 0.4,
+   "fy": 0.5
+  },
+  {
+   "src": "../media/previous-work/IMG_3534.JPG",
+   "until": "word:results",
+   "zoom": [
+    1.0,
+    1.1
+   ],
+   "fx": 0.4,
+   "fy": 0.5
+  },
+  {
+   "src": "../media/previous-work/IMG_3542.JPG",
+   "until": "line:b6",
+   "zoom": [
+    1.0,
+    1.1
+   ],
+   "fx": 0.3,
+   "fy": 0.5
+  },
+  {
+   "src": "../media/client/IMG_2616.jpg",
+   "until": "word:So",
+   "zoom": [
+    1.0,
+    1.08
+   ],
+   "fx": 0.45,
+   "fy": 0.4
+  },
+  {
+   "src": "../media/client/IMG_2611.jpg",
+   "until": "line:b7",
+   "zoom": [
+    1.0,
+    1.1
+   ],
+   "fx": 0.6,
+   "fy": 0.4
+  },
+  {
+   "src": "../media/previous-work/IMG_3541.JPG",
+   "until": "word:without#2",
+   "zoom": [
+    1.0,
+    1.1
+   ],
+   "fx": 0.62,
+   "fy": 0.5
+  },
+  {
+   "src": "../media/previous-work/IMG_3522.JPG",
+   "until": "word:this#2",
+   "zoom": [
+    1.0,
+    1.1
+   ],
+   "fx": 0.5,
+   "fy": 0.5
+  },
+  {
+   "src": "../media/videos-sept25/4682062360508153179.MP4",
+   "in": 9.0,
+   "until": "line:cta"
+  },
+  {
+   "src": "../media/client/IMG_2619.jpg",
+   "until": "end",
+   "zoom": [
+    1.0,
+    1.08
+   ],
+   "fx": 0.45,
+   "fy": 0.35
+  }
+ ],
+ "gfx": [
+  {
+   "tpl": "whCountOpenings",
+   "at": 0,
+   "dur": 6.9,
+   "cfg": {
+    "fx": 0.525,
+    "fy": 0.5,
+    "zoom": [
+     1.0,
+     1.06
+    ],
+    "len": 6.974,
+    "pts": [
+     [
+      326,
+      799
+     ],
+     [
+      548,
+      707
+     ],
+     [
+      788,
+      707
+     ],
+     [
+      978,
+      809
+     ],
+     [
+      1157,
+      696
+     ],
+     [
+      302,
+      1354
+     ],
+     [
+      543,
+      1354
+     ],
+     [
+      780,
+      1354
+     ],
+     [
+      998,
+      1354
+     ],
+     [
+      1229,
+      1357
+     ],
+     [
+      302,
+      1536
+     ],
+     [
+      532,
+      1536
+     ],
+     [
+      778,
+      1536
+     ],
+     [
+      998,
+      1536
+     ],
+     [
+      1208,
+      1536
+     ]
+    ],
+    "beats": {
+     "head": 0.1,
+     "count": 2.7,
+     "step": 0.08,
+     "times": 4.0,
+     "total": 5.2
+    },
+    "kicker": "CABINET PAINTING",
+    "y": 215,
+    "pillY": 880
+   },
+   "sfx": [
+    [
+     "whoosh",
+     0.25
+    ],
+    [
+     "hit",
+     0.4
+    ],
+    [
+     "tick",
+     2.7
+    ],
+    [
+     "tick",
+     2.78
+    ],
+    [
+     "tick",
+     2.86
+    ],
+    [
+     "tick",
+     2.94
+    ],
+    [
+     "tick",
+     3.02
+    ],
+    [
+     "tick",
+     3.1
+    ],
+    [
+     "tick",
+     3.18
+    ],
+    [
+     "tick",
+     3.26
+    ],
+    [
+     "tick",
+     3.34
+    ],
+    [
+     "tick",
+     3.42
+    ],
+    [
+     "tick",
+     3.5
+    ],
+    [
+     "tick",
+     3.58
+    ],
+    [
+     "tick",
+     3.66
+    ],
+    [
+     "tick",
+     3.74
+    ],
+    [
+     "tick",
+     3.82
+    ],
+    [
+     "hit",
+     4.0
+    ],
+    [
+     "hit",
+     5.2
+    ]
+   ]
+  },
+  {
+   "tpl": "hookText",
+   "at": "word:pricing-0.35",
+   "dur": 2.5,
+   "cfg": {
+    "style": "highlight",
+    "text": "CABINET PRICING THAT ACTUALLY MAKES SENSE",
+    "mark": "MAKES SENSE",
+    "y": 760
+   }
+  },
+  {
+   "tpl": "hookText",
+   "at": "word:simple#2-0.1",
+   "dur": 3.05,
+   "cfg": {
+    "style": "stack",
+    "text": "SIMPLE. PREDICTABLE. UPFRONT.",
+    "lines": [
+     "SIMPLE.",
+     "PREDICTABLE.",
+     "UPFRONT."
+    ],
+    "lineStep": 1.1,
+    "maxSize": 150,
+    "y": 1180
+   },
+   "sfx": [
+    [
+     "hit",
+     0.1
+    ],
+    [
+     "hit",
+     1.2
+    ],
+    [
+     "hit",
+     2.3
+    ]
+   ]
+  },
+  {
+   "tpl": "unitCalc",
+   "at": "word:just-0.75",
+   "dur": 5.2,
+   "cfg": {
+    "kicker": "YOUR CABINET PRICE",
+    "rate": 125,
+    "rateDp": 0,
+    "unit": "openings",
+    "per": "opening",
+    "qty": 15,
+    "qtyLabel": "e.g. 15 doors & drawers",
+    "grid": {
+     "cols": 5,
+     "rows": 3
+    },
+    "beats": {
+     "rate": 0.15,
+     "qty": 0.85,
+     "total": 3.35
+    },
+    "y": 470
+   },
+   "sfx": [
+    "whoosh",
+    [
+     "tick",
+     0.15
+    ],
+    [
+     "hit",
+     3.35
+    ]
+   ]
+  },
+  {
+   "tpl": "hookText",
+   "at": "line:b3-0.05",
+   "dur": 4.4,
+   "cfg": {
+    "style": "stack",
+    "text": "NO GUESSING. NO INFLATED QUOTES. NO CONFUSING BREAKDOWNS.",
+    "lines": [
+     "NO GUESSING.",
+     "NO INFLATED QUOTES.",
+     "NO CONFUSING BREAKDOWNS."
+    ],
+    "lineStep": 1.28,
+    "maxSize": 140,
+    "y": 800
+   },
+   "sfx": [
+    [
+     "hit",
+     0.1
+    ],
+    [
+     "hit",
+     1.38
+    ],
+    [
+     "hit",
+     2.66
+    ]
+   ]
+  },
+  {
+   "tpl": "checklist",
+   "at": "word:start-0.1",
+   "dur": 6.3,
+   "cfg": {
+    "kicker": "THE SPECIAL COVERS",
+    "title": "Every opening",
+    "price": "$125",
+    "y": 300,
+    "items": [
+     {
+      "icon": "demo",
+      "label": "Full prep"
+     },
+     {
+      "icon": "cleanup",
+      "label": "Sanding"
+     },
+     {
+      "icon": "fixtures",
+      "label": "Degreasing"
+     },
+     {
+      "icon": "paint-roller",
+      "label": "Priming"
+     },
+     {
+      "icon": "cabinets",
+      "label": "Premium finish"
+     }
+    ],
+    "beats": [
+     1.79,
+     2.83,
+     3.65,
+     4.51,
+     5.5
+    ]
+   },
+   "sfx": [
+    "whoosh",
+    [
+     "tick",
+     1.96
+    ],
+    [
+     "tick",
+     3.0
+    ],
+    [
+     "tick",
+     3.82
+    ],
+    [
+     "tick",
+     4.68
+    ],
+    [
+     "tick",
+     5.67
+    ]
+   ]
+  },
+  {
+   "tpl": "whBaStack",
+   "at": "word:that#2+0.04",
+   "dur": 3.35,
+   "cfg": {
+    "pairs": [
+     {
+      "b": "cabB",
+      "a": "cabA",
+      "fyB": 0.3,
+      "fxA": 0.5,
+      "fyA": 0.5,
+      "tag": "CABINETS"
+     }
+    ],
+    "each": 3.35,
+    "wipe": 1.25,
+    "wipeDur": 0.6,
+    "top": 220,
+    "ph": 720,
+    "gap": 28
+   },
+   "sfx": [
+    "whoosh",
+    [
+     "whoosh",
+     1.25
+    ],
+    [
+     "hit",
+     1.85
+    ]
+   ]
+  },
+  {
+   "tpl": "priceCard",
+   "at": "word:thousands",
+   "dur": 2.45,
+   "cfg": {
+    "kicker": "CABINET PAINTING",
+    "pre": "just",
+    "price": 125,
+    "note": "per opening"
+   },
+   "sfx": [
+    "whoosh",
+    [
+     "hit",
+     1.45
+    ]
+   ]
+  },
+  {
+   "tpl": "statCounter",
+   "at": "word:over-0.1",
+   "dur": 2.75,
+   "cfg": {
+    "value": 30,
+    "suffix": "+",
+    "label": "YEARS OF EXPERIENCE",
+    "y": 560,
+    "beat": 0.05,
+    "count": 1.0
+   },
+   "sfx": [
+    "whoosh",
+    [
+     "hit",
+     1.05
+    ]
+   ]
+  },
+  {
+   "tpl": "locationSuper",
+   "at": "word:New#2-0.25",
+   "dur": 3.0,
+   "cfg": {
+    "place": "NH · MA · ME",
+    "who": "SERVING HOMEOWNERS"
+   },
+   "hide": false
+  },
+  {
+   "tpl": "hookText",
+   "at": "word:let-0.15",
+   "dur": 2.6,
+   "cfg": {
+    "style": "highlight",
+    "text": "LET OUR FAMILY TREAT YOU LIKE FAMILY",
+    "mark": "LIKE FAMILY",
+    "y": 520
+   }
+  },
+  {
+   "tpl": "trustBadges",
+   "at": "word:every#2-0.1",
+   "dur": 3.9,
+   "cfg": {
+    "kind": "warranty",
+    "warrantyYears": 1,
+    "big": [
+     "1-YEAR CRAFTSMANSHIP",
+     "WARRANTY"
+    ],
+    "y": 330
+   },
+   "hide": false,
+   "sfx": [
+    "whoosh",
+    [
+     "hit",
+     0.6
+    ]
+   ]
+  },
+  {
+   "tpl": "discountStamp",
+   "at": "word:this#2",
+   "dur": 2.1,
+   "cfg": {
+    "big": "$125",
+    "small": "PER OPENING",
+    "y": 760
+   },
+   "sfx": [
+    [
+     "hit",
+     0.1
+    ]
+   ]
+  },
+  {
+   "tpl": "getQuoteEnd",
+   "at": "word:Tap-0.1",
+   "dur": 5.3,
+   "cfg": {
+    "line2": "Free cabinet painting estimate"
+   }
+  }
+ ],
+ "captions": {
+  "y": 1240,
+  "em": [
+   "simple",
+   "upfront",
+   "free",
+   "brand",
+   "warranty",
+   "family"
+  ]
+ }
+}

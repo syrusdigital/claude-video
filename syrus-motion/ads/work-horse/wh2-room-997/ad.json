@@ -1,0 +1,639 @@
+{
+ "title": "Work Horse | Rooms | $997 Flat | Script 4",
+ "source": "Notion: Script 4 — Most painters charge $2,000+ a room — Work Horse (Approved, $48.31 CPL). Seasonal wording removed (\"this winter\", \"Winter\").",
+ "vo": {
+  "voice": "am_michael",
+  "speed": 1.12,
+  "lines": [
+   {
+    "id": "hook",
+    "text": "Most painters charge two thousand dollars or more to paint a room. We're doing it for nine hundred ninety-seven dollars flat, guaranteed.",
+    "after": 0.35
+   },
+   {
+    "id": "b1",
+    "text": "At Work Horse Pro Painting, we believe homeowners deserve fair pricing without cutting corners.",
+    "after": 0.25
+   },
+   {
+    "id": "b2",
+    "text": "That's why you can get your entire standard room professionally painted for just nine hundred ninety-seven dollars, and everything's included.",
+    "after": 0.3
+   },
+   {
+    "id": "b3",
+    "text": "You'll get walls in the color you choose. Ceilings in clean, stock white flat paint. Trim in durable semi-gloss white. Standard prep work, high-quality paint, and professional labor, all included.",
+    "after": 0.3
+   },
+   {
+    "id": "b4",
+    "text": "No fine print. No hidden upsells. No extra fees for the things that should already be included.",
+    "after": 0.3
+   },
+   {
+    "id": "b5",
+    "text": "Just clean, professional work done right the first time, by a family-owned team with thirty years of experience serving New Hampshire, Massachusetts, and Maine.",
+    "after": 0.25
+   },
+   {
+    "id": "b6",
+    "text": "This is a real offer, not a sale. Just honest value from a company whose motto says it all. Let our family treat you like family.",
+    "after": 0.3
+   },
+   {
+    "id": "cta",
+    "text": "Tap Get Quote to schedule your nine hundred ninety-seven dollar room painting special, before our calendar fills up.",
+    "after": 0.1
+   }
+  ]
+ },
+ "music": {
+  "bpm": 104,
+  "key": "E",
+  "mood": "drive",
+  "db": -18,
+  "stop": [
+   "word:for",
+   "word:$997+0.05"
+  ],
+  "riser": [
+   "word:Let",
+   "word:Tap"
+  ]
+ },
+ "tail": 1.2,
+ "images": {
+  "kB": "../media/previous-work/IMG_3522.JPG",
+  "kA": "../media/previous-work/IMG_3538.JPG",
+  "wB": "../media/previous-work/IMG_3516.JPG",
+  "wA": "../media/previous-work/IMG_3549.JPG"
+ },
+ "shots": [
+  {
+   "src": "../media/previous-work/IMG_3509.JPG",
+   "until": "word:$997-0.05",
+   "zoom": [
+    1.0,
+    1.1
+   ],
+   "fx": 0.5,
+   "fy": 0.55
+  },
+  {
+   "src": "../media/previous-work/IMG_3541.JPG",
+   "until": "line:b1",
+   "zoom": [
+    1.06,
+    1.0
+   ],
+   "fx": 0.62,
+   "fy": 0.5
+  },
+  {
+   "src": "../media/sept25/1650064316005776367.JPG",
+   "until": "word:we#2",
+   "zoom": [
+    1.12,
+    1.0
+   ],
+   "fx": 0.5,
+   "fy": 0.45
+  },
+  {
+   "src": "../media/client/IMG_2621.jpg",
+   "until": "word:without",
+   "zoom": [
+    1.0,
+    1.1
+   ],
+   "fx": 0.5,
+   "fy": 0.25
+  },
+  {
+   "src": "../media/sept25/att.U24-XcS6EW_yo4Huqo2zNjUN05qJhfChCUeMnicWSHk.JPG",
+   "until": "line:b2",
+   "zoom": [
+    1.05,
+    1.18
+   ],
+   "fx": 0.55,
+   "fy": 0.55
+  },
+  {
+   "src": "../media/videos-sept25/4682062360508153179.MP4",
+   "in": 9.0,
+   "until": "word:just-0.55"
+  },
+  {
+   "src": "../media/sept25/2048978825248098594.JPG",
+   "until": "line:b3",
+   "zoom": [
+    1.0,
+    1.1
+   ],
+   "fx": 0.5,
+   "fy": 0.35
+  },
+  {
+   "src": "../media/videos-sept25/4682062360508153179.MP4",
+   "in": 0.3,
+   "until": "word:ceilings"
+  },
+  {
+   "src": "../media/video3/5149766097932587005.JPG",
+   "until": "word:trim",
+   "zoom": [
+    1.0,
+    1.1
+   ],
+   "fx": 0.5,
+   "fy": 0.6
+  },
+  {
+   "src": "../media/previous-work/IMG_3550.JPG",
+   "until": "word:standard#2",
+   "zoom": [
+    1.0,
+    1.1
+   ],
+   "fx": 0.3,
+   "fy": 0.6
+  },
+  {
+   "src": "../media/video3/7084751331653763753.JPG",
+   "until": "word:high",
+   "zoom": [
+    1.05,
+    1.15
+   ],
+   "fx": 0.5,
+   "fy": 0.6
+  },
+  {
+   "src": "../media/video3/1420180187363072478.JPG",
+   "until": "word:professional#2",
+   "zoom": [
+    1.0,
+    1.1
+   ],
+   "fx": 0.5,
+   "fy": 0.7
+  },
+  {
+   "src": "../media/sept25/att.OR1rzwMV4Gg4JBVeP2m_Msv9Pf44Yc_-Q6UjdSrxOzU.JPG",
+   "until": "line:b4",
+   "zoom": [
+    1.0,
+    1.1
+   ],
+   "fx": 0.5,
+   "fy": 0.5
+  },
+  {
+   "src": "../media/client/IMG_2629.jpg",
+   "until": "word:no#3",
+   "zoom": [
+    1.0,
+    1.08
+   ],
+   "fx": 0.5,
+   "fy": 0.3
+  },
+  {
+   "src": "../media/client/IMG_2606.jpg",
+   "until": "line:b5",
+   "zoom": [
+    1.0,
+    1.1
+   ],
+   "fx": 0.6,
+   "fy": 0.45
+  },
+  {
+   "src": "../media/previous-work/IMG_3543.JPG",
+   "until": "word:family-0.1",
+   "zoom": [
+    1.0,
+    1.08
+   ],
+   "fx": 0.6,
+   "fy": 0.5
+  },
+  {
+   "src": "../media/client/IMG_2615.jpg",
+   "until": "word:30",
+   "zoom": [
+    1.0,
+    1.08
+   ],
+   "fx": 0.45,
+   "fy": 0.4
+  },
+  {
+   "src": "../media/client/IMG_2625.jpg",
+   "until": "word:New-0.2",
+   "zoom": [
+    1.0,
+    1.06
+   ],
+   "fx": 0.5,
+   "fy": 0.3
+  },
+  {
+   "src": "../media/sept25/6206142226249391125.JPG",
+   "until": "line:b6",
+   "zoom": [
+    1.0,
+    1.1
+   ],
+   "fx": 0.5,
+   "fy": 0.5
+  },
+  {
+   "src": "../media/sept25/4389575807402975032.JPG",
+   "until": "word:Just#3",
+   "zoom": [
+    1.0,
+    1.1
+   ],
+   "fx": 0.5,
+   "fy": 0.5
+  },
+  {
+   "src": "../media/sept25/att.4S2MtHbctzAxATJ19_ItKFTuUjiHrl7L0KlNuEvKAbA.JPG",
+   "until": "word:motto",
+   "zoom": [
+    1.0,
+    1.1
+   ],
+   "fx": 0.5,
+   "fy": 0.5
+  },
+  {
+   "src": "../media/client/IMG_2628.jpg",
+   "until": "word:Let-0.12",
+   "zoom": [
+    1.0,
+    1.08
+   ],
+   "fx": 0.6,
+   "fy": 0.4
+  },
+  {
+   "src": "../media/client/IMG_3598.jpg",
+   "until": "line:cta",
+   "zoom": [
+    1.0,
+    1.08
+   ],
+   "fx": 0.45,
+   "fy": 0.5
+  },
+  {
+   "src": "../media/sept25/1415144963383296178.JPG",
+   "until": "word:special-0.1",
+   "zoom": [
+    1.0,
+    1.1
+   ],
+   "fx": 0.5,
+   "fy": 0.5
+  },
+  {
+   "src": "../media/sept25/8778292153452459626.JPG",
+   "until": "end",
+   "zoom": [
+    1.0,
+    1.08
+   ],
+   "fx": 0.5,
+   "fy": 0.5
+  }
+ ],
+ "gfx": [
+  {
+   "tpl": "priceShock",
+   "at": 0,
+   "dur": 7.55,
+   "cfg": {
+    "lead": "MOST PAINTERS CHARGE",
+    "leadSize": 68,
+    "anchors": [
+     "$2,000+"
+    ],
+    "anchorSize": 210,
+    "anchorY": 200,
+    "reveal": "WE'RE DOING IT FOR",
+    "price": "$997 FLAT",
+    "beats": {
+     "anchors": [
+      1.15
+     ],
+     "strike": 2.75,
+     "drop": 3.55,
+     "reveal": 4.55
+    },
+    "y": 600
+   },
+   "sfx": [
+    "whoosh",
+    [
+     "hit",
+     1.2
+    ],
+    [
+     "whoosh",
+     2.75
+    ],
+    [
+     "hit",
+     4.8
+    ]
+   ]
+  },
+  {
+   "tpl": "discountStamp",
+   "at": "word:guaranteed-0.12",
+   "dur": 1.75,
+   "cfg": {
+    "big": "$997 FLAT",
+    "small": "GUARANTEED",
+    "y": 820
+   },
+   "sfx": [
+    [
+     "hit",
+     0.1
+    ]
+   ]
+  },
+  {
+   "tpl": "priceCard",
+   "at": "word:just-0.55",
+   "dur": 4.55,
+   "cfg": {
+    "kicker": "ENTIRE STANDARD ROOM",
+    "pre": "just",
+    "price": 997,
+    "note": "Flat price · everything included"
+   },
+   "sfx": [
+    "whoosh",
+    [
+     "hit",
+     1.45
+    ]
+   ]
+  },
+  {
+   "tpl": "checklist",
+   "at": "line:b3-0.15",
+   "dur": 12.55,
+   "cfg": {
+    "kicker": "WHAT'S INCLUDED",
+    "title": "Standard room",
+    "price": "$997",
+    "y": 270,
+    "items": [
+     {
+      "icon": "wall-surround",
+      "label": "Walls in the color you choose"
+     },
+     {
+      "icon": "lighting",
+      "label": "Ceilings in clean flat white"
+     },
+     {
+      "icon": "window",
+      "label": "Trim in semi-gloss white"
+     },
+     {
+      "icon": "cleanup",
+      "label": "Standard prep work"
+     },
+     {
+      "icon": "paint-roller",
+      "label": "High-quality paint"
+     },
+     {
+      "icon": "demo",
+      "label": "Professional labor"
+     }
+    ],
+    "beats": [
+     0.43,
+     2.73,
+     5.83,
+     8.39,
+     9.61,
+     10.65
+    ]
+   },
+   "sfx": [
+    "whoosh",
+    [
+     "tick",
+     0.6
+    ],
+    [
+     "tick",
+     2.9
+    ],
+    [
+     "tick",
+     6.0
+    ],
+    [
+     "tick",
+     8.56
+    ],
+    [
+     "tick",
+     9.78
+    ],
+    [
+     "tick",
+     10.82
+    ]
+   ]
+  },
+  {
+   "tpl": "hookText",
+   "at": "line:b4-0.05",
+   "dur": 4.6,
+   "cfg": {
+    "style": "stack",
+    "text": "NO FINE PRINT. NO HIDDEN UPSELLS. NO EXTRA FEES.",
+    "lines": [
+     "NO FINE PRINT.",
+     "NO HIDDEN UPSELLS.",
+     "NO EXTRA FEES."
+    ],
+    "lineStep": 1.46,
+    "maxSize": 150,
+    "y": 820
+   },
+   "sfx": [
+    [
+     "hit",
+     0.1
+    ],
+    [
+     "hit",
+     1.56
+    ],
+    [
+     "hit",
+     3.02
+    ]
+   ]
+  },
+  {
+   "tpl": "whBaStack",
+   "at": "line:b5-0.05",
+   "dur": 3.75,
+   "cfg": {
+    "pairs": [
+     {
+      "b": "kB",
+      "a": "kA",
+      "fyB": 0.55,
+      "fxA": 0.42,
+      "fyA": 0.5,
+      "tag": "KITCHEN"
+     },
+     {
+      "b": "wB",
+      "a": "wA",
+      "fyB": 0.55,
+      "fyA": 0.55,
+      "tag": "BEDROOM"
+     }
+    ],
+    "each": 1.85,
+    "wipe": 0.3,
+    "wipeDur": 0.45,
+    "top": 220,
+    "ph": 720,
+    "gap": 28
+   },
+   "sfx": [
+    "whoosh",
+    [
+     "hit",
+     0.6
+    ],
+    [
+     "whoosh",
+     1.85
+    ],
+    [
+     "hit",
+     2.45
+    ]
+   ]
+  },
+  {
+   "tpl": "statCounter",
+   "at": "word:30-0.25",
+   "dur": 2.35,
+   "cfg": {
+    "value": 30,
+    "label": "YEARS OF EXPERIENCE",
+    "kicker": "FAMILY-OWNED",
+    "y": 560,
+    "beat": 0.05,
+    "count": 0.9
+   },
+   "sfx": [
+    "whoosh",
+    [
+     "hit",
+     0.95
+    ]
+   ]
+  },
+  {
+   "tpl": "locationSuper",
+   "at": "word:New-0.2",
+   "dur": 2.95,
+   "cfg": {
+    "place": "NH · MA · ME",
+    "who": "SERVING HOMEOWNERS"
+   },
+   "hide": false
+  },
+  {
+   "tpl": "discountStamp",
+   "at": "line:b6-0.05",
+   "dur": 2.2,
+   "cfg": {
+    "big": "REAL OFFER",
+    "small": "NOT A SALE",
+    "y": 800
+   },
+   "sfx": [
+    [
+     "hit",
+     0.1
+    ]
+   ]
+  },
+  {
+   "tpl": "hookText",
+   "at": "word:Let-0.12",
+   "dur": 2.3,
+   "cfg": {
+    "style": "highlight",
+    "text": "LET OUR FAMILY TREAT YOU LIKE FAMILY",
+    "mark": "LIKE FAMILY",
+    "y": 560
+   }
+  },
+  {
+   "tpl": "getQuoteEnd",
+   "at": "word:Tap-0.1",
+   "dur": 4.15,
+   "cfg": {
+    "line2": "$997 room painting special"
+   }
+  },
+  {
+   "tpl": "priceCard",
+   "at": "word:special-0.1",
+   "dur": 3.95,
+   "cfg": {
+    "kicker": "ROOM PAINTING SPECIAL",
+    "pre": "flat",
+    "price": 997,
+    "note": "Walls · ceilings · trim · prep · paint · labor",
+    "y": 330
+   },
+   "hide": false,
+   "sfx": [
+    "whoosh",
+    [
+     "hit",
+     1.45
+    ]
+   ]
+  },
+  {
+   "tpl": "tapPointer",
+   "at": "word:special+0.9",
+   "dur": 2.9,
+   "cfg": {},
+   "hide": false
+  }
+ ],
+ "captions": {
+  "y": 1240,
+  "em": [
+   "flat",
+   "guaranteed",
+   "included",
+   "family",
+   "real"
+  ]
+ }
+}

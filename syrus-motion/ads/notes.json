@@ -1,0 +1,58 @@
+{
+ "clients": [
+  {
+   "id": "elite-craft",
+   "name": "Elite Craft Renovations",
+   "about": "Long Island bathroom remodels and painting. Voiceover ads (AI voice) over Elite Craft's own job videos and photos."
+  },
+  {
+   "id": "work-horse",
+   "name": "Work Horse Pro Painting",
+   "about": "Family-owned painters serving New Hampshire, Massachusetts and Maine. Voiceover ads over Work Horse's own job photos."
+  },
+  {
+   "id": "twin-pines",
+   "name": "Twin Pines Home Improvements",
+   "about": "Wisconsin roofing. Their own reps on camera, cut tight with roof B-roll and graphics."
+  }
+ ],
+ "ads": [
+  {
+   "client": "elite-craft",
+   "dir": "elite-craft/ec1-biggest-offer",
+   "label": "$9,995 bathroom: biggest offer",
+   "script": "Bath Script 1 (Approved)",
+   "poster": 4.6,
+   "flow": "Long Island homeowners + \"biggest offer\" over the Northport reveal \u2192 $9,995 price card \u2192 Northport before/after wipe \u2192 \"2\u20133X the price\" \u2192 crew at work \u2192 \"No mess. No delays. No hidden costs.\" \u2192 trusted local company \u2192 Limited Spots stamp \u2192 Get Quote end card.",
+   "confirm": [
+    "The $9,995 offer is still running (script dates from Sep 2025 \u2013 Jan 2026).",
+    "\"Spots for this offer are extremely limited\" is true right now.",
+    "AI voice stands in for the client's usual VO."
+   ]
+  },
+  {
+   "client": "elite-craft",
+   "dir": "elite-craft/ec2-why-pay-more",
+   "label": "$9,995 bathroom: why pay $20,000?",
+   "script": "Bath Script 4 \"Why Pay More\"",
+   "poster": 6.6,
+   "flow": "\"Why pay $20,000?\" struck through \u2192 \"same results for just $9,995\" \u2192 Long Island homeowners \u2192 one shower: demo, tile, done \u2192 \"On time. On budget. Zero headaches.\" \u2192 prep and finished details \u2192 $9,995 price card \u2192 Get Quote end card and tap.",
+   "confirm": [
+    "The $9,995 offer is still running.",
+    "The client is comfortable with the script's $20,000 comparison on screen."
+   ]
+  },
+  {
+   "client": "elite-craft",
+   "dir": "elite-craft/ec3-painting-997",
+   "label": "$997 house painting",
+   "script": "Painting Script 1 (Winner)",
+   "poster": 1.6,
+   "flow": "\"Get your home professionally painted\" + $997 price card \u2192 crew at the house \u2192 checklist: no mess, no surprises, quality work \u2192 local Long Island team \u2192 \"Interior. Exterior. Or both.\" \u2192 finished homes \u2192 Get Quote end card.",
+   "confirm": [
+    "The $997 starting price is still running.",
+    "Painting footage is thin (4 short clips), so the middle uses Elite Craft's finished interiors and exteriors from their \"initial images\" folder. Confirm those are their projects."
+   ]
+  }
+ ]
+}

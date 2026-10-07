@@ -1,0 +1,543 @@
+{
+ "title": "Work Horse | Exterior | Free Estimate | Script 4",
+ "source": "Notion: SCRIPT 4 — Work Horse (Winner; CPL decaying — fresh visuals on the same words)",
+ "vo": {
+  "voice": "am_michael",
+  "speed": 1.12,
+  "lines": [
+   {
+    "id": "hook",
+    "text": "Hiring a painting contractor should not feel risky. But for most homeowners, it does.",
+    "after": 0.4
+   },
+   {
+    "id": "b1",
+    "text": "You are letting a crew work on your home's exterior for days. And most homeowners worry about the same things.",
+    "after": 0.3
+   },
+   {
+    "id": "b2",
+    "text": "Will they show up on time? Will they prep properly? Will they cut corners? Will the paint last?",
+    "after": 0.35
+   },
+   {
+    "id": "b3",
+    "text": "At Work Horse Pro Painting, our process is built to remove that uncertainty.",
+    "after": 0.25
+   },
+   {
+    "id": "b4",
+    "text": "From the start, everything is clearly included. The prep, the paint, the labor, and even a full pressure wash.",
+    "after": 0.3
+   },
+   {
+    "id": "b5",
+    "text": "You're working with a professional crew that communicates with you, shows up on time, and does the job the right way.",
+    "after": 0.3
+   },
+   {
+    "id": "b6",
+    "text": "This is how painting should be done. Simple. Predictable. And done right the first time.",
+    "after": 0.3
+   },
+   {
+    "id": "cta",
+    "text": "Click Get Quote to get a free, no-pressure exterior painting estimate you can actually trust.",
+    "after": 0.1
+   }
+  ]
+ },
+ "music": {
+  "bpm": 96,
+  "key": "A",
+  "mood": "drive",
+  "db": -18,
+  "stop": [
+   "line:b5.end",
+   "line:b6"
+  ],
+  "riser": [
+   "word:Simple",
+   "word:Click"
+  ]
+ },
+ "tail": 1.2,
+ "images": {
+  "bsB": "../media/previous-work/IMG_3490.JPG",
+  "bsA": "../media/previous-work/IMG_3482.JPG",
+  "b1": "../media/previous-work/IMG_3492.JPG",
+  "a1": "../media/previous-work/IMG_3480.JPG",
+  "b2": "../media/sept25/6770433740524745296.JPG",
+  "a2": "../media/sept25/8759477115647303105.JPG",
+  "b3": "../media/sept25/att.0TrHf0aMZ0IONsAFBjFulJ6O12rCaqC9MBhPE7O2CZ0.JPG",
+  "a3": "../media/sept25/2893293949386494720.JPG"
+ },
+ "shots": [
+  {
+   "src": "../media/previous-work/IMG_3553.JPG",
+   "until": "word:but",
+   "zoom": [
+    1.0,
+    1.12
+   ],
+   "fx": 0.5,
+   "fy": 0.3
+  },
+  {
+   "src": "../media/sept25/att.vkzJcbw6lYi9t_kc6HUf-2q7VQtjcr6DJmsQpwIHkrk.JPG",
+   "until": "line:b1",
+   "zoom": [
+    1.0,
+    1.1
+   ],
+   "fx": 0.5,
+   "fy": 0.4
+  },
+  {
+   "src": "../media/sept25/att.qkDDaLvWbZ6sj77B9C3h8DuINqDDODZASNRZCWO8XlQ.JPG",
+   "until": "word:exterior",
+   "zoom": [
+    1.0,
+    1.1
+   ],
+   "fx": 0.5,
+   "fy": 0.5
+  },
+  {
+   "src": "../media/previous-work/IMG_3486.JPG",
+   "until": "word:and",
+   "zoom": [
+    1.0,
+    1.1
+   ],
+   "fx": 0.5,
+   "fy": 0.5
+  },
+  {
+   "src": "../media/previous-work/IMG_3567.JPG",
+   "until": "line:b2",
+   "zoom": [
+    1.0,
+    1.12
+   ],
+   "fx": 0.45,
+   "fy": 0.5
+  },
+  {
+   "src": "../media/sept25/6682858002919255625.JPG",
+   "until": "word:Will#3",
+   "zoom": [
+    1.0,
+    1.1
+   ],
+   "fx": 0.5,
+   "fy": 0.5
+  },
+  {
+   "src": "../media/previous-work/IMG_3566.JPG",
+   "until": "line:b3",
+   "zoom": [
+    1.0,
+    1.1
+   ],
+   "fx": 0.5,
+   "fy": 0.5
+  },
+  {
+   "src": "../media/sept25/1650064316005776367.JPG",
+   "until": "word:process-0.1",
+   "zoom": [
+    1.1,
+    1.0
+   ],
+   "fx": 0.5,
+   "fy": 0.45
+  },
+  {
+   "src": "../media/previous-work/IMG_3482.JPG",
+   "until": "word:prep#2",
+   "zoom": [
+    1.04,
+    1.1
+   ],
+   "fx": 0.5,
+   "fy": 0.5
+  },
+  {
+   "src": "../media/sept25/778288993153260278.JPG",
+   "until": "word:labor",
+   "zoom": [
+    1.0,
+    1.1
+   ],
+   "fx": 0.5,
+   "fy": 0.5
+  },
+  {
+   "src": "../media/sept25/att.1QkqSD6XbvQwOQKuix85152K1IyRy-qnziCkJqKZino.JPG",
+   "until": "line:b5",
+   "zoom": [
+    1.0,
+    1.1
+   ],
+   "fx": 0.5,
+   "fy": 0.45
+  },
+  {
+   "src": "../media/client/IMG_2614.jpg",
+   "until": "word:communicates",
+   "zoom": [
+    1.0,
+    1.1
+   ],
+   "fx": 0.42,
+   "fy": 0.3
+  },
+  {
+   "src": "../media/client/IMG_2629.jpg",
+   "until": "word:shows",
+   "zoom": [
+    1.0,
+    1.08
+   ],
+   "fx": 0.5,
+   "fy": 0.3
+  },
+  {
+   "src": "../media/client/IMG_2613.jpg",
+   "until": "word:does#2",
+   "zoom": [
+    1.0,
+    1.1
+   ],
+   "fx": 0.5,
+   "fy": 0.4
+  },
+  {
+   "src": "../media/sept25/att.OR1rzwMV4Gg4JBVeP2m_Msv9Pf44Yc_-Q6UjdSrxOzU.JPG",
+   "until": "line:b6",
+   "zoom": [
+    1.0,
+    1.1
+   ],
+   "fx": 0.5,
+   "fy": 0.5
+  },
+  {
+   "src": "../media/sept25/2893293949386494720.JPG",
+   "until": "line:cta",
+   "zoom": [
+    1.0,
+    1.06
+   ],
+   "fx": 0.5,
+   "fy": 0.5
+  },
+  {
+   "src": "../media/sept25/5626880323858746298.JPG",
+   "until": "word:estimate",
+   "zoom": [
+    1.0,
+    1.1
+   ],
+   "fx": 0.5,
+   "fy": 0.5
+  },
+  {
+   "src": "../media/client/IMG_2620.jpg",
+   "until": "end",
+   "zoom": [
+    1.0,
+    1.08
+   ],
+   "fx": 0.45,
+   "fy": 0.4
+  }
+ ],
+ "gfx": [
+  {
+   "tpl": "badgeLine",
+   "at": 0.15,
+   "dur": 4.9,
+   "cfg": {
+    "items": [
+     "FREE EXTERIOR ESTIMATE",
+     "FULL PRESSURE WASH INCLUDED"
+    ],
+    "y": 290,
+    "beat": 0.05,
+    "stagger": 0.35
+   },
+   "hide": false
+  },
+  {
+   "tpl": "hookText",
+   "at": 0.05,
+   "dur": 3.15,
+   "cfg": {
+    "style": "highlight",
+    "text": "HIRING A PAINTER SHOULD NOT FEEL RISKY",
+    "mark": "RISKY",
+    "y": 960
+   },
+   "sfx": [
+    "whoosh",
+    [
+     "hit",
+     1.15
+    ]
+   ]
+  },
+  {
+   "tpl": "whWorryFlip",
+   "at": "line:b2-0.1",
+   "dur": 7.75,
+   "cfg": {
+    "beats": {
+     "q": [
+      0.1,
+      1.66,
+      2.94,
+      4.32
+     ],
+     "flip": 5.72,
+     "flipStep": 0.28
+    },
+    "y": 450
+   },
+   "sfx": [
+    [
+     "tick",
+     0.15000000000000002
+    ],
+    [
+     "tick",
+     1.71
+    ],
+    [
+     "tick",
+     2.9899999999999998
+    ],
+    [
+     "tick",
+     4.37
+    ],
+    [
+     "whoosh",
+     5.72
+    ],
+    [
+     "hit",
+     5.9
+    ],
+    [
+     "tick",
+     6.18
+    ],
+    [
+     "tick",
+     6.46
+    ],
+    [
+     "tick",
+     6.74
+    ]
+   ]
+  },
+  {
+   "tpl": "photoBeforeAfter",
+   "at": "word:process-0.1",
+   "dur": 5.05,
+   "cfg": {
+    "before": "bsB",
+    "after": "bsA",
+    "badge": "",
+    "fyB": 0.5,
+    "fyA": 0.5
+   },
+   "sfx": [
+    "whoosh",
+    [
+     "whoosh",
+     0.9
+    ],
+    [
+     "hit",
+     2.3
+    ]
+   ]
+  },
+  {
+   "tpl": "checklist",
+   "at": "word:prep#2-0.65",
+   "dur": 4.25,
+   "cfg": {
+    "kicker": "FROM THE START",
+    "title": "Everything included",
+    "price": "",
+    "y": 300,
+    "items": [
+     {
+      "icon": "cleanup",
+      "label": "The prep"
+     },
+     {
+      "icon": "paint-roller",
+      "label": "The paint"
+     },
+     {
+      "icon": "demo",
+      "label": "The labor"
+     },
+     {
+      "icon": "fixtures",
+      "label": "Full pressure wash"
+     }
+    ],
+    "beats": [
+     0.6,
+     1.3,
+     1.88,
+     2.78
+    ]
+   },
+   "sfx": [
+    "whoosh",
+    [
+     "tick",
+     0.77
+    ],
+    [
+     "tick",
+     1.47
+    ],
+    [
+     "tick",
+     2.05
+    ],
+    [
+     "tick",
+     2.9499999999999997
+    ]
+   ]
+  },
+  {
+   "tpl": "badgeLine",
+   "at": "word:communicates-0.15",
+   "dur": 4.95,
+   "cfg": {
+    "items": [
+     "COMMUNICATES WITH YOU",
+     "SHOWS UP ON TIME",
+     "DONE THE RIGHT WAY"
+    ],
+    "y": 290,
+    "beat": 0.1,
+    "stagger": 1.5
+   },
+   "hide": false,
+   "sfx": [
+    [
+     "tick",
+     0.1
+    ],
+    [
+     "tick",
+     1.6
+    ],
+    [
+     "tick",
+     3.1
+    ]
+   ]
+  },
+  {
+   "tpl": "whBaStack",
+   "at": "line:b6-0.1",
+   "dur": 5.3,
+   "cfg": {
+    "pairs": [
+     {
+      "b": "b1",
+      "a": "a1",
+      "fyB": 0.62,
+      "fyA": 0.62,
+      "tag": "BARN"
+     },
+     {
+      "b": "b2",
+      "a": "a2",
+      "fyB": 0.42,
+      "fyA": 0.4,
+      "tag": "CABIN"
+     },
+     {
+      "b": "b3",
+      "a": "a3",
+      "fxB": 0.5,
+      "fyB": 0.5,
+      "fyA": 0.42,
+      "tag": "FARMHOUSE"
+     }
+    ],
+    "each": 1.75,
+    "wipe": 0.3,
+    "wipeDur": 0.45,
+    "top": 220,
+    "ph": 720,
+    "gap": 28
+   },
+   "sfx": [
+    "whoosh",
+    [
+     "hit",
+     0.6
+    ],
+    [
+     "whoosh",
+     1.75
+    ],
+    [
+     "hit",
+     2.35
+    ],
+    [
+     "whoosh",
+     3.5
+    ],
+    [
+     "hit",
+     4.1
+    ]
+   ]
+  },
+  {
+   "tpl": "getQuoteEnd",
+   "at": "word:Click-0.1",
+   "dur": 4.5,
+   "cfg": {
+    "line2": "Free, no-pressure estimate"
+   }
+  },
+  {
+   "tpl": "tapPointer",
+   "at": "word:estimate+0.15",
+   "dur": 2.95,
+   "cfg": {},
+   "hide": false
+  }
+ ],
+ "captions": {
+  "y": 1240,
+  "em": [
+   "risky",
+   "free",
+   "pressure",
+   "professional",
+   "right",
+   "simple",
+   "predictable",
+   "trust"
+  ]
+ }
+}
