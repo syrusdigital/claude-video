@@ -93,7 +93,7 @@
   {
    "tpl": "monthlyStack",
    "at": "word:car-0.15",
-   "until": "line:b1",
+   "until": "line:b1+1.6",
    "cfg": {
     "beats": [
      0.05,
