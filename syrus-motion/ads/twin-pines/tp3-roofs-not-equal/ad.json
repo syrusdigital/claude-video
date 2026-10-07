@@ -1,0 +1,374 @@
+{
+ "title": "Twin Pines - Not All Roofs Are Created Equal - TP3",
+ "source": "Client on-camera footage: omni-s3 (Nate in his truck), WhatsApp 2025-08-06",
+ "aroll": [
+  {
+   "id": "open",
+   "src": "../media/omni-s3/wa-2025-08-06-220825.mp4",
+   "in": 4.6,
+   "out": 5.95,
+   "words": "words/wa-2025-08-06-220825.mp4.words.json",
+   "zoom": 1.05,
+   "fy": 0.6
+  },
+  {
+   "id": "intro",
+   "src": "../media/omni-s3/wa-2025-08-06-220825.mp4",
+   "in": 0.2,
+   "out": 4.58,
+   "words": "words/wa-2025-08-06-220825.mp4.words.json",
+   "zoom": 1.0,
+   "fy": 0.5
+  },
+  {
+   "id": "cheap",
+   "src": "../media/omni-s3/wa-2025-08-06-220827.mp4",
+   "in": 0.2,
+   "out": 2.8,
+   "words": "words/wa-2025-08-06-220827.mp4.words.json",
+   "zoom": 1.05,
+   "fy": 0.6
+  },
+  {
+   "id": "repairs",
+   "src": "../media/omni-s3/wa-2025-08-06-220827.mp4",
+   "in": 3.27,
+   "out": 5.79,
+   "words": "words/wa-2025-08-06-220827.mp4.words.json",
+   "zoom": 1.0,
+   "fy": 0.5
+  },
+  {
+   "id": "quality",
+   "src": "../media/omni-s3/wa-2025-08-06-220827.mp4",
+   "in": 6.81,
+   "out": 8.47,
+   "words": "words/wa-2025-08-06-220827.mp4.words.json",
+   "zoom": 1.0,
+   "fy": 0.5
+  },
+  {
+   "id": "quality2",
+   "src": "../media/omni-s3/wa-2025-08-06-220827.mp4",
+   "in": 9.04,
+   "out": 10.54,
+   "words": "words/wa-2025-08-06-220827.mp4.words.json",
+   "zoom": 1.0,
+   "fy": 0.5
+  },
+  {
+   "id": "3tab",
+   "src": "../media/omni-s3/wa-2025-08-06-220828.mp4",
+   "in": 0.0,
+   "out": 4.12,
+   "words": "words/wa-2025-08-06-220828.mp4.words.json",
+   "zoom": 1.05,
+   "fy": 0.6
+  },
+  {
+   "id": "dim",
+   "src": "../media/omni-s3/wa-2025-08-06-220829.mp4",
+   "in": 0.0,
+   "out": 5.85,
+   "words": "words/wa-2025-08-06-220829.mp4.words.json",
+   "zoom": 1.0,
+   "fy": 0.5
+  },
+  {
+   "id": "metal",
+   "src": "../media/omni-s3/wa-2025-08-06-220846.mp4",
+   "in": 0.91,
+   "out": 10.25,
+   "words": "words/wa-2025-08-06-220846.mp4.words.json",
+   "zoom": 1.05,
+   "fy": 0.6
+  },
+  {
+   "id": "every",
+   "src": "../media/omni-s3/wa-2025-08-06-220848.mp4",
+   "in": 0.4,
+   "out": 7.85,
+   "words": "words/wa-2025-08-06-220848.mp4.words.json",
+   "zoom": 1.0,
+   "fy": 0.5
+  },
+  {
+   "id": "decide",
+   "src": "../media/omni-s3/wa-2025-08-06-220855.mp4",
+   "in": 1.33,
+   "out": 2.68,
+   "words": "words/wa-2025-08-06-220855.mp4.words.json",
+   "zoom": 1.05,
+   "fy": 0.6
+  },
+  {
+   "id": "decide2",
+   "src": "../media/omni-s3/wa-2025-08-06-220855.mp4",
+   "in": 3.16,
+   "out": 7.25,
+   "words": "words/wa-2025-08-06-220855.mp4.words.json",
+   "zoom": 1.0,
+   "fy": 0.5
+  },
+  {
+   "id": "brand",
+   "src": "../media/omni-s3/wa-2025-08-06-220855.mp4",
+   "in": 7.85,
+   "out": 10.3,
+   "words": "words/wa-2025-08-06-220855.mp4.words.json",
+   "zoom": 1.05,
+   "fy": 0.6
+  },
+  {
+   "id": "cta",
+   "src": "../media/omni-s3/wa-2025-08-06-220855.mp4",
+   "in": 10.72,
+   "out": 14.7,
+   "words": "words/wa-2025-08-06-220855.mp4.words.json",
+   "zoom": 1.0,
+   "fy": 0.5
+  }
+ ],
+ "tail": 1.0,
+ "music": {
+  "bpm": 92,
+  "key": "C",
+  "mood": "warm",
+  "db": -24,
+  "duck": -6
+ },
+ "shots": [
+  {
+   "src": "../media/omni-multi/wa-2025-07-25-024013.mp4",
+   "in": 1.3,
+   "at": "word:means-0.1",
+   "len": 2.2,
+   "zoom": [
+    1.0,
+    1.06
+   ]
+  },
+  {
+   "src": "../../../pack/37-roof-layers/roof-layers.mp4",
+   "in": 4.2,
+   "at": "word:great-0.1",
+   "len": 3.0
+  },
+  {
+   "src": "../media/omni-s1/wa-2025-08-05-234439.mp4",
+   "in": 5.8,
+   "at": "word:standard-0.1",
+   "len": 1.8,
+   "zoom": [
+    1.0,
+    1.06
+   ]
+  },
+  {
+   "src": "../media/omni-multi/wa-2025-07-25-024011.mp4",
+   "in": 0.0,
+   "at": "word:dimensional-0.1",
+   "len": 3.0,
+   "zoom": [
+    1.0,
+    1.06
+   ]
+  },
+  {
+   "src": "../media/images/img-0224.jpg",
+   "at": "word:metal-0.1",
+   "len": 2.6,
+   "zoom": [
+    1.0,
+    1.07
+   ],
+   "fy": 0.5
+  },
+  {
+   "src": "../media/images/img-0230.jpg",
+   "at": "word:Plus-0.1",
+   "len": 2.96,
+   "zoom": [
+    1.0,
+    1.07
+   ],
+   "fy": 0.5
+  },
+  {
+   "src": "../media/omni-multi/wa-2025-07-25-035845.mp4",
+   "in": 19.0,
+   "at": "word:we'll-0.08",
+   "len": 2.0,
+   "zoom": [
+    1.0,
+    1.05
+   ]
+  },
+  {
+   "src": "../media/omni-multi/wa-2025-07-25-024007.mp4",
+   "in": 0.2,
+   "at": "word:talk-0.1",
+   "len": 2.0
+  },
+  {
+   "src": "../media/images/img-0080.jpg",
+   "at": "line:cta",
+   "len": 5.0,
+   "zoom": [
+    1.0,
+    1.08
+   ],
+   "fy": 0.5
+  }
+ ],
+ "gfx": [
+  {
+   "tpl": "hookText",
+   "at": 0.0,
+   "dur": 1.7,
+   "cfg": {
+    "style": "stack",
+    "text": "NOT ALL ROOFS ARE CREATED EQUAL",
+    "lines": [
+     "NOT ALL ROOFS",
+     "ARE CREATED EQUAL"
+    ],
+    "lineStep": 0.5,
+    "maxSize": 140,
+    "y": 560
+   },
+   "sfx": [
+    [
+     "hit",
+     0.1
+    ],
+    [
+     "hit",
+     0.6
+    ]
+   ]
+  },
+  {
+   "tpl": "nameLowerThird",
+   "at": "word:I'm-0.1",
+   "dur": 2.4,
+   "cfg": {
+    "name": "Nate Stern",
+    "title": "Twin Pines Home Improvements",
+    "y": 330
+   }
+  },
+  {
+   "tpl": "hookText",
+   "at": "word:cheapest-0.55",
+   "dur": 1.6,
+   "cfg": {
+    "style": "highlight",
+    "text": "THE CHEAPEST OPTION",
+    "mark": "CHEAPEST",
+    "step": 0.1,
+    "size": 120,
+    "y": 560
+   }
+  },
+  {
+   "tpl": "tpLifespan",
+   "at": "word:For-0.1",
+   "dur": 19.35,
+   "cfg": {
+    "rows": [
+     {
+      "kind": "3tab",
+      "name": "Standard 3-tab",
+      "len": 0.3,
+      "label": "SHORTER LIFESPAN",
+      "at": 0.9,
+      "barAt": 3.55
+     },
+     {
+      "kind": "dimensional",
+      "name": "Dimensional shingle",
+      "len": 0.62,
+      "label": "UP TO 30+ YEARS",
+      "at": 4.55,
+      "barAt": 9.3
+     },
+     {
+      "kind": "metal",
+      "name": "Metal & synthetic",
+      "len": 1.0,
+      "label": "UP TO 50+ YEARS",
+      "at": 12.1,
+      "barAt": 14.75,
+      "gold": true
+     }
+    ]
+   },
+   "hide": false,
+   "sfx": [
+    "whoosh"
+   ]
+  },
+  {
+   "tpl": "badgeLine",
+   "at": "word:Factoring-0.1",
+   "dur": 3.4,
+   "cfg": {
+    "items": [
+     "YOUR BUDGET",
+     "LOCAL CLIMATE",
+     "HOW LONG YOU'LL STAY"
+    ],
+    "y": 300,
+    "stagger": 0.9
+   },
+   "hide": false,
+   "sfx": [
+    [
+     "tick",
+     0.15
+    ],
+    [
+     "tick",
+     1.05
+    ],
+    [
+     "tick",
+     1.95
+    ]
+   ]
+  },
+  {
+   "tpl": "hookText",
+   "at": "word:educated-0.6",
+   "dur": 1.9,
+   "cfg": {
+    "style": "highlight",
+    "text": "AN EDUCATED INVESTMENT",
+    "mark": "EDUCATED INVESTMENT",
+    "step": 0.12,
+    "size": 116,
+    "y": 560
+   }
+  },
+  {
+   "tpl": "getQuoteEnd",
+   "at": "line:cta-0.05",
+   "dur": 5.0,
+   "cfg": {
+    "line2": "Choose the right roof"
+   }
+  }
+ ],
+ "captions": {
+  "y": 1450,
+  "em": [
+   "30",
+   "50",
+   "equal",
+   "cheapest",
+   "educated",
+   "lifespan"
+  ]
+ }
+}

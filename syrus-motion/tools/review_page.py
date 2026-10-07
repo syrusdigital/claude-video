@@ -70,16 +70,25 @@ def build_pack():
         alpha = bool(webm)
         src = os.path.join(d, prev or full); D = dur(os.path.join(d, webm or full))
         small(src, os.path.join(out, 'm', m['id'] + '.mp4'), 540 if not prev else 540, 28 if prev else 27)
-        poster(src, os.path.join(out, 'p', m['id'] + '.jpg'), min(D * 0.62, D - 0.2))
+        poster(src, os.path.join(out, 'p', m['id'] + '.jpg'), (D / 2 if m['group'] == 'transition' else max(0.1, D - 0.55)) if webm else min(D * 0.62, D - 0.2))   # overlays: settled end state; transitions: fully covered middle
         dl = []
         if webm: shutil.copy2(os.path.join(d, webm), os.path.join(out, 'd', m['id'] + '.webm')); dl.append({'label': 'WebM (transparent)', 'path': f"d/{m['id']}.webm", 'name': webm})
+        if mov:   # fill + luma matte pair: works in any editor with a track matte (Premiere: Track Matte Key, Matte Luma)
+            src_mov = os.path.join(d, mov); fill, mat = (os.path.join(out, 'd', f"{m['id']}-{k}.mp4") for k in ('fill', 'matte'))
+            if not (fresh(src_mov, fill) and fresh(src_mov, mat)):
+                sh('ffmpeg', '-y', '-v', 'error', '-i', src_mov, '-filter_complex', '[0]format=rgba,split[a][b];[a]format=rgb24,format=yuv420p[f];[b]alphaextract,format=yuv420p[m]',
+                   '-map', '[f]', '-c:v', 'libx264', '-crf', 14, '-preset', 'slow', '-movflags', '+faststart', fill,
+                   '-map', '[m]', '-c:v', 'libx264', '-crf', 14, '-preset', 'slow', '-movflags', '+faststart', mat)
+            stem = mov[:-4]
+            dl += [{'label': 'Fill MP4', 'path': f"d/{m['id']}-fill.mp4", 'name': stem + '-fill.mp4'},
+                   {'label': 'Matte MP4', 'path': f"d/{m['id']}-matte.mp4", 'name': stem + '-matte.mp4'}]
         if full:
             dst = os.path.join(out, 'd', m['id'] + '.mp4')
             if os.path.getsize(os.path.join(d, full)) <= MAX_FILE: shutil.copy2(os.path.join(d, full), dst)
             else: fit_mp4(os.path.join(d, full), dst)
             dl.append({'label': 'MP4 1080x1920', 'path': f"d/{m['id']}.mp4", 'name': full})
         matte = next((f for f in fs if 'matte' in f and f.endswith('.mp4')), None)
-        if matte: shutil.copy2(os.path.join(d, matte), os.path.join(out, 'd', m['id'] + '-matte.mp4')); dl.append({'label': 'Matte MP4', 'path': f"d/{m['id']}-matte.mp4", 'name': matte})
+        if matte: shutil.copy2(os.path.join(d, matte), os.path.join(out, 'd', m['id'] + '-wipe-matte.mp4')); dl.append({'label': 'Wipe matte MP4', 'path': f"d/{m['id']}-wipe-matte.mp4", 'name': matte})
         items.append({**m, 'alpha': alpha, 'dur': round(D, 2), 'tc': tc(D), 'frames': int(round(D * 30)), 'mov': bool(mov),
                       'movMB': round(os.path.getsize(os.path.join(d, mov)) / 1e6, 1) if mov else None, 'dl': dl,
                       'preview': f"m/{m['id']}.mp4", 'poster': f"p/{m['id']}.jpg"})

@@ -108,13 +108,11 @@
    "src": "../media/omni-multi/wa-2025-07-25-024007.mp4",
    "in": 0.0,
    "at": "line:storm",
-   "len": 3.7
-  },
-  {
-   "src": "../media/omni-multi/wa-2025-07-25-024003.mp4",
-   "in": 0.0,
-   "at": "line:storm+3.7",
-   "len": 3.7
+   "len": 7.4,
+   "zoom": [
+    1.0,
+    1.04
+   ]
   },
   {
    "src": "../media/omni-multi/wa-2025-07-25-024011.mp4",
@@ -148,7 +146,7 @@
   },
   {
    "src": "../media/omni-multi/wa-2025-07-25-035845.mp4",
-   "in": 18.4,
+   "in": 22.4,
    "at": "word:for#2-0.08",
    "len": 2.1,
    "zoom": [
