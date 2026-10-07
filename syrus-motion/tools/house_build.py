@@ -81,7 +81,7 @@ for bi, b in enumerate(beats):
         if c.get('flash'): s['flash'] = True
         w = info.get('w') or 1080
         g = 'eq=contrast=1.06:saturation=1.12:brightness=0.01'
-        if min(w, info.get('h') or 1920) < 720: g += ',unsharp=5:5:0.9:5:5:0.0'
+        if min(w, info.get('h') or 1920) < 720: g = 'hqdn3d=1.2:1.2:4:4,' + g + ',unsharp=5:5:0.8:5:5:0.0'   # phone clips: denoise the upscale, then sharpen
         s['grade'] = c.get('grade', g)
         shots.append(s)
 A['shots'] = shots; A['tail'] = A.get('tail', 0.4)

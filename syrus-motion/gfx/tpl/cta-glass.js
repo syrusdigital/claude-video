@@ -65,3 +65,28 @@ TPL.logoPill = {
     });
   },
 };
+
+// logoCard — the client's real logo (cfg.img, a key in spec.images), full size: pops in on a spring with a soft drop
+// shadow and one light sweep across it, holds, fades. Logos that need a backing (dark lettering) ship it baked into the PNG.
+TPL.logoCard = {
+  dur: 2.4,
+  defaults: { img: 'logo', y: 0.33, h: 420, maxW: 900, sweep: true },
+  draw(t, c, E) {
+    const im = IMGS[c.img]; if (!im) return;
+    const k = spring(t, 170, 17), a = clamp(t / 0.18) * (1 - easeOut((t - (c.dur - 0.3)) / 0.3));
+    if (a <= 0.001) return;
+    let h = c.h, w = im.width * (h / im.height); if (w > c.maxW) { w = c.maxW; h = im.height * (w / im.width); }
+    ctx.globalAlpha = a;
+    at(E.W / 2, E.H * c.y - 18 * (1 - k), 0.7 + 0.3 * k, 0, () => {
+      ctx.save(); ctx.shadowColor = 'rgba(0,0,0,0.45)'; ctx.shadowBlur = 48; ctx.shadowOffsetY = 18;
+      ctx.drawImage(im, -w / 2, -h / 2, w, h); ctx.restore();
+      if (c.sweep && t > 0.25 && t < 1.15) {   // one glint across the logo, clipped to its own pixels
+        const p = (t - 0.25) / 0.9, x = -w / 2 + (w + h) * p - h;
+        ctx.save(); ctx.globalCompositeOperation = 'source-atop';
+        const g = ctx.createLinearGradient(x, -h / 2, x + h * 0.6, h / 2);
+        g.addColorStop(0, 'rgba(255,255,255,0)'); g.addColorStop(0.5, 'rgba(255,255,255,0.35)'); g.addColorStop(1, 'rgba(255,255,255,0)');
+        ctx.fillStyle = g; ctx.fillRect(-w / 2, -h / 2, w, h); ctx.restore();
+      }
+    });
+  },
+};

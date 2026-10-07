@@ -17,7 +17,7 @@ TPL.qualifyQuiz = {
     const B = E.B, Q = c.questions.slice(0, 4), n = Q.length;
     const up = life(t, c.dur, 0.3, 200, 20); if (up <= 0.001) return;
     const cw = 920, x0 = (E.W - cw) / 2, HEAD = 156, RH = 158, ch = HEAD + n * RH + 22, y0 = c.y + (1 - up) * 130;
-    const qT = (i) => c.beat + i * c.step, yesT = (i) => qT(i) + 0.62, resT = yesT(n - 1) + 0.6;
+    const qT = (i) => (c.beats && c.beats[i] != null) ? c.beats[i] : c.beat + i * c.step, yesT = (i) => qT(i) + 0.62, resT = yesT(n - 1) + 0.6;
     const dip = 0.02 * Math.sin(seg(t, resT, resT + 0.25) * Math.PI);
     ctx.globalAlpha = clamp(up * 1.5);
     at(E.W / 2, y0 + ch / 2, 1 - dip, 0, () => at(-E.W / 2, -(y0 + ch / 2), 1, 0, () => {

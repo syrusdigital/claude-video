@@ -14,6 +14,7 @@ TPL.sceneNoMiddleman = {
     direct: { label: 'Us', icon: 'crew' },
     price: 14995,                           // the offer (gold) — client-confirmed
     priceLabel: 'YOU PAY',
+    symbols: false, symbolFinal: 'DIRECT',   // symbols: true shows $/$$/$$$ instead of figures
     caption1: 'EVERY MIDDLEMAN|ADDS A MARKUP',
     caption2: 'WE CUT OUT|THE MIDDLEMEN',
     final: 'DIRECT TO YOU.|NO MIDDLEMAN MARKUP.',
@@ -101,6 +102,17 @@ TPL.sceneNoMiddleman = {
       I.house(s * 0.95, w, sk, B.card);
     } else if (kind === 'crew') {
       at(0, s * 0.1, 1, 0, () => I.hardhat(s * 1.15, B.sky, w));
+    } else if (kind === 'office') {   // a glass tower
+      K.box(-s * 0.26, -s * 0.46, s * 0.52, s * 0.86, 4, w, { band: 0, hl: 0 });
+      for (let r = 0; r < 5; r++) for (let q = 0; q < 3; q++) { rrect(-s * 0.2 + q * s * 0.145, -s * 0.38 + r * s * 0.15, s * 0.1, s * 0.09, 2); ctx.fillStyle = sk; ctx.fill(); }
+    } else if (kind === 'tv') {
+      K.box(-s * 0.44, -s * 0.3, s * 0.88, s * 0.56, 6, w, { band: 0, hl: 0 }); rrect(-s * 0.38, -s * 0.24, s * 0.76, s * 0.44, 4); ctx.fillStyle = sk; ctx.fill();
+      K.poly([[-s * 0.06, -s * 0.12], [s * 0.1, -s * 0.02], [-s * 0.06, s * 0.08]], w);   // play button
+      rrect(-s * 0.16, s * 0.3, s * 0.32, s * 0.06, 3); ctx.fillStyle = w; ctx.fill();
+    } else if (kind === 'billboard') {
+      K.box(-s * 0.46, -s * 0.42, s * 0.92, s * 0.46, 4, w, { band: 0, hl: 0 }); rrect(-s * 0.4, -s * 0.36, s * 0.8, s * 0.34, 3); ctx.fillStyle = B.bad; ctx.fill();
+      text('$$$', 0, -s * 0.1, s * 0.26, w, { weight: 900, align: 'center', shadow: false });
+      ctx.fillStyle = w; ctx.fillRect(-s * 0.24, s * 0.04, s * 0.06, s * 0.38); ctx.fillRect(s * 0.18, s * 0.04, s * 0.06, s * 0.38);
     }
   },
   parcel(E) {
@@ -135,7 +147,10 @@ TPL.sceneNoMiddleman = {
       circle(x0 + 30, 0, 11, K.mix('#C9C3B5', B.dark, navy));
       text(c.priceLabel, x0 + 66, y0 + 50, 30, K.mix(K.mix(B.card, B.bad, pay), B.sky, navy), { weight: 800, spacing: 4, shadow: false });
       const pc = navy > 0.5 ? B.accent : K.mix(B.card, B.bad, pay);
-      const str = money(Math.round(val / (dropU > 0 && dropU < 1 ? 1 : 1))), fs = fitSize(str, 84, w - 80, { weight: 900 });
+      // cfg.symbols: no figures on screen (nothing client-confirmed to show): the tag grows $ -> $$ -> $$$ with each markup,
+      // then lands on cfg.symbolFinal (e.g. 'DIRECT') instead of an offer price
+      const str = c.symbols ? (dropU > 0.5 ? c.symbolFinal : '$'.repeat(1 + Math.min(markups, c.prices.length - 1) + (pay > 0.5 ? 1 : 0)))
+        : money(Math.round(val)), fs = fitSize(str, 84, w - 80, { weight: 900 });
       text(str, x0 + 64, y0 + 132, fs, pc, { weight: 900, shadow: false });
       const ul = easeOut(seg(t, b.drop + 0.8, b.drop + 1.2));
       if (ul > 0) { rrect(x0 + 64, y0 + 146, (w - 96) * ul, 9, 4.5); ctx.fillStyle = B.accent; ctx.fill(); }

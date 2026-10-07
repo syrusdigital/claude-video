@@ -40,7 +40,9 @@ TPL.kinetic = {
         if (cur.length && (cur.length >= 8 || /[.!?]$/.test(prev.w) || w.t0 - prev.t1 > 0.6)) flush();
       } else {
         const len = cur.reduce((a, x) => a + x.w.length + 1, 0) + w.w.length;
-        if (cur.length && (cur.length >= c.maxWords || len > c.maxChars || w.t0 - prev.t1 > 0.35 || /[.!?]$/.test(prev.w) || (/[,;:]$/.test(prev.w) && cur.length >= 2))) flush();
+        // a short word that closes a clause ("it," "too.") stays with the phrase it ends instead of opening an orphan chunk
+        const tail = /[,;:.!?]$/.test(w.w) && w.w.replace(/[^A-Za-z0-9$]/g, '').length <= 3 && cur.length <= c.maxWords && !/[,;:.!?]$/.test(prev ? prev.w : '');
+        if (cur.length && (tail ? (w.t0 - prev.t1 > 0.35) : (cur.length >= c.maxWords || len > c.maxChars || w.t0 - prev.t1 > 0.35 || /[.!?]$/.test(prev.w) || (/[,;:]$/.test(prev.w) && cur.length >= 2)))) flush();
         if (this.isMoney(w.w) && cur.length >= 2) flush();   // a price starts its own chunk, so it lands big
       }
       if (cur.length && w.t0 >= c.hookEnd && cur[0].t0 < c.hookEnd) flush();

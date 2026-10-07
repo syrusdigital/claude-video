@@ -4,7 +4,7 @@
 usage: python3 tools/audio.py plan.json out.wav
 plan.json: {
   "duration": 42.0, "bpm": 104, "key": "D", "mood": "warm" | "drive" | "tension",
-  "vo": "path/vo.wav" | null, "music_db": -18, "duck_db": -9,
+  "vo": "path/vo.wav" | null, "music_db": -18, "duck_db": -9, "duck_mid_db": -6,   # duck_mid: extra dip of the voice band (250 Hz-4 kHz) only
   "hits":   [t, ...]            # impacts (price slams, the payoff)
   "whoosh": [t, ...]            # graphic entries / transitions
   "ticks":  [t, ...]            # checklist ticks, counters
@@ -15,6 +15,7 @@ Everything is generated here (no samples), deterministic (seeded noise). Output 
 """
 import json, sys
 import numpy as np
+import scipy.signal as ss
 import soundfile as sf
 
 SR = 48000
@@ -90,14 +91,15 @@ for b in range(bars):
         if mood == 'drive': add(music, tb, Hh, 0.02)
 # ---- or a real track: loudness-matched, looped if short, trimmed to the ad
 if P.get('music_file'):
-    m, msr = sf.read(P['music_file'])
-    if m.ndim > 1: m = m.mean(axis=1)
-    if msr != SR: m = np.interp(np.linspace(0, len(m) - 1, int(len(m) * SR / msr)), np.arange(len(m)), m)
+    m, msr = sf.read(P['music_file'])   # kept in stereo: a real bed has its own width
+    m = m[:, :2] if m.ndim > 1 else m[:, None]
+    if m.shape[1] == 1: m = np.repeat(m, 2, axis=1)
+    if msr != SR: m = np.stack([np.interp(np.linspace(0, len(m) - 1, int(len(m) * SR / msr)), np.arange(len(m)), ch) for ch in m.T], axis=1)
     m = m[int(float(P.get('music_in', 0)) * SR):]   # skip a soft intro: house beds are at full energy from frame one
-    reps = int(np.ceil(N / len(m))); music = np.tile(m, reps)[:N]
+    reps = int(np.ceil(N / len(m))); music = np.tile(m, (reps, 1))[:N]
     if P.get('music_end') is not None:   # the house edit: the bed ends with the voice
         ie = int(min(DUR, P['music_end']) * SR); nf0 = int(0.35 * SR)
-        music[ie:] = 0; music[max(0, ie - nf0):ie] *= np.linspace(1, 0, len(music[max(0, ie - nf0):ie]))
+        music[ie:] = 0; music[max(0, ie - nf0):ie] *= np.linspace(1, 0, len(music[max(0, ie - nf0):ie]))[:, None]
 # ---- music drop-outs ("stop": silence before a payoff) and a fade at the end
 gain = np.ones(N)
 if P.get('stop'):
@@ -105,7 +107,7 @@ if P.get('stop'):
     ramp = int(0.05 * SR); gain[ia:ib] = 0.02
     gain[max(0, ia - ramp):ia] = np.linspace(1, 0.02, len(gain[max(0, ia - ramp):ia]))
 nf = int(1.2 * SR); gain[-nf:] *= np.linspace(1, 0, nf)
-music *= gain
+music *= gain[:, None] if music.ndim == 2 else gain
 
 # ---- sfx
 sfx = np.zeros(N)
@@ -147,19 +149,28 @@ if P.get('vo'):
     w = int(0.06 * SR); e = np.sqrt(np.maximum(movavg(vo ** 2, w), 0))
     speaking = (e > 0.02).astype(float)
     k = int(0.25 * SR); speaking = movavg(speaking, k)
-    duck = 10 ** (P.get('duck_db', -9) / 20)
-    music *= 1 - (1 - duck) * np.clip(speaking, 0, 1)
+else:
+    speaking = np.zeros(N)
 mg = 10 ** (P.get('music_db', -18) / 20)
 if P.get('music_file'):
-    # db is relative to the voice: the bed's RMS sits that far under the VO's speaking RMS (house ads: about -10 to -12)
+    # db is relative to the voice: the bed's RMS (before ducking) sits that far under the VO's speaking RMS
     vr = np.sqrt(np.mean(vo[np.abs(vo) > 0.01] ** 2)) if np.any(np.abs(vo) > 0.01) else 0.1
     live = music[np.abs(music) > 1e-4]; mr = np.sqrt(np.mean(live ** 2)) if len(live) else 1.0
     music = music / max(1e-6, mr) * vr * 0.9 * mg
 else:
     music = music / max(1e-6, np.abs(music).max()) * mg
-mix = vo * 0.9 + music + sfx * 0.6
-L = mix + np.roll(music, 240) * 0.15       # a touch of width on the music
-R = mix - np.roll(music, 240) * 0.15
+# ducking: the whole bed dips a little while the voice speaks, and the voice band (250 Hz-4 kHz) dips further, so the voice
+# keeps its chest and clarity while the kick, bass and hats keep driving
+sp = np.clip(speaking, 0, 1); sp = sp[:, None] if music.ndim == 2 else sp
+duck, dmid = 10 ** (P.get('duck_db', -9) / 20), 10 ** (P.get('duck_mid_db', 0) / 20)
+mid = ss.sosfiltfilt(ss.butter(2, [250 / (SR / 2), 4000 / (SR / 2)], 'band', output='sos'), music, axis=0)
+music = (music - mid) * (1 - (1 - duck) * sp) + mid * (1 - (1 - duck * dmid) * sp)
+if music.ndim == 2:
+    L = vo * 0.9 + music[:, 0] + sfx * 0.6; R = vo * 0.9 + music[:, 1] + sfx * 0.6
+else:   # the synthesized bed is mono: a touch of width on it
+    mix = vo * 0.9 + music + sfx * 0.6
+    L = mix + np.roll(music, 240) * 0.15
+    R = mix - np.roll(music, 240) * 0.15
 st = np.stack([L, R], axis=1)
 st /= max(1.0, np.abs(st).max() / 0.95)
 sf.write(sys.argv[2], st.astype(np.float32), SR, subtype='PCM_16')

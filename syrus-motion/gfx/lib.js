@@ -90,9 +90,10 @@ function renderFrame(T) {
   const B = Object.assign({}, BRAND0, S.brand || {});
   for (const it of S.items) {
     const tp = TPL[it.tpl]; if (!tp) throw new Error('unknown template ' + it.tpl);
-    const dur = it.dur ?? (it.cfg && it.cfg.dur) ?? tp.dur, t = T - (it.at || 0);
-    if (t < 0 || t > dur) continue;
-    const c = Object.assign({}, tp.defaults || {}, it.cfg || {}, { dur });
+    const dur = it.dur ?? (it.cfg && it.cfg.dur) ?? tp.dur, t0 = T - (it.at || 0);
+    if (t0 < 0 || t0 > dur) continue;
+    const sp = it.speed || 1, t = t0 * sp;   // speed: play a fixed-length scene faster/slower to fit its VO window
+    const c = Object.assign({}, tp.defaults || {}, it.cfg || {}, { dur: dur * sp });
     ctx.save(); tp.draw(t, c, { W, H, fps: S.fps, B, T }); ctx.restore();
   }
 }

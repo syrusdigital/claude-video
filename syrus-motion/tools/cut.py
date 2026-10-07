@@ -125,7 +125,7 @@ for i, s in enumerate(shots):
                   f"[b]scale=1080:-2[fg];[bg][fg]overlay=(W-w)/2:(H-h)/2,fps={FPS},{grade},format=yuv420p")
         else:
             # a slow push on video: zoompan one output frame per input frame (d=1), on a 2x canvas so the steps don't jitter
-            vf = (f"setpts=PTS/{sp},scale=1080:1920:force_original_aspect_ratio=increase,crop=1080:1920:(iw-1080)*{fx}:(ih-1920)*{fy},fps={FPS},"
+            vf = (f"setpts=PTS/{sp},scale=1080:1920:force_original_aspect_ratio=increase:flags=lanczos,crop=1080:1920:(iw-1080)*{fx}:(ih-1920)*{fy},fps={FPS},"
                   + (f"scale=2160:3840,zoompan=z='{z0}+({z1}-{z0})*in/{max(1, nfr - 1)}{pk.format(n='in')}':d=1:x='(iw-iw/zoom)*{fx}':y='(ih-ih/zoom)*{fy}':s=1080x1920:fps={FPS},"
                      if z1 != z0 or pz else '')
                   + f"{grade},format=yuv420p")
@@ -167,8 +167,12 @@ for g in A.get('gfx', []):
     at = anchor(g['at']); it = {'tpl': g['tpl'], 'at': round(at, 3), 'cfg': dict(g.get('cfg', {}))}
     if 'until' in g: g = {**g, 'dur': round(anchor(g['until']) - at, 3)}   # "until": an anchor instead of a fixed length
     if 'dur' in g: it['dur'] = g['dur']
-    if any(isinstance(b, str) for b in it['cfg'].get('beats') or []):   # beats may be anchors ("line:b4"), relative to the item
-        it['cfg']['beats'] = [round(anchor(b) - at, 3) if isinstance(b, str) else b for b in it['cfg']['beats']]
+    if g.get('fit'): it['speed'] = round(float(g['fit']) / it['dur'], 4)   # "fit": the scene's natural length, played over dur
+    bt = it['cfg'].get('beats')   # beats may be VO anchors ("line:b4", "word:labor"): converted to seconds into the item
+    if isinstance(bt, list): it['cfg']['beats'] = [round(anchor(b) - at, 3) if isinstance(b, str) else b for b in bt]
+    elif isinstance(bt, dict): it['cfg']['beats'] = {k: (round(anchor(v) - at, 3) if isinstance(v, str) else v) for k, v in bt.items()}
+    for k in [k for k, v in it['cfg'].items() if k.endswith('At') and isinstance(v, str)]: it['cfg'][k] = round(anchor(it['cfg'][k]) - at, 3)
+    if isinstance(it['cfg'].get('markups'), list): it['cfg']['markups'] = [round(anchor(b) - at, 3) if isinstance(b, str) else b for b in it['cfg']['markups']]
     items.append(it)
     d = g.get('dur', g.get('cfg', {}).get('dur', 3.0))
     if g.get('hide', True): hide.append([round(at, 3), round(at + d, 3)])
@@ -192,7 +196,7 @@ sh(['node', os.path.join(HERE, 'gfx.mjs'), sp, trk, '--mode', 'track'])
 mu = A.get('music', {})
 plan = {'music_file': os.path.join(AD, mu['file']) if mu.get('file') else None, 'music_end': anchor(mu['end']) if mu.get('end') else None, 'music_in': mu.get('in', 0),
         'duration': DUR, 'bpm': mu.get('bpm', 104), 'key': mu.get('key', 'D'), 'mood': mu.get('mood', 'warm'), 'music_db': mu.get('db', -18),
-        'duck_db': mu.get('duck', -9), 'vo': os.path.join(vo_dir, 'vo.wav'), 'whoosh': whoosh, 'hits': hits, 'ticks': ticks,
+        'duck_db': mu.get('duck', -9), 'duck_mid_db': mu.get('duck_mid', 0), 'vo': os.path.join(vo_dir, 'vo.wav'), 'whoosh': whoosh, 'hits': hits, 'ticks': ticks,
         'riser': [anchor(x) for x in mu['riser']] if mu.get('riser') else None, 'stop': [anchor(x) for x in mu['stop']] if mu.get('stop') else None}
 json.dump(plan, open(os.path.join(BUILD, 'audio.json'), 'w'))
 mix = os.path.join(BUILD, 'mix.wav'); sh([sys.executable, os.path.join(HERE, 'audio.py'), os.path.join(BUILD, 'audio.json'), mix])

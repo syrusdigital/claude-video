@@ -190,12 +190,25 @@
  ],
  "gfx": [
   {
-   "tpl": "logoPill",
-   "at": "word:Rob-Art-0.05",
-   "dur": 2.2,
+   "tpl": "sceneSeeItFirst",
+   "at": "word:actual",
+   "until": "word:before",
+   "fit": 9.6,
    "cfg": {
-    "name": "Rob-Art Design LLC",
-    "y": 0.3
+    "caption": "REAL DESIGN DRAWINGS|*BEFORE YOU SAY YES*"
+   },
+   "scene": true,
+   "sfx": []
+  },
+  {
+   "tpl": "logoCard",
+   "at": "word:Rob-Art-0.05",
+   "dur": 2.4,
+   "cfg": {
+    "img": "logo",
+    "y": 0.32,
+    "h": 230,
+    "maxW": 940
    },
    "hide": false,
    "sfx": []
@@ -210,13 +223,27 @@
    "sfx": [
     "whoosh"
    ]
+  },
+  {
+   "tpl": "logoCard",
+   "at": "word:Click-0.1",
+   "until": "end",
+   "cfg": {
+    "img": "logo",
+    "y": 0.27,
+    "sweep": false,
+    "h": 150,
+    "maxW": 760
+   },
+   "hide": false,
+   "sfx": []
   }
  ],
  "shots": [
   {
    "src": "../media/client/after-black-marble-island-a.png",
    "in": 0.0,
-   "len": 2.12,
+   "len": 2.16,
    "fx": 0.5,
    "fy": 0.5,
    "zoom": [
@@ -264,7 +291,7 @@
   {
    "src": "../media/client/white-kitchen-range.jpg",
    "in": 0.0,
-   "len": 2.48,
+   "len": 2.5,
    "fx": 0.5,
    "fy": 0.4,
    "zoom": [
@@ -276,7 +303,7 @@
   {
    "src": "../media/stock/pexels-38413569.mp4",
    "in": 1.5,
-   "len": 0.94,
+   "len": 0.92,
    "fx": 0.5,
    "fy": 0.5,
    "zoom": [
@@ -300,7 +327,7 @@
   {
    "src": "../media/stock/pexels-8293311.mp4",
    "in": 3.5,
-   "len": 2.36,
+   "len": 2.38,
    "fx": 0.5,
    "fy": 0.5,
    "zoom": [
@@ -348,7 +375,7 @@
   {
    "src": "../media/client/before-cherry-sink.jpg",
    "in": 0.0,
-   "len": 2.14,
+   "len": 2.12,
    "fx": 0.5,
    "fy": 0.5,
    "zoom": [
@@ -372,7 +399,7 @@
   {
    "src": "../media/client/before-cherry-range.jpg",
    "in": 0.0,
-   "len": 1.94,
+   "len": 1.96,
    "fx": 0.5,
    "fy": 0.5,
    "zoom": [
@@ -384,7 +411,7 @@
   {
    "src": "../media/client/after-black-marble-island-a.png",
    "in": 0.0,
-   "len": 2.22,
+   "len": 1.96,
    "fx": 0.4,
    "fy": 0.5,
    "zoom": [
@@ -396,7 +423,7 @@
   {
    "src": "../media/client/after-waterfall-edge.jpg",
    "in": 0.0,
-   "len": 1.78,
+   "len": 2.04,
    "fx": 0.5,
    "fy": 0.5,
    "zoom": [
@@ -480,7 +507,7 @@
   {
    "src": "../media/stock/pexels-19227879.mp4",
    "in": 7.0,
-   "len": 2.02,
+   "len": 2.0,
    "fx": 0.5,
    "fy": 0.5,
    "zoom": [
@@ -505,7 +532,7 @@
   {
    "src": "../media/client/before-oak-prep.jpg",
    "in": 0.0,
-   "len": 2.1,
+   "len": 2.14,
    "fx": 0.5,
    "fy": 0.5,
    "zoom": [
@@ -517,7 +544,7 @@
   {
    "src": "../media/client/before-cherry-counter.jpg",
    "in": 0.0,
-   "len": 1.84,
+   "len": 1.8,
    "fx": 0.5,
    "fy": 0.5,
    "zoom": [
@@ -529,7 +556,7 @@
   {
    "src": "../media/stock/pexels-36778243.mp4",
    "in": 6.0,
-   "len": 1.72,
+   "len": 1.98,
    "fx": 0.5,
    "fy": 0.5,
    "zoom": [
@@ -553,7 +580,7 @@
   {
    "src": "../media/client/after-black-marble-island-a.png",
    "in": 0.0,
-   "len": 2.42,
+   "len": 2.56,
    "fx": 0.6,
    "fy": 0.5,
    "zoom": [
@@ -565,7 +592,7 @@
   {
    "src": "../media/client/after-island-pendants.jpg",
    "in": 0.0,
-   "len": 2.74,
+   "len": 2.3,
    "fx": 0.5,
    "fy": 0.4,
    "zoom": [
@@ -577,7 +604,7 @@
   {
    "src": "../media/stock/pexels-39774505.mp4",
    "in": 5.5,
-   "len": 2.289,
+   "len": 2.314,
    "fx": 0.5,
    "fy": 0.5,
    "zoom": [
@@ -589,7 +616,7 @@
   {
    "src": "../media/client/after-waterfall-edge.jpg",
    "in": 0.0,
-   "len": 2.231,
+   "len": 2.286,
    "fx": 0.5,
    "fy": 0.5,
    "zoom": [
@@ -601,7 +628,7 @@
   {
    "src": "../media/stock/pexels-37674129.mp4",
    "in": 2.7,
-   "len": 2.54,
+   "len": 2.52,
    "fx": 0.5,
    "fy": 0.5,
    "zoom": [
@@ -613,7 +640,7 @@
   {
    "src": "../media/client/white-kitchen-range.jpg",
    "in": 0.0,
-   "len": 2.096,
+   "len": 2.136,
    "fx": 0.5,
    "fy": 0.5,
    "zoom": [
@@ -622,5 +649,8 @@
    ],
    "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01"
   }
- ]
+ ],
+ "images": {
+  "logo": "../brand/logo.png"
+ }
 }

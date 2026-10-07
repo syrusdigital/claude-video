@@ -4,8 +4,9 @@
 usage: python3 tools/vo_ingest.py <ad-dir> <take.mp3|wav|https-url> [--voice "Michael"] [--take <id>]
                                   [--tighten 0.12] [--wpm 190] [--tempo 1.12]
 - pauses longer than --tighten are cut down to it (the house edit has no dead air)
-- then a pitch-preserving time-stretch (ffmpeg rubberband) brings the read to --wpm (house median 189), capped at 1.15x (script tokens undercount spoken words, so the cap is what usually applies);
-  --tempo forces a factor instead
+- then a pitch-preserving time-stretch (ffmpeg rubberband) brings the read to --wpm (house median 189), capped at 1.15x and skipped
+  under 1.06x; --tempo forces a factor instead
+- a match EQ (tools/vo_match_eq.json) gives the take the winners' voice spectrum
 - word times come from faster-whisper on the final audio; the words themselves are the script's (ad.json "vo".lines),
   so on-screen text never shows a mis-hearing
 Writes <ad-dir>/build/vo/{vo.wav,vo.json} and stamps the cache key so tools/cut.py uses this take as-is.
@@ -40,12 +41,14 @@ idx = np.where(np.abs(wav) > 0.01)[0]; wav = wav[max(0, idx[0] - int(0.02 * SR))
 wav, _, _ = tighten(wav, SR, [], [], a.tighten)
 lines = A['vo']['lines']; nwords = sum(len(l['text'].split()) for l in lines)
 tempo = a.tempo or float(np.clip(a.wpm / (nwords / (len(wav) / SR / 60)), 1.0, 1.15))
-if tempo < 1.03: tempo = 1.0   # at pace already: no stretch at all (the cleanest sound)
-# crisp finish: the stretch (only when the read is slow) keeps transients and formants, then a broadcast voice chain:
-# rumble cut, a little less low-mid mud, presence + air, de-ess, gentle compression, limiter
-CHAIN = ('highpass=f=80,equalizer=f=260:width_type=o:width=1.0:g=-2.5,equalizer=f=3400:width_type=o:width=1.3:g=2.5,'
-         'highshelf=f=9000:g=2.5,deesser=i=0.35:m=0.5:f=0.5,acompressor=threshold=-20dB:ratio=3:attack=4:release=70:makeup=2.5,'
-         'alimiter=limit=0.95:level=false')
+if tempo < 1.06: tempo = 1.0   # near pace already: no stretch (a stretch smears the voice)
+# finish: match EQ to the winners' voice (tools/vo_match_eq.json: removes the 400-800 Hz box and the 6.3 kHz edge, restores the
+# 100-200 Hz chest), drawn as a dense log-spaced curve; then gentle compression and a limiter
+EQ = json.load(open(os.path.join(HERE, 'vo_match_eq.json')))['applied_db']
+eb = np.array([float(k) for k in EQ]); eg = np.array(list(EQ.values()), float); fs = np.geomspace(60, 9000, 48)
+entries = ';'.join(f'entry({f:.0f},{v:.2f})' for f, v in zip(fs, np.interp(np.log(fs), np.log(eb), eg)))
+CHAIN = (f"firequalizer=gain_entry='entry(20,0);{entries};entry(9500,0);entry(20000,0)':delay=0.05:accuracy=2,highpass=f=55,"
+         'acompressor=threshold=-18dB:ratio=2.5:attack=8:release=90:makeup=2,alimiter=limit=0.95:level=false')
 af = (f'rubberband=tempo={tempo:.4f}:transients=crisp:detector=compound:window=short:formant=preserved:pitchq=quality,' if tempo > 1.01 else '') + CHAIN
 with tempfile.NamedTemporaryFile(suffix='.wav') as t:
     sf.write(t.name, wav, SR, subtype='PCM_16'); wav = decode(t.name, ['-af', af])

@@ -94,7 +94,7 @@
   {
    "at": "line:b2",
    "clips": [
-    "ai/ai-bath-BVogbV0XGMQV15wPC8qmn.mp4@0.0 whip",
+    "ai/ai-bath-BVogbV0XGMQV15wPC8qmn.mp4@0.0",
     "stock/pexels-855672.mp4@5.0"
    ]
   },
@@ -130,12 +130,53 @@
  ],
  "gfx": [
   {
-   "tpl": "logoPill",
-   "at": "word:Luxury-0.05",
-   "dur": 2.2,
+   "tpl": "sceneBathBuild",
+   "at": "line:b1",
+   "until": "line:b2",
+   "fit": 11.0,
    "cfg": {
-    "name": "Luxury Home Renovations",
-    "y": 0.3
+    "steps": {
+     "demo": "",
+     "plumbing": "",
+     "walls": "",
+     "vanity": "",
+     "flooring": "",
+     "lighting": ""
+    },
+    "final": "10 BATHROOMS.|*DISCOUNTED RATE.*"
+   },
+   "scene": true,
+   "sfx": []
+  },
+  {
+   "tpl": "qualifyQuiz",
+   "at": "line:b2",
+   "until": "line:b5",
+   "cfg": {
+    "questions": [
+     "Bathroom 5+ years old?",
+     "Full remodel or tub-to-shower?",
+     "Ready to start within 30 days?"
+    ],
+    "beats": [
+     0.1,
+     "line:b3",
+     "line:b4"
+    ],
+    "result": "YOU MAY QUALIFY",
+    "cta": "HIT GET QUOTE"
+   },
+   "scene": true,
+   "sfx": []
+  },
+  {
+   "tpl": "logoCard",
+   "at": "word:Luxury-0.05",
+   "dur": 2.4,
+   "cfg": {
+    "img": "logo",
+    "y": 0.32,
+    "h": 420
    },
    "hide": false,
    "sfx": []
@@ -151,13 +192,26 @@
    "sfx": [
     "whoosh"
    ]
+  },
+  {
+   "tpl": "logoCard",
+   "at": "word:Hit-0.1",
+   "until": "end",
+   "cfg": {
+    "img": "logo",
+    "y": 0.27,
+    "sweep": false,
+    "h": 260
+   },
+   "hide": false,
+   "sfx": []
   }
  ],
  "shots": [
   {
    "src": "../media/ai/ai-bath-BVogbV0XGMQV15wPC8qmn.mp4",
    "in": 0.0,
-   "len": 2.12,
+   "len": 2.16,
    "fx": 0.5,
    "fy": 0.5,
    "zoom": [
@@ -181,26 +235,26 @@
   {
    "src": "../media/ai/ai-bath-video.mp4",
    "in": 0.0,
-   "len": 1.6,
+   "len": 1.64,
    "fx": 0.5,
    "fy": 0.5,
    "zoom": [
     1.0,
     1.07
    ],
-   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01,unsharp=5:5:0.9:5:5:0.0"
+   "grade": "hqdn3d=1.2:1.2:4:4,eq=contrast=1.06:saturation=1.12:brightness=0.01,unsharp=5:5:0.8:5:5:0.0"
   },
   {
    "src": "../media/ai/ai-bath-8v_gHe12Eop_2RlAkInzX.mp4",
    "in": 0.0,
-   "len": 1.46,
+   "len": 1.42,
    "fx": 0.5,
    "fy": 0.5,
    "zoom": [
     1.07,
     1.0
    ],
-   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01,unsharp=5:5:0.9:5:5:0.0"
+   "grade": "hqdn3d=1.2:1.2:4:4,eq=contrast=1.06:saturation=1.12:brightness=0.01,unsharp=5:5:0.8:5:5:0.0"
   },
   {
    "src": "../media/stock/pexels-12568633.mp4",
@@ -229,14 +283,14 @@
   {
    "src": "../media/ai/ai-bath-8v_gHe12Eop_2RlAkInzX.mp4",
    "in": 3.2,
-   "len": 1.48,
+   "len": 1.5,
    "fx": 0.5,
    "fy": 0.5,
    "zoom": [
     1.0,
     1.07
    ],
-   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01,unsharp=5:5:0.9:5:5:0.0"
+   "grade": "hqdn3d=1.2:1.2:4:4,eq=contrast=1.06:saturation=1.12:brightness=0.01,unsharp=5:5:0.8:5:5:0.0"
   },
   {
    "src": "../media/stock/pexels-34236997.mp4",
@@ -253,14 +307,13 @@
   {
    "src": "../media/ai/ai-bath-BVogbV0XGMQV15wPC8qmn.mp4",
    "in": 0.0,
-   "len": 1.62,
+   "len": 1.6,
    "fx": 0.5,
    "fy": 0.5,
    "zoom": [
     1.0,
     1.07
    ],
-   "whip": true,
    "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01"
   },
   {
@@ -297,7 +350,7 @@
     1.07,
     1.0
    ],
-   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01,unsharp=5:5:0.9:5:5:0.0"
+   "grade": "hqdn3d=1.2:1.2:4:4,eq=contrast=1.06:saturation=1.12:brightness=0.01,unsharp=5:5:0.8:5:5:0.0"
   },
   {
    "src": "../media/stock/pexels-6474087.mp4",
@@ -314,7 +367,7 @@
   {
    "src": "../media/stock/pexels-24906850.mp4",
    "in": 2.0,
-   "len": 1.78,
+   "len": 1.76,
    "fx": 0.5,
    "fy": 0.5,
    "zoom": [
@@ -326,7 +379,7 @@
   {
    "src": "../media/stock/pexels-38746559.mp4",
    "in": 2.5,
-   "len": 1.78,
+   "len": 1.8,
    "fx": 0.5,
    "fy": 0.5,
    "zoom": [
@@ -338,7 +391,7 @@
   {
    "src": "../media/stock/pexels-4154236.mp4",
    "in": 0.5,
-   "len": 1.68,
+   "len": 1.66,
    "fx": 0.5,
    "fy": 0.5,
    "zoom": [
@@ -350,7 +403,7 @@
   {
    "src": "../media/ai/ai-bath-6mCOgAptjPwZ-DSCAdJ4E.mp4",
    "in": 5.0,
-   "len": 1.7,
+   "len": 1.74,
    "fx": 0.5,
    "fy": 0.5,
    "zoom": [
@@ -362,7 +415,7 @@
   {
    "src": "../media/stock/pexels-28048584.mp4",
    "in": 3.5,
-   "len": 3.24,
+   "len": 3.2,
    "fx": 0.5,
    "fy": 0.5,
    "zoom": [
@@ -374,7 +427,7 @@
   {
    "src": "../media/stock/pexels-31739399.mp4",
    "in": 0.0,
-   "len": 2.784,
+   "len": 2.864,
    "fx": 0.5,
    "fy": 0.5,
    "zoom": [
@@ -383,5 +436,8 @@
    ],
    "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01"
   }
- ]
+ ],
+ "images": {
+  "logo": "../brand/logo.png"
+ }
 }

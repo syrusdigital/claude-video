@@ -177,12 +177,42 @@
  ],
  "gfx": [
   {
-   "tpl": "logoPill",
-   "at": "word:GC-0.05",
-   "dur": 2.2,
+   "tpl": "quoteSheet",
+   "at": "line:b2",
+   "until": "line:b3",
    "cfg": {
-    "name": "GC Countertops",
-    "y": 0.3
+    "title": "QUOTE",
+    "sub": "Kitchen countertops",
+    "lines": [
+     "Countertops",
+     "Removal",
+     "Install"
+    ],
+    "beats": [
+     0,
+     0.12,
+     0.24
+    ],
+    "markups": [
+     "word:inflated-0.3",
+     "word:inflated",
+     "word:quotes"
+    ],
+    "circleAt": "word:quotes+0.2",
+    "caption": "NO GUESSING.|*NO INFLATED QUOTES.*",
+    "captionAt": 0.05
+   },
+   "scene": true,
+   "sfx": []
+  },
+  {
+   "tpl": "logoCard",
+   "at": "word:GC-0.05",
+   "dur": 2.4,
+   "cfg": {
+    "img": "logo",
+    "y": 0.32,
+    "h": 470
    },
    "hide": false,
    "sfx": []
@@ -240,13 +270,26 @@
    "sfx": [
     "whoosh"
    ]
+  },
+  {
+   "tpl": "logoCard",
+   "at": "word:Tap-0.1",
+   "until": "end",
+   "cfg": {
+    "img": "logo",
+    "y": 0.27,
+    "sweep": false,
+    "h": 280
+   },
+   "hide": false,
+   "sfx": []
   }
  ],
  "shots": [
   {
    "src": "../media/client/IMG_2157.MOV",
    "in": 0.5,
-   "len": 2.12,
+   "len": 2.16,
    "fx": 0.5,
    "fy": 0.5,
    "zoom": [
@@ -282,7 +325,7 @@
   {
    "src": "../media/client/IMG_3453.MOV",
    "in": 16.0,
-   "len": 1.78,
+   "len": 1.82,
    "fx": 0.5,
    "fy": 0.5,
    "zoom": [
@@ -294,7 +337,7 @@
   {
    "src": "../media/client/IMG_5432.MOV",
    "in": 0.5,
-   "len": 1.9,
+   "len": 1.86,
    "fx": 0.5,
    "fy": 0.5,
    "zoom": [
@@ -306,7 +349,7 @@
   {
    "src": "../../vistaguard/media/stock/vg_calculator_bills.mp4",
    "in": 4.5,
-   "len": 1.34,
+   "len": 1.48,
    "fx": 0.5,
    "fy": 0.5,
    "zoom": [
@@ -318,7 +361,7 @@
   {
    "src": "../media/client/IMG_8983.MOV",
    "in": 0.5,
-   "len": 1.48,
+   "len": 1.36,
    "fx": 0.5,
    "fy": 0.5,
    "zoom": [
@@ -330,7 +373,7 @@
   {
    "src": "../media/client/IMG_9391.MOV",
    "in": 0.0,
-   "len": 2.44,
+   "len": 2.42,
    "fx": 0.5,
    "fy": 0.5,
    "zoom": [
@@ -354,7 +397,7 @@
   {
    "src": "../media/client/IMG_8418.MOV",
    "in": 7.0,
-   "len": 2.3,
+   "len": 2.36,
    "fx": 0.5,
    "fy": 0.5,
    "zoom": [
@@ -366,7 +409,7 @@
   {
    "src": "../media/client/IMG_5240.MOV",
    "in": 10.0,
-   "len": 2.84,
+   "len": 2.8,
    "fx": 0.5,
    "fy": 0.5,
    "zoom": [
@@ -390,7 +433,7 @@
   {
    "src": "../media/client/IMG_8920.MOV",
    "in": 4.5,
-   "len": 2.66,
+   "len": 2.64,
    "fx": 0.5,
    "fy": 0.5,
    "zoom": [
@@ -402,7 +445,7 @@
   {
    "src": "../media/client/IMG_1850.mov",
    "in": 10.0,
-   "len": 1.87,
+   "len": 1.86,
    "fx": 0.5,
    "fy": 0.5,
    "zoom": [
@@ -414,7 +457,7 @@
   {
    "src": "../media/client/IMG_9523.MOV",
    "in": 8.0,
-   "len": 1.89,
+   "len": 1.92,
    "fx": 0.5,
    "fy": 0.5,
    "zoom": [
@@ -438,7 +481,7 @@
   {
    "src": "../media/client/IMG_8983.MOV",
    "in": 5.0,
-   "len": 1.28,
+   "len": 1.26,
    "fx": 0.5,
    "fy": 0.5,
    "zoom": [
@@ -451,7 +494,7 @@
   {
    "src": "../media/client/IMG_9383.MOV",
    "in": 4.8,
-   "len": 1.32,
+   "len": 1.34,
    "fx": 0.5,
    "fy": 0.5,
    "zoom": [
@@ -463,7 +506,7 @@
   {
    "src": "../media/client/IMG_9003.MOV",
    "in": 13.0,
-   "len": 1.44,
+   "len": 1.4,
    "fx": 0.5,
    "fy": 0.5,
    "zoom": [
@@ -475,7 +518,7 @@
   {
    "src": "../media/client/IMG_0238.MOV",
    "in": 4.5,
-   "len": 1.88,
+   "len": 1.9,
    "fx": 0.5,
    "fy": 0.5,
    "zoom": [
@@ -487,7 +530,7 @@
   {
    "src": "../media/client/IMG_4219.MOV",
    "in": 0.5,
-   "len": 1.66,
+   "len": 1.72,
    "fx": 0.5,
    "fy": 0.5,
    "zoom": [
@@ -499,7 +542,7 @@
   {
    "src": "../media/client/IMG_1079.MOV",
    "in": 16.0,
-   "len": 1.8,
+   "len": 1.68,
    "fx": 0.5,
    "fy": 0.5,
    "zoom": [
@@ -511,7 +554,7 @@
   {
    "src": "../media/client/IMG_2342.MOV",
    "in": 10.0,
-   "len": 1.94,
+   "len": 2.02,
    "fx": 0.5,
    "fy": 0.5,
    "zoom": [
@@ -523,7 +566,7 @@
   {
    "src": "../media/client/IMG_7435.MOV",
    "in": 23.5,
-   "len": 1.809,
+   "len": 1.849,
    "fx": 0.5,
    "fy": 0.5,
    "zoom": [
@@ -532,5 +575,8 @@
    ],
    "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01"
   }
- ]
+ ],
+ "images": {
+  "logo": "../brand/logo.png"
+ }
 }

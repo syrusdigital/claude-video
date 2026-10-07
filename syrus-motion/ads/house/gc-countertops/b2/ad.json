@@ -102,12 +102,42 @@
  },
  "gfx": [
   {
-   "tpl": "logoPill",
-   "at": "word:GC-0.05",
-   "dur": 2.0,
+   "tpl": "quoteSheet",
+   "at": "line:b1",
+   "until": "line:b2+1.5",
    "cfg": {
-    "name": "GC Countertops",
-    "y": 0.3
+    "title": "QUOTE",
+    "sub": "Kitchen countertops",
+    "lines": [
+     "Countertops",
+     "Removal",
+     "Install"
+    ],
+    "beats": [
+     0,
+     0.12,
+     0.24
+    ],
+    "markups": [
+     "word:markup",
+     "word:kitchen#2",
+     "word:paying"
+    ],
+    "circleAt": "word:way",
+    "caption": "A BIG MARKUP|^BEFORE IT EVER GETS TO YOU^",
+    "captionAt": 0.05
+   },
+   "scene": true,
+   "sfx": []
+  },
+  {
+   "tpl": "logoCard",
+   "at": "word:GC-0.05",
+   "dur": 2.4,
+   "cfg": {
+    "img": "logo",
+    "y": 0.32,
+    "h": 470
    },
    "hide": false,
    "sfx": []
@@ -164,6 +194,19 @@
    "sfx": [
     "whoosh"
    ]
+  },
+  {
+   "tpl": "logoCard",
+   "at": "word:Click-0.1",
+   "until": "end",
+   "cfg": {
+    "img": "logo",
+    "y": 0.27,
+    "sweep": false,
+    "h": 280
+   },
+   "hide": false,
+   "sfx": []
   }
  ],
  "beats": [
@@ -171,7 +214,7 @@
    "at": "line:hook",
    "clips": [
     "client/IMG_0238.MOV@0.5",
-    "../../vistaguard/media/stock/vg_calculator_bills.mp4@4.5",
+    "client/IMG_9771.MOV@7.0",
     "client/IMG_8983.MOV@0.5",
     "client/IMG_8418.MOV@12.5 whip"
    ]
@@ -262,7 +305,7 @@
   {
    "src": "../media/client/IMG_0238.MOV",
    "in": 0.5,
-   "len": 1.32,
+   "len": 1.38,
    "fx": 0.5,
    "fy": 0.5,
    "zoom": [
@@ -274,7 +317,7 @@
   {
    "src": "../../vistaguard/media/stock/vg_calculator_bills.mp4",
    "in": 4.5,
-   "len": 1.82,
+   "len": 1.42,
    "fx": 0.5,
    "fy": 0.5,
    "zoom": [
@@ -287,7 +330,7 @@
   {
    "src": "../media/client/IMG_8983.MOV",
    "in": 0.5,
-   "len": 1.18,
+   "len": 1.56,
    "fx": 0.5,
    "fy": 0.5,
    "zoom": [
@@ -326,7 +369,7 @@
   {
    "src": "../media/stock/pexels-3773485.mp4",
    "in": 0.0,
-   "len": 1.54,
+   "len": 1.56,
    "fx": 0.5,
    "fy": 0.5,
    "zoom": [
@@ -365,7 +408,7 @@
   {
    "src": "../media/client/IMG_1343.MOV",
    "in": 14.0,
-   "len": 1.84,
+   "len": 1.8,
    "fx": 0.5,
    "fy": 0.5,
    "zoom": [
@@ -378,7 +421,7 @@
   {
    "src": "../media/client/IMG_2157.MOV",
    "in": 0.5,
-   "len": 1.18,
+   "len": 1.24,
    "fx": 0.5,
    "fy": 0.5,
    "zoom": [
@@ -391,7 +434,7 @@
   {
    "src": "../media/client/IMG_4518.MOV",
    "in": 0.0,
-   "len": 1.14,
+   "len": 1.08,
    "fx": 0.5,
    "fy": 0.5,
    "zoom": [
@@ -404,7 +447,7 @@
   {
    "src": "../media/client/IMG_9391.MOV",
    "in": 0.0,
-   "len": 1.56,
+   "len": 1.58,
    "fx": 0.5,
    "fy": 0.5,
    "zoom": [
@@ -469,7 +512,7 @@
   {
    "src": "../media/client/IMG_4219.MOV",
    "in": 0.5,
-   "len": 1.28,
+   "len": 1.3,
    "fx": 0.5,
    "fy": 0.5,
    "zoom": [
@@ -482,7 +525,7 @@
   {
    "src": "../media/client/IMG_1079.MOV",
    "in": 1.0,
-   "len": 1.14,
+   "len": 1.18,
    "fx": 0.5,
    "fy": 0.5,
    "zoom": [
@@ -495,7 +538,7 @@
   {
    "src": "../media/stock/pexels-7234150.mp4",
    "in": 0.0,
-   "len": 1.98,
+   "len": 1.92,
    "fx": 0.5,
    "fy": 0.5,
    "zoom": [
@@ -508,7 +551,7 @@
   {
    "src": "../media/client/IMG_5240.MOV",
    "in": 25.0,
-   "len": 2.3,
+   "len": 2.34,
    "fx": 0.5,
    "fy": 0.5,
    "zoom": [
@@ -521,7 +564,7 @@
   {
    "src": "../media/client/IMG_2745.MOV",
    "in": 4.0,
-   "len": 1.98,
+   "len": 1.94,
    "fx": 0.5,
    "fy": 0.5,
    "zoom": [
@@ -534,7 +577,7 @@
   {
    "src": "../media/client/IMG_2342.MOV",
    "in": 2.0,
-   "len": 1.8,
+   "len": 1.76,
    "fx": 0.5,
    "fy": 0.5,
    "zoom": [
@@ -547,7 +590,7 @@
   {
    "src": "../media/client/IMG_9003.MOV",
    "in": 1.5,
-   "len": 1.2,
+   "len": 1.24,
    "fx": 0.5,
    "fy": 0.5,
    "zoom": [
@@ -586,7 +629,7 @@
   {
    "src": "../media/client/IMG_9003.MOV",
    "in": 13.0,
-   "len": 1.54,
+   "len": 1.3,
    "fx": 0.5,
    "fy": 0.5,
    "zoom": [
@@ -599,7 +642,7 @@
   {
    "src": "../media/client/IMG_0238.MOV",
    "in": 4.5,
-   "len": 1.48,
+   "len": 1.74,
    "fx": 0.5,
    "fy": 0.5,
    "zoom": [
@@ -625,7 +668,7 @@
   {
    "src": "../media/client/IMG_7435.MOV",
    "in": 0.5,
-   "len": 1.86,
+   "len": 1.84,
    "fx": 0.5,
    "fy": 0.5,
    "zoom": [
@@ -638,7 +681,7 @@
   {
    "src": "../media/client/IMG_0238.MOV",
    "in": 0.5,
-   "len": 1.661,
+   "len": 1.721,
    "fx": 0.5,
    "fy": 0.5,
    "zoom": [
@@ -648,5 +691,8 @@
    "punch": 0.08,
    "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01"
   }
- ]
+ ],
+ "images": {
+  "logo": "../brand/logo.png"
+ }
 }
