@@ -819,7 +819,7 @@
     1.0,
     1.07
    ],
-   "punch": 0.08,
+   "whip": true,
    "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01"
   },
   {

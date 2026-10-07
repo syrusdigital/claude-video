@@ -1,0 +1,626 @@
+{
+ "duration": 51.45,
+ "shots": [
+  {
+   "src": "../media/client/dec_062028.mp4",
+   "in": 0.3,
+   "len": 1.48,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.0,
+    1.07
+   ],
+   "speed": 0.5,
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01,unsharp=5:5:0.9:5:5:0.0",
+   "_t0": 0.0,
+   "_len": 1.48
+  },
+  {
+   "src": "../media/stock/vg_calculator_bills.mp4",
+   "in": 4.5,
+   "len": 1.46,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.07,
+    1.0
+   ],
+   "punch": 0.08,
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01",
+   "_t0": 1.48,
+   "_len": 1.46
+  },
+  {
+   "src": "../media/client/dec_062030.mp4",
+   "in": 9.5,
+   "len": 1.4,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.0,
+    1.07
+   ],
+   "speed": 0.5,
+   "punch": 0.08,
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01,unsharp=5:5:0.9:5:5:0.0",
+   "_t0": 2.94,
+   "_len": 1.4
+  },
+  {
+   "src": "../media/client/dec_062035.mp4",
+   "in": 0.5,
+   "len": 1.48,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.07,
+    1.0
+   ],
+   "punch": 0.08,
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01,unsharp=5:5:0.9:5:5:0.0",
+   "_t0": 4.34,
+   "_len": 1.48
+  },
+  {
+   "src": "../media/stock/vg_storm_palms.mp4",
+   "in": 0.5,
+   "len": 1.56,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.0,
+    1.07
+   ],
+   "whip": true,
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01",
+   "_t0": 5.82,
+   "_len": 1.56
+  },
+  {
+   "src": "../media/client/dec_062016.mp4",
+   "in": 0.5,
+   "len": 1.4,
+   "fx": 0.4,
+   "fy": 0.5,
+   "zoom": [
+    1.0,
+    1.07
+   ],
+   "punch": 0.08,
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01,unsharp=5:5:0.9:5:5:0.0",
+   "_t0": 7.380000000000001,
+   "_len": 1.4
+  },
+  {
+   "src": "../media/client/oct_230836.mp4",
+   "in": 5.5,
+   "len": 1.72,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.07,
+    1.0
+   ],
+   "punch": 0.08,
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01,unsharp=5:5:0.9:5:5:0.0",
+   "_t0": 8.780000000000001,
+   "_len": 1.72
+  },
+  {
+   "src": "../media/stock/vg_lakeside_neighborhood_aerial.mp4",
+   "in": 6.5,
+   "len": 1.56,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.0,
+    1.07
+   ],
+   "whip": true,
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01",
+   "_t0": 10.500000000000002,
+   "_len": 1.56
+  },
+  {
+   "src": "../media/client/dec_062019.mp4",
+   "in": 0.5,
+   "len": 1.52,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.07,
+    1.0
+   ],
+   "punch": 0.08,
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01,unsharp=5:5:0.9:5:5:0.0",
+   "_t0": 12.060000000000002,
+   "_len": 1.52
+  },
+  {
+   "src": "../media/stock/vg_wind_sea_shore.mp4",
+   "in": 1.0,
+   "len": 1.64,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.0,
+    1.07
+   ],
+   "punch": 0.08,
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01",
+   "_t0": 13.580000000000002,
+   "_len": 1.64
+  },
+  {
+   "src": "../media/stock/vg_filling_form.mp4",
+   "in": 0.3,
+   "len": 1.24,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.0,
+    1.07
+   ],
+   "punch": 0.08,
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01",
+   "_t0": 15.220000000000002,
+   "_len": 1.24
+  },
+  {
+   "src": "../media/client/dec_062028.mp4",
+   "in": 4.0,
+   "len": 1.38,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.07,
+    1.0
+   ],
+   "speed": 0.5,
+   "whip": true,
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01,unsharp=5:5:0.9:5:5:0.0",
+   "_t0": 16.46,
+   "_len": 1.38
+  },
+  {
+   "src": "../media/client/dec_062021.mp4",
+   "in": 9.0,
+   "len": 1.3,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.0,
+    1.07
+   ],
+   "punch": 0.08,
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01,unsharp=5:5:0.9:5:5:0.0",
+   "_t0": 17.84,
+   "_len": 1.3
+  },
+  {
+   "src": "../media/client/dec_062030.mp4",
+   "in": 1.0,
+   "len": 1.62,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.07,
+    1.0
+   ],
+   "speed": 0.5,
+   "punch": 0.08,
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01,unsharp=5:5:0.9:5:5:0.0",
+   "_t0": 19.14,
+   "_len": 1.62
+  },
+  {
+   "src": "../media/client/oct_230930.mp4",
+   "in": 3.0,
+   "len": 1.5,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.0,
+    1.07
+   ],
+   "punch": 0.08,
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01,unsharp=5:5:0.9:5:5:0.0",
+   "_t0": 20.76,
+   "_len": 1.5
+  },
+  {
+   "src": "../media/stock/vg_calculator_bills.mp4",
+   "in": 7.5,
+   "len": 1.46,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.07,
+    1.0
+   ],
+   "punch": 0.08,
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01",
+   "_t0": 22.26,
+   "_len": 1.46
+  },
+  {
+   "src": "../media/client/dec_062033.mp4",
+   "in": 0.5,
+   "len": 1.52,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.0,
+    1.07
+   ],
+   "punch": 0.08,
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01,unsharp=5:5:0.9:5:5:0.0",
+   "_t0": 23.720000000000002,
+   "_len": 1.52
+  },
+  {
+   "src": "../media/client/dec_062011.mp4",
+   "in": 1.0,
+   "len": 1.3,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.07,
+    1.0
+   ],
+   "punch": 0.08,
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01,unsharp=5:5:0.9:5:5:0.0",
+   "_t0": 25.240000000000002,
+   "_len": 1.3
+  },
+  {
+   "src": "../media/client/dec_062019.mp4",
+   "in": 7.0,
+   "len": 0.96,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.0,
+    1.07
+   ],
+   "punch": 0.08,
+   "flash": true,
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01,unsharp=5:5:0.9:5:5:0.0",
+   "_t0": 26.540000000000003,
+   "_len": 0.96
+  },
+  {
+   "src": "../media/client/dec_062016.mp4",
+   "in": 5.6,
+   "len": 1.18,
+   "fx": 0.4,
+   "fy": 0.5,
+   "zoom": [
+    1.07,
+    1.0
+   ],
+   "punch": 0.08,
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01,unsharp=5:5:0.9:5:5:0.0",
+   "_t0": 27.500000000000004,
+   "_len": 1.18
+  },
+  {
+   "src": "../media/client/oct_231354.mp4",
+   "in": 6.0,
+   "len": 1.48,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.0,
+    1.07
+   ],
+   "whip": true,
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01,unsharp=5:5:0.9:5:5:0.0",
+   "_t0": 28.680000000000003,
+   "_len": 1.48
+  },
+  {
+   "src": "../media/client/oct_231340.mp4",
+   "in": 3.0,
+   "len": 1.32,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.07,
+    1.0
+   ],
+   "punch": 0.08,
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01,unsharp=5:5:0.9:5:5:0.0",
+   "_t0": 30.160000000000004,
+   "_len": 1.32
+  },
+  {
+   "src": "../media/stock/vg_spirit_level.mp4",
+   "in": 9.0,
+   "len": 1.46,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.0,
+    1.07
+   ],
+   "punch": 0.08,
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01",
+   "_t0": 31.480000000000004,
+   "_len": 1.46
+  },
+  {
+   "src": "../media/client/oct_232557.mp4",
+   "in": 9.5,
+   "len": 1.26,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.07,
+    1.0
+   ],
+   "punch": 0.08,
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01,unsharp=5:5:0.9:5:5:0.0",
+   "_t0": 32.940000000000005,
+   "_len": 1.26
+  },
+  {
+   "src": "../media/client/oct_231354.mp4",
+   "in": 12.4,
+   "len": 1.48,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.0,
+    1.07
+   ],
+   "punch": 0.08,
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01,unsharp=5:5:0.9:5:5:0.0",
+   "_t0": 34.2,
+   "_len": 1.48
+  },
+  {
+   "src": "../media/client/oct_231340.mp4",
+   "in": 12.8,
+   "len": 1.68,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.07,
+    1.0
+   ],
+   "punch": 0.08,
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01,unsharp=5:5:0.9:5:5:0.0",
+   "_t0": 35.68,
+   "_len": 1.68
+  },
+  {
+   "src": "../media/stock/vg_trees_windy.mp4",
+   "in": 6.0,
+   "len": 1.72,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.0,
+    1.07
+   ],
+   "whip": true,
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01",
+   "_t0": 37.36,
+   "_len": 1.72
+  },
+  {
+   "src": "../media/client/oct_231645.mp4",
+   "in": 0.3,
+   "len": 1.28,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.0,
+    1.07
+   ],
+   "punch": 0.08,
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01,unsharp=5:5:0.9:5:5:0.0",
+   "_t0": 39.08,
+   "_len": 1.28
+  },
+  {
+   "src": "../media/stock/vg_tampa_drone_pullout.mp4",
+   "in": 3.0,
+   "len": 1.44,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.07,
+    1.0
+   ],
+   "whip": true,
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01",
+   "_t0": 40.36,
+   "_len": 1.44
+  },
+  {
+   "src": "../media/client/oct_230836.mp4",
+   "in": 9.0,
+   "len": 1.46,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.0,
+    1.07
+   ],
+   "punch": 0.08,
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01,unsharp=5:5:0.9:5:5:0.0",
+   "_t0": 41.8,
+   "_len": 1.46
+  },
+  {
+   "src": "../media/client/dec_062038.mp4",
+   "in": 4.0,
+   "len": 1.18,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.07,
+    1.0
+   ],
+   "punch": 0.08,
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01,unsharp=5:5:0.9:5:5:0.0",
+   "_t0": 43.26,
+   "_len": 1.18
+  },
+  {
+   "src": "../media/client/oct_231645.mp4",
+   "in": 4.5,
+   "len": 1.62,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.0,
+    1.07
+   ],
+   "punch": 0.08,
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01,unsharp=5:5:0.9:5:5:0.0",
+   "_t0": 44.44,
+   "_len": 1.62
+  },
+  {
+   "src": "../media/client/oct_231236.mp4",
+   "in": 5.4,
+   "len": 1.26,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.07,
+    1.0
+   ],
+   "punch": 0.08,
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01,unsharp=5:5:0.9:5:5:0.0",
+   "_t0": 46.059999999999995,
+   "_len": 1.26
+  },
+  {
+   "src": "../media/client/dec_062035.mp4",
+   "in": 3.0,
+   "len": 1.36,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.0,
+    1.07
+   ],
+   "whip": true,
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01,unsharp=5:5:0.9:5:5:0.0",
+   "_t0": 47.31999999999999,
+   "_len": 1.36
+  },
+  {
+   "src": "../media/stock/vg_couple_front_of_house.mp4",
+   "in": 5.5,
+   "len": 1.5,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.07,
+    1.0
+   ],
+   "punch": 0.08,
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01",
+   "_t0": 48.67999999999999,
+   "_len": 1.5
+  },
+  {
+   "src": "../media/client/dec_062028.mp4",
+   "in": 0.3,
+   "len": 1.27,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.0,
+    1.07
+   ],
+   "speed": 0.5,
+   "punch": 0.08,
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01,unsharp=5:5:0.9:5:5:0.0",
+   "_t0": 50.17999999999999,
+   "_len": 1.27
+  }
+ ],
+ "gfx": [
+  {
+   "tpl": "logoPill",
+   "at": 7.53,
+   "cfg": {
+    "name": "VistaGuard Windows & Roofing",
+    "y": 0.3
+   },
+   "dur": 2.0
+  },
+  {
+   "tpl": "ctaGlass",
+   "at": 47.22,
+   "cfg": {
+    "style": "caps",
+    "y": 0.5
+   },
+   "dur": 4.2
+  }
+ ],
+ "lines": [
+  {
+   "id": "hook",
+   "text": "Why pay twenty thousand dollars or more for impact windows, when you can get the exact same protection for two to three times less?",
+   "t0": 0.0,
+   "t1": 7.04
+  },
+  {
+   "id": "b1",
+   "text": "At VistaGuard, we've helped thousands of South Florida homeowners protect their families and their homes with hurricane rated impact windows and doors.",
+   "t0": 7.38,
+   "t1": 14.94
+  },
+  {
+   "id": "b2",
+   "text": "The reason we can do it for so much less is simple.",
+   "t0": 15.22,
+   "t1": 17.58
+  },
+  {
+   "id": "b3",
+   "text": "We source our windows directly from the manufacturer, and our own crew installs them, so there's no broker adding a markup and no outside installer charging you for labor.",
+   "t0": 17.84,
+   "t1": 26.2
+  },
+  {
+   "id": "b4",
+   "text": "Your installation is included, free.",
+   "t0": 26.54,
+   "t1": 28.68
+  },
+  {
+   "id": "b5",
+   "text": "From start to finish, we handle everything, on time, on budget, and without the stress.",
+   "t0": 28.68,
+   "t1": 33.74
+  },
+  {
+   "id": "b6",
+   "text": "We prep properly, we work clean, and we deliver work you can trust when the storms roll in.",
+   "t0": 34.2,
+   "t1": 38.82
+  },
+  {
+   "id": "b7",
+   "text": "We've been protecting homes across South Florida for over thirty years, and every window we install carries a lifetime warranty on our products and materials.",
+   "t0": 39.08,
+   "t1": 46.92
+  },
+  {
+   "id": "cta",
+   "text": "Click Get Quote below to book your free inspection and estimate today.",
+   "t0": 47.32,
+   "t1": 50.54
+  }
+ ]
+}
