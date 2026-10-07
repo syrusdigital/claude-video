@@ -315,8 +315,8 @@
    "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01"
   },
   {
-   "src": "../../vistaguard/media/stock/vg_calculator_bills.mp4",
-   "in": 4.5,
+   "src": "../media/client/IMG_9771.MOV",
+   "in": 7.0,
    "len": 1.42,
    "fx": 0.5,
    "fy": 0.5,
@@ -382,7 +382,7 @@
   {
    "src": "../media/client/IMG_5240.MOV",
    "in": 10.0,
-   "len": 1.54,
+   "len": 1.52,
    "fx": 0.5,
    "fy": 0.5,
    "zoom": [
@@ -395,7 +395,7 @@
   {
    "src": "../media/client/IMG_9771.MOV",
    "in": 1.0,
-   "len": 1.74,
+   "len": 1.76,
    "fx": 0.5,
    "fy": 0.5,
    "zoom": [
@@ -460,7 +460,7 @@
   {
    "src": "../media/client/IMG_9392.MOV",
    "in": 2.5,
-   "len": 1.22,
+   "len": 1.24,
    "fx": 0.5,
    "fy": 0.5,
    "zoom": [
@@ -473,7 +473,7 @@
   {
    "src": "../media/client/IMG_9383.MOV",
    "in": 0.0,
-   "len": 1.3,
+   "len": 1.28,
    "fx": 0.5,
    "fy": 0.5,
    "zoom": [
@@ -525,7 +525,7 @@
   {
    "src": "../media/client/IMG_1079.MOV",
    "in": 1.0,
-   "len": 1.18,
+   "len": 1.24,
    "fx": 0.5,
    "fy": 0.5,
    "zoom": [
@@ -538,7 +538,7 @@
   {
    "src": "../media/stock/pexels-7234150.mp4",
    "in": 0.0,
-   "len": 1.92,
+   "len": 1.86,
    "fx": 0.5,
    "fy": 0.5,
    "zoom": [
@@ -577,7 +577,7 @@
   {
    "src": "../media/client/IMG_2342.MOV",
    "in": 2.0,
-   "len": 1.76,
+   "len": 1.78,
    "fx": 0.5,
    "fy": 0.5,
    "zoom": [
@@ -590,7 +590,7 @@
   {
    "src": "../media/client/IMG_9003.MOV",
    "in": 1.5,
-   "len": 1.24,
+   "len": 1.22,
    "fx": 0.5,
    "fy": 0.5,
    "zoom": [

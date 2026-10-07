@@ -1,10 +1,10 @@
 {
- "duration": 70.496,
+ "duration": 70.596,
  "shots": [
   {
    "src": "../media/client/after-black-marble-island-a.png",
    "in": 0.0,
-   "len": 2.12,
+   "len": 2.16,
    "fx": 0.5,
    "fy": 0.5,
    "zoom": [
@@ -13,7 +13,7 @@
    ],
    "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01",
    "_t0": 0.0,
-   "_len": 2.12
+   "_len": 2.16
   },
   {
    "src": "../media/stock/pexels-39774505.mp4",
@@ -26,7 +26,7 @@
     1.0
    ],
    "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01",
-   "_t0": 2.12,
+   "_t0": 2.16,
    "_len": 2.26
   },
   {
@@ -40,7 +40,7 @@
     1.12
    ],
    "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01",
-   "_t0": 4.38,
+   "_t0": 4.42,
    "_len": 2.26
   },
   {
@@ -54,13 +54,13 @@
     1.12
    ],
    "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01",
-   "_t0": 6.64,
+   "_t0": 6.68,
    "_len": 2.6
   },
   {
    "src": "../media/client/white-kitchen-range.jpg",
    "in": 0.0,
-   "len": 2.48,
+   "len": 2.5,
    "fx": 0.5,
    "fy": 0.4,
    "zoom": [
@@ -68,13 +68,13 @@
     1.12
    ],
    "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01",
-   "_t0": 9.24,
-   "_len": 2.48
+   "_t0": 9.28,
+   "_len": 2.5
   },
   {
    "src": "../media/stock/pexels-38413569.mp4",
    "in": 1.5,
-   "len": 0.94,
+   "len": 0.9,
    "fx": 0.5,
    "fy": 0.5,
    "zoom": [
@@ -82,13 +82,13 @@
     1.07
    ],
    "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01",
-   "_t0": 11.72,
-   "_len": 0.94
+   "_t0": 11.78,
+   "_len": 0.9
   },
   {
    "src": "../media/stock/pexels-7646445.mp4",
    "in": 0.5,
-   "len": 2.16,
+   "len": 2.18,
    "fx": 0.5,
    "fy": 0.5,
    "zoom": [
@@ -96,13 +96,13 @@
     1.07
    ],
    "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01",
-   "_t0": 12.66,
-   "_len": 2.16
+   "_t0": 12.68,
+   "_len": 2.18
   },
   {
    "src": "../media/stock/pexels-8293311.mp4",
    "in": 3.5,
-   "len": 2.36,
+   "len": 2.38,
    "fx": 0.5,
    "fy": 0.5,
    "zoom": [
@@ -110,8 +110,8 @@
     1.0
    ],
    "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01",
-   "_t0": 14.82,
-   "_len": 2.36
+   "_t0": 14.86,
+   "_len": 2.38
   },
   {
    "src": "../media/client/before-cherry-a.png",
@@ -124,7 +124,7 @@
     1.12
    ],
    "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01",
-   "_t0": 17.18,
+   "_t0": 17.24,
    "_len": 2.04
   },
   {
@@ -138,7 +138,7 @@
     1.07
    ],
    "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01",
-   "_t0": 19.22,
+   "_t0": 19.279999999999998,
    "_len": 1.84
   },
   {
@@ -152,13 +152,13 @@
     1.0
    ],
    "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01",
-   "_t0": 21.06,
+   "_t0": 21.119999999999997,
    "_len": 1.96
   },
   {
    "src": "../media/client/before-cherry-sink.jpg",
    "in": 0.0,
-   "len": 2.14,
+   "len": 2.12,
    "fx": 0.5,
    "fy": 0.5,
    "zoom": [
@@ -166,13 +166,13 @@
     1.12
    ],
    "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01",
-   "_t0": 23.02,
-   "_len": 2.14
+   "_t0": 23.08,
+   "_len": 2.12
   },
   {
    "src": "../media/client/after-island-pendants.jpg",
    "in": 0.0,
-   "len": 2.04,
+   "len": 2.06,
    "fx": 0.5,
    "fy": 0.6,
    "zoom": [
@@ -180,8 +180,8 @@
     1.12
    ],
    "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01",
-   "_t0": 25.16,
-   "_len": 2.04
+   "_t0": 25.2,
+   "_len": 2.06
   },
   {
    "src": "../media/client/before-cherry-range.jpg",
@@ -194,13 +194,13 @@
     1.12
    ],
    "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01",
-   "_t0": 27.2,
+   "_t0": 27.259999999999998,
    "_len": 1.94
   },
   {
    "src": "../media/client/after-black-marble-island-a.png",
    "in": 0.0,
-   "len": 2.22,
+   "len": 1.96,
    "fx": 0.4,
    "fy": 0.5,
    "zoom": [
@@ -208,13 +208,13 @@
     1.12
    ],
    "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01",
-   "_t0": 29.14,
-   "_len": 2.22
+   "_t0": 29.2,
+   "_len": 1.96
   },
   {
    "src": "../media/client/after-waterfall-edge.jpg",
    "in": 0.0,
-   "len": 1.78,
+   "len": 2.04,
    "fx": 0.5,
    "fy": 0.5,
    "zoom": [
@@ -222,13 +222,13 @@
     1.12
    ],
    "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01",
-   "_t0": 31.36,
-   "_len": 1.78
+   "_t0": 31.16,
+   "_len": 2.04
   },
   {
    "src": "../media/client/white-kitchen-range.jpg",
    "in": 0.0,
-   "len": 2.02,
+   "len": 2.0,
    "fx": 0.5,
    "fy": 0.5,
    "zoom": [
@@ -236,13 +236,13 @@
     1.12
    ],
    "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01",
-   "_t0": 33.14,
-   "_len": 2.02
+   "_t0": 33.2,
+   "_len": 2.0
   },
   {
    "src": "../media/stock/pexels-7424440.mp4",
    "in": 0.5,
-   "len": 1.5,
+   "len": 1.52,
    "fx": 0.5,
    "fy": 0.5,
    "zoom": [
@@ -250,8 +250,8 @@
     1.07
    ],
    "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01",
-   "_t0": 35.160000000000004,
-   "_len": 1.5
+   "_t0": 35.2,
+   "_len": 1.52
   },
   {
    "src": "../media/stock/pexels-7505107.mp4",
@@ -264,7 +264,7 @@
     1.0
    ],
    "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01",
-   "_t0": 36.660000000000004,
+   "_t0": 36.720000000000006,
    "_len": 1.34
   },
   {
@@ -278,13 +278,13 @@
     1.07
    ],
    "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01",
-   "_t0": 38.00000000000001,
+   "_t0": 38.06000000000001,
    "_len": 2.46
   },
   {
    "src": "../media/stock/pexels-39774498.mp4",
    "in": 5.5,
-   "len": 2.18,
+   "len": 2.16,
    "fx": 0.5,
    "fy": 0.5,
    "zoom": [
@@ -292,13 +292,13 @@
     1.0
    ],
    "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01",
-   "_t0": 40.46000000000001,
-   "_len": 2.18
+   "_t0": 40.52000000000001,
+   "_len": 2.16
   },
   {
    "src": "../media/client/after-waterfall-edge.jpg",
    "in": 0.0,
-   "len": 2.08,
+   "len": 2.1,
    "fx": 0.5,
    "fy": 0.7,
    "zoom": [
@@ -306,8 +306,8 @@
     1.12
    ],
    "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01",
-   "_t0": 42.64000000000001,
-   "_len": 2.08
+   "_t0": 42.68000000000001,
+   "_len": 2.1
   },
   {
    "src": "../media/stock/pexels-19227879.mp4",
@@ -320,13 +320,13 @@
     1.0
    ],
    "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01",
-   "_t0": 44.720000000000006,
+   "_t0": 44.78000000000001,
    "_len": 2.02
   },
   {
    "src": "../media/client/before-oak-gutted.jpg",
    "in": 0.0,
-   "len": 1.82,
+   "len": 1.8,
    "fx": 0.5,
    "fy": 0.5,
    "zoom": [
@@ -335,13 +335,13 @@
    ],
    "whip": true,
    "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01",
-   "_t0": 46.74000000000001,
-   "_len": 1.82
+   "_t0": 46.80000000000001,
+   "_len": 1.8
   },
   {
    "src": "../media/client/before-oak-prep.jpg",
    "in": 0.0,
-   "len": 2.1,
+   "len": 2.14,
    "fx": 0.5,
    "fy": 0.5,
    "zoom": [
@@ -349,13 +349,13 @@
     1.12
    ],
    "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01",
-   "_t0": 48.56000000000001,
-   "_len": 2.1
+   "_t0": 48.60000000000001,
+   "_len": 2.14
   },
   {
    "src": "../media/client/before-cherry-counter.jpg",
    "in": 0.0,
-   "len": 1.84,
+   "len": 1.56,
    "fx": 0.5,
    "fy": 0.5,
    "zoom": [
@@ -363,13 +363,13 @@
     1.12
    ],
    "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01",
-   "_t0": 50.66000000000001,
-   "_len": 1.84
+   "_t0": 50.74000000000001,
+   "_len": 1.56
   },
   {
    "src": "../media/stock/pexels-36778243.mp4",
    "in": 6.0,
-   "len": 1.72,
+   "len": 1.96,
    "fx": 0.5,
    "fy": 0.5,
    "zoom": [
@@ -377,13 +377,13 @@
     1.0
    ],
    "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01",
-   "_t0": 52.500000000000014,
-   "_len": 1.72
+   "_t0": 52.30000000000001,
+   "_len": 1.96
   },
   {
    "src": "../media/client/after-white-kitchen-wide.png",
    "in": 0.0,
-   "len": 1.96,
+   "len": 1.76,
    "fx": 0.4,
    "fy": 0.5,
    "zoom": [
@@ -391,13 +391,13 @@
     1.12
    ],
    "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01",
-   "_t0": 54.22000000000001,
-   "_len": 1.96
+   "_t0": 54.26000000000001,
+   "_len": 1.76
   },
   {
    "src": "../media/client/after-black-marble-island-a.png",
    "in": 0.0,
-   "len": 2.42,
+   "len": 2.58,
    "fx": 0.6,
    "fy": 0.5,
    "zoom": [
@@ -405,13 +405,13 @@
     1.12
    ],
    "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01",
-   "_t0": 56.180000000000014,
-   "_len": 2.42
+   "_t0": 56.02000000000001,
+   "_len": 2.58
   },
   {
    "src": "../media/client/after-island-pendants.jpg",
    "in": 0.0,
-   "len": 2.74,
+   "len": 2.8,
    "fx": 0.5,
    "fy": 0.4,
    "zoom": [
@@ -419,13 +419,13 @@
     1.12
    ],
    "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01",
-   "_t0": 58.600000000000016,
-   "_len": 2.74
+   "_t0": 58.60000000000001,
+   "_len": 2.8
   },
   {
    "src": "../media/stock/pexels-39774505.mp4",
    "in": 5.5,
-   "len": 2.289,
+   "len": 2.299,
    "fx": 0.5,
    "fy": 0.5,
    "zoom": [
@@ -433,13 +433,13 @@
     1.07
    ],
    "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01",
-   "_t0": 61.34000000000002,
-   "_len": 2.289
+   "_t0": 61.400000000000006,
+   "_len": 2.299
   },
   {
    "src": "../media/client/after-waterfall-edge.jpg",
    "in": 0.0,
-   "len": 2.231,
+   "len": 2.241,
    "fx": 0.5,
    "fy": 0.5,
    "zoom": [
@@ -447,13 +447,13 @@
     1.12
    ],
    "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01",
-   "_t0": 63.62900000000002,
-   "_len": 2.231
+   "_t0": 63.699000000000005,
+   "_len": 2.241
   },
   {
    "src": "../media/stock/pexels-37674129.mp4",
    "in": 2.7,
-   "len": 2.54,
+   "len": 2.5,
    "fx": 0.5,
    "fy": 0.5,
    "zoom": [
@@ -461,13 +461,13 @@
     1.07
    ],
    "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01",
-   "_t0": 65.86000000000001,
-   "_len": 2.54
+   "_t0": 65.94000000000001,
+   "_len": 2.5
   },
   {
    "src": "../media/client/white-kitchen-range.jpg",
    "in": 0.0,
-   "len": 2.096,
+   "len": 2.156,
    "fx": 0.5,
    "fy": 0.5,
    "zoom": [
@@ -475,27 +475,50 @@
     1.12
    ],
    "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01",
-   "_t0": 68.40000000000002,
-   "_len": 2.096
+   "_t0": 68.44000000000001,
+   "_len": 2.156
   }
  ],
  "gfx": [
   {
-   "tpl": "logoPill",
-   "at": 6.91,
+   "tpl": "sceneSeeItFirst",
+   "at": 26.26,
    "cfg": {
-    "name": "Rob-Art Design LLC",
-    "y": 0.3
+    "caption": "REAL DESIGN DRAWINGS|*BEFORE YOU SAY YES*"
    },
-   "dur": 2.2
+   "dur": 6.94,
+   "speed": 1.3833
+  },
+  {
+   "tpl": "logoCard",
+   "at": 6.97,
+   "cfg": {
+    "img": "logo",
+    "y": 0.32,
+    "h": 230,
+    "maxW": 940
+   },
+   "dur": 2.4
   },
   {
    "tpl": "ctaGlass",
-   "at": 61.24,
+   "at": 61.3,
    "cfg": {
     "y": 0.56
    },
    "dur": 3.6
+  },
+  {
+   "tpl": "logoCard",
+   "at": 61.3,
+   "cfg": {
+    "img": "logo",
+    "y": 0.27,
+    "sweep": false,
+    "h": 150,
+    "maxW": 760
+   },
+   "dur": 9.296
   }
  ],
  "lines": [
@@ -503,67 +526,67 @@
    "id": "hook",
    "text": "Why pay $40,000 for a kitchen remodel, when you can get the same stunning results for under $20,000?",
    "t0": 0.0,
-   "t1": 6.08
+   "t1": 6.14
   },
   {
    "id": "b1",
    "text": "We're Rob-Art Design, and we've been remodeling kitchens for New Jersey homeowners since 2012.",
-   "t0": 6.64,
-   "t1": 11.3
+   "t0": 6.68,
+   "t1": 11.36
   },
   {
    "id": "b2",
    "text": "Here's how we work.",
-   "t0": 11.72,
-   "t1": 12.4
+   "t0": 11.78,
+   "t1": 12.44
   },
   {
    "id": "b3",
    "text": "When you call us out, we first sit down with you for a free consultation, and we listen to exactly what you want your new kitchen to look like.",
-   "t0": 12.66,
-   "t1": 19.04
+   "t0": 12.68,
+   "t1": 19.08
   },
   {
    "id": "b4",
    "text": "From there, we build out real design drawings and renderings of your specific kitchen, not AI pictures, not stock images, actual layouts with your actual kitchen, showing your new cabinets, countertops, and finishes, so you can see exactly what you're getting before you say yes to anything.",
-   "t0": 19.22,
-   "t1": 34.9
+   "t0": 19.28,
+   "t1": 34.94
   },
   {
    "id": "b5",
    "text": "Then, we take you through material selection personally.",
-   "t0": 35.16,
-   "t1": 37.7
+   "t0": 35.2,
+   "t1": 37.76
   },
   {
    "id": "b6",
    "text": "We help you find high-quality materials you'll actually love, within a price that works for you.",
-   "t0": 38.0,
-   "t1": 42.46
+   "t0": 38.06,
+   "t1": 42.52
   },
   {
    "id": "b7",
    "text": "You're not choosing from a fixed package, you're building your kitchen, custom-made.",
-   "t0": 42.64,
-   "t1": 46.52
+   "t0": 42.68,
+   "t1": 46.58
   },
   {
    "id": "b8",
    "text": "Once the project starts, our in-house team handles everything, electrical, plumbing, cabinetry, one crew, managed by us, from day one to the final walkthrough.",
-   "t0": 46.74,
-   "t1": 55.98
+   "t0": 46.8,
+   "t1": 56.02
   },
   {
    "id": "b9",
    "text": "That's how we deliver a fully custom premium quality kitchen for under $20,000.",
-   "t0": 56.18,
-   "t1": 60.7
+   "t0": 56.02,
+   "t1": 60.8
   },
   {
    "id": "cta",
    "text": "Click Get Quote Below to book your free consultation. We'll show you exactly what your new kitchen will look like and give you a clear, honest estimate built around your budget.",
-   "t0": 61.34,
-   "t1": 69.64
+   "t0": 61.4,
+   "t1": 69.7
   }
  ]
 }
