@@ -83,9 +83,9 @@
     "after": 0.05
    }
   ],
-  "voice": "am_fenrir",
-  "speed": 1.06,
-  "tighten": 0.12,
-  "lead": 0.1
+  "engine": "elevenlabs",
+  "voice": "Michael (ElevenLabs Kysvuk17R9MDAP9l089v)",
+  "take": "P2MEsp2QY4VfhSgOXPLo",
+  "tempo": 1.079
  }
 }

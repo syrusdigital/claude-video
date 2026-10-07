@@ -1,5 +1,5 @@
 {
- "title": "Vistaguard Windows & Roofing V6 house",
+ "title": "Vistaguard V6 house",
  "vo": {
   "lines": [
    {
@@ -43,9 +43,425 @@
     "after": 0.05
    }
   ],
-  "voice": "am_fenrir",
-  "speed": 1.06,
-  "tighten": 0.12,
-  "lead": 0.1
- }
+  "engine": "elevenlabs",
+  "voice": "Michael (ElevenLabs Kysvuk17R9MDAP9l089v)",
+  "take": "3lY2FOvedjogrxNW1xcR",
+  "tempo": 1.15
+ },
+ "media": "../media",
+ "tail": 0.4,
+ "music": {
+  "file": "../../music/bed-warm-88.mp3",
+  "in": 25,
+  "db": -10,
+  "duck": -2,
+  "end": "end"
+ },
+ "captions": {
+  "style": "kinetic",
+  "hookEnd": "word:look",
+  "emStyle": "italic",
+  "hookMoney": "yellow",
+  "em": [
+   "free",
+   "twice",
+   "hurricane",
+   "lifetime",
+   "thirty",
+   "middleman",
+   "installation"
+  ],
+  "places": [
+   "South",
+   "Florida",
+   "VistaGuard",
+   "neighborhood"
+  ]
+ },
+ "beats": [
+  {
+   "at": "line:hook",
+   "clips": [
+    "client/dec_062028.mp4@0.3 x0.5",
+    "stock/vg_filling_form.mp4@0.3",
+    "stock/vg_calculator_bills.mp4@4.5",
+    "client/dec_062019.mp4@7.0"
+   ]
+  },
+  {
+   "at": "line:b1",
+   "clips": [
+    "client/dec_062011.mp4@1.0 whip",
+    "client/oct_230930.mp4@3.0",
+    "client/dec_062033.mp4@0.5"
+   ]
+  },
+  {
+   "at": "line:b2",
+   "clips": [
+    "stock/vg_calculator_bills.mp4@7.5",
+    "stock/vg_filling_form.mp4@3.2"
+   ]
+  },
+  {
+   "at": "line:b3",
+   "clips": [
+    "client/dec_062028.mp4@4.0 whip"
+   ]
+  },
+  {
+   "at": "line:b4",
+   "clips": [
+    "client/dec_062021.mp4@9.0",
+    "client/dec_062030.mp4@1.0 x0.5",
+    "client/dec_062016.mp4@0.5 fx=0.4"
+   ]
+  },
+  {
+   "at": "line:b5",
+   "clips": [
+    "client/dec_062035.mp4@0.5",
+    "client/oct_232557.mp4@9.5",
+    "stock/vg_storm_palms.mp4@0.5 whip",
+    "client/oct_231645.mp4@4.5"
+   ]
+  },
+  {
+   "at": "line:b6",
+   "clips": [
+    "stock/vg_lakeside_neighborhood_aerial.mp4@0.5",
+    "client/oct_230836.mp4@5.5",
+    "client/dec_062038.mp4@12.8",
+    "client/oct_231354.mp4@6.0",
+    "client/dec_062019.mp4@0.5"
+   ]
+  },
+  {
+   "at": "line:cta",
+   "clips": [
+    "client/dec_062035.mp4@3.0",
+    "stock/vg_couple_front_of_house.mp4@0.5"
+   ]
+  }
+ ],
+ "gfx": [
+  {
+   "tpl": "logoPill",
+   "at": "word:VistaGuard-0.05",
+   "dur": 2.0,
+   "cfg": {
+    "name": "VistaGuard Windows & Roofing",
+    "y": 0.3
+   },
+   "hide": false,
+   "sfx": []
+  },
+  {
+   "tpl": "ctaGlass",
+   "at": "word:Click-0.1",
+   "dur": 4.6,
+   "cfg": {
+    "style": "caps",
+    "y": 0.5
+   },
+   "sfx": [
+    "whoosh"
+   ]
+  }
+ ],
+ "shots": [
+  {
+   "src": "../media/client/dec_062028.mp4",
+   "in": 0.3,
+   "len": 2.1,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.0,
+    1.07
+   ],
+   "speed": 0.5,
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01,unsharp=5:5:0.9:5:5:0.0"
+  },
+  {
+   "src": "../media/stock/vg_filling_form.mp4",
+   "in": 0.3,
+   "len": 1.96,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.07,
+    1.0
+   ],
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01"
+  },
+  {
+   "src": "../media/stock/vg_calculator_bills.mp4",
+   "in": 4.5,
+   "len": 2.22,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.0,
+    1.07
+   ],
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01"
+  },
+  {
+   "src": "../media/client/dec_062019.mp4",
+   "in": 7.0,
+   "len": 1.86,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.07,
+    1.0
+   ],
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01,unsharp=5:5:0.9:5:5:0.0"
+  },
+  {
+   "src": "../media/client/dec_062011.mp4",
+   "in": 1.0,
+   "len": 2.36,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.0,
+    1.07
+   ],
+   "whip": true,
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01,unsharp=5:5:0.9:5:5:0.0"
+  },
+  {
+   "src": "../media/client/oct_230930.mp4",
+   "in": 3.0,
+   "len": 2.42,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.07,
+    1.0
+   ],
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01,unsharp=5:5:0.9:5:5:0.0"
+  },
+  {
+   "src": "../media/client/dec_062033.mp4",
+   "in": 0.5,
+   "len": 2.26,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.0,
+    1.07
+   ],
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01,unsharp=5:5:0.9:5:5:0.0"
+  },
+  {
+   "src": "../media/stock/vg_calculator_bills.mp4",
+   "in": 7.5,
+   "len": 1.72,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.0,
+    1.07
+   ],
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01"
+  },
+  {
+   "src": "../media/stock/vg_filling_form.mp4",
+   "in": 3.2,
+   "len": 1.5,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.07,
+    1.0
+   ],
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01"
+  },
+  {
+   "src": "../media/client/dec_062028.mp4",
+   "in": 4.0,
+   "len": 2.46,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.0,
+    1.07
+   ],
+   "whip": true,
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01,unsharp=5:5:0.9:5:5:0.0"
+  },
+  {
+   "src": "../media/client/dec_062021.mp4",
+   "in": 9.0,
+   "len": 1.8,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.0,
+    1.07
+   ],
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01,unsharp=5:5:0.9:5:5:0.0"
+  },
+  {
+   "src": "../media/client/dec_062030.mp4",
+   "in": 1.0,
+   "len": 1.78,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.07,
+    1.0
+   ],
+   "speed": 0.5,
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01,unsharp=5:5:0.9:5:5:0.0"
+  },
+  {
+   "src": "../media/client/dec_062016.mp4",
+   "in": 0.5,
+   "len": 1.8,
+   "fx": 0.4,
+   "fy": 0.5,
+   "zoom": [
+    1.0,
+    1.07
+   ],
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01,unsharp=5:5:0.9:5:5:0.0"
+  },
+  {
+   "src": "../media/client/dec_062035.mp4",
+   "in": 0.5,
+   "len": 2.28,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.0,
+    1.07
+   ],
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01,unsharp=5:5:0.9:5:5:0.0"
+  },
+  {
+   "src": "../media/client/oct_232557.mp4",
+   "in": 9.5,
+   "len": 2.82,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.07,
+    1.0
+   ],
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01,unsharp=5:5:0.9:5:5:0.0"
+  },
+  {
+   "src": "../media/stock/vg_storm_palms.mp4",
+   "in": 0.5,
+   "len": 2.36,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.0,
+    1.07
+   ],
+   "whip": true,
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01"
+  },
+  {
+   "src": "../media/client/oct_231645.mp4",
+   "in": 4.5,
+   "len": 2.34,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.07,
+    1.0
+   ],
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01,unsharp=5:5:0.9:5:5:0.0"
+  },
+  {
+   "src": "../media/stock/vg_lakeside_neighborhood_aerial.mp4",
+   "in": 0.5,
+   "len": 2.36,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.0,
+    1.07
+   ],
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01"
+  },
+  {
+   "src": "../media/client/oct_230836.mp4",
+   "in": 5.5,
+   "len": 2.76,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.07,
+    1.0
+   ],
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01,unsharp=5:5:0.9:5:5:0.0"
+  },
+  {
+   "src": "../media/client/dec_062038.mp4",
+   "in": 12.8,
+   "len": 2.512,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.0,
+    1.07
+   ],
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01,unsharp=5:5:0.9:5:5:0.0"
+  },
+  {
+   "src": "../media/client/oct_231354.mp4",
+   "in": 6.0,
+   "len": 2.708,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.07,
+    1.0
+   ],
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01,unsharp=5:5:0.9:5:5:0.0"
+  },
+  {
+   "src": "../media/client/dec_062019.mp4",
+   "in": 0.5,
+   "len": 2.38,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.0,
+    1.07
+   ],
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01,unsharp=5:5:0.9:5:5:0.0"
+  },
+  {
+   "src": "../media/client/dec_062035.mp4",
+   "in": 3.0,
+   "len": 2.94,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.0,
+    1.07
+   ],
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01,unsharp=5:5:0.9:5:5:0.0"
+  },
+  {
+   "src": "../media/stock/vg_couple_front_of_house.mp4",
+   "in": 0.5,
+   "len": 2.446,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.07,
+    1.0
+   ],
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01"
+  }
+ ]
 }

@@ -42,5 +42,346 @@
   "voice": "Michael (ElevenLabs Kysvuk17R9MDAP9l089v)",
   "take": "nXGwYMf0cpFvPYpUb0CY",
   "tempo": 1.124
- }
+ },
+ "media": "../media",
+ "tail": 0.4,
+ "music": {
+  "file": "../../music/bed-warm-88.mp3",
+  "in": 25,
+  "db": -10,
+  "duck": -2,
+  "end": "end"
+ },
+ "captions": {
+  "style": "kinetic",
+  "hookEnd": "line:hook.end",
+  "emStyle": "serif",
+  "hookMoney": "gold",
+  "em": [
+   "whole",
+   "included",
+   "honest",
+   "showroom",
+   "warranty",
+   "licensed",
+   "seven",
+   "discounted",
+   "qualify",
+   "acrylic",
+   "tile"
+  ],
+  "places": []
+ },
+ "beats": [
+  {
+   "at": "line:hook",
+   "clips": [
+    "ai/ai-bath-BVogbV0XGMQV15wPC8qmn.mp4@0.0",
+    "ai/ai-bath-oxaDYK4RreD_c2OtOUDVs.mp4@4.3"
+   ]
+  },
+  {
+   "at": "line:b1",
+   "clips": [
+    "ai/ai-bath-video.mp4@0.0",
+    "ai/ai-bath-8v_gHe12Eop_2RlAkInzX.mp4@0.0",
+    "stock/pexels-12568633.mp4@0.5",
+    "ai/ai-bath-f7RN0tTxAe-8Yx3LQTtj6.mp4@0.0",
+    "ai/ai-bath-8v_gHe12Eop_2RlAkInzX.mp4@3.2",
+    "stock/pexels-34236997.mp4@1.5"
+   ]
+  },
+  {
+   "at": "line:b2",
+   "clips": [
+    "ai/ai-bath-BVogbV0XGMQV15wPC8qmn.mp4@0.0 whip",
+    "stock/pexels-855672.mp4@5.0"
+   ]
+  },
+  {
+   "at": "line:b3",
+   "clips": [
+    "ai/ai-bath-Y18jESq4hOFB89_9UVMog.mp4@0.5",
+    "ai/ai-bath-nF5lGC6orko0IsARiHSA4.mp4@0.0"
+   ]
+  },
+  {
+   "at": "line:b4",
+   "clips": [
+    "stock/pexels-6474087.mp4@0.0",
+    "stock/pexels-24906850.mp4@2.0"
+   ]
+  },
+  {
+   "at": "line:b5",
+   "clips": [
+    "stock/pexels-38746559.mp4@2.5",
+    "stock/pexels-4154236.mp4@0.5",
+    "ai/ai-bath-6mCOgAptjPwZ-DSCAdJ4E.mp4@5.0"
+   ]
+  },
+  {
+   "at": "line:cta",
+   "clips": [
+    "stock/pexels-28048584.mp4@3.5",
+    "stock/pexels-31739399.mp4@0.0"
+   ]
+  }
+ ],
+ "gfx": [
+  {
+   "tpl": "logoPill",
+   "at": "word:Luxury-0.05",
+   "dur": 2.2,
+   "cfg": {
+    "name": "Luxury Home Renovations",
+    "y": 0.3
+   },
+   "hide": false,
+   "sfx": []
+  },
+  {
+   "tpl": "ctaGlass",
+   "at": "word:Hit-0.1",
+   "dur": 3.4,
+   "cfg": {
+    "y": 0.56,
+    "top": "hit"
+   },
+   "sfx": [
+    "whoosh"
+   ]
+  }
+ ],
+ "shots": [
+  {
+   "src": "../media/ai/ai-bath-BVogbV0XGMQV15wPC8qmn.mp4",
+   "in": 0.0,
+   "len": 2.0,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.0,
+    1.07
+   ],
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01"
+  },
+  {
+   "src": "../media/ai/ai-bath-oxaDYK4RreD_c2OtOUDVs.mp4",
+   "in": 3.21,
+   "len": 1.92,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.07,
+    1.0
+   ],
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01"
+  },
+  {
+   "src": "../media/ai/ai-bath-video.mp4",
+   "in": 0.0,
+   "len": 1.84,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.0,
+    1.07
+   ],
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01,unsharp=5:5:0.9:5:5:0.0"
+  },
+  {
+   "src": "../media/ai/ai-bath-8v_gHe12Eop_2RlAkInzX.mp4",
+   "in": 0.0,
+   "len": 1.8,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.07,
+    1.0
+   ],
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01,unsharp=5:5:0.9:5:5:0.0"
+  },
+  {
+   "src": "../media/stock/pexels-12568633.mp4",
+   "in": 0.5,
+   "len": 2.06,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.0,
+    1.07
+   ],
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01"
+  },
+  {
+   "src": "../media/ai/ai-bath-f7RN0tTxAe-8Yx3LQTtj6.mp4",
+   "in": 0.0,
+   "len": 1.5,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.07,
+    1.0
+   ],
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01"
+  },
+  {
+   "src": "../media/ai/ai-bath-8v_gHe12Eop_2RlAkInzX.mp4",
+   "in": 3.2,
+   "len": 1.78,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.0,
+    1.07
+   ],
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01,unsharp=5:5:0.9:5:5:0.0"
+  },
+  {
+   "src": "../media/stock/pexels-34236997.mp4",
+   "in": 1.5,
+   "len": 1.94,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.07,
+    1.0
+   ],
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01"
+  },
+  {
+   "src": "../media/ai/ai-bath-BVogbV0XGMQV15wPC8qmn.mp4",
+   "in": 0.0,
+   "len": 1.86,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.0,
+    1.07
+   ],
+   "whip": true,
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01"
+  },
+  {
+   "src": "../media/stock/pexels-855672.mp4",
+   "in": 5.0,
+   "len": 1.9,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.07,
+    1.0
+   ],
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01"
+  },
+  {
+   "src": "../media/ai/ai-bath-Y18jESq4hOFB89_9UVMog.mp4",
+   "in": 0.5,
+   "len": 2.67,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.0,
+    1.07
+   ],
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01"
+  },
+  {
+   "src": "../media/ai/ai-bath-nF5lGC6orko0IsARiHSA4.mp4",
+   "in": 0.0,
+   "len": 2.67,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.07,
+    1.0
+   ],
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01,unsharp=5:5:0.9:5:5:0.0"
+  },
+  {
+   "src": "../media/stock/pexels-6474087.mp4",
+   "in": 0.0,
+   "len": 2.0,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.0,
+    1.07
+   ],
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01"
+  },
+  {
+   "src": "../media/stock/pexels-24906850.mp4",
+   "in": 2.0,
+   "len": 1.72,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.07,
+    1.0
+   ],
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01"
+  },
+  {
+   "src": "../media/stock/pexels-38746559.mp4",
+   "in": 2.5,
+   "len": 2.2,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.0,
+    1.07
+   ],
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01"
+  },
+  {
+   "src": "../media/stock/pexels-4154236.mp4",
+   "in": 0.5,
+   "len": 1.86,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.07,
+    1.0
+   ],
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01"
+  },
+  {
+   "src": "../media/ai/ai-bath-6mCOgAptjPwZ-DSCAdJ4E.mp4",
+   "in": 5.0,
+   "len": 2.02,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.0,
+    1.07
+   ],
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01"
+  },
+  {
+   "src": "../media/stock/pexels-28048584.mp4",
+   "in": 3.5,
+   "len": 3.86,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.0,
+    1.07
+   ],
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01"
+  },
+  {
+   "src": "../media/stock/pexels-31739399.mp4",
+   "in": 0.0,
+   "len": 3.305,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.07,
+    1.0
+   ],
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01"
+  }
+ ]
 }

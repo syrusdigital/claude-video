@@ -82,5 +82,464 @@
   "voice": "Michael (ElevenLabs Kysvuk17R9MDAP9l089v)",
   "take": "UNT0pIdfCQeymfr6kRgT",
   "tempo": 1.15
- }
+ },
+ "media": "../media",
+ "tail": 0.4,
+ "music": {
+  "file": "../../music/bed-drive-100.mp3",
+  "in": 0,
+  "db": -10.5,
+  "duck": -2,
+  "end": "end"
+ },
+ "captions": {
+  "style": "kinetic",
+  "hookEnd": "line:hook.end",
+  "emStyle": "serif",
+  "hookMoney": "gold",
+  "em": [
+   "amazing",
+   "fair",
+   "honest",
+   "contractor",
+   "simple",
+   "clear",
+   "granite",
+   "quartz",
+   "marble",
+   "100%",
+   "labor"
+  ],
+  "places": [
+   "Georgia"
+  ]
+ },
+ "beats": [
+  {
+   "at": "line:hook",
+   "clips": [
+    "client/IMG_0238.MOV@0.5",
+    "client/IMG_4219.MOV@0.5"
+   ]
+  },
+  {
+   "at": "line:b1",
+   "clips": [
+    "client/IMG_8983.MOV@0.5",
+    "stock/pexels-3773485.mp4@0.0"
+   ]
+  },
+  {
+   "at": "line:b2",
+   "clips": [
+    "client/IMG_8920.MOV@0.5"
+   ]
+  },
+  {
+   "at": "line:b4",
+   "clips": [
+    "client/IMG_9454.MOV@2.0",
+    "client/IMG_1343.MOV@14.0"
+   ]
+  },
+  {
+   "at": "line:b5",
+   "clips": [
+    "client/IMG_2745.MOV@0.5"
+   ]
+  },
+  {
+   "at": "line:b7",
+   "clips": [
+    "../../vistaguard/media/stock/vg_calculator_bills.mp4@4.5",
+    "client/IMG_5240.MOV@10.0"
+   ]
+  },
+  {
+   "at": "line:b8",
+   "clips": [
+    "client/IMG_7435.MOV@0.5 whip"
+   ]
+  },
+  {
+   "at": "line:b9",
+   "clips": [
+    "client/IMG_8418.MOV@1.0",
+    "client/IMG_1850.mov@0.5"
+   ]
+  },
+  {
+   "at": "line:b11",
+   "clips": [
+    "client/IMG_2157.MOV@0.5",
+    "client/IMG_4518.MOV@0.0",
+    "client/IMG_9523.MOV@1.5",
+    "client/IMG_3453.MOV@2.0"
+   ]
+  },
+  {
+   "at": "line:b12",
+   "clips": [
+    "client/IMG_8983.MOV@5.0 whip",
+    "client/IMG_9383.MOV@0.0",
+    "client/IMG_9392.MOV@2.5",
+    "client/IMG_9003.MOV@1.5"
+   ]
+  },
+  {
+   "at": "line:b13",
+   "clips": [
+    "client/IMG_2342.MOV@2.0",
+    "client/IMG_1079.MOV@1.0"
+   ]
+  },
+  {
+   "at": "line:cta",
+   "clips": [
+    "client/IMG_4219.MOV@4.5",
+    "client/IMG_7435.MOV@23.5",
+    "client/IMG_0238.MOV@4.5"
+   ]
+  }
+ ],
+ "gfx": [
+  {
+   "tpl": "logoPill",
+   "at": "word:GC-0.05",
+   "dur": 2.2,
+   "cfg": {
+    "name": "GC Countertops",
+    "y": 0.3
+   },
+   "hide": false,
+   "sfx": []
+  },
+  {
+   "tpl": "ctaGlass",
+   "at": "word:Click-0.1",
+   "dur": 3.4,
+   "cfg": {
+    "y": 0.56
+   },
+   "sfx": [
+    "whoosh"
+   ]
+  }
+ ],
+ "shots": [
+  {
+   "src": "../media/client/IMG_0238.MOV",
+   "in": 0.5,
+   "len": 2.66,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.0,
+    1.07
+   ],
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01"
+  },
+  {
+   "src": "../media/client/IMG_4219.MOV",
+   "in": 0.5,
+   "len": 2.74,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.07,
+    1.0
+   ],
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01"
+  },
+  {
+   "src": "../media/client/IMG_8983.MOV",
+   "in": 0.5,
+   "len": 1.84,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.0,
+    1.07
+   ],
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01"
+  },
+  {
+   "src": "../media/stock/pexels-3773485.mp4",
+   "in": 0.0,
+   "len": 2.08,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.07,
+    1.0
+   ],
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01"
+  },
+  {
+   "src": "../media/client/IMG_8920.MOV",
+   "in": 0.5,
+   "len": 1.96,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.0,
+    1.07
+   ],
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01"
+  },
+  {
+   "src": "../media/client/IMG_9454.MOV",
+   "in": 2.0,
+   "len": 1.68,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.0,
+    1.07
+   ],
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01"
+  },
+  {
+   "src": "../media/client/IMG_1343.MOV",
+   "in": 14.0,
+   "len": 1.54,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.07,
+    1.0
+   ],
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01"
+  },
+  {
+   "src": "../media/client/IMG_2745.MOV",
+   "in": 0.5,
+   "len": 1.76,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.0,
+    1.07
+   ],
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01"
+  },
+  {
+   "src": "../../vistaguard/media/stock/vg_calculator_bills.mp4",
+   "in": 4.5,
+   "len": 2.52,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.0,
+    1.07
+   ],
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01"
+  },
+  {
+   "src": "../media/client/IMG_5240.MOV",
+   "in": 10.0,
+   "len": 2.14,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.07,
+    1.0
+   ],
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01"
+  },
+  {
+   "src": "../media/client/IMG_7435.MOV",
+   "in": 0.5,
+   "len": 2.9,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.0,
+    1.07
+   ],
+   "whip": true,
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01"
+  },
+  {
+   "src": "../media/client/IMG_8418.MOV",
+   "in": 1.0,
+   "len": 1.14,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.0,
+    1.07
+   ],
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01"
+  },
+  {
+   "src": "../media/client/IMG_1850.mov",
+   "in": 0.5,
+   "len": 1.74,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.07,
+    1.0
+   ],
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01"
+  },
+  {
+   "src": "../media/client/IMG_2157.MOV",
+   "in": 0.5,
+   "len": 2.16,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.0,
+    1.07
+   ],
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01"
+  },
+  {
+   "src": "../media/client/IMG_4518.MOV",
+   "in": 0.0,
+   "len": 2.2,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.07,
+    1.0
+   ],
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01"
+  },
+  {
+   "src": "../media/client/IMG_9523.MOV",
+   "in": 1.5,
+   "len": 2.3,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.0,
+    1.07
+   ],
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01"
+  },
+  {
+   "src": "../media/client/IMG_3453.MOV",
+   "in": 2.0,
+   "len": 2.22,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.07,
+    1.0
+   ],
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01"
+  },
+  {
+   "src": "../media/client/IMG_8983.MOV",
+   "in": 5.0,
+   "len": 0.9,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.0,
+    1.07
+   ],
+   "whip": true,
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01"
+  },
+  {
+   "src": "../media/client/IMG_9383.MOV",
+   "in": 0.0,
+   "len": 1.4,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.07,
+    1.0
+   ],
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01"
+  },
+  {
+   "src": "../media/client/IMG_9392.MOV",
+   "in": 2.5,
+   "len": 1.26,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.0,
+    1.07
+   ],
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01"
+  },
+  {
+   "src": "../media/client/IMG_9003.MOV",
+   "in": 1.5,
+   "len": 1.14,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.07,
+    1.0
+   ],
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01"
+  },
+  {
+   "src": "../media/client/IMG_2342.MOV",
+   "in": 2.0,
+   "len": 1.74,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.0,
+    1.07
+   ],
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01"
+  },
+  {
+   "src": "../media/client/IMG_1079.MOV",
+   "in": 1.0,
+   "len": 2.3,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.07,
+    1.0
+   ],
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01"
+  },
+  {
+   "src": "../media/client/IMG_4219.MOV",
+   "in": 4.5,
+   "len": 2.96,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.0,
+    1.07
+   ],
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01"
+  },
+  {
+   "src": "../media/client/IMG_7435.MOV",
+   "in": 23.5,
+   "len": 2.98,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.07,
+    1.0
+   ],
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01"
+  },
+  {
+   "src": "../media/client/IMG_0238.MOV",
+   "in": 4.5,
+   "len": 2.775,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.0,
+    1.07
+   ],
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01"
+  }
+ ]
 }

@@ -129,4 +129,32 @@ def build_masters():
     print('masters', len(items), 'zips,', len(big), 'too big ->', out, f"{sum(i['mb'] for i in items):.0f} MB")
 
 
-for w in WHAT: {'pack': build_pack, 'ads': build_ads, 'masters': build_masters}[w]()
+def build_house():
+    """The 10 house-style ads: gap list + measured house numbers + every ad scored + the videos by client."""
+    H = os.path.join(ROOT, 'ads', 'house'); out = os.path.join(OUT, 'house'); [os.makedirs(os.path.join(out, k), exist_ok=True) for k in 'dpa']
+    notes = json.load(open(os.path.join(H, 'notes.json')))
+    rep = json.load(open(os.path.join(H, 'report.json'))) if os.path.exists(os.path.join(H, 'report.json')) else {'house': {}, 'ads': []}
+    score = {r['dir']: r for r in rep['ads']}
+    gap = []   # the GAP-LIST.md table -> rows
+    for ln in open(os.path.join(H, 'GAP-LIST.md')):
+        cells = [c.strip() for c in ln.strip().strip('|').split('|')]
+        if len(cells) == 5 and cells[0].isdigit(): gap.append({'n': int(cells[0]), 'what': cells[1].strip('*'), 'ours': cells[2], 'house': cells[3], 'fix': cells[4]})
+    ads = []
+    for n in notes['ads']:
+        ad_dir = os.path.join(H, n['dir']); A = json.load(open(os.path.join(ad_dir, 'ad.json')))
+        mp4 = [f for f in os.listdir(os.path.join(ad_dir, 'out')) if f.endswith('.mp4')] if os.path.isdir(os.path.join(ad_dir, 'out')) else []
+        if not mp4: print('  missing render:', n['dir']); continue
+        src = os.path.join(ad_dir, 'out', mp4[0]); slug = n['dir'].replace('/', '-')
+        fit_mp4(src, os.path.join(out, 'd', slug + '.mp4')); poster(src, os.path.join(out, 'p', slug + '.jpg'), n.get('poster', 2.0))
+        D = dur(src)
+        ads.append({**n, 'slug': slug, 'title': A.get('title', slug), 'dur': round(D, 1), 'tc': tc(D), 'file': f'd/{slug}.mp4', 'name': mp4[0],
+                    'poster': f'p/{slug}.jpg', 'mb': round(os.path.getsize(os.path.join(out, 'd', slug + '.mp4')) / 1e6, 1), 'score': score.get(n['dir'])})
+    aud = []
+    for f in sorted(os.listdir(os.path.join(H, 'vo-audition'))):
+        if f.endswith('.mp3'): shutil.copy2(os.path.join(H, 'vo-audition', f), os.path.join(out, 'a', f)); aud.append({'file': f'a/{f}', 'name': f})
+    open(os.path.join(out, 'index.html'), 'w').write(page('Syrus House-Style Ads', 'house', '', {'kind': 'house', 'clients': notes['clients'], 'ads': ads,
+                                                                                         'gap': gap, 'house': rep['house'], 'audition': aud}))
+    print('house', len(ads), 'ads ->', out)
+
+
+for w in WHAT: {'pack': build_pack, 'ads': build_ads, 'masters': build_masters, 'house': build_house}[w]()

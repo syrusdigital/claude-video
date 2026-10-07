@@ -63,9 +63,474 @@
     "after": 0.05
    }
   ],
-  "voice": "am_fenrir",
-  "speed": 1.06,
-  "tighten": 0.12,
-  "lead": 0.1
- }
+  "engine": "elevenlabs",
+  "voice": "Michael (ElevenLabs Kysvuk17R9MDAP9l089v)",
+  "take": "fj29aH4YdGrEPkU4jAdH",
+  "tempo": 1.15
+ },
+ "media": "../media",
+ "tail": 0.4,
+ "music": {
+  "file": "../../music/bed-drive-100.mp3",
+  "in": 0,
+  "db": -10.5,
+  "duck": -2,
+  "end": "end"
+ },
+ "captions": {
+  "style": "kinetic",
+  "hookEnd": "line:hook.end",
+  "emStyle": "serif",
+  "hookMoney": "gold",
+  "em": [
+   "amazing",
+   "fair",
+   "honest",
+   "contractor",
+   "simple",
+   "clear",
+   "granite",
+   "quartz",
+   "marble",
+   "100%",
+   "labor"
+  ],
+  "places": [
+   "Georgia"
+  ]
+ },
+ "beats": [
+  {
+   "at": "line:hook",
+   "clips": [
+    "client/IMG_2157.MOV@0.5",
+    "client/IMG_4562.MOV@0.5"
+   ]
+  },
+  {
+   "at": "line:b1",
+   "clips": [
+    "client/IMG_9454.MOV@2.0",
+    "client/IMG_3453.MOV@16.0",
+    "client/IMG_5432.MOV@0.5"
+   ]
+  },
+  {
+   "at": "line:b2",
+   "clips": [
+    "../../vistaguard/media/stock/vg_calculator_bills.mp4@4.5",
+    "client/IMG_8983.MOV@0.5"
+   ]
+  },
+  {
+   "at": "line:b3",
+   "clips": [
+    "client/IMG_9391.MOV@0.0",
+    "client/IMG_1343.MOV@2.0",
+    "client/IMG_8418.MOV@7.0"
+   ]
+  },
+  {
+   "at": "line:b4",
+   "clips": [
+    "client/IMG_5240.MOV@10.0",
+    "client/IMG_2745.MOV@0.5",
+    "client/IMG_8920.MOV@4.5"
+   ]
+  },
+  {
+   "at": "line:b7",
+   "clips": [
+    "client/IMG_1850.mov@10.0",
+    "client/IMG_9523.MOV@8.0"
+   ]
+  },
+  {
+   "at": "line:b8",
+   "clips": [
+    "client/IMG_7435.MOV@0.5"
+   ]
+  },
+  {
+   "at": "line:b9",
+   "clips": [
+    "client/IMG_8983.MOV@5.0 whip",
+    "client/IMG_9383.MOV@4.8",
+    "client/IMG_9003.MOV@13.0"
+   ]
+  },
+  {
+   "at": "line:b10",
+   "clips": [
+    "client/IMG_0238.MOV@4.5",
+    "client/IMG_4219.MOV@0.5",
+    "client/IMG_1079.MOV@16.0"
+   ]
+  },
+  {
+   "at": "line:cta",
+   "clips": [
+    "client/IMG_2342.MOV@10.0",
+    "client/IMG_7435.MOV@23.5"
+   ]
+  }
+ ],
+ "gfx": [
+  {
+   "tpl": "logoPill",
+   "at": "word:GC-0.05",
+   "dur": 2.2,
+   "cfg": {
+    "name": "GC Countertops",
+    "y": 0.3
+   },
+   "hide": false,
+   "sfx": []
+  },
+  {
+   "tpl": "materialTable",
+   "at": 21.81,
+   "dur": 10.38,
+   "cfg": {
+    "kicker": "STARTING PRICES",
+    "cols": [
+     "MATERIAL",
+     "FROM / SQ FT"
+    ],
+    "y": 520,
+    "beats": [
+     0.35,
+     3.61,
+     6.23
+    ],
+    "rows": [
+     {
+      "name": "Granite",
+      "sub": "Natural stone",
+      "price": "$30",
+      "stone": "granite",
+      "pre": "from"
+     },
+     {
+      "name": "Quartz",
+      "sub": "Engineered stone",
+      "price": "$55",
+      "stone": "quartz",
+      "pre": "from"
+     },
+     {
+      "name": "Marble",
+      "sub": "Natural stone",
+      "price": "$65",
+      "stone": "marble",
+      "pre": "from"
+     }
+    ]
+   },
+   "sfx": []
+  },
+  {
+   "tpl": "ctaGlass",
+   "at": "word:Tap-0.1",
+   "dur": 4.0,
+   "cfg": {
+    "y": 0.56,
+    "top": "tap"
+   },
+   "sfx": [
+    "whoosh"
+   ]
+  }
+ ],
+ "shots": [
+  {
+   "src": "../media/client/IMG_2157.MOV",
+   "in": 0.5,
+   "len": 2.34,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.0,
+    1.07
+   ],
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01"
+  },
+  {
+   "src": "../media/client/IMG_4562.MOV",
+   "in": 0.5,
+   "len": 2.26,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.07,
+    1.0
+   ],
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01"
+  },
+  {
+   "src": "../media/client/IMG_9454.MOV",
+   "in": 2.0,
+   "len": 2.1,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.0,
+    1.07
+   ],
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01"
+  },
+  {
+   "src": "../media/client/IMG_3453.MOV",
+   "in": 16.0,
+   "len": 1.86,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.07,
+    1.0
+   ],
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01"
+  },
+  {
+   "src": "../media/client/IMG_5432.MOV",
+   "in": 0.5,
+   "len": 2.26,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.0,
+    1.07
+   ],
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01"
+  },
+  {
+   "src": "../../vistaguard/media/stock/vg_calculator_bills.mp4",
+   "in": 4.5,
+   "len": 1.52,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.0,
+    1.07
+   ],
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01"
+  },
+  {
+   "src": "../media/client/IMG_8983.MOV",
+   "in": 0.5,
+   "len": 1.7,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.07,
+    1.0
+   ],
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01"
+  },
+  {
+   "src": "../media/client/IMG_9391.MOV",
+   "in": 0.0,
+   "len": 2.62,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.0,
+    1.07
+   ],
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01"
+  },
+  {
+   "src": "../media/client/IMG_1343.MOV",
+   "in": 2.0,
+   "len": 2.74,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.07,
+    1.0
+   ],
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01"
+  },
+  {
+   "src": "../media/client/IMG_8418.MOV",
+   "in": 7.0,
+   "len": 2.76,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.0,
+    1.07
+   ],
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01"
+  },
+  {
+   "src": "../media/client/IMG_5240.MOV",
+   "in": 10.0,
+   "len": 3.26,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.0,
+    1.07
+   ],
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01"
+  },
+  {
+   "src": "../media/client/IMG_2745.MOV",
+   "in": 0.5,
+   "len": 2.96,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.07,
+    1.0
+   ],
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01"
+  },
+  {
+   "src": "../media/client/IMG_8920.MOV",
+   "in": 4.5,
+   "len": 3.2,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.0,
+    1.07
+   ],
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01"
+  },
+  {
+   "src": "../media/client/IMG_1850.mov",
+   "in": 10.0,
+   "len": 2.12,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.0,
+    1.07
+   ],
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01"
+  },
+  {
+   "src": "../media/client/IMG_9523.MOV",
+   "in": 8.0,
+   "len": 2.16,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.07,
+    1.0
+   ],
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01"
+  },
+  {
+   "src": "../media/client/IMG_7435.MOV",
+   "in": 0.5,
+   "len": 2.74,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.0,
+    1.07
+   ],
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01"
+  },
+  {
+   "src": "../media/client/IMG_8983.MOV",
+   "in": 5.0,
+   "len": 1.56,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.0,
+    1.07
+   ],
+   "whip": true,
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01"
+  },
+  {
+   "src": "../media/client/IMG_9383.MOV",
+   "in": 4.8,
+   "len": 1.86,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.07,
+    1.0
+   ],
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01"
+  },
+  {
+   "src": "../media/client/IMG_9003.MOV",
+   "in": 13.0,
+   "len": 1.82,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.0,
+    1.07
+   ],
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01"
+  },
+  {
+   "src": "../media/client/IMG_0238.MOV",
+   "in": 4.5,
+   "len": 2.28,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.0,
+    1.07
+   ],
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01"
+  },
+  {
+   "src": "../media/client/IMG_4219.MOV",
+   "in": 0.5,
+   "len": 2.22,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.07,
+    1.0
+   ],
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01"
+  },
+  {
+   "src": "../media/client/IMG_1079.MOV",
+   "in": 16.0,
+   "len": 2.16,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.0,
+    1.07
+   ],
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01"
+  },
+  {
+   "src": "../media/client/IMG_2342.MOV",
+   "in": 10.0,
+   "len": 2.42,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.0,
+    1.07
+   ],
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01"
+  },
+  {
+   "src": "../media/client/IMG_7435.MOV",
+   "in": 23.5,
+   "len": 2.268,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.07,
+    1.0
+   ],
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01"
+  }
+ ]
 }

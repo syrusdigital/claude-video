@@ -79,6 +79,15 @@ h2 + .sub { margin: 0 0 18px; color: var(--mute); max-width: 70ch; }
 .confirm { background: var(--panel); border: 1px solid var(--line); border-left: 4px solid var(--warn); border-radius: 10px; padding: 10px 12px; font-size: 13.5px; }
 .confirm b { display: block; font: 800 11px/1.4 var(--body); letter-spacing: .08em; text-transform: uppercase; color: var(--warn); margin-bottom: 4px; }
 .confirm ul { margin: 0; padding-left: 18px; }
+/* house */
+.gap td { vertical-align: top; font-size: 13.5px; } .gap td:first-child { color: var(--mute); font: 500 12px/1.5 var(--mono); }
+.gap td.what { font-weight: 800; white-space: nowrap; } .gap table { min-width: 760px; }
+.score { display: flex; flex-wrap: wrap; gap: 6px; font: 500 11.5px/1 var(--mono); color: var(--mute); }
+.score span { border: 1px solid var(--line); border-radius: 999px; padding: 6px 8px; background: var(--panel); }
+.score b { color: var(--ink); font-weight: 700; }
+.aud { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 12px; }
+.aud .note audio { width: 100%; margin-top: 8px; }
+.pending { border-left: 4px solid var(--sky); }
 /* masters */
 .table { overflow-x: auto; border: 1px solid var(--line); border-radius: 12px; }
 table { border-collapse: collapse; width: 100%; min-width: 520px; font-size: 14px; }
@@ -198,6 +207,45 @@ footer { margin-top: 44px; color: var(--mute); font-size: 13px; border-top: 1px 
             </article>`).join('')}</div>
         </section>`).join('')}
       <footer>Cut with the Syrus ad compiler: client footage + motion templates + captions + original music, loudness-normalized for Meta. Every ad has its ad.json timeline in the repo, so lines, shots and graphics can be changed and re-cut.</footer>`;
+  }
+
+  if (D.kind === 'house') {
+    const n = D.ads.length, H = D.house || {};
+    const sc = (r) => r ? `<div class="score"><span><b>${r.wpm}</b> wpm</span><span>music <b>${r.floor}</b> dB</span><span><b>${r.sfx}</b> sfx</span><span><b>${r.shot}s</b> avg shot</span><span><b>${r.lufs}</b> LUFS</span></div>` : '';
+    const ready = D.clients.filter((c) => D.ads.some((a) => a.client === c.id)), waiting = D.clients.filter((c) => !D.ads.some((a) => a.client === c.id));
+    app.innerHTML = `
+      <header class="top">
+        <div class="eyebrow">Syrus Digital · house-style ads</div>
+        <h1>House <em>Style</em></h1>
+        <p class="lede">I measured ${H.n || 21} of our own winning ads for voice, music, sound effects, text and cutting, then rebuilt our pipeline to match. These are ${n} new ads in that style, two per client, each on its word-for-word winning or approved script, with ElevenLabs "Michael" on every voiceover. Every ad is scored with the same meter as the winners.</p>
+        <div class="facts"><span><b>${n}</b> ads ready</span><span><b>${ready.length}</b> clients</span><span>house median: <b>${H.wpm}</b> wpm · music <b>${H.floor}</b> dB under voice · <b>${H.sfx}</b> sfx · <b>${H.shot}s</b> shots · <b>${H.lufs}</b> LUFS</span></div>
+      </header>
+      <p class="dlnote">Downloads work when this page is open in claude.ai.</p>
+      ${ready.map((c) => `
+        <section class="client">
+          <h2>${esc(c.name)}</h2><p class="sub">${esc(c.about)}</p>
+          <div class="ads">${D.ads.filter((a) => a.client === c.id).map((a) => `
+            <article class="ad">
+              <div class="frame"><video controls playsinline preload="none" poster="${esc(a.poster)}" src="${esc(a.file)}"></video><span class="slate">${esc(a.tc)}</span></div>
+              <h3>${esc(a.label)}</h3>
+              <div class="meta">${esc(a.script)} · ${a.dur}s · ${a.mb} MB</div>
+              ${sc(a.score)}
+              <p class="flow">${esc(a.flow)}</p>
+              ${a.confirm && a.confirm.length ? `<div class="confirm"><b>Confirm before launch</b><ul>${a.confirm.map((x) => `<li>${esc(x)}</li>`).join('')}</ul></div>` : ''}
+              <div class="dl">${saveBtns([{ label: 'Download MP4', path: a.file, name: a.name }])}</div>
+            </article>`).join('')}</div>
+        </section>`).join('')}
+      ${waiting.map((c) => `<section class="client"><h2>${esc(c.name)}</h2><div class="note pending"><h4>Waiting on footage</h4><p>${esc(c.about)}</p></div></section>`).join('')}
+      <section class="client">
+        <h2>Gap list: our first 9 ads vs the house</h2>
+        <p class="sub">What our Elite Craft, Work Horse and Twin Pines cuts did differently from the ${H.n || 21} winners, and how the new pipeline fixes each point.</p>
+        <div class="table gap"><table><thead><tr><th>#</th><th>What</th><th>Our 9 ads</th><th>House winners</th><th>Fixed by</th></tr></thead><tbody>
+          ${D.gap.map((g) => `<tr><td>${g.n}</td><td class="what">${esc(g.what)}</td><td>${esc(g.ours.replace(/\*\*/g, ''))}</td><td>${esc(g.house.replace(/\*\*/g, ''))}</td><td>${esc(g.fix)}</td></tr>`).join('')}
+        </tbody></table></div>
+      </section>
+      ${D.audition && D.audition.length ? `<section class="client"><h2>Voice audition</h2><p class="sub">File 0 is the real AMC V4 voice. 1 is Michael, the voice used on these ads. 2 and 3 are the alternates.</p>
+        <div class="aud">${D.audition.map((x) => `<div class="note"><h4>${esc(x.name.replace(/\.mp3$/, '').replace(/-/g, ' '))}</h4><audio controls preload="none" src="${esc(x.file)}"></audio></div>`).join('')}</div></section>` : ''}
+      <footer>Built with the Syrus ad compiler: word-timed shot plans (tools/house_build.py), centred kinetic type, real music beds and ElevenLabs voice, scored with tools/study_ad.py. Each ad's ad.json is in the repo, so a line, shot or graphic can be changed and the ad re-cut.</footer>`;
   }
 
   if (D.kind === 'masters') {
