@@ -158,7 +158,7 @@ TPL.sceneNoMiddleman = {
     // markup tags fly from the middleman to the stack under the price tag, then fall off at the collapse
     for (let k = 1; k < c.prices.length; k++) {
       const t0 = b.start + k * b.hop - 0.05, fly = easeIO(seg(t, t0, t0 + 0.45)); if (t < t0) continue;
-      const amt = '+' + money(c.prices[k] - c.prices[k - 1]);
+      const amt = c.symbols ? (c.markupText || '+ MARKUP') : '+' + money(c.prices[k] - c.prices[k - 1]);
       const sx = 176 + 100 + measure(c.chain[k].label, 54, { weight: 800 }) + 120, sy = [600, 780, 960, 1140, 1320][k];
       const tx = cx + (k % 2 ? -18 : 18), ty = cy + 150 + infl * 160 + (k - 1) * 84;
       const off = seg(t, b.collapse + 0.05 * k, b.collapse + 0.6 + 0.05 * k);

@@ -133,7 +133,7 @@
       "icon": "truck"
      },
      {
-      "label": "Outside installer",
+      "label": "Installer",
       "icon": "sales"
      },
      {
@@ -147,6 +147,7 @@
      3
     ],
     "symbols": true,
+    "markupText": "+ MARKUP",
     "symbolFinal": "DIRECT",
     "direct": {
      "label": "VistaGuard crew",

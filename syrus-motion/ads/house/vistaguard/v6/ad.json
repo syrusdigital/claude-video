@@ -222,7 +222,7 @@
       "icon": "truck"
      },
      {
-      "label": "Window company",
+      "label": "Dealer",
       "icon": "store"
      },
      {
@@ -236,6 +236,7 @@
      3
     ],
     "symbols": true,
+    "markupText": "+ MARKUP",
     "symbolFinal": "DIRECT",
     "direct": {
      "label": "VistaGuard",
@@ -260,7 +261,7 @@
   },
   {
    "tpl": "logoCard",
-   "at": "word:VistaGuard-0.05",
+   "at": "line:b4",
    "dur": 2.4,
    "cfg": {
     "img": "logo",
@@ -311,8 +312,8 @@
    "grade": "hqdn3d=1.2:1.2:4:4,eq=contrast=1.06:saturation=1.12:brightness=0.01,unsharp=5:5:0.8:5:5:0.0"
   },
   {
-   "src": "../media/stock/vg_filling_form.mp4",
-   "in": 0.3,
+   "src": "../media/client/dec_062030.mp4",
+   "in": 1.0,
    "len": 1.98,
    "fx": 0.5,
    "fy": 0.5,
@@ -320,11 +321,12 @@
     1.07,
     1.0
    ],
-   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01"
+   "speed": 0.5,
+   "grade": "hqdn3d=1.2:1.2:4:4,eq=contrast=1.06:saturation=1.12:brightness=0.01,unsharp=5:5:0.8:5:5:0.0"
   },
   {
-   "src": "../media/stock/vg_calculator_bills.mp4",
-   "in": 4.5,
+   "src": "../media/client/dec_062021.mp4",
+   "in": 9.0,
    "len": 1.8,
    "fx": 0.5,
    "fy": 0.5,
@@ -332,7 +334,7 @@
     1.0,
     1.07
    ],
-   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01"
+   "grade": "hqdn3d=1.2:1.2:4:4,eq=contrast=1.06:saturation=1.12:brightness=0.01,unsharp=5:5:0.8:5:5:0.0"
   },
   {
    "src": "../media/client/dec_062019.mp4",
@@ -471,7 +473,7 @@
   {
    "src": "../media/client/oct_232557.mp4",
    "in": 9.5,
-   "len": 1.98,
+   "len": 2.0,
    "fx": 0.5,
    "fy": 0.5,
    "zoom": [
@@ -483,7 +485,7 @@
   {
    "src": "../media/stock/vg_storm_palms.mp4",
    "in": 0.5,
-   "len": 2.26,
+   "len": 2.24,
    "fx": 0.5,
    "fy": 0.5,
    "zoom": [
@@ -507,7 +509,7 @@
   {
    "src": "../media/stock/vg_lakeside_neighborhood_aerial.mp4",
    "in": 0.5,
-   "len": 2.16,
+   "len": 2.2,
    "fx": 0.5,
    "fy": 0.5,
    "zoom": [
@@ -519,7 +521,7 @@
   {
    "src": "../media/client/oct_230836.mp4",
    "in": 5.5,
-   "len": 2.02,
+   "len": 1.98,
    "fx": 0.5,
    "fy": 0.5,
    "zoom": [

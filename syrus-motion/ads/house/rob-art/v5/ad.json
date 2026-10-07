@@ -352,7 +352,7 @@
       "icon": "office"
      },
      {
-      "label": "TV commercials",
+      "label": "TV ads",
       "icon": "tv"
      },
      {
@@ -371,6 +371,7 @@
      4
     ],
     "symbols": true,
+    "markupText": "+ MARKUP",
     "priceLabel": "YOU PAY",
     "caption1": "GUESS WHO PAYS|^FOR ALL OF THAT?^",
     "beats": {

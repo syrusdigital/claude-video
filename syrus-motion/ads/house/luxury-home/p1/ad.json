@@ -131,7 +131,7 @@
  "gfx": [
   {
    "tpl": "sceneBathBuild",
-   "at": "line:b1",
+   "at": "line:b1+2.3",
    "until": "line:b2",
    "fit": 11.0,
    "cfg": {

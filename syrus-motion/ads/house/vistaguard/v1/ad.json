@@ -206,7 +206,7 @@
       "icon": "factory"
      },
      {
-      "label": "Window company",
+      "label": "Dealer",
       "icon": "store"
      },
      {
@@ -224,6 +224,7 @@
      3
     ],
     "symbols": true,
+    "markupText": "+ MARKUP",
     "priceLabel": "YOU PAY",
     "caption1": "MARKED UP|^THEN MARKED UP AGAIN^",
     "beats": {

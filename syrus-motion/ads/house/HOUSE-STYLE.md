@@ -69,9 +69,25 @@ Separating the voice out of the winners (demucs) shows that the same few stock t
 The slower lo-fi beds (about 86 BPM, AMC V4 and Rob-Art V4/V6) also win, but the upbeat four are what we use now.
 
 ## How the new ads apply it
-- `gfx/tpl/kinetic.js` is the centred text, `gfx/tpl/cta-glass.js` is the CTA card and logo pill, and `tools/cut.py` handles whips, impact zooms, flashes, the real music bed and the end-with-VO timing.
-- VO: ElevenLabs "Michael" on the v4 model, one take per ad. `tools/vo_ingest.py` cuts pauses to 0.12 s and adds a broadcast finish. It stretches only if a read is slower than about 185 wpm: two of the 12 got a light 4–5%.
-- Music: one of the four lifted beds, 8–9 dB under the voice.
+- `gfx/tpl/kinetic.js` draws the centred text, and `gfx/tpl/cta-glass.js` the CTA card and `logoCard`.
+  - Each client's real logo sits in `ads/house/<client>/brand/logo.png`.
+  - It appears when the name is spoken and again above the CTA.
+- `tools/cut.py` handles whips, impact zooms, flashes, the real music bed and the end-with-VO timing.
+- VO: ElevenLabs "Michael" on the v4 model, one take per ad. `tools/vo_ingest.py`:
+  - cuts pauses to 0.12 s;
+  - applies a match EQ (`tools/vo_match_eq.json`, fitted to the winners' voice spectrum) to remove the boxy 400–800 Hz bump the raw takes have;
+  - adds light compression.
+- Music: one of the four lifted beds, in stereo. While the voice talks, `tools/audio.py` dips only the voice band (250 Hz–4 kHz), so the bed keeps its drive.
+- Stock metaphor shots are replaced by custom explainer animations in the same flat-vector look (`gfx/tpl/house-anim.js`, `gfx/tpl/scene-*.js`):
+  - a contractor quote (labor line, markups);
+  - the markup price chain (no figures unless spoken);
+  - the bathroom build;
+  - one team vs three subcontractors;
+  - the estimate process;
+  - the line-art kitchen;
+  - a monthly-cost comparison.
+
+  Each lands on VO anchors. Client footage stays the backbone.
 - The third "all-out" ad per client is cut for retention:
   - about 1.4 s per shot;
   - 4–7 zoom-blur whips;

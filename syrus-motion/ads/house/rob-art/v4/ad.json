@@ -301,7 +301,7 @@
   {
    "src": "../media/client/after-waterfall-edge.jpg",
    "in": 0.0,
-   "len": 1.32,
+   "len": 1.3,
    "fx": 0.5,
    "fy": 0.5,
    "zoom": [
@@ -314,7 +314,7 @@
   {
    "src": "../media/client/after-white-kitchen-wide.png",
    "in": 0.0,
-   "len": 1.1,
+   "len": 1.12,
    "fx": 0.5,
    "fy": 0.5,
    "zoom": [
@@ -327,7 +327,7 @@
   {
    "src": "../media/client/white-kitchen-range.jpg",
    "in": 0.0,
-   "len": 1.28,
+   "len": 1.3,
    "fx": 0.5,
    "fy": 0.4,
    "zoom": [
@@ -353,7 +353,7 @@
   {
    "src": "../media/stock/pexels-6389061.mp4",
    "in": 1.0,
-   "len": 0.92,
+   "len": 0.9,
    "fx": 0.5,
    "fy": 0.5,
    "zoom": [
@@ -471,7 +471,7 @@
   {
    "src": "../../vistaguard/media/stock/vg_filling_form.mp4",
    "in": 0.3,
-   "len": 1.623,
+   "len": 1.612,
    "fx": 0.5,
    "fy": 0.5,
    "zoom": [
@@ -484,7 +484,7 @@
   {
    "src": "../media/client/before-cherry-sink.jpg",
    "in": 0.0,
-   "len": 1.317,
+   "len": 1.328,
    "fx": 0.5,
    "fy": 0.5,
    "zoom": [
@@ -510,7 +510,7 @@
   {
    "src": "../media/stock/pexels-39122178.mp4",
    "in": 3.0,
-   "len": 1.74,
+   "len": 1.76,
    "fx": 0.5,
    "fy": 0.5,
    "zoom": [
@@ -523,7 +523,7 @@
   {
    "src": "../media/client/after-waterfall-edge.jpg",
    "in": 0.0,
-   "len": 1.4,
+   "len": 1.38,
    "fx": 0.5,
    "fy": 0.7,
    "zoom": [

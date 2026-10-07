@@ -33,7 +33,7 @@
    "label": "V1 \u00b7 Two to three times cheaper",
    "script": "Veer, Sept 2026 doc, Script 1",
    "poster": 2.02,
-   "flow": "\"If you just got quoted twenty thousand dollars or more\" over the installer drilling a new frame (120 fps slow-mo) \u2192 quote/calculator \u2192 South Florida aerial \u2192 outside crew \u2192 \"You end up paying extra twice\" \u2192 VistaGuard pill over the crew installing \u2192 \"Same hurricane rating\" over storm palms \u2192 30 years, licensed, lifetime warranty over finished jobs \u2192 CLICK \"GET QUOTE\" BELOW with arrow.",
+   "flow": "\"If you just got quoted twenty thousand dollars or more\" over the installer drilling a new frame (120 fps slow-mo) \u2192 quote/calculator \u2192 South Florida aerial \u2192 outside crew \u2192 \"You end up paying extra twice\" \u2192 VistaGuard pill over the crew installing \u2192 \"Same hurricane rating\" over storm palms \u2192 30 years, licensed, lifetime warranty over finished jobs \u2192 CLICK \"GET QUOTE\" BELOW with arrow. Animations: the circled $20,000+ quote on \"you're paying two to three times more\", and the markup chain (manufacturer, dealer, outside crew, you) through \"paying extra twice\".",
    "confirm": [
     "\"Two to three times\" cheaper and \"over thirty years\" are current claims.",
     "Lifetime warranty covers products and materials as stated."
@@ -45,7 +45,7 @@
    "label": "V6 \u00b7 Check the bottom of that quote",
    "script": "Veer, Sept 2026 doc, Script 6",
    "poster": 1.99,
-   "flow": "\"Look at the bottom of it\" over the drill shot and paperwork \u2192 labor line \"can add thousands\" \u2192 \"installation is free\" (whip to the crew) \u2192 own crew installs every window \u2192 direct from the manufacturer \u2192 30 years / lifetime warranty over finished homes \u2192 caps CTA with arrow.",
+   "flow": "\"Look at the bottom of it\" over the drill shot and paperwork \u2192 labor line \"can add thousands\" \u2192 \"installation is free\" (whip to the crew) \u2192 own crew installs every window \u2192 direct from the manufacturer \u2192 30 years / lifetime warranty over finished homes \u2192 caps CTA with arrow. Animations: the quote with its bottom line circled, the labor line flagged \"+ THOUSANDS\" and then stamped FREE, and the middleman chain collapsing to VistaGuard direct.",
    "confirm": [
     "Free installation is still the offer.",
     "\"Two to three times less\" claim."
@@ -58,7 +58,7 @@
    "label": "V3 \u00b7 Why pay more? (all-out)",
    "script": "Veer, Sept 2026 doc, Script 3 (mirrors the aired V2 winner: 1,001 leads at $30.51)",
    "poster": 2.52,
-   "flow": "Opens on the installer's drill in 120 fps slow-mo under \"Why pay twenty thousand dollars\" \u2192 calculator \u2192 laser level \u2192 storm palms on \"two to three times less\" \u2192 VistaGuard pill over the crew \u2192 South Florida aerial \u2192 hurricane coast \u2192 whip into the install: direct from the manufacturer, own crew, no broker \u2192 flash cut on \"installation is included, free\" \u2192 prep, clean work, storms \u2192 30 years / lifetime warranty over finished homes \u2192 caps CTA, ending on the same drill shot it opened on so the loop restarts cleanly. 36 cuts (1.4 s each), 7 zoom-blur whips, an impact zoom on every hard cut.",
+   "flow": "Opens on the installer's drill in 120 fps slow-mo under \"Why pay twenty thousand dollars\" \u2192 calculator \u2192 laser level \u2192 storm palms on \"two to three times less\" \u2192 VistaGuard pill over the crew \u2192 South Florida aerial \u2192 hurricane coast \u2192 whip into the install: direct from the manufacturer, own crew, no broker \u2192 flash cut on \"installation is included, free\" \u2192 prep, clean work, storms \u2192 30 years / lifetime warranty over finished homes \u2192 caps CTA, ending on the same drill shot it opened on so the loop restarts cleanly. 36 cuts (1.4 s each), 7 zoom-blur whips, an impact zoom on every hard cut. Animations: the $20,000+ quote in the hook, and the broker and installer markup chain collapsing to VistaGuard direct.",
    "confirm": [
     "\"Thousands of South Florida homeowners\" and \"over thirty years\" claims.",
     "Installation included free is still the offer."
@@ -70,7 +70,7 @@
    "label": "A1 \u00b7 $1,995 direct, fair price",
    "script": "Veer, Oct 2026 doc, A1",
    "poster": 2.39,
-   "flow": "Gold \"$1,995\" lands over a quartzite waterfall island \u2192 dated granite (thousands more) \u2192 \"fair price\" \u2192 \"sleep at night\" \u2192 GC Countertops name pill (their logo file says \"Granite Club\", so it is not shown) \u2192 amazing work over GC's best islands \u2192 old tops out, core drill + marking, new white quartz on the same island \u2192 \"100% happy\" \u2192 glass Get Quote card.",
+   "flow": "Gold \"$1,995\" lands over a quartzite waterfall island \u2192 dated granite (thousands more) \u2192 \"fair price\" \u2192 \"sleep at night\" \u2192 GC Countertops name pill (their logo file says \"Granite Club\", so it is not shown) \u2192 amazing work over GC's best islands \u2192 old tops out, core drill + marking, new white quartz on the same island \u2192 \"100% happy\" \u2192 glass Get Quote card. Animations: quotes with markup tags on \"thousands more\" and \"so marked up\".",
    "confirm": [
     "$1,995 is a starting price (VO says \"starting at\").",
     "\"Contractor pricing\" / 100% satisfaction wording approved.",
@@ -83,7 +83,7 @@
    "label": "B1 \u00b7 $30 per square foot + price table",
    "script": "Veer, Oct 2026 doc, B1",
    "poster": 2.81,
-   "flow": "Gold \"$30\" per square foot over two waterfall islands \u2192 Georgia homeowners \u2192 \"no inflated quotes\" \u2192 tape measure, clear price per sq ft \u2192 required on-screen table lands row by row as the VO says Granite from $30 \u00b7 Quartz from $55 \u00b7 Marble from $65 \u2192 start to finish, old tops out, new in \u2192 10 years licensed and insured \u2192 glass \"tap / Get Quote / below\".",
+   "flow": "Gold \"$30\" per square foot over two waterfall islands \u2192 Georgia homeowners \u2192 \"no inflated quotes\" \u2192 tape measure, clear price per sq ft \u2192 required on-screen table lands row by row as the VO says Granite from $30 \u00b7 Quartz from $55 \u00b7 Marble from $65 \u2192 start to finish, old tops out, new in \u2192 10 years licensed and insured \u2192 glass \"tap / Get Quote / below\". Animation: the quote with markup tags on \"inflated quotes\".",
    "confirm": [
     "Table prices: Granite from $30, Quartz from $55, Marble from $65 per sq ft.",
     "Logo: their supplied logo reads \"Granite Club LLC \u00b7 ESTD 2023\" (the brief bans \"Granite Club LLC\" in ads and the company age). The ads use their GC monogram and ring rebuilt as \"GC COUNTERTOPS\". Confirm with the client."
@@ -96,7 +96,7 @@
    "label": "B2 \u00b7 Shocked by your quote? (all-out)",
    "script": "Veer, Oct 2026 doc, B2",
    "poster": 1.6,
-   "flow": "\"If you got a quote\u2026 shocked\u2026 watch this\" over a dark quartzite waterfall, the calculator and a dated granite kitchen, whipping to an onyx island \u2192 markup / paying more \u2192 GC Countertops pill with a whip \u2192 \"contractor pricing\" over the crew measuring, marking and core-drilling (no supplier or slab yard shown) \u2192 the required price table lands row by row as the VO says Granite $30 \u00b7 Quartz $55 \u00b7 Marble $65 \u2192 100% satisfaction guarantee over finished kitchens \u2192 glass Get Quote, ending on the opening island. 30 cuts (1.5 s), 4 whips, impact zooms.",
+   "flow": "\"If you got a quote\u2026 shocked\u2026 watch this\" over a dark quartzite waterfall, the calculator and a dated granite kitchen, whipping to an onyx island \u2192 markup / paying more \u2192 GC Countertops pill with a whip \u2192 \"contractor pricing\" over the crew measuring, marking and core-drilling (no supplier or slab yard shown) \u2192 the required price table lands row by row as the VO says Granite $30 \u00b7 Quartz $55 \u00b7 Marble $65 \u2192 100% satisfaction guarantee over finished kitchens \u2192 glass Get Quote, ending on the opening island. 30 cuts (1.5 s), 4 whips, impact zooms. Animation: markup tags stacking on the quote (\"a big markup before it ever gets to your kitchen\").",
    "confirm": [
     "Table prices: Granite from $30, Quartz from $55, Marble from $65 per sq ft.",
     "100% satisfaction guarantee wording approved.",
@@ -109,7 +109,7 @@
    "label": "P1 \u00b7 Seven-day showcase",
    "script": "Veer, Oct 2026 bathroom doc, P1",
    "poster": 2.47,
-   "flow": "\"A bathroom remodel done in seven days\" over a time-lapse remodel \u2192 Luxury Home Renovations pill \u2192 10 outdated bathrooms, discounted, before/after videos \u2192 qualify: 5+ years old, full remodel or tub-to-shower, ready in 30 days \u2192 finished bathrooms \u2192 glass \"hit / Get Quote / below\".",
+   "flow": "\"A bathroom remodel done in seven days\" over a time-lapse remodel \u2192 Luxury Home Renovations pill \u2192 10 outdated bathrooms, discounted, before/after videos \u2192 qualify: 5+ years old, full remodel or tub-to-shower, ready in 30 days \u2192 finished bathrooms \u2192 glass \"hit / Get Quote / below\". Animations: a bathroom build over the showcase offer, then a \"Do you qualify?\" card that ticks on each requirement.",
    "confirm": [
     "Showcase offer (10 homes, discounted rate) is live.",
     "No client footage yet: swap in their real bathrooms when shared.",
@@ -123,7 +123,7 @@
    "label": "F1 \u00b7 $14,995 full bathroom, what's included",
    "script": "Veer, Oct 2026 bathroom doc, F1",
    "poster": 3.13,
-   "flow": "Gold \"$14,995\" over a finished bathroom \u2192 \"has to cost thirty thousand. It does not.\" \u2192 torn down and built back new \u2192 what you get: demo, waterproofing, tile or acrylic surrounds, glass door, vanity, toilet, flooring, fixtures \u2192 honest number before we start \u2192 LHR pill, 38 years licensed (captions blank over the state names, per the client rule) \u2192 own crews \u2192 showroom \u2192 2-year labor warranty \u2192 glass Get Quote.",
+   "flow": "Gold \"$14,995\" over a finished bathroom \u2192 \"has to cost thirty thousand. It does not.\" \u2192 torn down and built back new \u2192 what you get: demo, waterproofing, tile or acrylic surrounds, glass door, vanity, toilet, flooring, fixtures \u2192 honest number before we start \u2192 LHR pill, 38 years licensed (captions blank over the state names, per the client rule) \u2192 own crews \u2192 showroom \u2192 2-year labor warranty \u2192 glass Get Quote. Animations: the $30,000 quote (\"It does not.\"), and a full bathroom build with every included item labeled on its word.",
    "confirm": [
     "38 years / two-year labor warranty claims.",
     "No client footage yet: swap in their real bathrooms when shared.",
@@ -138,7 +138,7 @@
    "label": "F2 \u00b7 Biggest special ever, $14,995 (all-out)",
    "script": "Veer, Oct 2026 bathroom doc, F2",
    "poster": 6.43,
-   "flow": "\"The biggest bathroom remodeling special we have ever run\" over a hero bathroom, then the gold $14,995 pinned in the hook stack \u2192 whip into a full time-lapse remodel \u2192 every item gets its own cut, on the word: demo, shower/tub, waterproofing, tile or acrylic, glass door, vanity, toilet, flooring, fixtures \u2192 one team vs plumber/tile guy/electrician \u2192 showroom and samples \u2192 plans and itemized estimate \u2192 2-year labor warranty \u2192 LHR pill, 38 years (captions blank over the state names) \u2192 glass Get Quote, ending on the opening bathroom. 57 cuts (1.4 s), 7 whips.",
+   "flow": "\"The biggest bathroom remodeling special we have ever run\" over a hero bathroom, then the gold $14,995 pinned in the hook stack \u2192 whip into a full time-lapse remodel \u2192 every item gets its own cut, on the word: demo, shower/tub, waterproofing, tile or acrylic, glass door, vanity, toilet, flooring, fixtures \u2192 one team vs plumber/tile guy/electrician \u2192 showroom and samples \u2192 plans and itemized estimate \u2192 2-year labor warranty \u2192 LHR pill, 38 years (captions blank over the state names) \u2192 glass Get Quote, ending on the opening bathroom. 57 cuts (1.4 s), 7 whips. Animations: the bathroom build over the item list, one team vs three subcontractors, and the estimate-first process journey.",
    "confirm": [
     "Biggest-special claim and $14,995 starting price.",
     "No client footage yet: AI + stock bathrooms. Swap in their real bathrooms when shared.",
@@ -152,7 +152,7 @@
    "label": "V5 \u00b7 $19,995 that's crazy",
    "script": "Aired Rob-Art V5 (4.07.26), word for word",
    "poster": 4.11,
-   "flow": "Gold \"$19,995\" over Rob-Art's black-marble waterfall island \u2192 \"like $40,000 usually\" \u2192 size/layout/materials \u2192 \"sleep at night\" over a dated kitchen \u2192 Rob-Art Design LLC pill \u2192 amazing work, in-house NJ crews \u2192 big bloated companies \u2192 custom design, drawings, material selection \u2192 fair prices \u2192 glass Get Quote.",
+   "flow": "Gold \"$19,995\" over Rob-Art's black-marble waterfall island \u2192 \"like $40,000 usually\" \u2192 size/layout/materials \u2192 \"sleep at night\" over a dated kitchen \u2192 Rob-Art Design LLC pill \u2192 amazing work, in-house NJ crews \u2192 big bloated companies \u2192 custom design, drawings, material selection \u2192 fair prices \u2192 glass Get Quote. Animations: the quote with \"insanely ridiculous\" markups, and the overhead chain (offices, TV ads, billboards: guess who pays).",
    "confirm": [
     "$19,995 premium kitchen offer still stands."
    ]
@@ -163,7 +163,7 @@
    "label": "V1 \u00b7 Why pay $40,000",
    "script": "Aired Rob-Art V1 (4.07.26), word for word",
    "poster": 3.1,
-   "flow": "\"Why pay $40,000\" over their finished island \u2192 Rob-Art Design LLC pill, NJ since 2012 \u2192 consultation \u2192 real design drawings, then ONLY Rob-Art's real kitchens under \"not AI pictures, not stock images\" \u2192 material selection \u2192 in-house crew over their real befores (gutted oak kitchen) \u2192 \"under $20,000\" \u2192 glass Get Quote. No AI imagery in this ad.",
+   "flow": "\"Why pay $40,000\" over their finished island \u2192 Rob-Art Design LLC pill, NJ since 2012 \u2192 consultation \u2192 real design drawings, then ONLY Rob-Art's real kitchens under \"not AI pictures, not stock images\" \u2192 material selection \u2192 in-house crew over their real befores (gutted oak kitchen) \u2192 \"under $20,000\" \u2192 glass Get Quote. No AI imagery in this ad. Animation: the kitchen drawn in line art, then filled, on \"actual layouts... cabinets, countertops and finishes\".",
    "confirm": [
     "Since 2012 and the under-$20,000 claim."
    ]
@@ -175,7 +175,7 @@
    "label": "V4 \u00b7 $349 a month (all-out)",
    "script": "Aired Rob-Art V4 (4.07.26), word for word: the account's workhorse ($20,310 spend, 235 leads)",
    "poster": 3.46,
-   "flow": "Gold \"$349 a month\" over Rob-Art's black-marble island \u2192 a cut on each of \"car payment\" (hands on a wheel), \"gym membership\" (dumbbell rack) and \"takeout coffee\" (cup in a car holder) \u2192 their dated cherry kitchens on \"can't afford it\" \u2192 whip to the finished kitchen on \"here's the reality\", flash on \"you can afford it\" \u2192 calculator / $19,995 vs $349 \u2192 Rob-Art Design LLC pill, financing, custom kitchens \u2192 design options, swatches and plans \u2192 since 2012 / 12-month workmanship warranty over their real befores and afters \u2192 glass Get Quote, ending on the opening island. 39 cuts (1.4 s), 6 whips.",
+   "flow": "Gold \"$349 a month\" over Rob-Art's black-marble island \u2192 a cut on each of \"car payment\" (hands on a wheel), \"gym membership\" (dumbbell rack) and \"takeout coffee\" (cup in a car holder) \u2192 their dated cherry kitchens on \"can't afford it\" \u2192 whip to the finished kitchen on \"here's the reality\", flash on \"you can afford it\" \u2192 calculator / $19,995 vs $349 \u2192 Rob-Art Design LLC pill, financing, custom kitchens \u2192 design options, swatches and plans \u2192 since 2012 / 12-month workmanship warranty over their real befores and afters \u2192 glass Get Quote, ending on the opening island. 39 cuts (1.4 s), 6 whips. Animations: car + gym + coffee stacking against a short gold $349/mo bar, and $19,995 struck through into $349 a month (with \"With approved financing\").",
    "confirm": [
     "$349/month and $19,995 figures, and that financing is live (it is not on the banned list for Rob-Art).",
     "12-month workmanship warranty and since-2012 claims.",
@@ -210,12 +210,13 @@
   }
  ],
  "update": {
-  "title": "Updated Oct 7: new voice, upbeat music, and a third all-out ad per client",
+  "title": "Updated Oct 7 (evening): fuller voice, real logos, custom animations",
   "items": [
-   "Voice on all 12: ElevenLabs Michael re-read on the newer v4 model, which is crisper and brighter. It reads at house pace (185\u2013212 wpm); 10 of 12 need no time-stretch and two get a light 4\u20135%. Finished with de-essing, presence and light compression.",
-   "Music on all 12: upbeat beds lifted from our own winning ads, 115\u2013135 BPM instead of the old 88 BPM bed, sitting a dB or two louder under the voice.",
-   "A third ad for each client, cut for retention: about 1.4 s per shot (vs 1.9 s), 4\u20137 zoom-blur whips, an impact zoom on every hard cut, a cut on every listed item, and an ending that loops back to the opening frame.",
-   "The first eight ads keep their edit. Only the voice and music changed."
+   "Voice: the hollow sound is fixed. Measured against the voice in our winning ads, our ElevenLabs takes had a boxy 400-800 Hz bump and a thin chest. A matching EQ now gives them the winners' tone on all 12. The ElevenLabs connector's audio stops at about 9 kHz, which no EQ can add back.",
+   "Mix: each bed now plays in real stereo. Under the voice only the voice's frequency range dips, so the voice stays clear while the kick and hats keep driving.",
+   "Logos: every ad now shows the client's real logo when the name is spoken, and again above the CTA. Vistaguard and Luxury Home Renovations come from their websites. Rob-Art's is their site wordmark. GC's is rebuilt from their own monogram, without the banned \"Granite Club\" name or the founding year.",
+   "Custom animations replace the stock metaphor shots (calculators, paperwork, car/gym/coffee): a contractor quote with the labor line and markups, the markup price chain, the bathroom build, one team vs three subcontractors, the estimate process, the line-art kitchen, and $19,995 turning into $349 a month.",
+   "Other fixes: Vistaguard and GC hooks now open on client footage instead of stock; low-res phone clips are upscaled more cleanly; LHR F1/F2 show the required starting-price disclosure; a caption chunking glitch is fixed."
   ]
  }
 }
