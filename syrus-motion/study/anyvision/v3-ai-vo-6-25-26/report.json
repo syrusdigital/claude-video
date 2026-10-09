@@ -1,0 +1,89 @@
+{
+ "label": "Anyvision | V3 | AI/VO | 6.25.26 | $251.90, 5 leads, $50.38 CPL",
+ "file": "/home/user/claude-video/syrus-motion/study/anyvision/v3-ai-vo-6-25-26/video.mp4",
+ "duration": 86.47,
+ "size": "360x640",
+ "voice": {
+  "words": 247,
+  "wpm": 172.1,
+  "pitch_hz": 126.5,
+  "voice_guess": "male",
+  "first_word_at": 0.0,
+  "first_money_at": 0.0,
+  "first_money_word": "$17",
+  "hook_5s": "$17 ,495 for a premium kitchen remodel? That sounds crazy.",
+  "text": "$17 ,495 for a premium kitchen remodel? That sounds crazy. Premium kitchen remodels are like $40 ,000 usually, right? Sort of. But not really. It depends on the size of the kitchen, the layout, the materials you choose, and what actually needs to be done. Thing is, there's fair pricing. And then there's pricing that's so ridiculously inflated that homeowners end up paying way more than they should. At Any Vision Home Remodeling, here's how we run our business. First and foremost, we do amazing work. We don't settle for anything less. No corner cutting, no cheap materials, and we work with experienced local crews right here in the greater Seattle area, because we're a local company that's been serving homeowners for many years. We keep our operation lean and efficient. Unlike the giant remodeling companies with massive showrooms, TV commercials, giant sales teams, and huge overhead. Guess who pays for all of that? Yep, the homeowner. That's not how we do things. So we can do something really awesome. We can deliver beautiful, fully custom kitchen remodels, complete with custom 3D design renderings, personal material selection, and one team managing everything from start to finish, without charging you double what the project should realistically cost. The best work, the best materials, at fair, honest prices. So you can finally remodel your kitchen without feeling like you're getting ripped off. Simple. Click, get quote below. If you're interested in a fair, honest estimate for your kitchen remodel."
+ },
+ "music": {
+  "present": true,
+  "floor_rel_db": -17.7,
+  "after_vo_db": null,
+  "bed_db_rel_voice": -12.7,
+  "voice_dbfs": -8.1,
+  "bed_dbfs": -20.9,
+  "tempo_bpm_rough": 107.1,
+  "tempo_confidence": 0.043
+ },
+ "sfx": {
+  "hits": [
+   14.41,
+   58.83,
+   72.87,
+   80.45,
+   85.47
+  ],
+  "hit_count": 5,
+  "hits_per_min": 3.5,
+  "hits_on_cuts": 0,
+  "swells": []
+ },
+ "picture": {
+  "cuts": 38,
+  "cut_times": [
+   4.93,
+   5.17,
+   5.23,
+   5.3,
+   8.47,
+   10.2,
+   11.87,
+   13.7,
+   15.7,
+   18.23,
+   20.57,
+   22.27,
+   22.97,
+   23.2,
+   23.3,
+   23.33,
+   24.9,
+   24.93,
+   30.47,
+   30.53,
+   30.57,
+   34.9,
+   36.97,
+   38.3,
+   40.83,
+   42.87,
+   47.4,
+   51.2,
+   52.97,
+   58.0,
+   60.57,
+   62.3,
+   64.0,
+   66.8,
+   70.3,
+   72.03,
+   74.5,
+   79.13
+  ],
+  "avg_shot_s": 2.22,
+  "median_shot_s": 1.83
+ },
+ "loudness": {
+  "integrated_lufs": -8.5,
+  "lra": 1.6
+ }
+}

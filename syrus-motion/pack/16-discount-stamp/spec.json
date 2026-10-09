@@ -1,0 +1,17 @@
+{
+ "fps": 30,
+ "duration": 2.5,
+ "items": [
+  {
+   "tpl": "discountStamp",
+   "at": 0,
+   "dur": 2.5,
+   "cfg": {
+    "big": "10% OFF",
+    "small": "THIS MONTH",
+    "rot": -7,
+    "y": 760
+   }
+  }
+ ]
+}

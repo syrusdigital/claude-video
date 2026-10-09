@@ -1,0 +1,115 @@
+{
+ "_note": "Word for word from the source scripts. hook/body/cta exactly as written; body is split into one VO line per sentence (ids b1..bN) at build time. Rob-Art V1/V5 use the AIRED transcripts (the versions that actually ran), cleaned of aligner artifacts.",
+ "luxury-home/f1": {
+  "client": "Luxury Home Renovations",
+  "label": "F1 | AI/VO | $14,995 Full Bathroom",
+  "source": "Veer, Ad Script for Editing — October 2026 — Luxury Home Renovations (Bathroom), F1",
+  "hook": "Brand new full bathroom remodels, starting at just $14,995.",
+  "body": "Most homeowners think a full bathroom remodel has to cost thirty thousand dollars. It does not. This is the whole bathroom, start to finish, taken down and built back new. That is why it starts at $14,995, instead of the thirty thousand most companies will quote you for the exact same bathroom. Here is what you get. We take out the old bathroom and haul it away. We put in a brand new shower or bathtub and waterproof it properly. You get new wall surrounds, and you choose how they are finished, tile or acrylic, whichever you want. You also get a brand new glass shower door, a new vanity, a new toilet, new flooring, and all new fixtures. Labor and materials are both included. The final price depends on the size of your bathroom and the materials you choose, and you get an honest number before we start. At Luxury Home Renovations, we are a licensed bathroom remodeling contractor with 38 years of experience, licensed in both Tennessee and Georgia. Our own crews do the work, not subcontractors, including the electrical and the plumbing. And you pick your materials in person in our own showroom. Your work is backed by a two year labor warranty, plus the full manufacturer warranties on your materials.",
+  "cta": "Click \"Get Quote\" to book your free design consultation."
+ },
+ "luxury-home/p1": {
+  "client": "Luxury Home Renovations",
+  "label": "P1 | AI/VO | 7 Day Showcase",
+  "source": "Veer, Ad Script for Editing — October 2026 — Luxury Home Renovations (Bathroom), P1",
+  "hook": "A bathroom remodel done in seven days. Sounds awesome, right?",
+  "body": "At Luxury Home Renovations, we are looking for 10 homes with outdated bathrooms that we can remodel at a discounted rate, in return for using the before and after videos on our website. To qualify, your bathroom has to be five years or older. You have to be looking for either a full bathroom remodel or a tub to shower conversion. And you have to be ready to get started within the next 30 days. We are only looking for 10 homeowners for this showcase, so if you think your bathroom might be a good fit...",
+  "cta": "Hit the \"Get Quote\" button below, answer a few short questions, and we will contact you to see if you qualify."
+ },
+ "gc-countertops/a1": {
+  "client": "GC Countertops",
+  "label": "A1 | AI/VO | $1,995 Direct",
+  "source": "Veer, Ad Script for Editing — October 2026 — GC Countertops, A1",
+  "hook": "Brand-new kitchen countertops starting at $1,995.",
+  "body": "Most countertop companies will quote you thousands more than that. Right? Well, sort of. It comes down to the size of your kitchen and the material you pick. But here's the thing. There's a fair price. And then there's pricing so marked up, I don't know how some of these guys sleep at night. At GC Countertops, here's how we do it. First, we do amazing work. No corner cutting. And because we source our countertops directly from the supplier, we get contractor pricing that you can't get on your own, and we pass that savings right on to you. We take out your old countertops and install your new ones, with all the labor included. And we don't leave your home until you're 100% happy with the work.",
+  "cta": "Click \"Get Quote\" to book your free in-home measurement and estimate. We'll give you a fair, honest price, with no pressure."
+ },
+ "gc-countertops/b1": {
+  "client": "GC Countertops",
+  "label": "B1 | AI/VO | $30 Sq Ft Direct",
+  "source": "Veer, Ad Script for Editing — October 2026 — GC Countertops, B1",
+  "hook": "Get brand-new kitchen countertops starting at just $30 per square foot.",
+  "body": "Georgia homeowners love this because it finally gives you a simple, honest way to price your countertops. You don't have to guess, and we don't give you inflated quotes. At GC Countertops, we give you a clear price per square foot, so you know what your new countertops will cost before the job even starts. Granite starts at just $30 per square foot. Quartz starts at $55 per square foot. And marble starts at $65 per square foot. Your final price just depends on the size of your kitchen and the material you pick. And we handle everything from start to finish. We take out your old countertops and install your new ones, with all the labor included. We've been installing countertops across Georgia for over 10 years, and we're fully licensed and insured.",
+  "cta": "Tap \"Get Quote\" to book your free in-home measurement and estimate."
+ },
+ "vistaguard/v1": {
+  "client": "Vistaguard Windows & Roofing",
+  "label": "V1 | AI/VO | Two To Three Times Cheaper",
+  "source": "Veer, Ad Script for Editing — September 2026 — Vistaguard, Script 1",
+  "hook": "If you just got quoted twenty thousand dollars or more for brand-new impact windows, you're paying two to three times more than you have to.",
+  "body": "Here in South Florida, most window companies don't source their own windows. They buy them from a manufacturer and add their own profit on top. Then they hire an outside crew to install them, and that crew charges its own price too. You end up paying extra twice. At VistaGuard, we source our impact windows straight from the manufacturer, and our own crew installs them. No broker in the middle, and no separate labor bill, because our installation is free. Same hurricane rating, two to three times less than what you were just quoted. We've been installing windows in your neighborhood all across South Florida for over thirty years, we're licensed and insured, and every job carries a lifetime warranty on our products and materials.",
+  "cta": "Click Get Quote below to book your free in-home inspection and estimate."
+ },
+ "vistaguard/v6": {
+  "client": "Vistaguard Windows & Roofing",
+  "label": "V6 | AI/VO | Check The Bottom Of That Quote",
+  "source": "Veer, Ad Script for Editing — September 2026 — Vistaguard, Script 6",
+  "hook": "If you've got a quote for brand-new impact windows sitting in front of you, look at the bottom of it. You're probably being charged for the installation too.",
+  "body": "Most window companies in South Florida sell you the windows, then hand your job to an outside crew and bill you again to put them in. That labor line alone can add thousands to your total. At VistaGuard, installation is free. Our own crew installs every window we source, so there's no second crew and no separate labor bill. And because we work directly with the manufacturer instead of buying through a middleman, the windows come in at two to three times less than what most companies will quote you. We've been installing impact windows in your neighborhood across South Florida for over thirty years, we're licensed and insured, and every job carries a lifetime warranty on our products and materials.",
+  "cta": "Click Get Quote below to book your free in-home inspection and estimate."
+ },
+ "garage-force/a1": {
+  "client": "Garage Force of Miami",
+  "label": "A1 | AI/VO | $1,095 That's Crazy",
+  "source": "Notion Script Library, A1 — Garage Force of Miami (Winner, 184 leads at $13.92)",
+  "hook": "$1,095 for a brand-new garage floor coating? That's crazy.",
+  "body": "Most floor coating companies charge twelve to fifteen thousand dollars to coat garage floors, patios, driveways. Right? Well… sort of. It comes down to the size, the prep work, and the materials. But here's the thing… There's a fair price. And then there's pricing so crazy high, I don't know how some of these guys sleep at night. At Garage Force, here's how we do it. First, we do amazing work. No corner cutting. No cheap materials. We use premium, state-of-the-art floor coatings, that are 20 times stronger than epoxy, in any color you want. And because we're a small local team, we don't carry all that overhead. The big companies with offices, sales teams, and ads everywhere? Guess who pays for that. You do. That's not how we do it. So we keep it simple: top-quality floor coatings that look great and actually last, without charging you way more than you should pay. The best work, the best materials, at a fair price. And most of our projects are completed in one day, backed by a lifetime warranty on material and craftsmanship.",
+  "cta": "Click \"Get Quote\" to book a quick phone consultation. We'll give you a fair, honest estimate that fits your budget, with no pressure, and no pushy in-home sales visit."
+ },
+ "garage-force/c2": {
+  "client": "Garage Force of Miami",
+  "label": "C2 | AI/VO | No-Pressure Phone Estimate",
+  "source": "Notion Script Library, C2 — Garage Force of Miami (95 leads, best CTR in account)",
+  "hook": "Most floor coating companies send a salesman to your home and won't leave until you sign. We do the complete opposite.",
+  "body": "Here's how we're different. When you reach out, we don't send a pushy salesman to camp in your driveway until you buy. But let's talk about what really matters, your floor. At Garage Force, we install premium floor coatings built to last. It's a polyaspartic coating that's up to 20 times stronger than epoxy. It won't fade in the South Florida sun, it resists stains and hot tires, and you can get it in any color you want to match your home. Most of our projects are finished in just one day, so you can walk on it that same evening and park your car the next morning. And because we're a small local team without the big-company overhead, you get better materials and a better warranty at a better price. Our floor coatings start at just $1,095, and right now we're adding free upgrades worth hundreds of dollars when you book. Then, when you're ready, it's easy. You book a quick, no-pressure phone call and we give you an honest estimate right over the phone. If you like what you hear, we come out and finalize everything. If you don't, no problem at all. Every floor is backed by a lifetime warranty, and we're 5-star rated on Google.",
+  "cta": "Click \"Get Quote\" to book your quick, no-pressure phone consultation. We'll give you an honest estimate right over the phone, and we only come out if you want us to."
+ },
+ "rob-art/v5": {
+  "client": "Rob-Art Design",
+  "label": "V5 | AI/VO | $19,995 That's Crazy",
+  "source": "Aired Rob-Art V5 | AI/VO | 4.07.26 (transcribed from the running ad; Notion Script 5 — Rob-Art)",
+  "hook": "$19,995 for a premium kitchen remodel? That's crazy. Premium kitchen remodels are like $40,000 usually, right?",
+  "body": "Sort of. But not really. It has to do with the size, the layout, the materials you choose, and what actually needs to be done. Thing is, there's a fair price. And there's pricing that's so insanely ridiculous that I don't know how these remodeling contractors sleep at night. At Rob-Art Design, here's how we run our business. First and foremost, we do amazing work. We don't settle for anything less. No corner cutting, no junky materials. And we only work with our in-house local New Jersey crews. But there's more. Because we're a small local company that we run really well, we don't have a ton of overhead. Unlike the big bloated companies who have fancy offices and TV commercials and billboards, guess who pays for all of that? Yep. You. That's not at all how we do things. So we can do something really awesome. We can do amazing work. We do beautiful, fully custom kitchen remodels, real design drawings, personal material selection, one in-house team managing everything without charging you 200% more than it should really cost. The best work, the best materials, at fair prices. So you can not only have peace of mind, but also save money. Simple.",
+  "cta": "Click Get Quote below if you're interested in a consultation and a fair, honest estimate for your kitchen remodel."
+ },
+ "rob-art/v1": {
+  "client": "Rob-Art Design",
+  "label": "V1 | AI/VO | Why Pay $40,000",
+  "source": "Aired Rob-Art V1 | AI/VO | 4.07.26 (transcribed from the running ad; $46.09 CPL, best in account)",
+  "hook": "Why pay $40,000 for a kitchen remodel, when you can get the same stunning results for under $20,000?",
+  "body": "We're Rob-Art Design, and we've been remodeling kitchens for New Jersey homeowners since 2012. Here's how we work. When you call us out, we first sit down with you for a free consultation, and we listen to exactly what you want your new kitchen to look like. From there, we build out real design drawings and renderings of your specific kitchen, not AI pictures, not stock images, actual layouts with your actual kitchen, showing your new cabinets, countertops, and finishes, so you can see exactly what you're getting before you say yes to anything. Then, we take you through material selection personally. We help you find high-quality materials you'll actually love, within a price that works for you. You're not choosing from a fixed package, you're building your kitchen, custom-made. Once the project starts, our in-house team handles everything, electrical, plumbing, cabinetry, one crew, managed by us, from day one to the final walkthrough. That's how we deliver a fully custom premium quality kitchen for under $20,000.",
+  "cta": "Click Get Quote Below to book your free consultation. We'll show you exactly what your new kitchen will look like and give you a clear, honest estimate built around your budget."
+ },
+ "vistaguard/v3": {
+  "client": "Vistaguard Windows & Roofing",
+  "label": "V3 | AI/VO | Why Pay More?",
+  "source": "Veer, Ad Script for Editing — September 2026 — Vistaguard, Script 3 (mirrors the aired V2 winner: 1,001 leads at $30.51)",
+  "hook": "Why pay twenty thousand dollars or more for impact windows, when you can get the exact same protection for two to three times less?",
+  "body": "At VistaGuard, we've helped thousands of South Florida homeowners protect their families and their homes with hurricane rated impact windows and doors. The reason we can do it for so much less is simple. We source our windows directly from the manufacturer, and our own crew installs them, so there's no broker adding a markup and no outside installer charging you for labor. Your installation is included, free. From start to finish, we handle everything, on time, on budget, and without the stress. We prep properly, we work clean, and we deliver work you can trust when the storms roll in. We've been protecting homes across South Florida for over thirty years, and every window we install carries a lifetime warranty on our products and materials.",
+  "cta": "Click Get Quote below to book your free inspection and estimate today."
+ },
+ "gc-countertops/b2": {
+  "client": "GC Countertops",
+  "label": "B2 | AI/VO | $30 Sq Ft Sourcing",
+  "source": "Veer, Ad Script for Editing — October 2026 — GC Countertops, B2",
+  "hook": "If you got a quote for new kitchen countertops and you were shocked by how expensive it was, watch this.",
+  "body": "A lot of companies add a big markup on your countertops before they ever get to your kitchen. So you end up paying way more for the exact same countertops. At GC Countertops, we do it differently. We source our countertops directly from the supplier, at contractor pricing. That's a price you just can't get if you go out and buy them yourself. And we pass that savings right on to you. That's why brand-new countertops start at just $30 per square foot for granite. Quartz starts at $55, and marble starts at $65. And every job comes with our 100% satisfaction guarantee. We don't leave your home until you're completely happy with the work.",
+  "cta": "Click \"Get Quote\" to book your free in-home measurement and estimate, and see how much you can save."
+ },
+ "luxury-home/f2": {
+  "client": "Luxury Home Renovations",
+  "label": "F2 | AI/VO | $14,995 Biggest Special",
+  "source": "Veer, Ad Script for Editing — October 2026 — Luxury Home Renovations (Bathroom), F2",
+  "hook": "This is the biggest bathroom remodeling special we have ever run.",
+  "body": "Our full bathroom remodels start at just $14,995. That is the whole bathroom, start to finish. We take the old one out, install a brand new walk in shower or bathtub, fully waterproof it, add modern wall surrounds in either tile or acrylic, and finish it with a new glass shower door, a new vanity, a new toilet, new flooring and all new fixtures. But here is what actually makes the difference. You are not dealing with individual plumbers, and then a tile guy, and then an electrician that you end up chasing around your own home. You are dealing with one professional team, one point of contact, and one company that is responsible for the finished result. And because we carry our own materials right here in our showroom, you are not paying a supplier's markup on top. So you get quality materials at a fair price. When we come out to your home, we listen to exactly what you need, we design your bathroom around that, and we hand you a detailed, itemized estimate before any work begins. Then you come into our showroom and pick your materials in person. Your work is backed by a two year labor warranty, plus the full manufacturer warranty on your materials. At Luxury Home Renovations, we have 38 years of experience, and we are licensed in both Tennessee and Georgia.",
+  "cta": "Click \"Get Quote\" to book your free design consultation on our full bathroom remodels."
+ },
+ "rob-art/v4": {
+  "client": "Rob-Art Design",
+  "label": "V4 | AI/VO | $349 a Month",
+  "source": "Aired Rob-Art V4 | AI/VO | 4.07.26 (transcribed from the running ad; the account's workhorse: $20,310 spend, 235 leads)",
+  "hook": "$349 a month for a brand new kitchen remodel. That's less than what most New Jersey homeowners spend on their car payment, gym membership, and takeout coffee combined.",
+  "body": "And yet people keep putting off remodeling their kitchen because they think they can't afford it. Here's the reality. You can afford it. You just need to stop thinking about it as a $19,995 one-time payment and start thinking about it as $349 a month. We offer flexible financing at Rob-Art Design, which means you can get a fully custom kitchen remodel at a monthly payment that fits your budget with zero pressure to have it all up front. We'll sit down with you, walk you through different design options at different price points, and show you exactly what the monthly payment looks like based on what you choose. We've been remodeling kitchens for New Jersey homeowners since 2012, and every project comes with a 12-month workmanship warranty on everything we build.",
+  "cta": "Click Get Quote Below and let's get your new kitchen started."
+ }
+}

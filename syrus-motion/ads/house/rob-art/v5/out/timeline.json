@@ -1,0 +1,851 @@
+{
+ "duration": 78.705,
+ "shots": [
+  {
+   "src": "../media/client/after-black-marble-island-a.png",
+   "in": 0.0,
+   "len": 2.0,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.0,
+    1.12
+   ],
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01",
+   "_t0": 0.0,
+   "_len": 2.0
+  },
+  {
+   "src": "../media/client/after-waterfall-edge.jpg",
+   "in": 0.0,
+   "len": 2.7,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.0,
+    1.12
+   ],
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01",
+   "_t0": 2.0,
+   "_len": 2.7
+  },
+  {
+   "src": "../media/stock/pexels-39774505.mp4",
+   "in": 0.5,
+   "len": 2.18,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.0,
+    1.07
+   ],
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01",
+   "_t0": 4.7,
+   "_len": 2.18
+  },
+  {
+   "src": "../media/client/after-island-pendants.jpg",
+   "in": 0.0,
+   "len": 2.24,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.0,
+    1.12
+   ],
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01",
+   "_t0": 6.880000000000001,
+   "_len": 2.24
+  },
+  {
+   "src": "../media/client/white-kitchen-range.jpg",
+   "in": 0.0,
+   "len": 1.98,
+   "fx": 0.5,
+   "fy": 0.4,
+   "zoom": [
+    1.0,
+    1.12
+   ],
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01",
+   "_t0": 9.120000000000001,
+   "_len": 1.98
+  },
+  {
+   "src": "../media/stock/pexels-7646445.mp4",
+   "in": 0.5,
+   "len": 1.64,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.0,
+    1.07
+   ],
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01",
+   "_t0": 11.100000000000001,
+   "_len": 1.64
+  },
+  {
+   "src": "../media/stock/pexels-8293307.mp4",
+   "in": 0.5,
+   "len": 1.96,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.07,
+    1.0
+   ],
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01",
+   "_t0": 12.740000000000002,
+   "_len": 1.96
+  },
+  {
+   "src": "../media/client/before-cherry-a.png",
+   "in": 0.0,
+   "len": 1.72,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.0,
+    1.12
+   ],
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01",
+   "_t0": 14.700000000000003,
+   "_len": 1.72
+  },
+  {
+   "src": "../media/stock/pexels-39122178.mp4",
+   "in": 3.0,
+   "len": 2.0,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.0,
+    1.07
+   ],
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01",
+   "_t0": 16.42,
+   "_len": 2.0
+  },
+  {
+   "src": "../../vistaguard/media/stock/vg_calculator_bills.mp4",
+   "in": 7.5,
+   "len": 1.82,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.0,
+    1.07
+   ],
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01",
+   "_t0": 18.42,
+   "_len": 1.82
+  },
+  {
+   "src": "../media/client/before-cherry-range.jpg",
+   "in": 0.0,
+   "len": 1.68,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.0,
+    1.12
+   ],
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01",
+   "_t0": 20.240000000000002,
+   "_len": 1.68
+  },
+  {
+   "src": "../media/stock/pexels-3773485.mp4",
+   "in": 0.0,
+   "len": 1.96,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.0,
+    1.07
+   ],
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01",
+   "_t0": 21.92,
+   "_len": 1.96
+  },
+  {
+   "src": "../media/client/after-white-kitchen-wide.png",
+   "in": 0.0,
+   "len": 2.76,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.0,
+    1.12
+   ],
+   "whip": true,
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01",
+   "_t0": 23.880000000000003,
+   "_len": 2.76
+  },
+  {
+   "src": "../media/client/after-black-marble-island-a.png",
+   "in": 0.0,
+   "len": 1.12,
+   "fx": 0.3,
+   "fy": 0.5,
+   "zoom": [
+    1.0,
+    1.12
+   ],
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01",
+   "_t0": 26.64,
+   "_len": 1.12
+  },
+  {
+   "src": "../media/stock/pexels-39774498.mp4",
+   "in": 5.5,
+   "len": 1.14,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.07,
+    1.0
+   ],
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01",
+   "_t0": 27.76,
+   "_len": 1.14
+  },
+  {
+   "src": "../media/client/after-waterfall-edge.jpg",
+   "in": 0.0,
+   "len": 2.04,
+   "fx": 0.5,
+   "fy": 0.7,
+   "zoom": [
+    1.0,
+    1.12
+   ],
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01",
+   "_t0": 28.900000000000002,
+   "_len": 2.04
+  },
+  {
+   "src": "../media/stock/pexels-19227879.mp4",
+   "in": 1.0,
+   "len": 2.3,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.0,
+    1.07
+   ],
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01",
+   "_t0": 30.94,
+   "_len": 2.3
+  },
+  {
+   "src": "../media/ai/ai-kitchen-FEZm5yS5Y3xQxG2NqBy2T.mp4",
+   "in": 2.0,
+   "len": 1.72,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.0,
+    1.07
+   ],
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01",
+   "_t0": 33.24,
+   "_len": 1.72
+  },
+  {
+   "src": "../media/client/before-oak-prep.jpg",
+   "in": 0.0,
+   "len": 1.54,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.0,
+    1.12
+   ],
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01",
+   "_t0": 34.96,
+   "_len": 1.54
+  },
+  {
+   "src": "../media/stock/pexels-38413569.mp4",
+   "in": 1.5,
+   "len": 0.84,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.0,
+    1.07
+   ],
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01",
+   "_t0": 36.5,
+   "_len": 0.84
+  },
+  {
+   "src": "../media/client/before-oak-gutted.jpg",
+   "in": 0.0,
+   "len": 2.06,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.0,
+    1.12
+   ],
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01",
+   "_t0": 37.34,
+   "_len": 2.06
+  },
+  {
+   "src": "../media/stock/pexels-36778243.mp4",
+   "in": 0.5,
+   "len": 2.34,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.07,
+    1.0
+   ],
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01",
+   "_t0": 39.400000000000006,
+   "_len": 2.34
+  },
+  {
+   "src": "../../vistaguard/media/stock/vg_florida_highway_aerial.mp4",
+   "in": 2.0,
+   "len": 1.92,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.0,
+    1.07
+   ],
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01",
+   "_t0": 41.74000000000001,
+   "_len": 1.92
+  },
+  {
+   "src": "../media/stock/pexels-34208839.mp4",
+   "in": 3.5,
+   "len": 2.44,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.07,
+    1.0
+   ],
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01",
+   "_t0": 43.66000000000001,
+   "_len": 2.44
+  },
+  {
+   "src": "../../vistaguard/media/stock/vg_filling_form.mp4",
+   "in": 0.3,
+   "len": 1.98,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.0,
+    1.07
+   ],
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01",
+   "_t0": 46.10000000000001,
+   "_len": 1.98
+  },
+  {
+   "src": "../../vistaguard/media/stock/vg_calculator_bills.mp4",
+   "in": 4.5,
+   "len": 0.86,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.0,
+    1.07
+   ],
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01",
+   "_t0": 48.080000000000005,
+   "_len": 0.86
+  },
+  {
+   "src": "../media/client/after-island-pendants.jpg",
+   "in": 0.0,
+   "len": 1.88,
+   "fx": 0.5,
+   "fy": 0.3,
+   "zoom": [
+    1.0,
+    1.12
+   ],
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01",
+   "_t0": 48.940000000000005,
+   "_len": 1.88
+  },
+  {
+   "src": "../media/stock/pexels-39774505.mp4",
+   "in": 5.5,
+   "len": 1.84,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.0,
+    1.07
+   ],
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01",
+   "_t0": 50.82000000000001,
+   "_len": 1.84
+  },
+  {
+   "src": "../media/client/white-kitchen-range.jpg",
+   "in": 0.0,
+   "len": 1.84,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.0,
+    1.12
+   ],
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01",
+   "_t0": 52.66000000000001,
+   "_len": 1.84
+  },
+  {
+   "src": "../media/client/after-black-marble-island-a.png",
+   "in": 0.0,
+   "len": 1.94,
+   "fx": 0.5,
+   "fy": 0.6,
+   "zoom": [
+    1.0,
+    1.12
+   ],
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01",
+   "_t0": 54.500000000000014,
+   "_len": 1.94
+  },
+  {
+   "src": "../media/stock/pexels-7311107.mp4",
+   "in": 1.0,
+   "len": 1.78,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.07,
+    1.0
+   ],
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01",
+   "_t0": 56.44000000000001,
+   "_len": 1.78
+  },
+  {
+   "src": "../media/stock/pexels-9617189.mp4",
+   "in": 5.0,
+   "len": 1.98,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.0,
+    1.07
+   ],
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01",
+   "_t0": 58.22000000000001,
+   "_len": 1.98
+  },
+  {
+   "src": "../media/stock/pexels-7424440.mp4",
+   "in": 0.5,
+   "len": 1.74,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.07,
+    1.0
+   ],
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01",
+   "_t0": 60.20000000000001,
+   "_len": 1.74
+  },
+  {
+   "src": "../media/stock/pexels-7505107.mp4",
+   "in": 6.0,
+   "len": 2.1,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.0,
+    1.07
+   ],
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01",
+   "_t0": 61.94000000000001,
+   "_len": 2.1
+  },
+  {
+   "src": "../media/ai/ai-kitchen-QH90yG6GGnMkBBpI0TFTc.mp4",
+   "in": 5.0,
+   "len": 1.62,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.07,
+    1.0
+   ],
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01",
+   "_t0": 64.04,
+   "_len": 1.62
+  },
+  {
+   "src": "../media/client/after-waterfall-edge.jpg",
+   "in": 0.0,
+   "len": 1.78,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.0,
+    1.12
+   ],
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01",
+   "_t0": 65.66000000000001,
+   "_len": 1.78
+  },
+  {
+   "src": "../media/stock/pexels-37674129.mp4",
+   "in": 0.0,
+   "len": 1.56,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.07,
+    1.0
+   ],
+   "whip": true,
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01",
+   "_t0": 67.44000000000001,
+   "_len": 1.56
+  },
+  {
+   "src": "../media/client/after-white-kitchen-wide.png",
+   "in": 0.0,
+   "len": 1.74,
+   "fx": 0.3,
+   "fy": 0.5,
+   "zoom": [
+    1.0,
+    1.12
+   ],
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01",
+   "_t0": 69.00000000000001,
+   "_len": 1.74
+  },
+  {
+   "src": "../media/stock/pexels-36958639.mp4",
+   "in": 55.5,
+   "len": 1.78,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.07,
+    1.0
+   ],
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01",
+   "_t0": 70.74000000000001,
+   "_len": 1.78
+  },
+  {
+   "src": "../media/client/after-island-pendants.jpg",
+   "in": 0.0,
+   "len": 1.9,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.0,
+    1.12
+   ],
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01",
+   "_t0": 72.52000000000001,
+   "_len": 1.9
+  },
+  {
+   "src": "../media/client/after-black-marble-island-a.png",
+   "in": 0.0,
+   "len": 2.24,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.0,
+    1.12
+   ],
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01",
+   "_t0": 74.42000000000002,
+   "_len": 2.24
+  },
+  {
+   "src": "../media/stock/pexels-39774505.mp4",
+   "in": 0.5,
+   "len": 2.045,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.0,
+    1.07
+   ],
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01",
+   "_t0": 76.66000000000001,
+   "_len": 2.045
+  }
+ ],
+ "gfx": [
+  {
+   "tpl": "quoteSheet",
+   "at": 18.42,
+   "cfg": {
+    "title": "QUOTE",
+    "sub": "Kitchen remodel",
+    "lines": [
+     "Cabinets",
+     "Countertops",
+     "Labor"
+    ],
+    "beats": [
+     0,
+     0.12,
+     0.24
+    ],
+    "markups": [
+     1.36,
+     1.82,
+     3.1,
+     3.5
+    ],
+    "circleAt": 4.46,
+    "caption": "^INSANELY^|RIDICULOUS",
+    "captionAt": 0.1
+   },
+   "dur": 5.46
+  },
+  {
+   "tpl": "sceneNoMiddleman",
+   "at": 41.74,
+   "cfg": {
+    "chain": [
+     {
+      "label": "Big company",
+      "icon": "store"
+     },
+     {
+      "label": "Fancy offices",
+      "icon": "office"
+     },
+     {
+      "label": "TV ads",
+      "icon": "tv"
+     },
+     {
+      "label": "Billboards",
+      "icon": "billboard"
+     },
+     {
+      "label": "You",
+      "icon": "house"
+     }
+    ],
+    "prices": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "symbols": true,
+    "markupText": "+ MARKUP",
+    "priceLabel": "YOU PAY",
+    "caption1": "GUESS WHO PAYS|^FOR ALL OF THAT?^",
+    "beats": {
+     "nodes": 0.05,
+     "start": 0.06,
+     "hop": 1.25,
+     "collapse": 99,
+     "us": 99,
+     "direct": 99,
+     "drop": 99,
+     "final": 99
+    }
+   },
+   "dur": 7.2
+  },
+  {
+   "tpl": "logoCard",
+   "at": 23.99,
+   "cfg": {
+    "img": "logo",
+    "y": 0.32,
+    "h": 230,
+    "maxW": 940
+   },
+   "dur": 2.4
+  },
+  {
+   "tpl": "ctaGlass",
+   "at": 72.42,
+   "cfg": {
+    "y": 0.56
+   },
+   "dur": 3.6
+  },
+  {
+   "tpl": "logoCard",
+   "at": 72.42,
+   "cfg": {
+    "img": "logo",
+    "y": 0.27,
+    "sweep": false,
+    "h": 150,
+    "maxW": 760
+   },
+   "dur": 6.285
+  }
+ ],
+ "lines": [
+  {
+   "id": "hook",
+   "text": "$19,995 for a premium kitchen remodel? That's crazy. Premium kitchen remodels are like $40,000 usually, right?",
+   "t0": 0.0,
+   "t1": 8.74
+  },
+  {
+   "id": "b1",
+   "text": "Sort of.",
+   "t0": 9.12,
+   "t1": 9.68
+  },
+  {
+   "id": "b2",
+   "text": "But not really.",
+   "t0": 9.88,
+   "t1": 10.84
+  },
+  {
+   "id": "b3",
+   "text": "It has to do with the size, the layout, the materials you choose, and what actually needs to be done.",
+   "t0": 11.1,
+   "t1": 16.12
+  },
+  {
+   "id": "b4",
+   "text": "Thing is, there's a fair price.",
+   "t0": 16.42,
+   "t1": 18.06
+  },
+  {
+   "id": "b5",
+   "text": "And there's pricing that's so insanely ridiculous that I don't know how these remodeling contractors sleep at night.",
+   "t0": 18.42,
+   "t1": 23.72
+  },
+  {
+   "id": "b6",
+   "text": "At Rob-Art Design, here's how we run our business.",
+   "t0": 23.88,
+   "t1": 26.16
+  },
+  {
+   "id": "b7",
+   "text": "First and foremost, we do amazing work.",
+   "t0": 26.64,
+   "t1": 28.9
+  },
+  {
+   "id": "b8",
+   "text": "We don't settle for anything less.",
+   "t0": 28.9,
+   "t1": 30.62
+  },
+  {
+   "id": "b9",
+   "text": "No corner cutting, no junky materials.",
+   "t0": 30.94,
+   "t1": 33.02
+  },
+  {
+   "id": "b10",
+   "text": "And we only work with our in-house local New Jersey crews.",
+   "t0": 33.24,
+   "t1": 36.18
+  },
+  {
+   "id": "b11",
+   "text": "But there's more.",
+   "t0": 36.5,
+   "t1": 37.02
+  },
+  {
+   "id": "b12",
+   "text": "Because we're a small local company that we run really well, we don't have a ton of overhead.",
+   "t0": 37.34,
+   "t1": 41.54
+  },
+  {
+   "id": "b13",
+   "text": "Unlike the big bloated companies who have fancy offices and TV commercials and billboards, guess who pays for all of that?",
+   "t0": 41.74,
+   "t1": 47.92
+  },
+  {
+   "id": "b14",
+   "text": "Yep.",
+   "t0": 48.08,
+   "t1": 48.24
+  },
+  {
+   "id": "b15",
+   "text": "You.",
+   "t0": 48.54,
+   "t1": 48.66
+  },
+  {
+   "id": "b16",
+   "text": "That's not at all how we do things.",
+   "t0": 48.94,
+   "t1": 50.52
+  },
+  {
+   "id": "b17",
+   "text": "So we can do something really awesome.",
+   "t0": 50.82,
+   "t1": 52.78
+  },
+  {
+   "id": "b18",
+   "text": "We can do amazing work.",
+   "t0": 52.98,
+   "t1": 54.3
+  },
+  {
+   "id": "b19",
+   "text": "We do beautiful, fully custom kitchen remodels, real design drawings, personal material selection, one in-house team managing everything without charging you 200% more than it should really cost.",
+   "t0": 54.5,
+   "t1": 65.4
+  },
+  {
+   "id": "b20",
+   "text": "The best work, the best materials, at fair prices.",
+   "t0": 65.66,
+   "t1": 68.66
+  },
+  {
+   "id": "b21",
+   "text": "So you can not only have peace of mind, but also save money.",
+   "t0": 69.0,
+   "t1": 71.76
+  },
+  {
+   "id": "b22",
+   "text": "Simple.",
+   "t0": 72.1,
+   "t1": 72.2
+  },
+  {
+   "id": "cta",
+   "text": "Click Get Quote below if you're interested in a consultation and a fair, honest estimate for your kitchen remodel.",
+   "t0": 72.52,
+   "t1": 77.88
+  }
+ ]
+}

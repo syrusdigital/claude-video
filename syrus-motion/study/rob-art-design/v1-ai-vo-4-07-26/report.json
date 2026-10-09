@@ -1,0 +1,85 @@
+{
+ "label": "Rob-Art Design | V1 | AI/VO | 4.07.26 | $460.91, 10 leads, $46.09 CPL",
+ "file": "/home/user/claude-video/syrus-motion/study/rob-art-design/v1-ai-vo-4-07-26/video.mp4",
+ "duration": 70.9,
+ "size": "360x640",
+ "voice": {
+  "words": 223,
+  "wpm": 190.3,
+  "pitch_hz": 123.1,
+  "voice_guess": "male",
+  "first_word_at": 0.0,
+  "first_money_at": 0.48,
+  "first_money_word": "$40",
+  "hook_5s": "Why pay $40 ,000 for a kitchen remodel, when you can get the same stunning results for under $20",
+  "text": "Why pay $40 ,000 for a kitchen remodel, when you can get the same stunning results for under $20 ,000? We're Rob Art Design, and we've been remodeling kitchens for New Jersey homeowners since 2012. Here's how we work. When you call us out, we first sit down with you for a free consultation, and we listen to exactly what you want your new kitchen to look like. From there, we build out real design drawings and renderings of your specific kitchen, not AI pictures, not stock images, actual layouts with your actual kitchen, showing your new cabinets, countertops, and finishes, so you can see exactly what you're getting before you say yes to anything. Then, we take you through material selection personally. We help you find high -quality materials you'll actually love, within a price that works for you. You're not choosing from a fixed package, you're building your kitchen, custom -made. Once the project starts, our in -house team handles everything, electrical, plumbing, cabinetry, one crew, managed by us, from day one to the final walkthrough. That's how we deliver a fully custom premium quality kitchen for under $20 ,000. Click Get Quote Below to book your free consultation. We'll show you exactly what your new kitchen will look like and give you a clear, honest estimate built around your budget."
+ },
+ "music": {
+  "present": true,
+  "floor_rel_db": -11.7,
+  "after_vo_db": -46.6,
+  "bed_db_rel_voice": -11.7,
+  "voice_dbfs": -24.0,
+  "bed_dbfs": -35.7,
+  "tempo_bpm_rough": 88.2,
+  "tempo_confidence": 0.041
+ },
+ "sfx": {
+  "hits": [
+   11.15,
+   59.81,
+   62.29
+  ],
+  "hit_count": 3,
+  "hits_per_min": 2.5,
+  "hits_on_cuts": 1,
+  "swells": []
+ },
+ "picture": {
+  "cuts": 36,
+  "cut_times": [
+   1.03,
+   7.73,
+   12.9,
+   16.4,
+   18.1,
+   19.47,
+   24.03,
+   26.67,
+   27.93,
+   29.07,
+   30.5,
+   31.5,
+   32.57,
+   34.0,
+   41.73,
+   42.47,
+   43.27,
+   44.93,
+   46.5,
+   48.27,
+   50.77,
+   51.8,
+   52.57,
+   53.97,
+   55.2,
+   56.0,
+   57.07,
+   57.7,
+   58.17,
+   59.2,
+   59.8,
+   61.73,
+   65.23,
+   66.8,
+   68.07,
+   69.33
+  ],
+  "avg_shot_s": 1.92,
+  "median_shot_s": 1.37
+ },
+ "loudness": {
+  "integrated_lufs": -24.0,
+  "lra": 2.1
+ }
+}

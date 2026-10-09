@@ -1,0 +1,68 @@
+{
+ "label": "Total Home Remodeling | V3 | AI/VO | 4.01.26 | Affordable Remodel Offer | $83.83, 1 lead, $83.83 CPL",
+ "file": "/home/user/claude-video/syrus-motion/study/total-home-remodeling/v3-affordable-remodel/video.mp4",
+ "duration": 55.08,
+ "size": "360x640",
+ "voice": {
+  "words": 179,
+  "wpm": 196.1,
+  "pitch_hz": 206.5,
+  "voice_guess": "female",
+  "first_word_at": 0.0,
+  "first_money_at": null,
+  "first_money_word": null,
+  "hook_5s": "Here's something most homeowners only find out after it's too late. When a contractor gives you a quote to remodel",
+  "text": "Here's something most homeowners only find out after it's too late. When a contractor gives you a quote to remodel your kitchen, that number is usually just the starting point. Materials get added. Labor becomes extra. There are change orders you didn't expect. And by the time the job is done, the price looks nothing like what you agreed to. At Total Home Remodeling Company, we work differently. We give you one number up front that fits with your budget for a full kitchen remodel. Our price covers everything. Brand new cabinets in the style of your choice. Countertops and courts, granite, epoxy, or butcher block. You decide. Flooring in epoxy, vinyl, or hardwood. All materials. All labor. All inclusive in one price. That number doesn't change after you sign. And we back every install with a two -year warranty on both labor and materials. Because we stand behind the work after we leave. We are a local Missouri -based licensed contractor with over 20 years serving local homeowners. Click get quote below for your free in -home estimate."
+ },
+ "music": {
+  "present": true,
+  "floor_rel_db": -7.4,
+  "after_vo_db": null,
+  "bed_db_rel_voice": -1.8,
+  "voice_dbfs": -20.6,
+  "bed_dbfs": -22.4,
+  "tempo_bpm_rough": 115.4,
+  "tempo_confidence": 0.078
+ },
+ "sfx": {
+  "hits": [
+   31.61
+  ],
+  "hit_count": 1,
+  "hits_per_min": 1.1,
+  "hits_on_cuts": 0,
+  "swells": []
+ },
+ "picture": {
+  "cuts": 21,
+  "cut_times": [
+   6.13,
+   8.33,
+   9.67,
+   11.1,
+   13.53,
+   15.17,
+   17.57,
+   20.37,
+   25.67,
+   27.87,
+   31.33,
+   35.5,
+   36.33,
+   37.3,
+   39.33,
+   41.47,
+   43.63,
+   45.43,
+   47.63,
+   50.03,
+   52.37
+  ],
+  "avg_shot_s": 2.5,
+  "median_shot_s": 2.2
+ },
+ "loudness": {
+  "integrated_lufs": -22.1,
+  "lra": 1.7
+ }
+}

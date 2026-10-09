@@ -1,0 +1,55 @@
+{
+ "title": "Work Horse | Cabinets | $125 per Opening | Script 2",
+ "source": "Notion: SCRIPT 2: CABINET PAINTING \u2014 Work Horse (Winner, $45.47 CPL). Seasonal wording removed (\"this New Year\", \"in 2026\", \"New Year Pricing\"); 1-year craftsmanship warranty per client revision 2026-01-10.",
+ "vo": {
+  "voice": "am_michael",
+  "speed": 1.12,
+  "lines": [
+   {
+    "id": "hook",
+    "text": "Your cabinet painting price is simple. Count the openings, and multiply by one hundred twenty-five dollars.",
+    "after": 0.35
+   },
+   {
+    "id": "b1",
+    "text": "Homeowners are finally getting cabinet pricing that actually makes sense, because at Work Horse Pro Painting, we made the process simple, predictable, and totally upfront.",
+    "after": 0.25
+   },
+   {
+    "id": "b2",
+    "text": "If you want to know what it will cost to repaint your cabinets, just count the openings, and multiply by one hundred twenty-five dollars.",
+    "after": 0.3
+   },
+   {
+    "id": "b3",
+    "text": "No guessing. No inflated quotes. No confusing breakdowns. Your price is clear before we even walk in the door.",
+    "after": 0.3
+   },
+   {
+    "id": "b4",
+    "text": "This special covers everything from start to finish, including full prep, sanding, degreasing, priming, and a premium finish that makes your cabinets look brand new, without spending thousands of dollars on replacements.",
+    "after": 0.3
+   },
+   {
+    "id": "b5",
+    "text": "With over thirty years of experience serving homeowners in New Hampshire, Massachusetts, and Maine, and a motto that says it all, let our family treat you like family, you'll get clean, precise results you'll actually love walking into.",
+    "after": 0.25
+   },
+   {
+    "id": "b6",
+    "text": "And every cabinet project comes with a one-year craftsmanship warranty, so your investment is protected long after we leave.",
+    "after": 0.25
+   },
+   {
+    "id": "b7",
+    "text": "If you want a clean, modern look without a massive renovation, this is the smartest way to do it.",
+    "after": 0.3
+   },
+   {
+    "id": "cta",
+    "text": "Tap Get Quote to book your free, fair cabinet painting estimate.",
+    "after": 0.1
+   }
+  ]
+ }
+}

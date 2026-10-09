@@ -1,0 +1,29 @@
+{
+ "fps": 30,
+ "duration": 7.0,
+ "items": [
+  {
+   "tpl": "processSteps",
+   "at": 0,
+   "dur": 7.0,
+   "cfg": {
+    "title": "HOW IT WORKS",
+    "steps": [
+     "In-home estimate",
+     "Itemized quote",
+     "Pick materials in our showroom",
+     "Install",
+     "Final walkthrough"
+    ],
+    "icons": [
+     "house",
+     "quote",
+     "swatch",
+     "tools",
+     "badge"
+    ],
+    "y": 370
+   }
+  }
+ ]
+}

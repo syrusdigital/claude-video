@@ -1,0 +1,30 @@
+# Words the transcriber must spell right. One per line. Add names of people, places and companies.
+Rafael Palhinha
+glioblastoma
+GBM
+glioma
+astrocytoma
+IDH-wildtype
+MGMT
+methylation
+temozolomide
+Temodar
+bevacizumab
+Avastin
+lomustine
+Optune
+tumor treating fields
+radiotherapy
+chemoradiation
+craniotomy
+resection
+neuro-oncology
+neurosurgeon
+oncologist
+MRI
+FLAIR
+dexamethasone
+Keppra
+clinical trial
+immunotherapy
+CAR-T

@@ -1,0 +1,50 @@
+{
+ "label": "Five Star Bath | Video Ads | Instant Forms | Qualifying | $9,793, 180 leads, $54.41 CPL",
+ "file": "/home/user/claude-video/syrus-motion/study/five-star-bath/video-ads-if-qualifying-9-8k/video.mp4",
+ "duration": 18.64,
+ "size": "360x640",
+ "voice": {
+  "words": 74,
+  "wpm": 240.3,
+  "pitch_hz": 136.8,
+  "voice_guess": "male",
+  "first_word_at": 0.0,
+  "first_money_at": null,
+  "first_money_word": null,
+  "hook_5s": "I've been remodeling showers for 15 years, and I never use tile anymore. This is a high -tech polymer composite.",
+  "text": "I've been remodeling showers for 15 years, and I never use tile anymore. This is a high -tech polymer composite. It looks exactly like premium stone or tile, but it installs in one day and you never have to scrub grout again. Right now we're looking for 5 homes in the area to get a tub or shower remodel at a massive discount. Tap the button below to see if your zip code qualifies."
+ },
+ "music": {
+  "present": true,
+  "floor_rel_db": -24.9,
+  "after_vo_db": null,
+  "bed_db_rel_voice": -17.1,
+  "voice_dbfs": -20.9,
+  "bed_dbfs": -38.0,
+  "tempo_bpm_rough": 107.1,
+  "tempo_confidence": 0.086
+ },
+ "sfx": {
+  "hits": [],
+  "hit_count": 0,
+  "hits_per_min": 0.0,
+  "hits_on_cuts": 0,
+  "swells": []
+ },
+ "picture": {
+  "cuts": 5,
+  "cut_times": [
+   5.07,
+   6.2,
+   8.53,
+   9.73,
+   10.53
+  ],
+  "avg_shot_s": 3.11,
+  "median_shot_s": 1.77
+ },
+ "loudness": {
+  "integrated_lufs": -20.1,
+  "lra": 1.5
+ }
+}

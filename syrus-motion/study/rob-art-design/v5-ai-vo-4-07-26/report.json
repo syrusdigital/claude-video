@@ -1,0 +1,89 @@
+{
+ "label": "Rob-Art Design | V5 | AI/VO | 4.07.26 | $1,574.50, 22 leads, $71.57 CPL",
+ "file": "/home/user/claude-video/syrus-motion/study/rob-art-design/v5-ai-vo-4-07-26/video.mp4",
+ "duration": 77.8,
+ "size": "360x640",
+ "voice": {
+  "words": 244,
+  "wpm": 188.2,
+  "pitch_hz": 130.1,
+  "voice_guess": "male",
+  "first_word_at": 0.0,
+  "first_money_at": 0.0,
+  "first_money_word": "$19",
+  "hook_5s": "$19 ,995 for a premium kitchen remodel? That's crazy.",
+  "text": "$19 ,995 for a premium kitchen remodel? That's crazy. Premium kitchen remodels are like $40 ,000 usually, right? Sort of. But not really. It has to do with the size, the layout, the materials you choose, and what actually needs to be done. Thing is, there's a fair price. And there's pricing that's so insanely ridiculous that I don't know how these remodeling contractors sleep at night. At Rob Ark Design, here's how we run our business. First and foremost, we do amazing work. We don't settle for anything less. No corner cutting, no junky materials. And we only work with our in -house local New Jersey crews. But there's more. Because we're a small local company that we run really well, we don't have a ton of overhead. Unlike the big bloated companies who have fancy offices and TV commercials and billboards, guess who pays for all of that? Yep. You. That's not at all how we do things. So we can do something really awesome. We can do amazing work. We do beautiful, fully custom kitchen remodels, real design drawings, personal material selection, one in -house team managing everything without charging you 200 % more than it should really cost. The best work, the best materials, at fair prices. So you can not only have peace of mind, but also save money. Simple. Click get quote below if you're interested in a consultation and a fair, honest estimate for your kitchen remodel."
+ },
+ "music": {
+  "present": true,
+  "floor_rel_db": -12.3,
+  "after_vo_db": null,
+  "bed_db_rel_voice": -7.9,
+  "voice_dbfs": -22.2,
+  "bed_dbfs": -30.2,
+  "tempo_bpm_rough": 120.0,
+  "tempo_confidence": 0.093
+ },
+ "sfx": {
+  "hits": [
+   55.59,
+   71.59,
+   77.17
+  ],
+  "hit_count": 3,
+  "hits_per_min": 2.3,
+  "hits_on_cuts": 0,
+  "swells": []
+ },
+ "picture": {
+  "cuts": 40,
+  "cut_times": [
+   3.87,
+   3.93,
+   6.33,
+   7.6,
+   10.83,
+   12.23,
+   13.7,
+   14.83,
+   15.97,
+   17.77,
+   19.63,
+   20.43,
+   21.73,
+   23.33,
+   26.5,
+   29.0,
+   30.17,
+   31.5,
+   37.27,
+   38.77,
+   40.03,
+   42.7,
+   44.13,
+   45.63,
+   48.2,
+   48.9,
+   51.2,
+   52.67,
+   54.8,
+   56.6,
+   64.17,
+   65.53,
+   67.37,
+   68.37,
+   69.77,
+   70.87,
+   71.8,
+   71.87,
+   74.2,
+   76.17
+  ],
+  "avg_shot_s": 1.9,
+  "median_shot_s": 1.5
+ },
+ "loudness": {
+  "integrated_lufs": -22.5,
+  "lra": 2.0
+ }
+}

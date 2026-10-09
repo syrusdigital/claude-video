@@ -1,0 +1,40 @@
+{
+ "title": "Elite Craft | Bath | Why Pay More $9,995 | Script 4",
+ "source": "Notion: Script 4 \u2013 Why Pay More? \u2014 Elite Craft",
+ "vo": {
+  "voice": "am_michael",
+  "speed": 1.12,
+  "lines": [
+   {
+    "id": "hook",
+    "text": "Why pay twenty thousand dollars for a bathroom remodel, when you can get the same stunning results for just nine thousand, nine hundred ninety-five dollars?",
+    "after": 0.35
+   },
+   {
+    "id": "b1",
+    "text": "At Elite Craft Renovations, we've helped countless Long Island homeowners transform their outdated bathrooms, without the massive price tag.",
+    "after": 0.3
+   },
+   {
+    "id": "b2",
+    "text": "From design to finish, we handle it all. On time, on budget, and with zero headaches.",
+    "after": 0.25
+   },
+   {
+    "id": "b3",
+    "text": "We prep properly, work clean, and deliver results you'll be proud to show off.",
+    "after": 0.3
+   },
+   {
+    "id": "b4",
+    "text": "And right now, you can lock in this exclusive offer for a limited time.",
+    "after": 0.3
+   },
+   {
+    "id": "cta",
+    "text": "Click Get Quote below to schedule your free estimate, and see how easy it can be to get the bathroom you've always wanted.",
+    "after": 0.1
+   }
+  ]
+ }
+}

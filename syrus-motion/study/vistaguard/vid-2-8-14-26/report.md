@@ -1,0 +1,9 @@
+# Vistaguard | VID | 2 | 8.14.26 (on-camera) | $1,097, 11 leads, $99.76 CPL
+32.49s · 720x1280 · -14.1 LUFS
+- **Voice:** male (~164.9 Hz), 231.9 wpm, first word at 0.0s, first money at Nones ("None")
+- **Hook (0-5s):** The biggest mistakes homeowners make is not the windows they purchase, it's the company they choose to install them. Impact windows
+- **Music:** yes · floor -20.3 dB vs voice (≈ minus how far the music sits under the voice; VO-only reads below -30) · gap bed -13.2 dB · after VO None dBFS · tempo ~93.8 (conf 0.06)
+- **SFX:** 0 hits (0.0/min), 0 on cuts · swells []
+- **Picture:** 18 cuts, avg shot 1.71s (median 1.47s)
+
+The biggest mistakes homeowners make is not the windows they purchase, it's the company they choose to install them. Impact windows only perform as well as the installation. If measurements are off, if prep is rushed, or if corners are cut, even the best windows won't deliver the results that you expect. At Bisteca, we handle everything in -house. From the inspection to the install, we pride ourselves with our clear timeline, clean up professional work, communication will never step out of the way. That's what homeowners trust us. We don't just install windows, we've managed the entire project the right way. If you consider impact windows, click get a quote for a free fur estimate, and see how a stress -free process works.

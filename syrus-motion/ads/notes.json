@@ -1,0 +1,136 @@
+{
+ "clients": [
+  {
+   "id": "elite-craft",
+   "name": "Elite Craft Renovations",
+   "about": "Long Island bathroom remodels and painting. Voiceover ads (AI voice) over Elite Craft's own job videos and photos."
+  },
+  {
+   "id": "work-horse",
+   "name": "Work Horse Pro Painting",
+   "about": "Family-owned painters serving New Hampshire, Massachusetts and Maine. Voiceover ads over Work Horse's own job photos."
+  },
+  {
+   "id": "twin-pines",
+   "name": "Twin Pines Home Improvements",
+   "about": "Wisconsin roofing. Their own reps on camera, cut tight with roof B-roll and graphics."
+  }
+ ],
+ "ads": [
+  {
+   "client": "elite-craft",
+   "dir": "elite-craft/ec1-biggest-offer",
+   "label": "$9,995 bathroom: biggest offer",
+   "script": "Bath Script 1 (Approved)",
+   "poster": 4.6,
+   "flow": "Long Island homeowners + \"biggest offer\" over the Northport reveal \u2192 $9,995 price card \u2192 Northport before/after wipe \u2192 \"2\u20133X the price\" \u2192 crew at work \u2192 \"No mess. No delays. No hidden costs.\" \u2192 trusted local company \u2192 Limited Spots stamp \u2192 Get Quote end card.",
+   "confirm": [
+    "The $9,995 offer is still running (script dates from Sep 2025 \u2013 Jan 2026).",
+    "\"Spots for this offer are extremely limited\" is true right now.",
+    "AI voice stands in for the client's usual VO."
+   ]
+  },
+  {
+   "client": "elite-craft",
+   "dir": "elite-craft/ec2-why-pay-more",
+   "label": "$9,995 bathroom: why pay $20,000?",
+   "script": "Bath Script 4 \"Why Pay More\"",
+   "poster": 6.6,
+   "flow": "\"Why pay $20,000?\" struck through \u2192 \"same results for just $9,995\" \u2192 Long Island homeowners \u2192 one shower: demo, tile, done \u2192 \"On time. On budget. Zero headaches.\" \u2192 prep and finished details \u2192 $9,995 price card \u2192 Get Quote end card and tap.",
+   "confirm": [
+    "The $9,995 offer is still running.",
+    "The client is comfortable with the script's $20,000 comparison on screen."
+   ]
+  },
+  {
+   "client": "elite-craft",
+   "dir": "elite-craft/ec3-painting-997",
+   "label": "$997 house painting",
+   "script": "Painting Script 1 (Winner)",
+   "poster": 2.9,
+   "flow": "\"Get your home professionally painted\" + $997 price card \u2192 crew at the house \u2192 checklist: no mess, no surprises, quality work \u2192 local Long Island team \u2192 \"Interior. Exterior. Or both.\" \u2192 finished homes \u2192 Get Quote end card.",
+   "confirm": [
+    "The $997 starting price is still running.",
+    "Painting footage is thin (4 short clips), so the middle uses Elite Craft's finished interiors and exteriors from their \"initial images\" folder. Confirm those are their projects."
+   ]
+  },
+  {
+   "client": "work-horse",
+   "dir": "work-horse/wh1-count-the-openings",
+   "label": "Cabinets: $125 per opening",
+   "script": "Cabinet Script 2 (Winner, $45.47 CPL)",
+   "poster": 2.6,
+   "flow": "\"$125 per opening\" card from 0.1s, gold markers count 15 doors and drawers in a kitchen \u2192 \"Simple. Predictable. Upfront.\" over the team \u2192 calculator 15 \u00d7 $125 = $1,875 \u2192 \"No guessing / no inflated quotes / no confusing breakdowns\" \u2192 prep checklist \u2192 cabinet before/after \u2192 30+ years, NH \u00b7 MA \u00b7 ME, family motto, 1-year craftsmanship warranty \u2192 Get Quote end card.",
+   "confirm": [
+    "The hook's counting photo is a kitchen where Work Horse painted walls and ceiling, not the cabinets. It's framed as \"your kitchen\", never as their result.",
+    "The cabinet before/after pair (IMG_3527 \u2192 3537) is a likely match, not certain.",
+    "$1,875 is an example (15 \u00d7 $125) and is labelled that way.",
+    "A family photo with what look like minors appears on the family-motto line. Get the client's OK or swap it.",
+    "1-year craftsmanship warranty per the client's Jan 2026 revision; seasonal words were removed from the script."
+   ]
+  },
+  {
+   "client": "work-horse",
+   "dir": "work-horse/wh2-room-997",
+   "label": "Rooms: $997 flat",
+   "script": "Room Script 4 (Approved, $48.31 CPL)",
+   "poster": 7.0,
+   "flow": "\"Most painters charge $2,000+\" struck through \u2192 \"$997 flat\" as the room cuts from before to after \u2192 crew \u2192 room reveal video + $997 card \u2192 what's included checklist, item by item over matching footage \u2192 \"No fine print / no hidden upsells / no extra fees\" \u2192 stacked before/afters \u2192 family-owned 30 years, NH \u00b7 MA \u00b7 ME \u2192 Get Quote end card.",
+   "confirm": [
+    "What \"guaranteed\" covers, and that the $2,000+ competitor figure can be backed up (both are in the script).",
+    "A family photo with what look like minors appears late in the ad. Get the client's OK or swap it.",
+    "\"Before our calendar fills up\" stays as VO only; no numbers are shown."
+   ]
+  },
+  {
+   "client": "work-horse",
+   "dir": "work-horse/wh3-not-risky",
+   "label": "Exterior: not risky",
+   "script": "Exterior Script 4 (Winner, CPL decaying, fresh visuals)",
+   "poster": 3.0,
+   "flow": "Free exterior estimate + full pressure wash badges, \"Hiring a painter should not feel risky\" over a peeling gable \u2192 the four worries stack in one by one \u2192 they flip to answers \u2192 barn before/after wipe \u2192 everything included \u2192 team with communicates / on time / right way \u2192 before/after montage (barn, cabin, farmhouse) \u2192 Get Quote end card.",
+   "confirm": [
+    "The farmhouse sage-to-white change is subtle on a phone screen.",
+    "Shots showing the \"Bumpa's Barn\" sign were left out on purpose."
+   ]
+  },
+  {
+   "client": "twin-pines",
+   "dir": "twin-pines/tp1-free-inspection",
+   "label": "Free 15-minute roof inspection",
+   "script": "Omnipresence script 11 (Nate Stern, on camera)",
+   "poster": 7.5,
+   "flow": "\"When's the last time you got your roof inspected?\" \u2192 Nate's name super + FREE INSPECTIONS stamp \u2192 \"roofs wear down\u2026 too late\" over worn shakes and exposed decking \u2192 quick / thorough / free badges over the roof walk \u2192 \"15-minute inspection could save you thousands\" \u2192 Get Quote end card over a finished home.",
+   "confirm": [
+    "Nate says \"call\" but the end card says \"Tap Get Quote below\". Add the phone number, or keep the Get Quote CTA.",
+    "The free 15-minute inspection is still offered (footage is from 2025).",
+    "Crew B-roll and finished-home photos are Twin Pines' own crews and jobs."
+   ]
+  },
+  {
+   "client": "twin-pines",
+   "dir": "twin-pines/tp2-local-founder",
+   "label": "Local founder, not storm chasers",
+   "script": "2025 Video 2 (Nate Stern, on camera)",
+   "poster": 13.0,
+   "flow": "\"Hey, Wisconsin homeowners\" + location super \u2192 \"Nate Stern, Founder\" \u2192 25+ YEARS counter \u2192 \"local family-owned\" \u2192 Storm chasers vs Twin Pines, each row landing as he says it \u2192 fair pricing / top quality \u2192 FREE INSPECTION & QUOTE stamp \u2192 \"Click Get Quote below\" with a tap pointer \u2192 \"Thank you.\"",
+   "confirm": [
+    "\"Over 25 years\" and the Founder title are still accurate.",
+    "The free inspection and estimate is still offered."
+   ]
+  },
+  {
+   "client": "twin-pines",
+   "dir": "twin-pines/tp3-roofs-not-equal",
+   "label": "Not all roofs are created equal",
+   "script": "Omnipresence script 3 (Nate in his truck)",
+   "poster": 1.0,
+   "flow": "Cold open \"Not all roofs are created equal\" \u2192 name super \u2192 \"the cheapest option\u2026\" \u2192 roof-layers animation on \"quality products\" \u2192 lifespan card (3-tab shorter, dimensional up to 30+ years, metal & synthetic up to 50+) landing on his words \u2192 your budget / local climate / how long you'll stay \u2192 \"an educated investment\" \u2192 end card.",
+   "confirm": [
+    "Lifespans are phrased \"up to\", as Nate says them. There's no metal-roof footage, so that row uses a drawn swatch.",
+    "Nate looks down (reading) in one take; a cutaway covers most of it.",
+    "Nate says \"call\" at the end; same CTA question as TP1."
+   ]
+  }
+ ]
+}

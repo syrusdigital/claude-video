@@ -1,0 +1,20 @@
+# animate-skill build outputs: keep sources, storyboards and the share cut; drop the rest
+pieces/*/frames/
+pieces/*/review/
+pieces/*/index.html
+pieces/*/renders/*
+!pieces/*/renders/share.mp4
+overlays/*/frames-alpha/
+overlays/*/renders/*.mov
+catalog/media/
+pack/*/*.mov
+pack/*/*-frames/
+ads/*/build/
+ads/*/media/
+ads/**/build/
+ads/**/media/
+ads/**/out/*.mp4
+pack/**/*-frames/
+pack/**/*.html
+study/**/*.mp4
+study/**/*.wav

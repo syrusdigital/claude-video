@@ -1,0 +1,77 @@
+{
+ "label": "American Made Coatings | V5 | AI/VO | 4.06.26 + 6.17.26 relaunch (same file) | $222, 12 leads, $18.50 CPL",
+ "file": "/home/user/claude-video/syrus-motion/study/amc/v5-aivo/video.mp4",
+ "duration": 56.49,
+ "size": "720x1280",
+ "voice": {
+  "words": 176,
+  "wpm": 188.7,
+  "pitch_hz": 130.1,
+  "voice_guess": "male",
+  "first_word_at": 0.0,
+  "first_money_at": 42.82,
+  "first_money_word": "$8",
+  "hook_5s": "If your concrete floor gets slippery when it's wet, watch this because it is a serious problem.",
+  "text": "If your concrete floor gets slippery when it's wet, watch this because it is a serious problem. Most homeowners don't think about their garage floor, patio, or pool deck until it becomes dangerous. When concrete gets wet, it gets slick, and that's how people slip, fall, and get hurt. The problem is most surfaces aren't treated properly or they wear down over time. At American Made Coatings, we fix that. We install high -quality concrete floor coatings that not only look great, but add grip, durability, and protection. So your garage, patio, or pool deck isn't just better looking, it's safer to walk on. We're five -star rated on Google. We have been doing this for 18 years, and every project is fully customized with colors and finishes that match your home. And unlike companies charging $8 ,000 to $12 ,000 plus, our projects start at just $1 ,995. Click get quote to book a quick phone consultation. We'll give you a free, honest estimate and help you figure out the best option for your space."
+ },
+ "music": {
+  "present": true,
+  "floor_rel_db": -9.1,
+  "after_vo_db": -55.8,
+  "bed_db_rel_voice": -6.6,
+  "voice_dbfs": -14.6,
+  "bed_dbfs": -21.2,
+  "tempo_bpm_rough": 85.7,
+  "tempo_confidence": 0.072
+ },
+ "sfx": {
+  "hits": [
+   49.43
+  ],
+  "hit_count": 1,
+  "hits_per_min": 1.1,
+  "hits_on_cuts": 0,
+  "swells": []
+ },
+ "picture": {
+  "cuts": 30,
+  "cut_times": [
+   2.53,
+   3.27,
+   6.53,
+   7.6,
+   8.27,
+   9.0,
+   11.9,
+   12.93,
+   14.4,
+   14.9,
+   15.83,
+   18.4,
+   21.87,
+   22.13,
+   22.4,
+   23.73,
+   25.17,
+   26.57,
+   29.23,
+   30.13,
+   30.67,
+   32.6,
+   35.53,
+   37.6,
+   39.97,
+   41.57,
+   44.1,
+   45.5,
+   51.9,
+   54.6
+  ],
+  "avg_shot_s": 1.82,
+  "median_shot_s": 1.47
+ },
+ "loudness": {
+  "integrated_lufs": -14.3,
+  "lra": 2.4
+ }
+}

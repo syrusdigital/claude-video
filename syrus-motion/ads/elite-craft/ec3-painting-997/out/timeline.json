@@ -1,0 +1,316 @@
+{
+ "duration": 36.79,
+ "shots": [
+  {
+   "src": "../media/painting/IMG_3825.MOV",
+   "in": 0.1,
+   "until": "word:starting",
+   "speed": 0.85,
+   "grade": "eq=contrast=1.05:saturation=1.1:brightness=-0.06",
+   "_t0": 0.0,
+   "_len": 2.35
+  },
+  {
+   "src": "../media/painting/IMG_3620.JPEG",
+   "until": "line:b1",
+   "zoom": [
+    1.0,
+    1.1
+   ],
+   "fy": 0.5,
+   "grade": "eq=contrast=1.05:saturation=1.1:brightness=-0.06",
+   "_t0": 2.35,
+   "_len": 3.198
+  },
+  {
+   "src": "../media/painting/IMG_3644.MOV",
+   "in": 0.1,
+   "until": "word:we",
+   "speed": 0.95,
+   "_t0": 5.548,
+   "_len": 1.84
+  },
+  {
+   "src": "../media/initial-images/IMG_3424.JPEG",
+   "until": "word:from",
+   "zoom": [
+    1.0,
+    1.06
+   ],
+   "_t0": 7.388,
+   "_len": 1.2
+  },
+  {
+   "src": "../media/painting/IMG_3621.JPEG",
+   "until": "line:b2",
+   "zoom": [
+    1.06,
+    1.0
+   ],
+   "fx": 0.6,
+   "_t0": 8.588,
+   "_len": 1.639
+  },
+  {
+   "src": "../media/painting/IMG_5771.MOV",
+   "in": 0.1,
+   "until": "word:Just#2",
+   "speed": 0.75,
+   "_t0": 10.226999999999999,
+   "_len": 1.9
+  },
+  {
+   "src": "../media/initial-images/IMG_3530.JPEG",
+   "until": "line:b3",
+   "zoom": [
+    1.0,
+    1.08
+   ],
+   "fy": 0.6,
+   "_t0": 12.126999999999999,
+   "_len": 1.624
+  },
+  {
+   "src": "../media/initial-images/IMG_3427.JPEG",
+   "until": "word:years",
+   "zoom": [
+    1.0,
+    1.08
+   ],
+   "fy": 0.3,
+   "_t0": 13.751,
+   "_len": 1.92
+  },
+  {
+   "src": "../media/initial-images/IMG_3054.JPEG",
+   "until": "word:commitment",
+   "zoom": [
+    1.0,
+    1.08
+   ],
+   "_t0": 15.671,
+   "_len": 2.12
+  },
+  {
+   "src": "../media/initial-images/IMG_3051.JPEG",
+   "until": "word:So",
+   "zoom": [
+    1.08,
+    1.0
+   ],
+   "_t0": 17.791,
+   "_len": 2.06
+  },
+  {
+   "src": "../media/painting/IMG_5771.JPEG",
+   "until": "word:exterior",
+   "zoom": [
+    1.0,
+    1.08
+   ],
+   "_t0": 19.851,
+   "_len": 1.54
+  },
+  {
+   "src": "../media/painting/IMG_3623.JPEG",
+   "until": "word:both",
+   "zoom": [
+    1.0,
+    1.06
+   ],
+   "fx": 0.3,
+   "_t0": 21.391,
+   "_len": 0.88
+  },
+  {
+   "src": "../media/initial-images/IMG_3460.JPEG",
+   "until": "word:trust",
+   "zoom": [
+    1.0,
+    1.06
+   ],
+   "fx": 0.5,
+   "_t0": 22.270999999999997,
+   "_len": 1.24
+  },
+  {
+   "src": "../media/painting/IMG_3825.JPG",
+   "until": "line:b4",
+   "zoom": [
+    1.0,
+    1.1
+   ],
+   "fy": 0.4,
+   "_t0": 23.510999999999996,
+   "_len": 2.548
+  },
+  {
+   "src": "../media/painting/IMG_3644.JPG",
+   "until": "word:experience#2",
+   "zoom": [
+    1.0,
+    1.1
+   ],
+   "fx": 0.7,
+   "_t0": 26.058999999999997,
+   "_len": 2.18
+  },
+  {
+   "src": "../media/initial-images/IMG_3415.JPEG",
+   "until": "word:respects",
+   "zoom": [
+    1.0,
+    1.06
+   ],
+   "_t0": 28.238999999999997,
+   "_len": 1.8
+  },
+  {
+   "src": "../media/initial-images/IMG_3502.JPEG",
+   "until": "line:cta",
+   "zoom": [
+    1.0,
+    1.08
+   ],
+   "fx": 0.5,
+   "_t0": 30.038999999999998,
+   "_len": 1.805
+  },
+  {
+   "src": "../media/initial-images/IMG_5749.JPEG",
+   "zoom": [
+    1.0,
+    1.12
+   ],
+   "fy": 0.5,
+   "_t0": 31.843999999999998,
+   "_len": 4.946
+  }
+ ],
+ "gfx": [
+  {
+   "tpl": "hookText",
+   "at": 0.1,
+   "cfg": {
+    "style": "highlight",
+    "text": "GET YOUR HOME PROFESSIONALLY PAINTED",
+    "mark": "PAINTED",
+    "y": 520,
+    "maxSize": 130
+   },
+   "dur": 5.3
+  },
+  {
+   "tpl": "priceCard",
+   "at": 0.7,
+   "cfg": {
+    "kicker": "HOME PAINTING",
+    "pre": "starting at just",
+    "price": 997,
+    "note": "Interior & exterior"
+   },
+   "dur": 4.8
+  },
+  {
+   "tpl": "checklist",
+   "at": 9.927,
+   "cfg": {
+    "kicker": "THE ELITE CRAFT WAY",
+    "title": "House painting",
+    "price": "$997",
+    "items": [
+     {
+      "icon": "cleanup",
+      "label": "No mess"
+     },
+     {
+      "icon": "check",
+      "label": "No surprises"
+     },
+     {
+      "icon": "paint-roller",
+      "label": "Quality work, done right"
+     }
+    ],
+    "beats": [
+     0.3,
+     1.0,
+     2.15
+    ]
+   },
+   "dur": 3.8
+  },
+  {
+   "tpl": "locationSuper",
+   "at": 13.691,
+   "cfg": {
+    "place": "LONG ISLAND",
+    "who": "LOCAL PAINTING TEAM"
+   },
+   "dur": 2.8
+  },
+  {
+   "tpl": "hookText",
+   "at": 20.301,
+   "cfg": {
+    "style": "stack",
+    "text": "INTERIOR. EXTERIOR. OR BOTH.",
+    "lines": [
+     "INTERIOR.",
+     "EXTERIOR.",
+     "OR BOTH."
+    ],
+    "lineStep": 0.9,
+    "maxSize": 170,
+    "y": 760
+   },
+   "dur": 3.0
+  },
+  {
+   "tpl": "getQuoteEnd",
+   "at": 31.744,
+   "cfg": {
+    "line2": "Free estimate"
+   },
+   "dur": 5.05
+  }
+ ],
+ "lines": [
+  {
+   "id": "hook",
+   "text": "Get your home professionally painted, starting at just nine hundred ninety-seven dollars.",
+   "t0": 0.15,
+   "t1": 5.198
+  },
+  {
+   "id": "b1",
+   "text": "At Elite Craft Renovations, we make the process easy from start to finish.",
+   "t0": 5.548,
+   "t1": 9.977
+  },
+  {
+   "id": "b2",
+   "text": "No mess. No surprises. Just quality work, done right.",
+   "t0": 10.227,
+   "t1": 13.451
+  },
+  {
+   "id": "b3",
+   "text": "Our local Long Island team brings years of experience and a true commitment to craftsmanship. So whether it's interior, exterior, or both, you can trust us to deliver results that last.",
+   "t0": 13.751,
+   "t1": 25.759
+  },
+  {
+   "id": "b4",
+   "text": "If you're looking for a smooth, stress-free experience with a crew that respects your time and your home,",
+   "t0": 26.059,
+   "t1": 31.744
+  },
+  {
+   "id": "cta",
+   "text": "click Get Quote now, and schedule your free estimate today.",
+   "t0": 31.844,
+   "t1": 35.19
+  }
+ ]
+}

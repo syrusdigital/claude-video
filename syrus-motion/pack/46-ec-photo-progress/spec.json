@@ -1,0 +1,24 @@
+{
+ "fps": 30,
+ "duration": 7.0,
+ "bg": "#000000",
+ "imageFiles": {
+  "before": "../../ads/elite-craft/media/dorothy/IMG_4219.JPG",
+  "during": "../../ads/elite-craft/media/dorothy/IMG_0373.JPG",
+  "after": "../../ads/elite-craft/media/dorothy/WhatsApp_Image_2025-10-08_at_20.18.53_2ee65163.jpg"
+ },
+ "items": [
+  {
+   "tpl": "photoProgress",
+   "at": 0,
+   "cfg": {
+    "labels": [
+     "DEMO",
+     "TILE",
+     "DONE"
+    ],
+    "title": "ONE SHOWER, START TO FINISH"
+   }
+  }
+ ]
+}

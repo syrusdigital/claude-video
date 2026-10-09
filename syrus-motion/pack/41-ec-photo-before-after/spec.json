@@ -1,0 +1,18 @@
+{
+ "fps": 30,
+ "duration": 6.0,
+ "bg": "#000000",
+ "imageFiles": {
+  "before": "../../ads/elite-craft/media/initial-images/IMG_9542.JPEG",
+  "after": "../../ads/elite-craft/media/stills/northport-master-after.jpg"
+ },
+ "items": [
+  {
+   "tpl": "photoBeforeAfter",
+   "at": 0,
+   "cfg": {
+    "badge": "SAME BATHROOM. NEW LIFE."
+   }
+  }
+ ]
+}

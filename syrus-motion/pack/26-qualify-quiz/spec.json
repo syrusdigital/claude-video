@@ -1,0 +1,22 @@
+{
+ "fps": 30,
+ "duration": 6.0,
+ "items": [
+  {
+   "tpl": "qualifyQuiz",
+   "at": 0,
+   "dur": 6.0,
+   "cfg": {
+    "title": "DO YOU QUALIFY?",
+    "questions": [
+     "Do you own your home?",
+     "Is your bathroom 5+ years old?",
+     "Ready to start within 30 days?"
+    ],
+    "result": "YOU QUALIFY",
+    "cta": "TAP GET QUOTE",
+    "y": 300
+   }
+  }
+ ]
+}

@@ -1,0 +1,627 @@
+{
+ "duration": 45.901,
+ "shots": [
+  {
+   "src": "../media/client/IMG_0238.MOV",
+   "in": 0.5,
+   "len": 1.38,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.0,
+    1.07
+   ],
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01",
+   "_t0": 0.0,
+   "_len": 1.38
+  },
+  {
+   "src": "../media/client/IMG_9771.MOV",
+   "in": 7.0,
+   "len": 1.42,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.07,
+    1.0
+   ],
+   "punch": 0.08,
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01",
+   "_t0": 1.38,
+   "_len": 1.42
+  },
+  {
+   "src": "../media/client/IMG_8983.MOV",
+   "in": 0.5,
+   "len": 1.56,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.0,
+    1.07
+   ],
+   "punch": 0.08,
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01",
+   "_t0": 2.8,
+   "_len": 1.56
+  },
+  {
+   "src": "../media/client/IMG_8418.MOV",
+   "in": 12.5,
+   "len": 1.58,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.07,
+    1.0
+   ],
+   "whip": true,
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01",
+   "_t0": 4.359999999999999,
+   "_len": 1.58
+  },
+  {
+   "src": "../../vistaguard/media/stock/vg_calculator_bills.mp4",
+   "in": 7.5,
+   "len": 1.44,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.0,
+    1.07
+   ],
+   "punch": 0.08,
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01",
+   "_t0": 5.9399999999999995,
+   "_len": 1.44
+  },
+  {
+   "src": "../media/stock/pexels-3773485.mp4",
+   "in": 0.0,
+   "len": 1.56,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.07,
+    1.0
+   ],
+   "punch": 0.08,
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01",
+   "_t0": 7.379999999999999,
+   "_len": 1.56
+  },
+  {
+   "src": "../media/client/IMG_5240.MOV",
+   "in": 10.0,
+   "len": 1.52,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.0,
+    1.07
+   ],
+   "punch": 0.08,
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01",
+   "_t0": 8.94,
+   "_len": 1.52
+  },
+  {
+   "src": "../media/client/IMG_9771.MOV",
+   "in": 1.0,
+   "len": 1.76,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.0,
+    1.07
+   ],
+   "punch": 0.08,
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01",
+   "_t0": 10.459999999999999,
+   "_len": 1.76
+  },
+  {
+   "src": "../media/client/IMG_1343.MOV",
+   "in": 14.0,
+   "len": 1.8,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.07,
+    1.0
+   ],
+   "punch": 0.08,
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01",
+   "_t0": 12.219999999999999,
+   "_len": 1.8
+  },
+  {
+   "src": "../media/client/IMG_2157.MOV",
+   "in": 0.5,
+   "len": 1.24,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.0,
+    1.07
+   ],
+   "whip": true,
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01",
+   "_t0": 14.02,
+   "_len": 1.24
+  },
+  {
+   "src": "../media/client/IMG_4518.MOV",
+   "in": 0.0,
+   "len": 1.08,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.07,
+    1.0
+   ],
+   "punch": 0.08,
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01",
+   "_t0": 15.26,
+   "_len": 1.08
+  },
+  {
+   "src": "../media/client/IMG_9391.MOV",
+   "in": 0.0,
+   "len": 1.58,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.0,
+    1.07
+   ],
+   "punch": 0.08,
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01",
+   "_t0": 16.34,
+   "_len": 1.58
+  },
+  {
+   "src": "../media/client/IMG_9392.MOV",
+   "in": 2.5,
+   "len": 1.24,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.07,
+    1.0
+   ],
+   "punch": 0.08,
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01",
+   "_t0": 17.92,
+   "_len": 1.24
+  },
+  {
+   "src": "../media/client/IMG_9383.MOV",
+   "in": 0.0,
+   "len": 1.28,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.0,
+    1.07
+   ],
+   "punch": 0.08,
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01",
+   "_t0": 19.16,
+   "_len": 1.28
+  },
+  {
+   "src": "../media/client/IMG_9454.MOV",
+   "in": 10.0,
+   "len": 1.52,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.0,
+    1.07
+   ],
+   "whip": true,
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01",
+   "_t0": 20.44,
+   "_len": 1.52
+  },
+  {
+   "src": "../media/client/IMG_3960.MOV",
+   "in": 0.5,
+   "len": 1.6,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.07,
+    1.0
+   ],
+   "punch": 0.08,
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01",
+   "_t0": 21.96,
+   "_len": 1.6
+  },
+  {
+   "src": "../media/client/IMG_4219.MOV",
+   "in": 0.5,
+   "len": 1.3,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.0,
+    1.07
+   ],
+   "punch": 0.08,
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01",
+   "_t0": 23.560000000000002,
+   "_len": 1.3
+  },
+  {
+   "src": "../media/client/IMG_1079.MOV",
+   "in": 1.0,
+   "len": 1.24,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.07,
+    1.0
+   ],
+   "punch": 0.08,
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01",
+   "_t0": 24.860000000000003,
+   "_len": 1.24
+  },
+  {
+   "src": "../media/stock/pexels-7234150.mp4",
+   "in": 0.0,
+   "len": 1.86,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.0,
+    1.07
+   ],
+   "punch": 0.08,
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01",
+   "_t0": 26.1,
+   "_len": 1.86
+  },
+  {
+   "src": "../media/client/IMG_5240.MOV",
+   "in": 25.0,
+   "len": 2.34,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.07,
+    1.0
+   ],
+   "punch": 0.08,
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01",
+   "_t0": 27.96,
+   "_len": 2.34
+  },
+  {
+   "src": "../media/client/IMG_2745.MOV",
+   "in": 4.0,
+   "len": 1.94,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.0,
+    1.07
+   ],
+   "punch": 0.08,
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01",
+   "_t0": 30.3,
+   "_len": 1.94
+  },
+  {
+   "src": "../media/client/IMG_2342.MOV",
+   "in": 2.0,
+   "len": 1.78,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.07,
+    1.0
+   ],
+   "punch": 0.08,
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01",
+   "_t0": 32.24,
+   "_len": 1.78
+  },
+  {
+   "src": "../media/client/IMG_9003.MOV",
+   "in": 1.5,
+   "len": 1.22,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.0,
+    1.07
+   ],
+   "whip": true,
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01",
+   "_t0": 34.02,
+   "_len": 1.22
+  },
+  {
+   "src": "../media/client/IMG_8920.MOV",
+   "in": 0.5,
+   "len": 1.14,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.07,
+    1.0
+   ],
+   "punch": 0.08,
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01",
+   "_t0": 35.24,
+   "_len": 1.14
+  },
+  {
+   "src": "../media/client/IMG_9523.MOV",
+   "in": 1.5,
+   "len": 1.42,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.0,
+    1.07
+   ],
+   "punch": 0.08,
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01",
+   "_t0": 36.38,
+   "_len": 1.42
+  },
+  {
+   "src": "../media/client/IMG_9003.MOV",
+   "in": 13.0,
+   "len": 1.3,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.0,
+    1.07
+   ],
+   "punch": 0.08,
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01",
+   "_t0": 37.800000000000004,
+   "_len": 1.3
+  },
+  {
+   "src": "../media/client/IMG_0238.MOV",
+   "in": 4.5,
+   "len": 1.74,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.07,
+    1.0
+   ],
+   "punch": 0.08,
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01",
+   "_t0": 39.1,
+   "_len": 1.74
+  },
+  {
+   "src": "../media/client/IMG_2342.MOV",
+   "in": 30.5,
+   "len": 1.5,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.0,
+    1.07
+   ],
+   "punch": 0.08,
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01",
+   "_t0": 40.84,
+   "_len": 1.5
+  },
+  {
+   "src": "../media/client/IMG_7435.MOV",
+   "in": 0.5,
+   "len": 1.84,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.07,
+    1.0
+   ],
+   "punch": 0.08,
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01",
+   "_t0": 42.34,
+   "_len": 1.84
+  },
+  {
+   "src": "../media/client/IMG_0238.MOV",
+   "in": 0.5,
+   "len": 1.721,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.0,
+    1.07
+   ],
+   "punch": 0.08,
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01",
+   "_t0": 44.18000000000001,
+   "_len": 1.721
+  }
+ ],
+ "gfx": [
+  {
+   "tpl": "quoteSheet",
+   "at": 5.94,
+   "cfg": {
+    "title": "QUOTE",
+    "sub": "Kitchen countertops",
+    "lines": [
+     "Countertops",
+     "Removal",
+     "Install"
+    ],
+    "beats": [
+     0,
+     0.12,
+     0.24
+    ],
+    "markups": [
+     1.44,
+     4.0,
+     5.14
+    ],
+    "circleAt": 5.36,
+    "caption": "A BIG MARKUP|^BEFORE IT EVER GETS TO YOU^",
+    "captionAt": 0.05
+   },
+   "dur": 6.02
+  },
+  {
+   "tpl": "logoCard",
+   "at": 14.07,
+   "cfg": {
+    "img": "logo",
+    "y": 0.32,
+    "h": 470
+   },
+   "dur": 2.4
+  },
+  {
+   "tpl": "materialTable",
+   "at": 26.1,
+   "cfg": {
+    "kicker": "STARTING PRICES",
+    "cols": [
+     "MATERIAL",
+     "FROM / SQ FT"
+    ],
+    "y": 520,
+    "beats": [
+     1.86,
+     4.2,
+     5.88
+    ],
+    "rows": [
+     {
+      "name": "Granite",
+      "sub": "Natural stone",
+      "price": "$30",
+      "stone": "granite",
+      "pre": "from"
+     },
+     {
+      "name": "Quartz",
+      "sub": "Engineered stone",
+      "price": "$55",
+      "stone": "quartz",
+      "pre": "from"
+     },
+     {
+      "name": "Marble",
+      "sub": "Natural stone",
+      "price": "$65",
+      "stone": "marble",
+      "pre": "from"
+     }
+    ]
+   },
+   "dur": 7.82
+  },
+  {
+   "tpl": "ctaGlass",
+   "at": 40.74,
+   "cfg": {
+    "y": 0.56
+   },
+   "dur": 4.4
+  },
+  {
+   "tpl": "logoCard",
+   "at": 40.74,
+   "cfg": {
+    "img": "logo",
+    "y": 0.27,
+    "sweep": false,
+    "h": 280
+   },
+   "dur": 5.161
+  }
+ ],
+ "lines": [
+  {
+   "id": "hook",
+   "text": "If you got a quote for new kitchen countertops and you were shocked by how expensive it was, watch this.",
+   "t0": 0.0,
+   "t1": 5.64
+  },
+  {
+   "id": "b1",
+   "text": "A lot of companies add a big markup on your countertops before they ever get to your kitchen.",
+   "t0": 5.94,
+   "t1": 10.26
+  },
+  {
+   "id": "b2",
+   "text": "So you end up paying way more for the exact same countertops.",
+   "t0": 10.46,
+   "t1": 13.72
+  },
+  {
+   "id": "b3",
+   "text": "At GC Countertops, we do it differently.",
+   "t0": 14.02,
+   "t1": 16.0
+  },
+  {
+   "id": "b4",
+   "text": "We source our countertops directly from the supplier, at contractor pricing.",
+   "t0": 16.34,
+   "t1": 20.14
+  },
+  {
+   "id": "b5",
+   "text": "That's a price you just can't get if you go out and buy them yourself.",
+   "t0": 20.44,
+   "t1": 23.2
+  },
+  {
+   "id": "b6",
+   "text": "And we pass that savings right on to you.",
+   "t0": 23.56,
+   "t1": 25.82
+  },
+  {
+   "id": "b7",
+   "text": "That's why brand-new countertops start at just $30 per square foot for granite.",
+   "t0": 26.1,
+   "t1": 29.94
+  },
+  {
+   "id": "b8",
+   "text": "Quartz starts at $55, and marble starts at $65.",
+   "t0": 30.3,
+   "t1": 33.38
+  },
+  {
+   "id": "b9",
+   "text": "And every job comes with our 100% satisfaction guarantee.",
+   "t0": 34.02,
+   "t1": 37.5
+  },
+  {
+   "id": "b10",
+   "text": "We don't leave your home until you're completely happy with the work.",
+   "t0": 37.8,
+   "t1": 40.56
+  },
+  {
+   "id": "cta",
+   "text": "Click \"Get Quote\" to book your free in-home measurement and estimate, and see how much you can save.",
+   "t0": 40.84,
+   "t1": 44.94
+  }
+ ]
+}

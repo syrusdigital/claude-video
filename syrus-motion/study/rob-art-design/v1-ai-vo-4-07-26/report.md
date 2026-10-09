@@ -1,0 +1,9 @@
+# Rob-Art Design | V1 | AI/VO | 4.07.26 | $460.91, 10 leads, $46.09 CPL
+70.9s · 360x640 · -24.0 LUFS
+- **Voice:** male (~123.1 Hz), 190.3 wpm, first word at 0.0s, first money at 0.48s ("$40")
+- **Hook (0-5s):** Why pay $40 ,000 for a kitchen remodel, when you can get the same stunning results for under $20
+- **Music:** yes · floor -11.7 dB vs voice (≈ minus how far the music sits under the voice; VO-only reads below -30) · gap bed -11.7 dB · after VO -46.6 dBFS · tempo ~88.2 (conf 0.041)
+- **SFX:** 3 hits (2.5/min), 1 on cuts · swells []
+- **Picture:** 36 cuts, avg shot 1.92s (median 1.37s)
+
+Why pay $40 ,000 for a kitchen remodel, when you can get the same stunning results for under $20 ,000? We're Rob Art Design, and we've been remodeling kitchens for New Jersey homeowners since 2012. Here's how we work. When you call us out, we first sit down with you for a free consultation, and we listen to exactly what you want your new kitchen to look like. From there, we build out real design drawings and renderings of your specific kitchen, not AI pictures, not stock images, actual layouts with your actual kitchen, showing your new cabinets, countertops, and finishes, so you can see exactly what you're getting before you say yes to anything. Then, we take you through material selection personally. We help you find high -quality materials you'll actually love, within a price that works for you. You're not choosing from a fixed package, you're building your kitchen, custom -made. Once the project starts, our in -house team handles everything, electrical, plumbing, cabinetry, one crew, managed by us, from day one to the final walkthrough. That's how we deliver a fully custom premium quality kitchen for under $20 ,000. Click Get Quote Below to book your free consultation. We'll show you exactly what your new kitchen will look like and give you a clear, honest estimate built around your budget.

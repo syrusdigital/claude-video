@@ -1,0 +1,63 @@
+{
+ "label": "Innovative Interiors | V1 | AI/VO | 4.27.26 | $8,495 Package | $34.26, 1 lead, $34.26 CPL",
+ "file": "/home/user/claude-video/syrus-motion/study/innovative-interiors/v1-8495-package/video.mp4",
+ "duration": 60.67,
+ "size": "360x640",
+ "voice": {
+  "words": 165,
+  "wpm": 164.2,
+  "pitch_hz": 133.3,
+  "voice_guess": "male",
+  "first_word_at": 0.0,
+  "first_money_at": 11.1,
+  "first_money_word": "$8",
+  "hook_5s": "South Orange County homeowners. This is the biggest bathroom remodeling special we've ever offered.",
+  "text": "South Orange County homeowners. This is the biggest bathroom remodeling special we've ever offered. For a limited time, Innovative Interiors is offering a complete wet area bathroom remodel package for just $8 ,495. Our wet area bathroom remodel package is a focused, high impact upgrade designed to completely transform your shower or tub area. Our $8 ,495 special includes removal and disposal of your existing tub or shower, a brand new walk -in shower or bathtub, full waterproofing, clean, modern tile installation, and a brand new glass shower door. Everything is professionally installed by our in -house team. No hidden costs, no shortcuts, just a clean, modern result built to last. With over 20 years of experience and a 4 .9 star rating, we've built our reputation on delivering exactly what we promise. And because this is a seasonal package, availability is limited. Once our schedule fills, pricing adjusts. Click Get Quote to book your free estimate at our $8 ,495 wet area remodel package."
+ },
+ "music": {
+  "present": true,
+  "floor_rel_db": -9.0,
+  "after_vo_db": -45.4,
+  "bed_db_rel_voice": -3.9,
+  "voice_dbfs": -22.4,
+  "bed_dbfs": -26.3,
+  "tempo_bpm_rough": 92.3,
+  "tempo_confidence": 0.04
+ },
+ "sfx": {
+  "hits": [
+   28.77,
+   54.79
+  ],
+  "hit_count": 2,
+  "hits_per_min": 2.0,
+  "hits_on_cuts": 0,
+  "swells": []
+ },
+ "picture": {
+  "cuts": 15,
+  "cut_times": [
+   5.33,
+   6.5,
+   10.67,
+   20.7,
+   23.8,
+   27.77,
+   29.87,
+   34.03,
+   36.97,
+   39.2,
+   43.27,
+   44.97,
+   50.3,
+   51.87,
+   53.2
+  ],
+  "avg_shot_s": 3.79,
+  "median_shot_s": 3.54
+ },
+ "loudness": {
+  "integrated_lufs": -23.0,
+  "lra": 2.6
+ }
+}

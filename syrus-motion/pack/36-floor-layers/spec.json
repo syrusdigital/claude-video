@@ -1,0 +1,3 @@
+{ "fps": 30, "duration": 12, "bg": "#0B1424", "items": [
+  { "tpl": "sceneFloorLayers", "at": 0, "cfg": {} }
+] }

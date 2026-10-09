@@ -1,0 +1,70 @@
+{
+ "label": "Innovative Interiors | V3 | AI/VO | 4.27.26 | Starting $8,495 | $10.85, 0 leads",
+ "file": "/home/user/claude-video/syrus-motion/study/innovative-interiors/v3-starting-8495/video.mp4",
+ "duration": 54.02,
+ "size": "360x640",
+ "voice": {
+  "words": 167,
+  "wpm": 186.8,
+  "pitch_hz": 126.0,
+  "voice_guess": "male",
+  "first_word_at": 0.0,
+  "first_money_at": 1.9,
+  "first_money_word": "$8",
+  "hook_5s": "Full bathroom remodels starting at just $8 ,495. And no,",
+  "text": "Full bathroom remodels starting at just $8 ,495. And no, this isn't one of those fake starting at prices that gets you in the door and doubles later at innovative interiors. For $8 ,495, you get our real wet area bathroom remodel package. It includes full removal of your old tub or shower, a brand new walk -in shower or bathtub, waterproofing, tile installation, and a new glass shower door. That's a complete functional bathroom upgrade at a fixed price. Now, if you're looking to upgrade more, like adding a new vanity, toilet, or additional finishes, of course the price can go up. But the difference is we give you a realistic quote that actually fits your budget with premium materials and installation. No games, no pressure, just clear pricing from a local South Orange County remodeling company with 20 plus years of experience and a 4 .9 star reputation. Click get quote to get a free estimate and see what your bathroom remodel would realistically cost."
+ },
+ "music": {
+  "present": true,
+  "floor_rel_db": -9.6,
+  "after_vo_db": null,
+  "bed_db_rel_voice": -5.9,
+  "voice_dbfs": -23.8,
+  "bed_dbfs": -29.8,
+  "tempo_bpm_rough": 127.7,
+  "tempo_confidence": 0.051
+ },
+ "sfx": {
+  "hits": [
+   9.67,
+   24.53,
+   27.79,
+   49.51
+  ],
+  "hit_count": 4,
+  "hits_per_min": 4.4,
+  "hits_on_cuts": 1,
+  "swells": []
+ },
+ "picture": {
+  "cuts": 20,
+  "cut_times": [
+   4.37,
+   6.1,
+   7.57,
+   11.03,
+   13.17,
+   19.83,
+   21.63,
+   27.7,
+   29.8,
+   30.97,
+   31.47,
+   34.37,
+   35.2,
+   36.7,
+   38.03,
+   40.03,
+   40.73,
+   41.5,
+   45.0,
+   46.77
+  ],
+  "avg_shot_s": 2.57,
+  "median_shot_s": 1.8
+ },
+ "loudness": {
+  "integrated_lufs": -23.6,
+  "lra": 2.5
+ }
+}

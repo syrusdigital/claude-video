@@ -1,0 +1,85 @@
+{
+ "label": "Anyvision | VID 5 | AI/VO | 9.05.26 | $2,423.92, 25 leads, $96.96 CPL",
+ "file": "/home/user/claude-video/syrus-motion/study/anyvision/vid5-ai-vo-9-05-26/video.mp4",
+ "duration": 65.04,
+ "size": "720x1280",
+ "voice": {
+  "words": 212,
+  "wpm": 197.1,
+  "pitch_hz": 124.0,
+  "voice_guess": "male",
+  "first_word_at": 0.0,
+  "first_money_at": 2.84,
+  "first_money_word": "$40",
+  "hook_5s": "Snohomish and King County Homeowners. Why pay $40 ,000, $50 ,000 or even $60 ,000 for",
+  "text": "Snohomish and King County Homeowners. Why pay $40 ,000, $50 ,000 or even $60 ,000 for a kitchen remodel when you can get a brand new kitchen starting at just $17 ,995 at any Vision Home Remodeling. We know most remodeling companies are overcharging you tens of thousands for the exact same kitchen. We don't do that and here's why. We import our own materials and we make your countertop ourselves so you're not paying somebody else's commission on top. With a full kitchen remodel you're going to get brand new cabinets, a brand new countertop, brand new flooring, a brand new sink and faucet and brand new lighting in the materials of your choice. And you're never picking the loan. You come into our showroom right here in Snohomish and King County and our in -house kitchen designer sits down with you in person. We've been remodeling kitchens for over 20 years, licensed, insured and backed by our 12 -month craftsmanship warranty plus the full manufacturer warranties. And we're going to take care of you. We'll get you the best possible price on premium materials so you end up with a kitchen you love without ever feeling like you overpaid for it. Click get quote to book your free design consultation."
+ },
+ "music": {
+  "present": true,
+  "floor_rel_db": -11.5,
+  "after_vo_db": -37.4,
+  "bed_db_rel_voice": -7.1,
+  "voice_dbfs": -14.4,
+  "bed_dbfs": -21.5,
+  "tempo_bpm_rough": 136.4,
+  "tempo_confidence": 0.057
+ },
+ "sfx": {
+  "hits": [
+   32.57,
+   62.37
+  ],
+  "hit_count": 2,
+  "hits_per_min": 1.8,
+  "hits_on_cuts": 1,
+  "swells": []
+ },
+ "picture": {
+  "cuts": 37,
+  "cut_times": [
+   2.67,
+   6.13,
+   6.37,
+   6.43,
+   7.3,
+   11.13,
+   12.8,
+   15.57,
+   17.73,
+   19.93,
+   20.03,
+   21.97,
+   24.47,
+   26.2,
+   29.83,
+   31.2,
+   32.67,
+   34.03,
+   36.37,
+   37.93,
+   40.93,
+   43.7,
+   43.9,
+   44.93,
+   46.37,
+   47.77,
+   50.73,
+   52.8,
+   53.0,
+   53.1,
+   54.9,
+   55.87,
+   57.53,
+   58.2,
+   59.33,
+   61.53,
+   63.17
+  ],
+  "avg_shot_s": 1.71,
+  "median_shot_s": 1.67
+ },
+ "loudness": {
+  "integrated_lufs": -14.3,
+  "lra": 1.8
+ }
+}

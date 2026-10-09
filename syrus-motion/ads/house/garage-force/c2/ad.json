@@ -1,0 +1,91 @@
+{
+ "title": "Garage Force of Miami C2 house",
+ "vo": {
+  "lines": [
+   {
+    "id": "hook",
+    "text": "Most floor coating companies send a salesman to your home and won't leave until you sign. We do the complete opposite.",
+    "after": 0.05
+   },
+   {
+    "id": "b1",
+    "text": "Here's how we're different.",
+    "after": 0.05
+   },
+   {
+    "id": "b2",
+    "text": "When you reach out, we don't send a pushy salesman to camp in your driveway until you buy.",
+    "after": 0.05
+   },
+   {
+    "id": "b3",
+    "text": "But let's talk about what really matters, your floor.",
+    "after": 0.05
+   },
+   {
+    "id": "b4",
+    "text": "At Garage Force, we install premium floor coatings built to last.",
+    "after": 0.05
+   },
+   {
+    "id": "b5",
+    "text": "It's a polyaspartic coating that's up to 20 times stronger than epoxy.",
+    "after": 0.05
+   },
+   {
+    "id": "b6",
+    "text": "It won't fade in the South Florida sun, it resists stains and hot tires, and you can get it in any color you want to match your home.",
+    "after": 0.05
+   },
+   {
+    "id": "b7",
+    "text": "Most of our projects are finished in just one day, so you can walk on it that same evening and park your car the next morning.",
+    "after": 0.05
+   },
+   {
+    "id": "b8",
+    "text": "And because we're a small local team without the big-company overhead, you get better materials and a better warranty at a better price.",
+    "after": 0.05
+   },
+   {
+    "id": "b9",
+    "text": "Our floor coatings start at just $1,095, and right now we're adding free upgrades worth hundreds of dollars when you book.",
+    "after": 0.05
+   },
+   {
+    "id": "b10",
+    "text": "Then, when you're ready, it's easy.",
+    "after": 0.05
+   },
+   {
+    "id": "b11",
+    "text": "You book a quick, no-pressure phone call and we give you an honest estimate right over the phone.",
+    "after": 0.05
+   },
+   {
+    "id": "b12",
+    "text": "If you like what you hear, we come out and finalize everything.",
+    "after": 0.05
+   },
+   {
+    "id": "b13",
+    "text": "If you don't, no problem at all.",
+    "after": 0.05
+   },
+   {
+    "id": "b14",
+    "text": "Every floor is backed by a lifetime warranty, and we're 5-star rated on Google.",
+    "after": 0.05
+   },
+   {
+    "id": "cta",
+    "text": "Click \"Get Quote\" to book your quick, no-pressure phone consultation. We'll give you an honest estimate right over the phone, and we only come out if you want us to.",
+    "after": 0.05
+   }
+  ],
+  "engine": "elevenlabs",
+  "voice": "Michael (ElevenLabs Kysvuk17R9MDAP9l089v)",
+  "take": "P2MEsp2QY4VfhSgOXPLo",
+  "tempo": 1.079
+ }
+}

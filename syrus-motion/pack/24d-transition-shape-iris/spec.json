@@ -1,0 +1,14 @@
+{
+ "fps": 30,
+ "duration": 0.8,
+ "items": [
+  {
+   "tpl": "transitions",
+   "at": 0,
+   "dur": 0.8,
+   "cfg": {
+    "kind": "shapeIris"
+   }
+  }
+ ]
+}

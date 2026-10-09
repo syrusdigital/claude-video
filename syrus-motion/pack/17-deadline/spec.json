@@ -1,0 +1,17 @@
+{
+ "fps": 30,
+ "duration": 3.0,
+ "items": [
+  {
+   "tpl": "deadline",
+   "at": 0,
+   "dur": 3.0,
+   "cfg": {
+    "mode": "date",
+    "date": "OCT 31",
+    "head": "OFFER ENDS",
+    "y": 560
+   }
+  }
+ ]
+}

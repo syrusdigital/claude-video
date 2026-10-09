@@ -1,0 +1,196 @@
+{
+ "duration": 31.8,
+ "shots": [
+  {
+   "src": "../media/omni-s11/wa-2025-07-31-233219.mp4",
+   "in": 0.6,
+   "at": "word:If-0.06",
+   "len": 0.98,
+   "fit": "blur",
+   "_at": 2.05,
+   "_t0": 2.05,
+   "_len": 0.98
+  },
+  {
+   "src": "../media/omni-s11/wa-2025-07-31-233223.mp4",
+   "in": 0.3,
+   "at": "line:notice",
+   "len": 2.01,
+   "fit": "blur",
+   "_at": 7.767,
+   "_t0": 7.767,
+   "_len": 2.01
+  },
+  {
+   "src": "../media/omni-multi/wa-2025-07-25-024013.mp4",
+   "in": 1.3,
+   "at": "word:by-0.22",
+   "len": 2.34,
+   "zoom": [
+    1.0,
+    1.06
+   ],
+   "_at": 10.997,
+   "_t0": 10.997,
+   "_len": 2.34
+  },
+  {
+   "src": "../media/omni-multi/wa-2025-07-25-035845.mp4",
+   "in": 5.0,
+   "at": "word:We'll-0.08",
+   "len": 4.34,
+   "zoom": [
+    1.0,
+    1.05
+   ],
+   "_at": 16.243000000000002,
+   "_t0": 16.243000000000002,
+   "_len": 4.34
+  },
+  {
+   "src": "../media/omni-multi/wa-2025-07-25-024007.mp4",
+   "in": 3.4,
+   "at": "word:15-0.12",
+   "len": 3.18,
+   "zoom": [
+    1.0,
+    1.06
+   ],
+   "_at": 24.006999999999998,
+   "_t0": 24.006999999999998,
+   "_len": 3.18
+  },
+  {
+   "src": "../media/images/img-0080.jpg",
+   "at": "line:cta+1.2",
+   "len": 3.4,
+   "zoom": [
+    1.0,
+    1.08
+   ],
+   "fy": 0.5,
+   "_at": 28.4,
+   "_t0": 28.4,
+   "_len": 3.4
+  }
+ ],
+ "gfx": [
+  {
+   "tpl": "hookText",
+   "at": 0.0,
+   "cfg": {
+    "style": "highlight",
+    "text": "WHEN'S THE LAST TIME YOU GOT YOUR ROOF INSPECTED?",
+    "mark": "INSPECTED?",
+    "step": 0.14,
+    "size": 104,
+    "y": 450
+   },
+   "dur": 2.45
+  },
+  {
+   "tpl": "nameLowerThird",
+   "at": 3.807,
+   "cfg": {
+    "name": "Nate Stern",
+    "title": "Twin Pines Home Improvements",
+    "y": 1290
+   },
+   "dur": 2.3
+  },
+  {
+   "tpl": "discountStamp",
+   "at": 6.077,
+   "cfg": {
+    "big": "FREE",
+    "small": "INSPECTIONS",
+    "y": 430,
+    "rot": -6
+   },
+   "dur": 2.0
+  },
+  {
+   "tpl": "badgeLine",
+   "at": 14.123,
+   "cfg": {
+    "items": [
+     "QUICK",
+     "THOROUGH",
+     "COMPLETELY FREE"
+    ],
+    "y": 300,
+    "stagger": 0.42
+   },
+   "dur": 2.6
+  },
+  {
+   "tpl": "hookText",
+   "at": 24.047,
+   "cfg": {
+    "style": "stack",
+    "text": "15-MINUTE INSPECTION COULD SAVE YOU THOUSANDS",
+    "lines": [
+     "15-MINUTE INSPECTION",
+     "COULD SAVE YOU",
+     "THOUSANDS"
+    ],
+    "lineStep": 0.85,
+    "maxSize": 150,
+    "y": 760
+   },
+   "dur": 3.15
+  },
+  {
+   "tpl": "getQuoteEnd",
+   "at": 28.4,
+   "cfg": {
+    "line2": "Free 15-minute inspection"
+   },
+   "dur": 3.75
+  }
+ ],
+ "lines": [
+  {
+   "id": "hook",
+   "text": "",
+   "t0": 0.0,
+   "t1": 3.767
+  },
+  {
+   "id": "intro",
+   "text": "",
+   "t0": 3.767,
+   "t1": 7.767
+  },
+  {
+   "id": "notice",
+   "text": "",
+   "t0": 7.767,
+   "t1": 9.767
+  },
+  {
+   "id": "wear",
+   "text": "",
+   "t0": 9.767,
+   "t1": 13.333
+  },
+  {
+   "id": "free",
+   "text": "",
+   "t0": 13.333,
+   "t1": 22.467
+  },
+  {
+   "id": "save",
+   "text": "",
+   "t0": 22.467,
+   "t1": 27.2
+  },
+  {
+   "id": "cta",
+   "text": "",
+   "t0": 27.2,
+   "t1": 30.8
+  }
+ ]
+}

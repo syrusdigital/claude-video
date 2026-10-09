@@ -1,0 +1,275 @@
+<title>{{TITLE}}</title>
+<meta name="description" content="{{DESC}}">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=JetBrains+Mono:wght@500;700&display=swap">
+<style>
+/* Layout: an edit-bay contact sheet. 9:16 frames on a dark navy bay, timecode slates on every frame, gold only for the money/actions. */
+:root {
+  --bg: #0A1428; --panel: #101D37; --raise: #172846; --line: #253758; --ink: #EDF1F7; --mute: #97A6C0;
+  --gold: #FFCF3F; --gold-ink: #1A1300; --sky: #6CC4FF; --warn: #FFB547; --good: #46D98A;
+  --frame: #7F8896;
+  --display: "Archivo", "Arial Narrow", "Helvetica Neue", Arial, sans-serif;
+  --body: "Archivo", "Helvetica Neue", Arial, sans-serif;
+  --mono: "JetBrains Mono", ui-monospace, Menlo, Consolas, monospace;
+  color-scheme: dark;
+}
+@media (prefers-color-scheme: light) { :root:not([data-theme="dark"]) {
+  --bg: #F2F4F8; --panel: #FFFFFF; --raise: #E9EDF4; --line: #D5DCE8; --ink: #0B1630; --mute: #56637B;
+  --gold: #F2B705; --gold-ink: #1A1300; --sky: #0B6FB8; --warn: #A15C00; --good: #11804A; --frame: #8A93A3; color-scheme: light; } }
+:root[data-theme="light"] {
+  --bg: #F2F4F8; --panel: #FFFFFF; --raise: #E9EDF4; --line: #D5DCE8; --ink: #0B1630; --mute: #56637B;
+  --gold: #F2B705; --gold-ink: #1A1300; --sky: #0B6FB8; --warn: #A15C00; --good: #11804A; --frame: #8A93A3; color-scheme: light; }
+* { box-sizing: border-box; }
+body { background: var(--bg); color: var(--ink); font: 400 15px/1.55 var(--body); padding-inline: 16px; padding-block: 0 64px; }
+.wrap { max-width: 1240px; margin: 0 auto; }
+header.top { padding-block: 40px 24px; display: grid; gap: 14px; }
+.eyebrow { font: 700 12px/1 var(--mono); letter-spacing: .14em; text-transform: uppercase; color: var(--sky); }
+h1 { font: 900 clamp(40px, 7vw, 76px)/.92 var(--display); font-stretch: 118%; letter-spacing: -.01em; margin: 0; text-wrap: balance; }
+h1 em { font-style: normal; color: var(--gold); }
+.lede { max-width: 66ch; color: var(--mute); font-size: 17px; margin: 0; }
+.facts { display: flex; flex-wrap: wrap; gap: 8px 22px; font: 500 13px/1.4 var(--mono); color: var(--mute); }
+.facts b { color: var(--ink); font-weight: 700; }
+.facts a { color: var(--sky); text-underline-offset: 3px; }
+.notes { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 12px; margin-block: 8px 0; }
+.note { background: var(--panel); border: 1px solid var(--line); border-radius: 14px; padding: 14px 16px; min-width: 0; font-size: 14px; }
+.note h4 { margin: 0 0 4px; font: 800 13px/1.3 var(--display); font-stretch: 110%; letter-spacing: .04em; text-transform: uppercase; }
+.note p { margin: 0; color: var(--mute); }
+.note a { color: var(--sky); }
+nav.chips { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 5; background: var(--bg); padding-block: 12px; display: flex; flex-wrap: wrap; gap: 8px; border-bottom: 1px solid var(--line); margin-bottom: 22px; }
+.chip { appearance: none; border: 1px solid var(--line); background: var(--panel); color: var(--ink); font: 700 13px/1 var(--body); padding: 10px 14px; border-radius: 999px; cursor: pointer; }
+.chip span { color: var(--mute); font: 500 12px/1 var(--mono); margin-left: 6px; }
+.chip[aria-pressed="true"] { background: var(--ink); color: var(--bg); border-color: var(--ink); }
+.chip[aria-pressed="true"] span { color: var(--bg); opacity: .7; }
+.chip:focus-visible, .btn:focus-visible, .frame:focus-visible { outline: 3px solid var(--sky); outline-offset: 2px; }
+h2 { font: 900 30px/1 var(--display); font-stretch: 112%; margin: 34px 0 6px; text-wrap: balance; }
+h2 + .sub { margin: 0 0 18px; color: var(--mute); max-width: 70ch; }
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(218px, 1fr)); gap: 26px 18px; }
+.clip { display: grid; gap: 8px; align-content: start; min-width: 0; }
+.frame { position: relative; aspect-ratio: 9 / 16; max-width: 100%; border-radius: 12px; overflow: hidden; background: var(--frame); cursor: pointer; border: 1px solid var(--line); }
+.frame video { width: 100%; height: 100%; object-fit: cover; display: block; }
+.slate { position: absolute; left: 8px; top: 8px; background: rgba(5, 10, 22, .78); color: #fff; font: 700 11px/1 var(--mono); padding: 6px 8px; border-radius: 6px; letter-spacing: .02em; }
+.kind { position: absolute; left: 8px; bottom: 8px; font: 800 10px/1 var(--body); letter-spacing: .08em; text-transform: uppercase; padding: 6px 8px; border-radius: 6px; background: rgba(5, 10, 22, .78); color: #fff; }
+.kind.alpha { background: #FFCF3F; color: #1A1300; }
+.playhint { position: absolute; inset: auto 8px 8px auto; width: 34px; height: 34px; border-radius: 50%; background: rgba(5, 10, 22, .7); display: grid; place-items: center; }
+.playhint::before { content: ""; border-left: 11px solid #fff; border-top: 7px solid transparent; border-bottom: 7px solid transparent; margin-left: 3px; }
+.frame.playing .playhint { opacity: 0; }
+.clip h3 { margin: 4px 0 0; font: 800 17px/1.2 var(--display); font-stretch: 106%; text-wrap: balance; }
+.clip h3 small { display: block; font: 500 11px/1.4 var(--mono); color: var(--mute); letter-spacing: .04em; }
+.clip p { margin: 0; font-size: 13.5px; color: var(--mute); }
+.clip p.use { color: var(--ink); }
+.clip p.use b { font-weight: 800; color: var(--sky); font-size: 11px; letter-spacing: .08em; text-transform: uppercase; margin-right: 4px; }
+.dl { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 2px; }
+.btn { appearance: none; border: 1px solid var(--line); background: var(--raise); color: var(--ink); font: 700 12px/1 var(--body); padding: 9px 11px; border-radius: 8px; cursor: pointer; }
+.btn.primary { background: var(--gold); color: var(--gold-ink); border-color: var(--gold); }
+.btn[disabled] { opacity: .6; cursor: progress; }
+.no-dl .btn.save { display: none; }
+.dlnote { display: none; font: 500 12px/1.4 var(--mono); color: var(--mute); }
+.no-dl .dlnote { display: block; }
+/* ads */
+.client { margin-top: 30px; border-top: 1px solid var(--line); padding-top: 18px; }
+.client h2 { margin-top: 0; }
+.ads { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 26px 20px; }
+.ad { display: grid; gap: 10px; align-content: start; min-width: 0; }
+.ad .frame { cursor: default; }
+.ad h3 { margin: 0; font: 800 19px/1.2 var(--display); font-stretch: 106%; text-wrap: balance; }
+.ad .meta { font: 500 12px/1.5 var(--mono); color: var(--mute); }
+.ad p { margin: 0; font-size: 14px; }
+.ad .flow { color: var(--mute); }
+.confirm { background: var(--panel); border: 1px solid var(--line); border-left: 4px solid var(--warn); border-radius: 10px; padding: 10px 12px; font-size: 13.5px; }
+.confirm b { display: block; font: 800 11px/1.4 var(--body); letter-spacing: .08em; text-transform: uppercase; color: var(--warn); margin-bottom: 4px; }
+.confirm ul { margin: 0; padding-left: 18px; }
+/* house */
+.gap td { vertical-align: top; font-size: 13.5px; } .gap td:first-child { color: var(--mute); font: 500 12px/1.5 var(--mono); }
+.gap td.what { font-weight: 800; white-space: nowrap; } .gap table { min-width: 760px; }
+.score { display: flex; flex-wrap: wrap; gap: 6px; font: 500 11.5px/1 var(--mono); color: var(--mute); }
+.score span { border: 1px solid var(--line); border-radius: 999px; padding: 6px 8px; background: var(--panel); }
+.score b { color: var(--ink); font-weight: 700; }
+.aud { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 12px; }
+.aud .note audio { width: 100%; margin-top: 8px; }
+.pending { border-left: 4px solid var(--sky); }
+.tag { display: inline-block; vertical-align: 2px; margin-right: 8px; padding: 4px 8px; border-radius: 999px; background: var(--ink); color: var(--bg); font: 700 10.5px/1 var(--mono); letter-spacing: .08em; text-transform: uppercase; }
+.upd { border-left: 4px solid var(--ink); margin: 0 0 18px; } .upd ul { margin: 8px 0 0; padding-left: 18px; } .upd li { margin: 4px 0; }
+/* masters */
+.table { overflow-x: auto; border: 1px solid var(--line); border-radius: 12px; }
+table { border-collapse: collapse; width: 100%; min-width: 520px; font-size: 14px; }
+th, td { text-align: left; padding: 10px 12px; border-bottom: 1px solid var(--line); vertical-align: middle; }
+th { font: 700 11px/1 var(--mono); letter-spacing: .08em; text-transform: uppercase; color: var(--mute); background: var(--panel); }
+td.num { font: 500 13px/1 var(--mono); font-variant-numeric: tabular-nums; color: var(--mute); white-space: nowrap; }
+tr:last-child td { border-bottom: 0; }
+footer { margin-top: 44px; color: var(--mute); font-size: 13px; border-top: 1px solid var(--line); padding-top: 16px; }
+@media (prefers-reduced-motion: reduce) { * { scroll-behavior: auto !important; } }
+@media (max-width: 520px) { .grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px 12px; } .clip h3 { font-size: 15px; } .dl .btn { padding: 8px 9px; } }
+</style>
+
+<div class="wrap" id="app"></div>
+<script id="data" type="application/json">{{DATA}}</script>
+<script>
+(function () {
+  const D = JSON.parse(document.getElementById('data').textContent);
+  const app = document.getElementById('app');
+  const esc = (s) => String(s ?? '').replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+  const L = D.links || {};
+  const link = (k, txt) => L[k] ? `<a href="${esc(L[k])}" target="_blank" rel="noopener">${esc(txt)}</a>` : esc(txt);
+  let downloads = null;
+  document.documentElement.classList.add('no-dl');
+  (async () => {
+    try { downloads = window.claude && window.claude.use ? await window.claude.use('downloads') : null; } catch (e) { downloads = null; }
+    document.documentElement.classList.toggle('no-dl', !downloads);
+  })();
+  async function save(btn) {
+    if (!downloads) return;
+    const label = btn.textContent; btn.disabled = true; btn.textContent = 'Preparing…';
+    try {
+      const r = await fetch(btn.dataset.path); if (!r.ok) throw { code: 'fetch' };
+      await downloads.save({ filename: btn.dataset.name, data: await r.blob() });
+      btn.textContent = 'Saved ✓';
+    } catch (e) {
+      btn.textContent = e && e.code === 'declined' ? label : (e && e.code === 'rate_limited' ? 'Wait a moment' : 'Couldn’t save');
+      if (!(e && e.code === 'declined')) setTimeout(() => { btn.textContent = label; }, 2500);
+    } finally { btn.disabled = false; }
+  }
+  app.addEventListener('click', (ev) => {
+    const b = ev.target.closest('button.save'); if (b) { save(b); return; }
+    const f = ev.target.closest('.frame[data-hover]'); if (f) toggle(f);
+  });
+  function toggle(f, on) {
+    const v = f.querySelector('video'); const play = on ?? v.paused;
+    if (play) { v.play().then(() => f.classList.add('playing')).catch(() => {}); } else { v.pause(); f.classList.remove('playing'); }
+  }
+  const saveBtns = (list) => list.map((d, i) => `<button class="btn save${i === 0 ? ' primary' : ''}" data-path="${esc(d.path)}" data-name="${esc(d.name)}">${esc(d.label)}</button>`).join('');
+
+  if (D.kind === 'pack') {
+    const G = [['all', 'All'], ['overlay', 'Overlays'], ['transition', 'Transitions'], ['explainer', 'Explainers'], ['client-footage', 'Client footage'], ['syrus', 'Syrus']];
+    const count = (g) => g === 'all' ? D.items.length : D.items.filter((i) => i.group === g).length;
+    const alphaN = D.items.filter((i) => i.alpha).length;
+    app.innerHTML = `
+      <header class="top">
+        <div class="eyebrow">Syrus Digital · editor library</div>
+        <h1>Motion <em>Pack</em></h1>
+        <p class="lede">${D.items.length} drop-in graphics for client ads. Transparent overlays sit on top of any footage; full-frame pieces cut in like B-roll. Every file is 1080×1920 at 30 fps.</p>
+        <div class="facts"><span><b>${alphaN}</b> transparent overlays</span><span><b>${D.items.length - alphaN}</b> full-frame pieces</span><span>${link('ads', '9 finished ads')}</span></div>
+        <div class="notes">
+          <div class="note"><h4>Which file</h4><p>WebM is the light transparent file. For Premiere, use the Fill + Matte pair: fill on V2, matte on V3 with its eye off, then Track Matte Key on the fill (Matte: Video 3, Composite using: Matte Luma).</p></div>
+          <div class="note"><h4>Claims are examples</h4><p>Prices, years, warranties, deadlines and spot counts must be the client's confirmed numbers before an ad ships. Ask Claude to re-render with new copy.</p></div>
+          <div class="note"><h4>Client footage</h4><p>Items marked Elite Craft or Work Horse use that client's own photos. Use them only in that client's ads.</p></div>
+        </div>
+      </header>
+      <nav class="chips" aria-label="Filter">${G.map(([g, n]) => `<button class="chip" data-g="${g}" aria-pressed="false">${n}<span>${count(g)}</span></button>`).join('')}</nav>
+      ${D.update ? `<div class="note upd"><h4>${esc(D.update.title)}</h4><ul>${D.update.items.map((x) => `<li>${esc(x)}</li>`).join('')}</ul></div>` : ''}
+      <p class="dlnote">Downloads work when this page is open in claude.ai.</p>
+      <div class="grid" id="grid">${D.items.map((it) => `
+        <article class="clip" data-group="${it.group}">
+          <div class="frame" data-hover tabindex="0" aria-label="Play ${esc(it.title)}">
+            <video muted loop playsinline preload="none" poster="${esc(it.poster)}" src="${esc(it.preview)}"></video>
+            <span class="slate">#${esc(it.id.split('-')[0])} · ${esc(it.tc)}</span>
+            <span class="kind${it.alpha ? ' alpha' : ''}">${it.alpha ? 'Transparent' : 'Full frame'}</span>
+            <span class="playhint" aria-hidden="true"></span>
+          </div>
+          <h3>${esc(it.title)}<small>${it.frames} frames${it.alpha ? ' · alpha' : ''}</small></h3>
+          <p>${esc(it.what)}</p>
+          <p class="use"><b>Use</b>${esc(it.use)}</p>
+          <div class="dl">${saveBtns(it.dl)}</div>
+        </article>`).join('')}</div>
+      <footer>Built with the Syrus gfx engine (canvas templates rendered frame by frame). Every item has its spec.json in the repo, so copy, prices and timing can be changed and re-rendered.</footer>`;
+    const setG = (g) => {
+      document.querySelectorAll('.chip').forEach((c) => c.setAttribute('aria-pressed', String(c.dataset.g === g)));
+      document.querySelectorAll('.clip').forEach((c) => { c.hidden = !(g === 'all' || c.dataset.group === g); });
+      try { localStorage.setItem('pack-filter', g); } catch (e) {}
+    };
+    document.querySelectorAll('.chip').forEach((c) => c.addEventListener('click', () => setG(c.dataset.g)));
+    let g0 = 'all'; try { g0 = localStorage.getItem('pack-filter') || 'all'; } catch (e) {}
+    setG(G.some(([g]) => g === g0) ? g0 : 'all');
+    if (matchMedia('(hover: hover)').matches) document.querySelectorAll('.frame[data-hover]').forEach((f) => {
+      f.addEventListener('pointerenter', () => toggle(f, true)); f.addEventListener('pointerleave', () => toggle(f, false));
+    });
+    document.querySelectorAll('.frame[data-hover]').forEach((f) => f.addEventListener('keydown', (e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); toggle(f); } }));
+  }
+
+  if (D.kind === 'ads') {
+    const n = D.ads.length;
+    app.innerHTML = `
+      <header class="top">
+        <div class="eyebrow">Syrus Digital · spec ads for review</div>
+        <h1>Ad <em>Cuts</em></h1>
+        <p class="lede">${n} finished 9:16 ads cut from three clients' own footage, on their approved scripts. Voiceover ads use an AI voice; Twin Pines ads use their reps' real on-camera audio. Each needs the client checks listed under it before it runs.</p>
+        <div class="facts"><span><b>${n}</b> ads</span><span><b>${D.clients.length}</b> clients</span><span>${link('pack', 'Motion pack')}</span></div>
+      </header>
+      ${D.update ? `<div class="note upd"><h4>${esc(D.update.title)}</h4><ul>${D.update.items.map((x) => `<li>${esc(x)}</li>`).join('')}</ul></div>` : ''}
+      <p class="dlnote">Downloads work when this page is open in claude.ai.</p>
+      ${D.clients.map((c) => `
+        <section class="client">
+          <h2>${esc(c.name)}</h2><p class="sub">${esc(c.about)}</p>
+          <div class="ads">${D.ads.filter((a) => a.client === c.id).map((a) => `
+            <article class="ad">
+              <div class="frame"><video controls playsinline preload="none" poster="${esc(a.poster)}" src="${esc(a.file)}"></video><span class="slate">${esc(a.tc)}</span></div>
+              <h3>${esc(a.label)}</h3>
+              <div class="meta">${esc(a.script)} · ${a.dur}s · ${a.mb} MB</div>
+              <p class="flow">${esc(a.flow)}</p>
+              ${a.confirm && a.confirm.length ? `<div class="confirm"><b>Confirm before launch</b><ul>${a.confirm.map((x) => `<li>${esc(x)}</li>`).join('')}</ul></div>` : ''}
+              <div class="dl">${saveBtns([{ label: 'Download MP4', path: a.file, name: a.name }])}</div>
+            </article>`).join('')}</div>
+        </section>`).join('')}
+      <footer>Cut with the Syrus ad compiler: client footage + motion templates + captions + original music, loudness-normalized for Meta. Every ad has its ad.json timeline in the repo, so lines, shots and graphics can be changed and re-cut.</footer>`;
+  }
+
+  if (D.kind === 'house') {
+    const n = D.ads.length, H = D.house || {};
+    const sc = (r) => r ? `<div class="score"><span><b>${r.wpm}</b> wpm</span><span>music <b>${r.floor}</b> dB</span><span><b>${r.sfx}</b> sfx</span><span><b>${r.shot}s</b> avg shot</span><span><b>${r.lufs}</b> LUFS</span></div>` : '';
+    const ready = D.clients.filter((c) => D.ads.some((a) => a.client === c.id)), waiting = D.clients.filter((c) => !D.ads.some((a) => a.client === c.id));
+    app.innerHTML = `
+      <header class="top">
+        <div class="eyebrow">Syrus Digital · house-style ads</div>
+        <h1>House <em>Style</em></h1>
+        <p class="lede">I measured ${H.n || 21} of our own winning ads for voice, music, sound effects, text and cutting, then rebuilt our pipeline to match. These are ${n} ads in that style: two per client, plus a third all-out cut built for retention. Each runs its word-for-word winning or approved script, voiced by ElevenLabs "Michael", over a music bed lifted from our own winners. Every ad is scored with the same meter as the winners.</p>
+        <div class="facts"><span><b>${n}</b> ads ready</span><span><b>${ready.length}</b> clients</span><span>house median: <b>${H.wpm}</b> wpm · music <b>${H.floor}</b> dB under voice · <b>${H.sfx}</b> sfx · <b>${H.shot}s</b> shots · <b>${H.lufs}</b> LUFS</span></div>
+      </header>
+      ${D.update ? `<div class="note upd"><h4>${esc(D.update.title)}</h4><ul>${D.update.items.map((x) => `<li>${esc(x)}</li>`).join('')}</ul></div>` : ''}
+      <p class="dlnote">Downloads work when this page is open in claude.ai.</p>
+      ${ready.map((c) => `
+        <section class="client">
+          <h2>${esc(c.name)}</h2><p class="sub">${esc(c.about)}</p>
+          <div class="ads">${D.ads.filter((a) => a.client === c.id).map((a) => `
+            <article class="ad">
+              <div class="frame"><video controls playsinline preload="none" poster="${esc(a.poster)}" src="${esc(a.file)}"></video><span class="slate">${esc(a.tc)}</span></div>
+              <h3>${a.tag ? `<span class="tag">${esc(a.tag)}</span>` : ''}${esc(a.label)}</h3>
+              <div class="meta">${esc(a.script)} · ${a.dur}s · ${a.mb} MB${a.music ? ` · music: ${esc(a.music)}` : ''}</div>
+              ${sc(a.score)}
+              <p class="flow">${esc(a.flow)}</p>
+              ${a.confirm && a.confirm.length ? `<div class="confirm"><b>Confirm before launch</b><ul>${a.confirm.map((x) => `<li>${esc(x)}</li>`).join('')}</ul></div>` : ''}
+              <div class="dl">${saveBtns([{ label: 'Download MP4', path: a.file, name: a.name }])}</div>
+            </article>`).join('')}</div>
+        </section>`).join('')}
+      ${waiting.map((c) => `<section class="client"><h2>${esc(c.name)}</h2><div class="note pending"><h4>Waiting on footage</h4><p>${esc(c.about)}</p></div></section>`).join('')}
+      <section class="client">
+        <h2>Gap list: our first 9 ads vs the house</h2>
+        <p class="sub">What our Elite Craft, Work Horse and Twin Pines cuts did differently from the ${H.n || 21} winners, and how the new pipeline fixes each point.</p>
+        <div class="table gap"><table><thead><tr><th>#</th><th>What</th><th>Our 9 ads</th><th>House winners</th><th>Fixed by</th></tr></thead><tbody>
+          ${D.gap.map((g) => `<tr><td>${g.n}</td><td class="what">${esc(g.what)}</td><td>${esc(g.ours.replace(/\*\*/g, ''))}</td><td>${esc(g.house.replace(/\*\*/g, ''))}</td><td>${esc(g.fix)}</td></tr>`).join('')}
+        </tbody></table></div>
+      </section>
+      ${D.beds && D.beds.length ? `<section class="client"><h2>Music beds</h2><p class="sub">Lifted from our own winning ads: the voice is removed, the dips it left are evened out, and each bed loops on the bar with no whooshes from the original edit.</p>
+        <div class="aud">${D.beds.map((b) => `<div class="note"><h4>${esc(b.name)}</h4><p>From ${esc(b.from)}. Used on ${esc(b.used)}.</p><audio controls preload="none" src="${esc(b.file)}"></audio></div>`).join('')}</div></section>` : ''}
+      ${D.audition && D.audition.length ? `<section class="client"><h2>Voice audition</h2><p class="sub">File 0 is the real AMC V4 voice. 1 is Michael, the voice used on these ads. 2 and 3 are the alternates. 4 and 5 are the voice fix: the same 14 seconds of Vistaguard V6, as ElevenLabs delivered it (boxy) and after the EQ matched to the winners' voice.</p>
+        <div class="aud">${D.audition.map((x) => `<div class="note"><h4>${esc(x.name.replace(/\.mp3$/, '').replace(/-/g, ' '))}</h4><audio controls preload="none" src="${esc(x.file)}"></audio></div>`).join('')}</div></section>` : ''}
+      <footer>Built with the Syrus ad compiler: word-timed shot plans (tools/house_build.py), centred kinetic type, real music beds and ElevenLabs voice, scored with tools/study_ad.py. Each ad's ad.json is in the repo, so a line, shot or graphic can be changed and the ad re-cut.</footer>`;
+  }
+
+  if (D.kind === 'masters') {
+    app.innerHTML = `
+      <header class="top">
+        <div class="eyebrow">Syrus Digital · editor library</div>
+        <h1>Motion <em>Masters</em></h1>
+        <p class="lede">Lossless transparent masters (PNG-in-MOV with alpha, 1080×1920, 30 fps) for Premiere, After Effects and Final Cut. Each download is a .zip holding one .mov. Previews and notes are on the ${link('pack', 'motion pack page')}.</p>
+      </header>
+      ${D.update ? `<div class="note upd"><h4>${esc(D.update.title)}</h4><ul>${D.update.items.map((x) => `<li>${esc(x)}</li>`).join('')}</ul></div>` : ''}
+      <p class="dlnote">Downloads work when this page is open in claude.ai.</p>
+      <div class="table"><table><thead><tr><th>#</th><th>Item</th><th>Size</th><th></th></tr></thead><tbody>
+        ${D.items.map((m) => `<tr><td class="num">${esc(m.id.split('-')[0])}</td><td>${esc(m.title)}</td><td class="num">${m.mb} MB</td><td><button class="btn save primary" data-path="${esc(m.path)}" data-name="${esc(m.name)}">Download .zip</button></td></tr>`).join('')}
+      </tbody></table></div>
+      ${D.big.length ? `<h2>Too large for this page</h2><p class="sub">These masters are over the 15 MB file limit here. Use their WebM from the pack page, or ask for the .mov to be delivered another way.</p>
+      <div class="table"><table><thead><tr><th>#</th><th>Item</th><th>.mov size</th></tr></thead><tbody>${D.big.map((m) => `<tr><td class="num">${esc(m.id.split('-')[0])}</td><td>${esc(m.title)}</td><td class="num">${m.mb} MB</td></tr>`).join('')}</tbody></table></div>` : ''}
+      <footer>Premiere: import the .mov and it keeps its transparency. CapCut: the WebM on the pack page is lighter.</footer>`;
+  }
+})();
+</script>

@@ -1,0 +1,214 @@
+#!/usr/bin/env python3
+"""Syrus ad compiler: ad.json -> a finished 9:16 ad (footage + graphics + captions + VO + music).
+
+usage: python3 tools/cut.py <ad-dir> [--force-vo] [--stills]
+<ad-dir>/ad.json:
+{
+  "title": "LHR F1", "brand": {...gfx brand overrides...},
+  "vo": { "lines": [ {"id": "hook", "text": "...", "after": 0.25}, ... ], "voice": "am_michael", "speed": 1.1 },
+  "music": { "bpm": 104, "key": "D", "mood": "warm", "db": -18, "stop": ["word:only", "word:only+0.6"] },
+  "tail": 1.2,
+  "shots": [ { "src": "media/a.mp4", "in": 2.0, "len": 2.2 | "until": "<anchor>", "fit": "cover"|"blur",
+               "fx": 0.5, "fy": 0.5, "zoom": [1.0, 1.08], "speed": 1.0 }, ... ],   # photos (.jpg/.png) get Ken Burns from "zoom"
+  "gfx": [ { "tpl": "priceShock", "at": "<anchor>", "dur": 4.5, "cfg": {...}, "hide": true, "sfx": ["whoosh", ["hit", 2.75]] }, ... ],
+  "captions": { "y": 1240, "em": ["free"] }   # or { "style": "kinetic", "hookEnd": "line:hook.end", "em": [...], "places": [...] }
+}
+Music: { "file": "../music/bed.wav", "db": -11, "end": "end" } plays a real track (looped/trimmed, faded at "end");
+without "file" a bed is synthesized. A shot with "whip": true enters on a zoom-blur + whoosh (the house transition);
+"punch": 0.1 lands the shot pushed in 10% and settles it in ~0.2 s (an impact cut), "flash": true pops it in from white.
+Anchors: number | "word:<w>" (first occurrence) | "word:<w>#2" | "line:<id>" (its start) | "line:<id>.end" | "end";
+any anchor may carry "+0.4" / "-0.2". Shots run back to back; the last shot stretches to the end.
+Outputs <ad-dir>/out/<slug>.mp4 and out/sheet.jpg (1 frame/2s contact sheet).
+"""
+import json, os, re, subprocess, sys, shutil, hashlib
+
+HERE = os.path.dirname(os.path.abspath(__file__)); ROOT = os.path.dirname(HERE)
+AD = os.path.abspath(sys.argv[1]); A = json.load(open(os.path.join(AD, 'ad.json')))
+BUILD = os.path.join(AD, 'build'); OUT = os.path.join(AD, 'out'); os.makedirs(BUILD, exist_ok=True); os.makedirs(OUT, exist_ok=True)
+FPS = 30
+def sh(cmd, **kw):
+    r = subprocess.run(cmd, **kw)
+    if r.returncode: sys.exit(f'FAILED: {" ".join(map(str, cmd))[:400]}')
+def ff(*args): sh(['ffmpeg', '-y', '-hide_banner', '-loglevel', 'error', *map(str, args)])
+
+# ---- 1. voiceover: synthesized from A['vo'] (AI/VO ads), or the speaker's own audio from A['aroll'] (on-camera ads)
+vo_dir = os.path.join(BUILD, 'vo'); os.makedirs(vo_dir, exist_ok=True)
+AROLL = A.get('aroll')
+if AROLL:
+    # each A-roll piece: { src, in, out, words: 'media/x.mp4.words.json' } — their real voice is the clock
+    words, lines, parts, t = [], [], [], float(A.get('lead', 0.0))
+    for k, r in enumerate(AROLL):
+        src = os.path.join(AD, r['src'])
+        # whole frames, and exactly that much audio: a piece's video and audio must be the same length, or every join
+        # shifts the picture against the voice (the concat keeps audio gapless) and lip sync drifts through the ad
+        nfr_a = max(1, round((float(r['out']) - float(r['in'])) * FPS)); d = nfr_a / FPS
+        seg = os.path.join(BUILD, f'aroll{k:02d}.mp4'); parts.append(seg)
+        fx, fy, z = r.get('fx', 0.5), r.get('fy', 0.4), r.get('zoom', 1.0)
+        vf = (f"scale=1080*{z}:1920*{z}:force_original_aspect_ratio=increase,crop=1080:1920:(iw-1080)*{fx}:(ih-1920)*{fy},fps=30,"
+              f"{r.get('grade', 'eq=contrast=1.05:saturation=1.08')},format=yuv420p")
+        # 8 ms fades at both edges: a cut through wind rumble is a step in the waveform, which clicks at the join
+        ff('-ss', r['in'], '-t', d + 0.1, '-i', src, '-vf', vf, '-af', f'aresample=48000,aformat=channel_layouts=mono,apad,atrim=end_sample={nfr_a * 48000 // FPS},'
+           f'afade=t=in:d=0.008,afade=t=out:st={d - 0.008:.4f}:d=0.008',
+           '-frames:v', nfr_a, '-c:v', 'libx264', '-crf', 17, '-preset', 'veryfast', '-c:a', 'pcm_s16le', seg.replace('.mp4', '.mov'))
+        os.replace(seg.replace('.mp4', '.mov'), seg)
+        W_ = json.load(open(os.path.join(AD, r['words']))) if r.get('words') else {'words': []}
+        for w in (W_['words'] if isinstance(W_, dict) else W_):
+            if float(r['in']) - 0.05 <= w['t0'] < float(r['in']) + d:
+                words.append({'w': w['w'], 't0': round(t + w['t0'] - float(r['in']), 3), 't1': round(t + w['t1'] - float(r['in']), 3)})
+        lines.append({'id': r.get('id', f'a{k}'), 'text': r.get('text', ''), 't0': round(t, 3), 't1': round(t + d, 3)})
+        t += d
+    lst0 = os.path.join(BUILD, 'aroll.txt'); open(lst0, 'w').write(''.join(f"file '{p}'\n" for p in parts))
+    acat = os.path.join(BUILD, 'aroll.mp4'); ff('-f', 'concat', '-safe', 0, '-i', lst0, '-c:v', 'copy', '-c:a', 'pcm_s16le', acat.replace('.mp4', '.mov')); os.replace(acat.replace('.mp4', '.mov'), acat)
+    # clean the speech: rumble cut, gentle denoise and compression, then a light level match
+    ff('-i', acat, '-vn', '-af', 'highpass=f=80,afftdn=nf=-28,acompressor=threshold=-20dB:ratio=3:attack=8:release=120,loudnorm=I=-16:TP=-2', '-ar', 48000, '-ac', 1, os.path.join(vo_dir, 'vo.wav'))
+    VO = {'duration': round(t, 3), 'lines': lines, 'words': words}
+    json.dump(VO, open(os.path.join(vo_dir, 'vo.json'), 'w'), indent=1)
+    V = {}
+else:
+  V = A['vo']; vkey = hashlib.sha1(json.dumps(V, sort_keys=True).encode()).hexdigest()[:12]
+  if '--force-vo' in sys.argv or not os.path.exists(os.path.join(vo_dir, vkey)):
+    json.dump({'lead': V.get('lead', 0.15), 'tail': V.get('vo_tail', 0.3), 'lines': V['lines'],
+               **{k: V[k] for k in ('engine', 'tighten', 'voice_id', 'voice_settings', 'model') if k in V}}, open(os.path.join(vo_dir, 'script.json'), 'w'))
+    sh([sys.executable, os.path.join(HERE, 'vo.py'), os.path.join(vo_dir, 'script.json'), vo_dir, '--voice', V.get('voice', 'am_michael'), '--speed', str(V.get('speed', 1.1))], stderr=subprocess.DEVNULL)
+    open(os.path.join(vo_dir, vkey), 'w').close()
+  VO = json.load(open(os.path.join(vo_dir, 'vo.json')))
+DUR = round(VO['duration'] + float(A.get('tail', 0.0 if AROLL else 1.2)), 3)
+
+norm = lambda s: re.sub(r'[^a-z0-9$]', '', s.lower())
+def anchor(a):
+    if isinstance(a, (int, float)): return float(a)
+    m = re.match(r'^(.*?)([+-]\d+(\.\d+)?)?$', a.strip()); base, off = m.group(1), float(m.group(2) or 0)
+    if base == 'end': return DUR + off
+    if base.startswith('line:'):
+        lid = base[5:]; end = lid.endswith('.end'); lid = lid[:-4] if end else lid
+        ln = next(l for l in VO['lines'] if l['id'] == lid); return (ln['t1'] if end else ln['t0']) + off
+    if base.startswith('word:'):
+        w, _, n = base[5:].partition('#'); n = int(n or 1); hits = [x for x in VO['words'] if norm(x['w']).startswith(norm(w))]
+        if len(hits) < n: sys.exit(f'anchor not found: {a} (words: {" ".join(x["w"] for x in VO["words"])[:300]})')
+        return hits[n - 1]['t0'] + off
+    return float(base) + off
+
+# ---- 2. footage: one segment per shot, 1080x1920 @ 30fps
+# (on-camera ads: shots carry "at" anchors and become cutaways over the A-roll; the A-roll audio keeps running)
+shots = A.get('shots', []); t = 0.0; segs = []
+if AROLL:
+    for s_ in shots:
+        s_['_at'] = anchor(s_['at']) if 'at' in s_ else None
+for i, s in enumerate(shots):
+    start = s['_at'] if AROLL else t
+    end = (start + float(s['len'])) if AROLL else (DUR if i == len(shots) - 1 else (anchor(s['until']) if 'until' in s else t + float(s['len'])))
+    ln = max(0.2, round(end - start, 3)); t = start + ln
+    src = os.path.join(AD, s['src']); out = os.path.join(BUILD, f'seg{i:02d}.mp4'); segs.append(out)
+    is_img = src.lower().endswith(('.jpg', '.jpeg', '.png', '.webp', '.heic'))
+    fx, fy = s.get('fx', 0.5), s.get('fy', 0.5); z0, z1 = s.get('zoom', [1.0, 1.1] if is_img else [1.0, 1.0])
+    grade = s.get('grade', 'eq=contrast=1.05:saturation=1.1:brightness=0.01')
+    if s.get('flash'): grade = "eq=brightness='0.45*max(0,1-t/0.12)':eval=frame," + grade   # a white pop on the cut
+    pz = float(s.get('punch', 0))   # impact zoom: the shot lands pushed in by pz and settles over ~0.2 s
+    pk = f"+{pz}*exp(-{{n}}/4)" if pz else ''
+    nfr = int(round(ln * FPS))
+    # cache: a segment is only re-encoded when its source or settings change
+    skey = hashlib.sha1(json.dumps([s, start, ln, os.path.getmtime(src)], sort_keys=True, default=str).encode()).hexdigest()[:12]
+    stamp = out + '.' + skey
+    if os.path.exists(out) and os.path.exists(stamp):
+        s['_t0'], s['_len'] = start, ln; continue
+    for old in [f for f in os.listdir(BUILD) if f.startswith(f'seg{i:02d}.mp4.')]: os.remove(os.path.join(BUILD, old))
+    if is_img:
+        # Ken Burns: upscale 2x first so zoompan's integer steps don't jitter; zoom z0->z1, centred on (fx, fy)
+        zexpr = f"{z0}+({z1}-{z0})*on/{max(1, nfr - 1)}" + pk.format(n='on')
+        vf = (f"scale=2160:3840:force_original_aspect_ratio=increase,crop=2160:3840:(iw-2160)*{fx}:(ih-3840)*{fy},"
+              f"zoompan=z='{zexpr}':x='(iw-iw/zoom)*{fx}':y='(ih-ih/zoom)*{fy}':d={nfr}:s=1080x1920:fps={FPS},{grade},format=yuv420p")
+        ff('-loop', 1, '-i', src, '-vf', vf, '-frames:v', nfr, '-an', '-c:v', 'libx264', '-crf', 17, '-preset', 'veryfast', out)
+    else:
+        sp = float(s.get('speed', 1.0)); need = ln * sp
+        if s.get('fit') == 'blur':
+            vf = (f"setpts=PTS/{sp},split[a][b];[a]scale=1080:1920:force_original_aspect_ratio=increase,crop=1080:1920,boxblur=24:2,eq=brightness=-0.12[bg];"
+                  f"[b]scale=1080:-2[fg];[bg][fg]overlay=(W-w)/2:(H-h)/2,fps={FPS},{grade},format=yuv420p")
+        else:
+            # a slow push on video: zoompan one output frame per input frame (d=1), on a 2x canvas so the steps don't jitter
+            vf = (f"setpts=PTS/{sp},scale=1080:1920:force_original_aspect_ratio=increase:flags=lanczos,crop=1080:1920:(iw-1080)*{fx}:(ih-1920)*{fy},fps={FPS},"
+                  + (f"scale=2160:3840,zoompan=z='{z0}+({z1}-{z0})*in/{max(1, nfr - 1)}{pk.format(n='in')}':d=1:x='(iw-iw/zoom)*{fx}':y='(ih-ih/zoom)*{fy}':s=1080x1920:fps={FPS},"
+                     if z1 != z0 or pz else '')
+                  + f"{grade},format=yuv420p")
+        ff('-ss', s.get('in', 0), '-t', need + 0.2, '-i', src, '-filter_complex' if s.get('fit') == 'blur' else '-vf', vf, '-frames:v', nfr, '-an', '-c:v', 'libx264', '-crf', 17, '-preset', 'veryfast', out)
+    s['_t0'], s['_len'] = start, ln
+    open(stamp, 'w').close()
+base = os.path.join(BUILD, 'base.mp4')
+if AROLL:
+    # A-roll video with each cutaway laid over its window (pts shifted to its start)
+    ins, fc, last = ['-i', acat], [], '[0:v]'
+    if DUR > VO['duration']:   # "tail": hold the last A-roll frame so the end card / a last cutaway has room
+        fc.append(f"[0:v]tpad=stop_mode=clone:stop_duration={DUR - VO['duration'] + 0.1:.3f}[a0]"); last = '[a0]'
+    for k, (p, s_) in enumerate(zip(segs, shots)):
+        ins += ['-i', p]
+        fc.append(f"[{k+1}:v]setpts=PTS-STARTPTS+{s_['_t0']}/TB[c{k}];{last}[c{k}]overlay=enable='between(t,{s_['_t0']},{s_['_t0'] + s_['_len'] - 0.001})':eof_action=pass[o{k}]")
+        last = f'[o{k}]'
+    if fc: ff(*ins, '-filter_complex', ';'.join(fc), '-map', last, '-an', '-c:v', 'libx264', '-crf', 17, '-preset', 'veryfast', '-t', DUR, base)
+    else: ff('-i', acat, '-an', '-c:v', 'copy', base)
+else:
+    lst = os.path.join(BUILD, 'segs.txt'); open(lst, 'w').write(''.join(f"file '{p}'\n" for p in segs))
+    ff('-f', 'concat', '-safe', 0, '-i', lst, '-c', 'copy', base)
+# whips (the house transition): a shot with "whip": true enters on a zoom-blur — a heavy blur that resolves over ~0.2 s
+# around the cut, with a punch of scale — and gets a whoosh in the mix
+WHIPS = [round(s_['_t0'], 3) for s_ in shots if s_.get('whip')]
+if WHIPS:
+    win = '+'.join(f"between(t,{w - 0.07:.3f},{w + 0.17:.3f})" for w in WHIPS)
+    sig = '+'.join(f"between(t,{w - 0.07:.3f},{w + 0.17:.3f})*(1-abs(t-{w:.3f})/0.17)" for w in WHIPS)
+    wb = os.path.join(BUILD, 'base_whip.mp4')
+    # scale punch: zoom 1 -> 1.12 -> 1 across the window; blur via a small-scale round trip (cheap, strong, smooth)
+    ff('-i', base, '-filter_complex',
+       f"[0:v]split[a][b];[b]scale=270:480,gblur=sigma=6,scale=1080:1920[bl];[a][bl]overlay=enable='{win}'[m];"
+       f"[m]scale=w='1080*(1+0.12*({sig}))':h='1920*(1+0.12*({sig}))':eval=frame,crop=1080:1920,format=yuv420p[v]",
+       '-map', '[v]', '-c:v', 'libx264', '-crf', 17, '-preset', 'veryfast', wb)
+    os.replace(wb, base)
+
+# ---- 3. graphics track: captions + items, one transparent pass
+items, hide, whoosh, hits, ticks = [], [], [], [], []
+for g in A.get('gfx', []):
+    at = anchor(g['at']); it = {'tpl': g['tpl'], 'at': round(at, 3), 'cfg': dict(g.get('cfg', {}))}
+    if 'until' in g: g = {**g, 'dur': round(anchor(g['until']) - at, 3)}   # "until": an anchor instead of a fixed length
+    if 'dur' in g: it['dur'] = g['dur']
+    if g.get('fit'): it['speed'] = round(float(g['fit']) / it['dur'], 4)   # "fit": the scene's natural length, played over dur
+    bt = it['cfg'].get('beats')   # beats may be VO anchors ("line:b4", "word:labor"): converted to seconds into the item
+    if isinstance(bt, list): it['cfg']['beats'] = [round(anchor(b) - at, 3) if isinstance(b, str) else b for b in bt]
+    elif isinstance(bt, dict): it['cfg']['beats'] = {k: (round(anchor(v) - at, 3) if isinstance(v, str) else v) for k, v in bt.items()}
+    for k in [k for k, v in it['cfg'].items() if k.endswith('At') and isinstance(v, str)]: it['cfg'][k] = round(anchor(it['cfg'][k]) - at, 3)
+    if isinstance(it['cfg'].get('markups'), list): it['cfg']['markups'] = [round(anchor(b) - at, 3) if isinstance(b, str) else b for b in it['cfg']['markups']]
+    items.append(it)
+    d = g.get('dur', g.get('cfg', {}).get('dur', 3.0))
+    if g.get('hide', True): hide.append([round(at, 3), round(at + d, 3)])
+    for e in g.get('sfx', ['whoosh']):
+        kind, off = (e, 0.0) if isinstance(e, str) else (e[0], float(e[1]))
+        {'whoosh': whoosh, 'hit': hits, 'tick': ticks}[kind].append(round(at + off, 3))
+whoosh += [round(w - 0.05, 3) for w in (WHIPS if not AROLL else [])]
+cap = A.get('captions', {})
+spec = {'fps': FPS, 'duration': DUR, 'brand': A.get('brand', {}), 'images': {},
+        'items': ([{'tpl': 'kinetic' if cap.get('style') == 'kinetic' else 'captions', 'at': 0, 'dur': DUR,
+                    'cfg': {**{k: v for k, v in cap.items() if k not in ('style', 'on')}, 'words': VO['words'], 'hide': hide + [[round(anchor(a), 3), round(anchor(b), 3)] for a, b in cap.get('hide', [])],
+                            **({'hookEnd': anchor(cap['hookEnd'])} if 'hookEnd' in cap else {})}}] if cap.get('on', True) else []) + items}
+for k, p in A.get('images', {}).items():   # logos / photos the graphics draw, embedded
+    import base64, mimetypes
+    spec['images'][k] = f"data:{mimetypes.guess_type(p)[0] or 'image/png'};base64," + base64.b64encode(open(os.path.join(AD, p), 'rb').read()).decode()
+sp = os.path.join(BUILD, 'gfx.json'); json.dump(spec, open(sp, 'w'))
+trk = os.path.join(BUILD, 'track')
+sh(['node', os.path.join(HERE, 'gfx.mjs'), sp, trk, '--mode', 'track'])
+
+# ---- 4. audio
+mu = A.get('music', {})
+plan = {'music_file': os.path.join(AD, mu['file']) if mu.get('file') else None, 'music_end': anchor(mu['end']) if mu.get('end') else None, 'music_in': mu.get('in', 0),
+        'duration': DUR, 'bpm': mu.get('bpm', 104), 'key': mu.get('key', 'D'), 'mood': mu.get('mood', 'warm'), 'music_db': mu.get('db', -18),
+        'duck_db': mu.get('duck', -9), 'duck_mid_db': mu.get('duck_mid', 0), 'vo': os.path.join(vo_dir, 'vo.wav'), 'whoosh': whoosh, 'hits': hits, 'ticks': ticks,
+        'riser': [anchor(x) for x in mu['riser']] if mu.get('riser') else None, 'stop': [anchor(x) for x in mu['stop']] if mu.get('stop') else None}
+json.dump(plan, open(os.path.join(BUILD, 'audio.json'), 'w'))
+mix = os.path.join(BUILD, 'mix.wav'); sh([sys.executable, os.path.join(HERE, 'audio.py'), os.path.join(BUILD, 'audio.json'), mix])
+
+# ---- 5. final: footage + graphics + audio, loudness -14 LUFS
+slug = re.sub(r'[^A-Za-z0-9]+', '-', A.get('title', os.path.basename(AD))).strip('-')
+final = os.path.join(OUT, slug + '.mp4')
+ff('-i', base, '-framerate', FPS, '-i', os.path.join(trk + '-frames', 'f%05d.png'), '-i', mix,
+   '-filter_complex', '[0:v][1:v]overlay=format=auto,format=yuv420p[v];[2:a]loudnorm=I=-14:TP=-1.0:LRA=11[a]',
+   '-map', '[v]', '-map', '[a]', '-c:v', 'libx264', '-crf', 19, '-preset', 'medium', '-c:a', 'aac', '-b:a', '192k', '-ar', 48000,
+   '-movflags', '+faststart', '-t', DUR, final)
+shutil.rmtree(trk + '-frames', ignore_errors=True)
+ff('-i', final, '-vf', 'fps=0.5,scale=270:-2,tile=8x3:padding=6:color=0x0b1424', '-frames:v', 1, '-q:v', 3, os.path.join(OUT, 'sheet.jpg'))
+json.dump({'duration': DUR, 'shots': [{k: v for k, v in s.items()} for s in shots], 'gfx': items, 'lines': VO['lines']}, open(os.path.join(OUT, 'timeline.json'), 'w'), indent=1)
+print(f'ad -> {final} ({DUR:.1f}s)')

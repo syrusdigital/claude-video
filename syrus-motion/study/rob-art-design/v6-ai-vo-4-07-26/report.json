@@ -1,0 +1,73 @@
+{
+ "label": "Rob-Art Design | V6 | AI/VO | 4.07.26 | $629.27, 14 leads, $44.95 CPL",
+ "file": "/home/user/claude-video/syrus-motion/study/rob-art-design/v6-ai-vo-4-07-26/video.mp4",
+ "duration": 78.55,
+ "size": "360x640",
+ "voice": {
+  "words": 273,
+  "wpm": 209.6,
+  "pitch_hz": 126.0,
+  "voice_guess": "male",
+  "first_word_at": 0.0,
+  "first_money_at": 46.72,
+  "first_money_word": "$23",
+  "hook_5s": "Last month, a homeowner in New Jersey called us. She said she'd been wanting to redo her kitchen for three years.",
+  "text": "Last month, a homeowner in New Jersey called us. She said she'd been wanting to redo her kitchen for three years. But every time she got close to pulling the trigger, something stopped her. Either the quote came back way higher than she expected, or the contractor couldn't actually show her what her remodeled kitchen was going to look like beforehand. Or she'd heard too many horror stories about remodels that went completely sideways. So she just kept waiting. She called us almost expecting to be disappointed again. We invited her in for a free consultation. No commitment, just a conversation. We listened to everything she wanted. The layout, the cabinets, the countertops, how she actually uses her kitchen every day. Then we built out real design drawings showing her exactly what her new kitchen would look like. Her layout, her materials, her finishes. Then we walked her through the full estimate. Honest, transparent, built around her budget. We quoted her $23 ,795. We remodeled her kitchen just like she wanted under $30 ,000 with high -quality materials. She told us afterwards that she couldn't believe she'd waited three years. Kitchen was done in weeks, and it looked exactly like what we showed her on day one. If that sounds like a situation you're in right now, you've been thinking about it. You're just not sure where to start or whether the price is going to make sense. Click get quote below to book your free consultation. We'll show you exactly what your new kitchen could look like and give you a completely honest estimate built around your budget. No pressure, just answers."
+ },
+ "music": {
+  "present": true,
+  "floor_rel_db": -9.5,
+  "after_vo_db": -44.3,
+  "bed_db_rel_voice": -6.6,
+  "voice_dbfs": -24.2,
+  "bed_dbfs": -30.8,
+  "tempo_bpm_rough": 85.7,
+  "tempo_confidence": 0.06
+ },
+ "sfx": {
+  "hits": [
+   68.83,
+   77.77
+  ],
+  "hit_count": 2,
+  "hits_per_min": 1.5,
+  "hits_on_cuts": 0,
+  "swells": []
+ },
+ "picture": {
+  "cuts": 25,
+  "cut_times": [
+   2.27,
+   5.23,
+   7.4,
+   8.67,
+   11.47,
+   16.13,
+   18.57,
+   20.13,
+   24.2,
+   26.3,
+   28.23,
+   29.9,
+   34.6,
+   38.73,
+   43.23,
+   49.5,
+   51.57,
+   54.7,
+   57.93,
+   59.27,
+   61.87,
+   64.0,
+   68.43,
+   71.37,
+   73.97
+  ],
+  "avg_shot_s": 3.02,
+  "median_shot_s": 2.7
+ },
+ "loudness": {
+  "integrated_lufs": -24.1,
+  "lra": 1.9
+ }
+}

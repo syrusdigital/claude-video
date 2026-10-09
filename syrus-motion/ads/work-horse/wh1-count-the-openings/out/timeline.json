@@ -1,0 +1,665 @@
+{
+ "duration": 79.592,
+ "shots": [
+  {
+   "src": "../media/previous-work/IMG_3554.JPG",
+   "until": "line:b1",
+   "zoom": [
+    1.0,
+    1.06
+   ],
+   "fx": 0.525,
+   "fy": 0.5,
+   "_t0": 0.0,
+   "_len": 6.974
+  },
+  {
+   "src": "../media/client/IMG_2610.jpg",
+   "until": "word:actually",
+   "zoom": [
+    1.04,
+    1.14
+   ],
+   "fx": 0.5,
+   "fy": 0.35,
+   "_t0": 6.974,
+   "_len": 2.72
+  },
+  {
+   "src": "../media/client/IMG_2606.jpg",
+   "until": "word:Work",
+   "zoom": [
+    1.0,
+    1.1
+   ],
+   "fx": 0.6,
+   "fy": 0.45,
+   "_t0": 9.694,
+   "_len": 2.14
+  },
+  {
+   "src": "../media/sept25/1650064316005776367.JPG",
+   "until": "word:we",
+   "zoom": [
+    1.12,
+    1.0
+   ],
+   "fx": 0.5,
+   "fy": 0.45,
+   "_t0": 11.834000000000001,
+   "_len": 2.02
+  },
+  {
+   "src": "../media/client/IMG_2614.jpg",
+   "until": "line:b2",
+   "zoom": [
+    1.0,
+    1.12
+   ],
+   "fx": 0.42,
+   "fy": 0.3,
+   "_t0": 13.854000000000001,
+   "_len": 3.782
+  },
+  {
+   "src": "../media/previous-work/IMG_3528.JPG",
+   "until": "word:just-0.75",
+   "zoom": [
+    1.0,
+    1.12
+   ],
+   "fx": 0.35,
+   "fy": 0.3,
+   "_t0": 17.636000000000003,
+   "_len": 2.63
+  },
+  {
+   "src": "../media/video3/8187638200705877976.JPG",
+   "until": "line:b3",
+   "zoom": [
+    1.0,
+    1.06
+   ],
+   "fx": 0.5,
+   "fy": 0.5,
+   "_t0": 20.266000000000002,
+   "_len": 5.339
+  },
+  {
+   "src": "../media/sept25/1669666799162967131.JPG",
+   "until": "word:no#3",
+   "zoom": [
+    1.0,
+    1.1
+   ],
+   "fx": 0.5,
+   "fy": 0.5,
+   "_t0": 25.605000000000004,
+   "_len": 2.56
+  },
+  {
+   "src": "../media/video3/4552406157660962095.JPG",
+   "until": "word:Your#3",
+   "zoom": [
+    1.05,
+    1.15
+   ],
+   "fx": 0.4,
+   "fy": 0.4,
+   "_t0": 28.165000000000003,
+   "_len": 1.88
+  },
+  {
+   "src": "../media/client/IMG_2608.jpg",
+   "until": "word:walk",
+   "zoom": [
+    1.0,
+    1.1
+   ],
+   "fx": 0.5,
+   "fy": 0.4,
+   "_t0": 30.045,
+   "_len": 1.74
+  },
+  {
+   "src": "../media/client/IMG_2613.jpg",
+   "until": "line:b4",
+   "zoom": [
+    1.0,
+    1.1
+   ],
+   "fx": 0.5,
+   "fy": 0.4,
+   "_t0": 31.785,
+   "_len": 1.29
+  },
+  {
+   "src": "../media/video3/1420180187363072478.JPG",
+   "until": "word:full",
+   "zoom": [
+    1.0,
+    1.1
+   ],
+   "fx": 0.5,
+   "fy": 0.6,
+   "_t0": 33.075,
+   "_len": 3.34
+  },
+  {
+   "src": "../media/sept25/att.U24-XcS6EW_yo4Huqo2zNjUN05qJhfChCUeMnicWSHk.JPG",
+   "until": "word:degreasing",
+   "zoom": [
+    1.05,
+    1.15
+   ],
+   "fx": 0.5,
+   "fy": 0.5,
+   "_t0": 36.415000000000006,
+   "_len": 1.86
+  },
+  {
+   "src": "../media/sept25/att.Z9gm4sFwD-Z8poezprEqe2K_ehVFx9-HdLjKljpGdRo.JPG",
+   "until": "word:thousands",
+   "zoom": [
+    1.0,
+    1.1
+   ],
+   "fx": 0.5,
+   "fy": 0.5,
+   "_t0": 38.275000000000006,
+   "_len": 5.94
+  },
+  {
+   "src": "../media/sept25/att.1QkqSD6XbvQwOQKuix85152K1IyRy-qnziCkJqKZino.JPG",
+   "until": "line:b5",
+   "zoom": [
+    1.0,
+    1.1
+   ],
+   "fx": 0.5,
+   "fy": 0.4,
+   "_t0": 44.215,
+   "_len": 2.509
+  },
+  {
+   "src": "../media/client/IMG_2624.jpg",
+   "until": "word:New#2-0.25",
+   "zoom": [
+    1.0,
+    1.08
+   ],
+   "fx": 0.5,
+   "fy": 0.3,
+   "_t0": 46.724000000000004,
+   "_len": 2.79
+  },
+  {
+   "src": "../media/sept25/82237169880313645.JPG",
+   "until": "word:motto-0.22",
+   "zoom": [
+    1.0,
+    1.1
+   ],
+   "fx": 0.5,
+   "fy": 0.5,
+   "_t0": 49.514,
+   "_len": 3.03
+  },
+  {
+   "src": "../media/client/IMG_3590.jpg",
+   "until": "word:you'll",
+   "zoom": [
+    1.0,
+    1.08
+   ],
+   "fx": 0.4,
+   "fy": 0.5,
+   "_t0": 52.544000000000004,
+   "_len": 4.0
+  },
+  {
+   "src": "../media/previous-work/IMG_3534.JPG",
+   "until": "word:results",
+   "zoom": [
+    1.0,
+    1.1
+   ],
+   "fx": 0.4,
+   "fy": 0.5,
+   "_t0": 56.544000000000004,
+   "_len": 1.76
+  },
+  {
+   "src": "../media/previous-work/IMG_3542.JPG",
+   "until": "line:b6",
+   "zoom": [
+    1.0,
+    1.1
+   ],
+   "fx": 0.3,
+   "fy": 0.5,
+   "_t0": 58.304,
+   "_len": 2.696
+  },
+  {
+   "src": "../media/client/IMG_2616.jpg",
+   "until": "word:So",
+   "zoom": [
+    1.0,
+    1.08
+   ],
+   "fx": 0.45,
+   "fy": 0.4,
+   "_t0": 61.0,
+   "_len": 4.34
+  },
+  {
+   "src": "../media/client/IMG_2611.jpg",
+   "until": "line:b7",
+   "zoom": [
+    1.0,
+    1.1
+   ],
+   "fx": 0.6,
+   "fy": 0.4,
+   "_t0": 65.34,
+   "_len": 3.158
+  },
+  {
+   "src": "../media/sept25/6296927871037440421.JPG",
+   "until": "word:without#2",
+   "zoom": [
+    1.0,
+    1.1
+   ],
+   "fx": 0.5,
+   "fy": 0.5,
+   "_t0": 68.498,
+   "_len": 1.88
+  },
+  {
+   "src": "../media/previous-work/IMG_3522.JPG",
+   "until": "word:this#2",
+   "zoom": [
+    1.0,
+    1.1
+   ],
+   "fx": 0.5,
+   "fy": 0.5,
+   "_t0": 70.378,
+   "_len": 1.88
+  },
+  {
+   "src": "../media/videos-sept25/4682062360508153179.MP4",
+   "in": 9.0,
+   "until": "line:cta",
+   "_t0": 72.258,
+   "_len": 2.173
+  },
+  {
+   "src": "../media/sept25/4389575807402975032.JPG",
+   "until": "end",
+   "zoom": [
+    1.0,
+    1.1
+   ],
+   "fx": 0.5,
+   "fy": 0.45,
+   "_t0": 74.431,
+   "_len": 5.161
+  }
+ ],
+ "gfx": [
+  {
+   "tpl": "whCountOpenings",
+   "at": 0.0,
+   "cfg": {
+    "fx": 0.525,
+    "fy": 0.5,
+    "zoom": [
+     1.0,
+     1.06
+    ],
+    "len": 6.974,
+    "pts": [
+     [
+      326,
+      799
+     ],
+     [
+      548,
+      707
+     ],
+     [
+      788,
+      707
+     ],
+     [
+      978,
+      809
+     ],
+     [
+      1157,
+      696
+     ],
+     [
+      302,
+      1354
+     ],
+     [
+      543,
+      1354
+     ],
+     [
+      780,
+      1354
+     ],
+     [
+      998,
+      1354
+     ],
+     [
+      1229,
+      1357
+     ],
+     [
+      302,
+      1536
+     ],
+     [
+      532,
+      1536
+     ],
+     [
+      778,
+      1536
+     ],
+     [
+      998,
+      1536
+     ],
+     [
+      1208,
+      1536
+     ]
+    ],
+    "beats": {
+     "head": 0.1,
+     "count": 2.7,
+     "step": 0.08,
+     "times": 4.0,
+     "total": 5.2
+    },
+    "kicker": "CABINET PAINTING",
+    "y": 215,
+    "pillY": 880
+   },
+   "dur": 6.9
+  },
+  {
+   "tpl": "hookText",
+   "at": 8.584,
+   "cfg": {
+    "style": "highlight",
+    "text": "CABINET PRICING THAT ACTUALLY MAKES SENSE",
+    "mark": "MAKES SENSE",
+    "y": 760
+   },
+   "dur": 2.5
+  },
+  {
+   "tpl": "hookText",
+   "at": 14.554,
+   "cfg": {
+    "style": "stack",
+    "text": "SIMPLE. PREDICTABLE. UPFRONT.",
+    "lines": [
+     "SIMPLE.",
+     "PREDICTABLE.",
+     "UPFRONT."
+    ],
+    "lineStep": 1.1,
+    "maxSize": 150,
+    "y": 1180
+   },
+   "dur": 3.05
+  },
+  {
+   "tpl": "unitCalc",
+   "at": 20.266,
+   "cfg": {
+    "kicker": "YOUR CABINET PRICE",
+    "rate": 125,
+    "rateDp": 0,
+    "unit": "openings",
+    "per": "opening",
+    "qty": 15,
+    "qtyLabel": "e.g. 15 doors & drawers",
+    "grid": {
+     "cols": 5,
+     "rows": 3
+    },
+    "beats": {
+     "rate": 0.15,
+     "qty": 0.85,
+     "total": 3.35
+    },
+    "y": 470
+   },
+   "dur": 5.2
+  },
+  {
+   "tpl": "hookText",
+   "at": 25.555,
+   "cfg": {
+    "style": "stack",
+    "text": "NO GUESSING. NO INFLATED QUOTES. NO CONFUSING BREAKDOWNS.",
+    "lines": [
+     "NO GUESSING.",
+     "NO INFLATED QUOTES.",
+     "NO CONFUSING",
+     "BREAKDOWNS."
+    ],
+    "lineStep": 1.05,
+    "maxSize": 140,
+    "y": 820
+   },
+   "dur": 4.4
+  },
+  {
+   "tpl": "checklist",
+   "at": 34.615,
+   "cfg": {
+    "kicker": "THE SPECIAL COVERS",
+    "title": "Every opening",
+    "price": "$125",
+    "y": 300,
+    "items": [
+     {
+      "icon": "demo",
+      "label": "Full prep"
+     },
+     {
+      "icon": "cleanup",
+      "label": "Sanding"
+     },
+     {
+      "icon": "fixtures",
+      "label": "Degreasing"
+     },
+     {
+      "icon": "paint-roller",
+      "label": "Priming"
+     },
+     {
+      "icon": "cabinets",
+      "label": "Premium finish"
+     }
+    ],
+    "beats": [
+     1.79,
+     2.83,
+     3.65,
+     4.51,
+     5.5
+    ]
+   },
+   "dur": 6.93
+  },
+  {
+   "tpl": "whBaStack",
+   "at": 41.555,
+   "cfg": {
+    "pairs": [
+     {
+      "b": "cabB",
+      "a": "cabA",
+      "fyB": 0.3,
+      "fxA": 0.5,
+      "fyA": 0.5,
+      "tag": "CABINETS"
+     }
+    ],
+    "each": 2.67,
+    "wipe": 0.5,
+    "wipeDur": 0.5,
+    "top": 220,
+    "ph": 720,
+    "gap": 28
+   },
+   "dur": 2.67
+  },
+  {
+   "tpl": "priceCard",
+   "at": 44.215,
+   "cfg": {
+    "kicker": "CABINET PAINTING",
+    "pre": "just",
+    "price": 125,
+    "note": "per opening"
+   },
+   "dur": 2.45
+  },
+  {
+   "tpl": "statCounter",
+   "at": 46.744,
+   "cfg": {
+    "value": 30,
+    "suffix": "+",
+    "label": "YEARS OF EXPERIENCE",
+    "y": 560,
+    "beat": 0.05,
+    "count": 1.0
+   },
+   "dur": 2.75
+  },
+  {
+   "tpl": "locationSuper",
+   "at": 49.514,
+   "cfg": {
+    "place": "NH \u00b7 MA \u00b7 ME",
+    "who": "SERVING HOMEOWNERS"
+   },
+   "dur": 3.0
+  },
+  {
+   "tpl": "hookText",
+   "at": 54.214,
+   "cfg": {
+    "style": "highlight",
+    "text": "LET OUR FAMILY TREAT YOU LIKE FAMILY",
+    "mark": "LIKE FAMILY",
+    "y": 520
+   },
+   "dur": 2.6
+  },
+  {
+   "tpl": "trustBadges",
+   "at": 61.02,
+   "cfg": {
+    "kind": "warranty",
+    "warrantyYears": 1,
+    "big": [
+     "1-YEAR CRAFTSMANSHIP",
+     "WARRANTY"
+    ],
+    "y": 330
+   },
+   "dur": 3.9
+  },
+  {
+   "tpl": "discountStamp",
+   "at": 72.258,
+   "cfg": {
+    "big": "$125",
+    "small": "PER OPENING",
+    "y": 760
+   },
+   "dur": 2.1
+  },
+  {
+   "tpl": "getQuoteEnd",
+   "at": 74.331,
+   "cfg": {
+    "line2": "Free cabinet painting estimate"
+   },
+   "dur": 5.3
+  }
+ ],
+ "lines": [
+  {
+   "id": "hook",
+   "text": "Your cabinet painting price is simple. Count the openings, and multiply by one hundred twenty-five dollars.",
+   "t0": 0.15,
+   "t1": 6.624
+  },
+  {
+   "id": "b1",
+   "text": "Homeowners are finally getting cabinet pricing that actually makes sense, because at Work Horse Pro Painting, we made the process simple, predictable, and totally upfront.",
+   "t0": 6.974,
+   "t1": 17.386
+  },
+  {
+   "id": "b2",
+   "text": "If you want to know what it will cost to repaint your cabinets, just count the openings, and multiply by one hundred twenty-five dollars.",
+   "t0": 17.636,
+   "t1": 25.305
+  },
+  {
+   "id": "b3",
+   "text": "No guessing. No inflated quotes. No confusing breakdowns. Your price is clear before we even walk in the door.",
+   "t0": 25.605,
+   "t1": 32.775
+  },
+  {
+   "id": "b4",
+   "text": "This special covers everything from start to finish, including full prep, sanding, degreasing, priming, and a premium finish that makes your cabinets look brand new, without spending thousands of dollars on replacements.",
+   "t0": 33.075,
+   "t1": 46.424
+  },
+  {
+   "id": "b5",
+   "text": "With over thirty years of experience serving homeowners in New Hampshire, Massachusetts, and Maine, and a motto that says it all, let our family treat you like family, you'll get clean, precise results you'll actually love walking into.",
+   "t0": 46.724,
+   "t1": 60.75
+  },
+  {
+   "id": "b6",
+   "text": "And every cabinet project comes with a one-year craftsmanship warranty, so your investment is protected long after we leave.",
+   "t0": 61.0,
+   "t1": 68.248
+  },
+  {
+   "id": "b7",
+   "text": "If you want a clean, modern look without a massive renovation, this is the smartest way to do it.",
+   "t0": 68.498,
+   "t1": 74.131
+  },
+  {
+   "id": "cta",
+   "text": "Tap Get Quote to book your free, fair cabinet painting estimate.",
+   "t0": 74.431,
+   "t1": 77.992
+  }
+ ]
+}

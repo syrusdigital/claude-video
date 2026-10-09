@@ -1,0 +1,352 @@
+{
+ "title": "Elite Craft - Bath - Why Pay More 9995 - Script 4",
+ "source": "Notion: Script 4 \u2013 Why Pay More? \u2014 Elite Craft",
+ "vo": {
+  "voice": "am_michael",
+  "speed": 1.12,
+  "lines": [
+   {
+    "id": "hook",
+    "text": "Why pay twenty thousand dollars for a bathroom remodel, when you can get the same stunning results for just nine thousand, nine hundred ninety-five dollars?",
+    "after": 0.35
+   },
+   {
+    "id": "b1",
+    "text": "At Elite Craft Renovations, we've helped countless Long Island homeowners transform their outdated bathrooms, without the massive price tag.",
+    "after": 0.3
+   },
+   {
+    "id": "b2",
+    "text": "From design to finish, we handle it all. On time, on budget, and with zero headaches.",
+    "after": 0.25
+   },
+   {
+    "id": "b3",
+    "text": "We prep properly, work clean, and deliver results you'll be proud to show off.",
+    "after": 0.3
+   },
+   {
+    "id": "b4",
+    "text": "And right now, you can lock in this exclusive offer for a limited time.",
+    "after": 0.3
+   },
+   {
+    "id": "cta",
+    "text": "Click Get Quote below to schedule your free estimate, and see how easy it can be to get the bathroom you've always wanted.",
+    "after": 0.1
+   }
+  ]
+ },
+ "music": {
+  "bpm": 112,
+  "key": "E",
+  "mood": "drive",
+  "db": -19,
+  "stop": [
+   "word:just-0.05",
+   "word:$9+0.1"
+  ],
+  "riser": [
+   "word:limited-1.2",
+   "word:Click"
+  ]
+ },
+ "tail": 1.2,
+ "images": {
+  "d_demo": "../media/dorothy/IMG_4219.JPG",
+  "d_tile": "../media/dorothy/IMG_0373.JPG",
+  "d_done": "../media/dorothy/WhatsApp_Image_2025-10-08_at_20.18.53_2ee65163.jpg"
+ },
+ "shots": [
+  {
+   "src": "../media/stacy/WhatsApp_Image_2025-10-12_at_19.07.30_a2aeef45.jpg",
+   "until": "word:for",
+   "zoom": [
+    1.08,
+    1.0
+   ],
+   "grade": "eq=contrast=1.05:saturation=1.1:brightness=-0.07"
+  },
+  {
+   "src": "../media/initial-video/IMG_9862.MOV",
+   "in": 0.1,
+   "until": "word:when",
+   "speed": 0.9,
+   "grade": "eq=contrast=1.05:saturation=1.1:brightness=-0.07"
+  },
+  {
+   "src": "../media/stacy/WhatsApp_Image_2025-10-12_at_19.07.30_7473dca4.jpg",
+   "until": "word:stunning",
+   "zoom": [
+    1.0,
+    1.06
+   ],
+   "grade": "eq=contrast=1.05:saturation=1.1:brightness=-0.07"
+  },
+  {
+   "src": "../media/initial-video/IMG_9859.MOV",
+   "in": 0.1,
+   "until": "word:just",
+   "grade": "eq=contrast=1.05:saturation=1.1:brightness=-0.07"
+  },
+  {
+   "src": "../media/initial-images/IMG_3252.JPEG",
+   "until": "line:b1",
+   "zoom": [
+    1.0,
+    1.1
+   ],
+   "fy": 0.15,
+   "grade": "eq=contrast=1.05:saturation=1.1:brightness=-0.07"
+  },
+  {
+   "src": "../media/dorothy/IMG_0327.MOV",
+   "in": 0.2,
+   "until": "word:countless",
+   "speed": 0.8
+  },
+  {
+   "src": "../media/initial-video/IMG_7986.MOV",
+   "in": 0.6,
+   "until": "word:transform",
+   "speed": 0.95
+  },
+  {
+   "src": "../media/dorothy/IMG_4219.JPG",
+   "until": "line:b2",
+   "zoom": [
+    1.04,
+    1.04
+   ]
+  },
+  {
+   "src": "../media/initial-video/68918107362__D54CCAE9-94B1-41DB-ACF7-BE0FEAC37E20.MOV",
+   "in": 0.1,
+   "until": "word:handle"
+  },
+  {
+   "src": "../media/dorothy/13F85D42-CEE3-4394-B1E9-08B17A03C5D5.mov",
+   "in": 0.2,
+   "until": "word:On"
+  },
+  {
+   "src": "../media/initial-images/IMG_1586.JPEG",
+   "until": "line:b3",
+   "zoom": [
+    1.0,
+    1.1
+   ],
+   "fy": 0.45
+  },
+  {
+   "src": "../media/adam/IMG_0112.MOV",
+   "in": 0.1,
+   "until": "word:work"
+  },
+  {
+   "src": "../media/adam/IMG_0113.MOV",
+   "in": 0.0,
+   "until": "word:deliver",
+   "speed": 0.95
+  },
+  {
+   "src": "../media/dorothy/IMG_0373.MOV",
+   "in": 0.1,
+   "until": "word:proud"
+  },
+  {
+   "src": "../media/initial-video/IMG_9865.MOV",
+   "in": 0.2,
+   "until": "line:b4",
+   "fy": 0.3
+  },
+  {
+   "src": "../media/initial-images/IMG_9862.JPEG",
+   "until": "line:cta",
+   "zoom": [
+    1.0,
+    1.1
+   ],
+   "fy": 0.4
+  },
+  {
+   "src": "../media/initial-images/IMG_9863.JPEG",
+   "until": "word:see",
+   "zoom": [
+    1.0,
+    1.08
+   ],
+   "fy": 0.4
+  },
+  {
+   "src": "../media/initial-images/IMG_9861.JPEG",
+   "zoom": [
+    1.0,
+    1.12
+   ],
+   "fx": 0.35
+  }
+ ],
+ "gfx": [
+  {
+   "tpl": "priceShock",
+   "at": 0.1,
+   "dur": 9.5,
+   "hide": false,
+   "cfg": {
+    "lead": "WHY PAY",
+    "anchors": [
+     "$20,000?"
+    ],
+    "reveal": "SAME RESULTS FOR JUST",
+    "price": "$9,995",
+    "y": 520,
+    "beats": {
+     "anchors": [
+      0.35
+     ],
+     "strike": 3.1,
+     "drop": 3.7,
+     "reveal": 5.45
+    },
+    "leadSize": 96,
+    "anchorSize": 200,
+    "anchorY": 230
+   },
+   "sfx": [
+    "whoosh",
+    [
+     "hit",
+     0.45
+    ],
+    [
+     "whoosh",
+     3.1
+    ],
+    [
+     "hit",
+     5.85
+    ]
+   ]
+  },
+  {
+   "tpl": "locationSuper",
+   "at": "word:Long-0.2",
+   "dur": 2.6,
+   "cfg": {
+    "place": "LONG ISLAND",
+    "who": "HOMEOWNERS"
+   },
+   "hide": false
+  },
+  {
+   "tpl": "photoProgress",
+   "at": "word:transform-0.1",
+   "dur": 4.95,
+   "cfg": {
+    "imgs": [
+     "d_demo",
+     "d_tile",
+     "d_done"
+    ],
+    "labels": [
+     "DEMO",
+     "TILE",
+     "DONE"
+    ]
+   },
+   "sfx": [
+    "whoosh",
+    [
+     "tick",
+     1.45
+    ],
+    [
+     "tick",
+     2.9
+    ]
+   ]
+  },
+  {
+   "tpl": "hookText",
+   "at": "word:On-0.1",
+   "dur": 2.8,
+   "cfg": {
+    "style": "stack",
+    "text": "ON TIME. ON BUDGET. ZERO HEADACHES.",
+    "lines": [
+     "ON TIME.",
+     "ON BUDGET.",
+     "ZERO HEADACHES."
+    ],
+    "lineStep": 0.72,
+    "maxSize": 150,
+    "y": 800
+   },
+   "sfx": [
+    [
+     "hit",
+     0.1
+    ],
+    [
+     "hit",
+     0.82
+    ],
+    [
+     "hit",
+     1.54
+    ]
+   ]
+  },
+  {
+   "tpl": "priceCard",
+   "at": "word:lock-0.3",
+   "dur": 3.2,
+   "cfg": {
+    "kicker": "COMPLETE BATHROOM REMODEL",
+    "pre": "just",
+    "price": 9995,
+    "note": "Limited time offer"
+   },
+   "sfx": [
+    "whoosh",
+    [
+     "hit",
+     1.45
+    ]
+   ]
+  },
+  {
+   "tpl": "getQuoteEnd",
+   "at": "word:Click-0.1",
+   "dur": 4.6,
+   "cfg": {
+    "line2": "Free estimate"
+   }
+  },
+  {
+   "tpl": "tapPointer",
+   "at": "word:wanted-0.6",
+   "dur": 2.8,
+   "cfg": {}
+  }
+ ],
+ "captions": {
+  "y": 1240,
+  "em": [
+   "free",
+   "zero",
+   "limited"
+  ],
+  "hide": [
+   [
+    0.0,
+    3.25
+   ],
+   [
+    5.7,
+    9.6
+   ]
+  ]
+ }
+}

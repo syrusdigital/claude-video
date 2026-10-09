@@ -1,0 +1,8 @@
+{
+  "name": "v1-shown-appointment",
+  "title": "Syrus — pay per shown appointment",
+  "format": { "width": 1080, "height": 1920, "fps": 24, "bpm": 120, "duration": 16.0, "frames": 384 },
+  "storyFormat": "morph chain (4 worlds, 2 shape morphs, 1 hard cut on the payoff)",
+  "style": "syrus-iso",
+  "review": { "safe": { "top": 240, "bottom": 420, "right": 140 }, "refs": {} }
+}

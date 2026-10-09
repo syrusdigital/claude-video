@@ -1,0 +1,549 @@
+{
+ "duration": 46.16,
+ "shots": [
+  {
+   "src": "../media/client/IMG_0238.MOV",
+   "in": 0.5,
+   "len": 2.1,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.0,
+    1.07
+   ],
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01",
+   "_t0": 0.0,
+   "_len": 2.1
+  },
+  {
+   "src": "../media/client/IMG_4219.MOV",
+   "in": 0.5,
+   "len": 2.68,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.07,
+    1.0
+   ],
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01",
+   "_t0": 2.1,
+   "_len": 2.68
+  },
+  {
+   "src": "../media/client/IMG_8983.MOV",
+   "in": 0.5,
+   "len": 1.5,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.0,
+    1.07
+   ],
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01",
+   "_t0": 4.78,
+   "_len": 1.5
+  },
+  {
+   "src": "../media/stock/pexels-3773485.mp4",
+   "in": 0.0,
+   "len": 1.62,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.07,
+    1.0
+   ],
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01",
+   "_t0": 6.28,
+   "_len": 1.62
+  },
+  {
+   "src": "../media/client/IMG_8920.MOV",
+   "in": 0.5,
+   "len": 1.76,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.0,
+    1.07
+   ],
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01",
+   "_t0": 7.9,
+   "_len": 1.76
+  },
+  {
+   "src": "../media/client/IMG_9454.MOV",
+   "in": 2.0,
+   "len": 1.64,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.0,
+    1.07
+   ],
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01",
+   "_t0": 9.66,
+   "_len": 1.64
+  },
+  {
+   "src": "../media/client/IMG_1343.MOV",
+   "in": 14.0,
+   "len": 1.42,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.07,
+    1.0
+   ],
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01",
+   "_t0": 11.3,
+   "_len": 1.42
+  },
+  {
+   "src": "../media/client/IMG_2745.MOV",
+   "in": 0.5,
+   "len": 2.06,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.0,
+    1.07
+   ],
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01",
+   "_t0": 12.72,
+   "_len": 2.06
+  },
+  {
+   "src": "../../vistaguard/media/stock/vg_calculator_bills.mp4",
+   "in": 4.5,
+   "len": 2.0,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.0,
+    1.07
+   ],
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01",
+   "_t0": 14.780000000000001,
+   "_len": 2.0
+  },
+  {
+   "src": "../media/client/IMG_5240.MOV",
+   "in": 10.0,
+   "len": 1.86,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.07,
+    1.0
+   ],
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01",
+   "_t0": 16.78,
+   "_len": 1.86
+  },
+  {
+   "src": "../media/client/IMG_7435.MOV",
+   "in": 0.5,
+   "len": 2.32,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.0,
+    1.07
+   ],
+   "whip": true,
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01",
+   "_t0": 18.64,
+   "_len": 2.32
+  },
+  {
+   "src": "../media/client/IMG_8418.MOV",
+   "in": 1.0,
+   "len": 1.28,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.0,
+    1.07
+   ],
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01",
+   "_t0": 20.96,
+   "_len": 1.28
+  },
+  {
+   "src": "../media/client/IMG_1850.mov",
+   "in": 0.5,
+   "len": 1.76,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.07,
+    1.0
+   ],
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01",
+   "_t0": 22.240000000000002,
+   "_len": 1.76
+  },
+  {
+   "src": "../media/client/IMG_2157.MOV",
+   "in": 0.5,
+   "len": 1.82,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.0,
+    1.07
+   ],
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01",
+   "_t0": 24.000000000000004,
+   "_len": 1.82
+  },
+  {
+   "src": "../media/client/IMG_4518.MOV",
+   "in": 0.0,
+   "len": 2.24,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.07,
+    1.0
+   ],
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01",
+   "_t0": 25.820000000000004,
+   "_len": 2.24
+  },
+  {
+   "src": "../media/client/IMG_9523.MOV",
+   "in": 1.5,
+   "len": 1.76,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.0,
+    1.07
+   ],
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01",
+   "_t0": 28.060000000000002,
+   "_len": 1.76
+  },
+  {
+   "src": "../media/client/IMG_3453.MOV",
+   "in": 2.0,
+   "len": 1.96,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.07,
+    1.0
+   ],
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01",
+   "_t0": 29.820000000000004,
+   "_len": 1.96
+  },
+  {
+   "src": "../media/client/IMG_8983.MOV",
+   "in": 5.0,
+   "len": 1.28,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.0,
+    1.07
+   ],
+   "whip": true,
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01",
+   "_t0": 31.780000000000005,
+   "_len": 1.28
+  },
+  {
+   "src": "../media/client/IMG_9383.MOV",
+   "in": 0.0,
+   "len": 0.7,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.07,
+    1.0
+   ],
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01",
+   "_t0": 33.06,
+   "_len": 0.7
+  },
+  {
+   "src": "../media/client/IMG_9392.MOV",
+   "in": 2.5,
+   "len": 1.02,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.0,
+    1.07
+   ],
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01",
+   "_t0": 33.760000000000005,
+   "_len": 1.02
+  },
+  {
+   "src": "../media/client/IMG_9003.MOV",
+   "in": 1.5,
+   "len": 1.1,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.07,
+    1.0
+   ],
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01",
+   "_t0": 34.78000000000001,
+   "_len": 1.1
+  },
+  {
+   "src": "../media/client/IMG_2342.MOV",
+   "in": 2.0,
+   "len": 1.5,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.0,
+    1.07
+   ],
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01",
+   "_t0": 35.88000000000001,
+   "_len": 1.5
+  },
+  {
+   "src": "../media/client/IMG_1079.MOV",
+   "in": 1.0,
+   "len": 1.98,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.07,
+    1.0
+   ],
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01",
+   "_t0": 37.38000000000001,
+   "_len": 1.98
+  },
+  {
+   "src": "../media/client/IMG_4219.MOV",
+   "in": 4.5,
+   "len": 2.44,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.0,
+    1.07
+   ],
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01",
+   "_t0": 39.36000000000001,
+   "_len": 2.44
+  },
+  {
+   "src": "../media/client/IMG_7435.MOV",
+   "in": 23.5,
+   "len": 2.08,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.07,
+    1.0
+   ],
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01",
+   "_t0": 41.800000000000004,
+   "_len": 2.08
+  },
+  {
+   "src": "../media/client/IMG_0238.MOV",
+   "in": 4.5,
+   "len": 2.28,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.0,
+    1.07
+   ],
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01",
+   "_t0": 43.88,
+   "_len": 2.28
+  }
+ ],
+ "gfx": [
+  {
+   "tpl": "quoteSheet",
+   "at": 4.78,
+   "cfg": {
+    "title": "QUOTE",
+    "sub": "Kitchen countertops",
+    "lines": [
+     "Countertops",
+     "Removal",
+     "Install"
+    ],
+    "beats": [
+     0.05,
+     0.25,
+     0.45
+    ],
+    "markups": [
+     1.7,
+     2.1,
+     2.58
+    ],
+    "circleAt": 2.76,
+    "caption": "^THOUSANDS^|MORE",
+    "captionAt": 0.1
+   },
+   "dur": 3.12
+  },
+  {
+   "tpl": "quoteSheet",
+   "at": 14.78,
+   "cfg": {
+    "title": "QUOTE",
+    "sub": "Kitchen countertops",
+    "lines": [
+     "Countertops",
+     "Removal",
+     "Install"
+    ],
+    "beats": [
+     0,
+     0.1,
+     0.2
+    ],
+    "markups": [
+     1.18,
+     1.68,
+     2.1,
+     2.8
+    ],
+    "circleAt": 2.98,
+    "caption": "^MARKED UP^|AGAIN AND AGAIN",
+    "captionAt": 0.1
+   },
+   "dur": 3.86
+  },
+  {
+   "tpl": "logoCard",
+   "at": 18.73,
+   "cfg": {
+    "img": "logo",
+    "y": 0.32,
+    "h": 470
+   },
+   "dur": 2.4
+  },
+  {
+   "tpl": "ctaGlass",
+   "at": 39.26,
+   "cfg": {
+    "y": 0.56
+   },
+   "dur": 3.4
+  },
+  {
+   "tpl": "logoCard",
+   "at": 39.26,
+   "cfg": {
+    "img": "logo",
+    "y": 0.27,
+    "sweep": false,
+    "h": 280
+   },
+   "dur": 6.9
+  }
+ ],
+ "lines": [
+  {
+   "id": "hook",
+   "text": "Brand-new kitchen countertops starting at $1,995.",
+   "t0": 0.0,
+   "t1": 3.8
+  },
+  {
+   "id": "b1",
+   "text": "Most countertop companies will quote you thousands more than that.",
+   "t0": 4.78,
+   "t1": 7.8
+  },
+  {
+   "id": "b2",
+   "text": "Right?",
+   "t0": 7.9,
+   "t1": 8.08
+  },
+  {
+   "id": "b3",
+   "text": "Well, sort of.",
+   "t0": 8.38,
+   "t1": 9.48
+  },
+  {
+   "id": "b4",
+   "text": "It comes down to the size of your kitchen and the material you pick.",
+   "t0": 9.66,
+   "t1": 12.52
+  },
+  {
+   "id": "b5",
+   "text": "But here's the thing.",
+   "t0": 12.72,
+   "t1": 13.38
+  },
+  {
+   "id": "b6",
+   "text": "There's a fair price.",
+   "t0": 13.52,
+   "t1": 14.46
+  },
+  {
+   "id": "b7",
+   "text": "And then there's pricing so marked up, I don't know how some of these guys sleep at night.",
+   "t0": 14.78,
+   "t1": 18.5
+  },
+  {
+   "id": "b8",
+   "text": "At GC Countertops, here's how we do it.",
+   "t0": 18.64,
+   "t1": 20.8
+  },
+  {
+   "id": "b9",
+   "text": "First, we do amazing work.",
+   "t0": 20.96,
+   "t1": 22.7
+  },
+  {
+   "id": "b10",
+   "text": "No corner cutting.",
+   "t0": 23.0,
+   "t1": 23.7
+  },
+  {
+   "id": "b11",
+   "text": "And because we source our countertops directly from the supplier, we get contractor pricing that you can't get on your own, and we pass that savings right on to you.",
+   "t0": 24.0,
+   "t1": 31.52
+  },
+  {
+   "id": "b12",
+   "text": "We take out your old countertops and install your new ones, with all the labor included.",
+   "t0": 31.78,
+   "t1": 35.56
+  },
+  {
+   "id": "b13",
+   "text": "And we don't leave your home until you're 100% happy with the work.",
+   "t0": 35.88,
+   "t1": 39.06
+  },
+  {
+   "id": "cta",
+   "text": "Click \"Get Quote\" to book your free in-home measurement and estimate. We'll give you a fair, honest price, with no pressure.",
+   "t0": 39.36,
+   "t1": 45.2
+  }
+ ]
+}

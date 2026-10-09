@@ -1,0 +1,605 @@
+{
+ "title": "Vistaguard V1 house",
+ "vo": {
+  "lines": [
+   {
+    "id": "hook",
+    "text": "If you just got quoted twenty thousand dollars or more for brand-new impact windows, you're paying two to three times more than you have to.",
+    "after": 0.05
+   },
+   {
+    "id": "b1",
+    "text": "Here in South Florida, most window companies don't source their own windows.",
+    "after": 0.05
+   },
+   {
+    "id": "b2",
+    "text": "They buy them from a manufacturer and add their own profit on top.",
+    "after": 0.05
+   },
+   {
+    "id": "b3",
+    "text": "Then they hire an outside crew to install them, and that crew charges its own price too.",
+    "after": 0.05
+   },
+   {
+    "id": "b4",
+    "text": "You end up paying extra twice.",
+    "after": 0.05
+   },
+   {
+    "id": "b5",
+    "text": "At VistaGuard, we source our impact windows straight from the manufacturer, and our own crew installs them.",
+    "after": 0.05
+   },
+   {
+    "id": "b6",
+    "text": "No broker in the middle, and no separate labor bill, because our installation is free.",
+    "after": 0.05
+   },
+   {
+    "id": "b7",
+    "text": "Same hurricane rating, two to three times less than what you were just quoted.",
+    "after": 0.05
+   },
+   {
+    "id": "b8",
+    "text": "We've been installing windows in your neighborhood all across South Florida for over thirty years, we're licensed and insured, and every job carries a lifetime warranty on our products and materials.",
+    "after": 0.05
+   },
+   {
+    "id": "cta",
+    "text": "Click Get Quote below to book your free in-home inspection and estimate.",
+    "after": 0.05
+   }
+  ],
+  "engine": "elevenlabs",
+  "voice": "Michael (ElevenLabs v4, Kysvuk17R9MDAP9l089v)",
+  "take": "FnmbdJJZ9U87Ave67wwm",
+  "tempo": 1.0
+ },
+ "media": "../media",
+ "tail": 0.4,
+ "music": {
+  "file": "../../music/lift-anyvision-vid5.mp3",
+  "in": 0,
+  "db": -9,
+  "duck": -2.5,
+  "end": "end"
+ },
+ "captions": {
+  "style": "kinetic",
+  "hookEnd": "word:impact",
+  "emStyle": "italic",
+  "hookMoney": "yellow",
+  "em": [
+   "free",
+   "twice",
+   "hurricane",
+   "lifetime",
+   "thirty",
+   "middleman",
+   "installation"
+  ],
+  "places": [
+   "South",
+   "Florida",
+   "VistaGuard",
+   "neighborhood"
+  ]
+ },
+ "beats": [
+  {
+   "at": "line:hook",
+   "clips": [
+    "client/dec_062028.mp4@0.3 x0.5",
+    "client/dec_062030.mp4@9.5 x0.5",
+    "client/dec_062035.mp4@0.5"
+   ]
+  },
+  {
+   "at": "line:b1",
+   "clips": [
+    "stock/vg_lakeside_neighborhood_aerial.mp4@6.5",
+    "client/oct_230836.mp4@9.0"
+   ]
+  },
+  {
+   "at": "line:b2",
+   "clips": [
+    "stock/vg_calculator_bills.mp4@7.5",
+    "client/oct_230930.mp4@3.0"
+   ]
+  },
+  {
+   "at": "line:b3",
+   "clips": [
+    "client/dec_062011.mp4@1.0",
+    "client/dec_062019.mp4@7.0"
+   ]
+  },
+  {
+   "at": "line:b4",
+   "clips": [
+    "stock/vg_filling_form.mp4@0.3"
+   ]
+  },
+  {
+   "at": "line:b5",
+   "clips": [
+    "client/dec_062028.mp4@4.0 whip",
+    "client/dec_062030.mp4@1.0 x0.5",
+    "client/dec_062021.mp4@9.0"
+   ]
+  },
+  {
+   "at": "line:b6",
+   "clips": [
+    "client/dec_062033.mp4@0.5",
+    "client/dec_062016.mp4@0.5 fx=0.4",
+    "client/oct_232557.mp4@9.5"
+   ]
+  },
+  {
+   "at": "line:b7",
+   "clips": [
+    "stock/vg_storm_palms.mp4@0.5 whip",
+    "stock/vg_wind_sea_shore.mp4@1.0"
+   ]
+  },
+  {
+   "at": "line:b8",
+   "clips": [
+    "client/oct_231645.mp4@0.3",
+    "client/dec_062038.mp4@4.0",
+    "stock/vg_tampa_drone_pullout.mp4@3.0",
+    "client/oct_231354.mp4@12.4",
+    "client/dec_062030.mp4@9.5 x0.5",
+    "client/oct_231236.mp4@5.4"
+   ]
+  },
+  {
+   "at": "line:cta",
+   "clips": [
+    "client/dec_062035.mp4@3.0",
+    "stock/vg_couple_front_of_house.mp4@5.5"
+   ]
+  }
+ ],
+ "gfx": [
+  {
+   "tpl": "quoteSheet",
+   "at": "word:you're",
+   "until": "line:b1",
+   "cfg": {
+    "title": "QUOTE",
+    "sub": "Impact windows",
+    "lines": [
+     "Impact windows",
+     "Permits",
+     "Installation labor",
+     "Disposal"
+    ],
+    "beats": [
+     0.05,
+     0.25,
+     0.45,
+     0.65
+    ],
+    "total": "$20,000+",
+    "totalAt": 0.7,
+    "circleAt": 1.0,
+    "caption": "PAYING|^2-3x MORE^",
+    "captionAt": 0.1
+   },
+   "scene": true,
+   "sfx": []
+  },
+  {
+   "tpl": "sceneNoMiddleman",
+   "at": "line:b2",
+   "until": "line:b5",
+   "cfg": {
+    "chain": [
+     {
+      "label": "Manufacturer",
+      "icon": "factory"
+     },
+     {
+      "label": "Dealer",
+      "icon": "store"
+     },
+     {
+      "label": "Outside crew",
+      "icon": "sales"
+     },
+     {
+      "label": "You",
+      "icon": "house"
+     }
+    ],
+    "prices": [
+     1,
+     2,
+     3
+    ],
+    "symbols": true,
+    "markupText": "+ MARKUP",
+    "priceLabel": "YOU PAY",
+    "caption1": "MARKED UP|^THEN MARKED UP AGAIN^",
+    "beats": {
+     "nodes": 0.05,
+     "start": 0.3,
+     "hop": 2.55,
+     "collapse": 99,
+     "us": 99,
+     "direct": 99,
+     "drop": 99,
+     "final": 99
+    }
+   },
+   "scene": true,
+   "sfx": []
+  },
+  {
+   "tpl": "logoCard",
+   "at": "word:VistaGuard-0.05",
+   "dur": 2.4,
+   "cfg": {
+    "img": "logo",
+    "y": 0.32,
+    "h": 400
+   },
+   "hide": false,
+   "sfx": []
+  },
+  {
+   "tpl": "ctaGlass",
+   "at": "word:Click-0.1",
+   "dur": 4.8,
+   "cfg": {
+    "style": "caps",
+    "y": 0.5
+   },
+   "sfx": [
+    "whoosh"
+   ]
+  },
+  {
+   "tpl": "logoCard",
+   "at": "word:Click-0.1",
+   "until": "end",
+   "cfg": {
+    "img": "logo",
+    "y": 0.27,
+    "sweep": false,
+    "h": 250
+   },
+   "hide": false,
+   "sfx": []
+  }
+ ],
+ "shots": [
+  {
+   "src": "../media/client/dec_062028.mp4",
+   "in": 0.3,
+   "len": 2.54,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.0,
+    1.07
+   ],
+   "speed": 0.5,
+   "grade": "hqdn3d=1.2:1.2:4:4,eq=contrast=1.06:saturation=1.12:brightness=0.01,unsharp=5:5:0.8:5:5:0.0"
+  },
+  {
+   "src": "../media/client/dec_062030.mp4",
+   "in": 9.5,
+   "len": 2.24,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.07,
+    1.0
+   ],
+   "speed": 0.5,
+   "grade": "hqdn3d=1.2:1.2:4:4,eq=contrast=1.06:saturation=1.12:brightness=0.01,unsharp=5:5:0.8:5:5:0.0"
+  },
+  {
+   "src": "../media/client/dec_062035.mp4",
+   "in": 0.5,
+   "len": 2.52,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.0,
+    1.07
+   ],
+   "grade": "hqdn3d=1.2:1.2:4:4,eq=contrast=1.06:saturation=1.12:brightness=0.01,unsharp=5:5:0.8:5:5:0.0"
+  },
+  {
+   "src": "../media/stock/vg_lakeside_neighborhood_aerial.mp4",
+   "in": 6.5,
+   "len": 1.68,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.0,
+    1.07
+   ],
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01"
+  },
+  {
+   "src": "../media/client/oct_230836.mp4",
+   "in": 9.0,
+   "len": 2.12,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.07,
+    1.0
+   ],
+   "grade": "hqdn3d=1.2:1.2:4:4,eq=contrast=1.06:saturation=1.12:brightness=0.01,unsharp=5:5:0.8:5:5:0.0"
+  },
+  {
+   "src": "../media/stock/vg_calculator_bills.mp4",
+   "in": 7.5,
+   "len": 1.66,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.0,
+    1.07
+   ],
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01"
+  },
+  {
+   "src": "../media/client/oct_230930.mp4",
+   "in": 3.0,
+   "len": 1.7,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.07,
+    1.0
+   ],
+   "grade": "hqdn3d=1.2:1.2:4:4,eq=contrast=1.06:saturation=1.12:brightness=0.01,unsharp=5:5:0.8:5:5:0.0"
+  },
+  {
+   "src": "../media/client/dec_062011.mp4",
+   "in": 1.0,
+   "len": 2.36,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.0,
+    1.07
+   ],
+   "grade": "hqdn3d=1.2:1.2:4:4,eq=contrast=1.06:saturation=1.12:brightness=0.01,unsharp=5:5:0.8:5:5:0.0"
+  },
+  {
+   "src": "../media/client/dec_062019.mp4",
+   "in": 7.0,
+   "len": 2.04,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.07,
+    1.0
+   ],
+   "grade": "hqdn3d=1.2:1.2:4:4,eq=contrast=1.06:saturation=1.12:brightness=0.01,unsharp=5:5:0.8:5:5:0.0"
+  },
+  {
+   "src": "../media/stock/vg_filling_form.mp4",
+   "in": 0.3,
+   "len": 1.92,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.0,
+    1.07
+   ],
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01"
+  },
+  {
+   "src": "../media/client/dec_062028.mp4",
+   "in": 4.0,
+   "len": 1.88,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.0,
+    1.07
+   ],
+   "whip": true,
+   "grade": "hqdn3d=1.2:1.2:4:4,eq=contrast=1.06:saturation=1.12:brightness=0.01,unsharp=5:5:0.8:5:5:0.0"
+  },
+  {
+   "src": "../media/client/dec_062030.mp4",
+   "in": 1.0,
+   "len": 1.56,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.07,
+    1.0
+   ],
+   "speed": 0.5,
+   "grade": "hqdn3d=1.2:1.2:4:4,eq=contrast=1.06:saturation=1.12:brightness=0.01,unsharp=5:5:0.8:5:5:0.0"
+  },
+  {
+   "src": "../media/client/dec_062021.mp4",
+   "in": 9.0,
+   "len": 1.78,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.0,
+    1.07
+   ],
+   "grade": "hqdn3d=1.2:1.2:4:4,eq=contrast=1.06:saturation=1.12:brightness=0.01,unsharp=5:5:0.8:5:5:0.0"
+  },
+  {
+   "src": "../media/client/dec_062033.mp4",
+   "in": 0.5,
+   "len": 1.74,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.0,
+    1.07
+   ],
+   "grade": "hqdn3d=1.2:1.2:4:4,eq=contrast=1.06:saturation=1.12:brightness=0.01,unsharp=5:5:0.8:5:5:0.0"
+  },
+  {
+   "src": "../media/client/dec_062016.mp4",
+   "in": 0.5,
+   "len": 1.44,
+   "fx": 0.4,
+   "fy": 0.5,
+   "zoom": [
+    1.07,
+    1.0
+   ],
+   "grade": "hqdn3d=1.2:1.2:4:4,eq=contrast=1.06:saturation=1.12:brightness=0.01,unsharp=5:5:0.8:5:5:0.0"
+  },
+  {
+   "src": "../media/client/oct_232557.mp4",
+   "in": 9.5,
+   "len": 1.64,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.0,
+    1.07
+   ],
+   "grade": "hqdn3d=1.2:1.2:4:4,eq=contrast=1.06:saturation=1.12:brightness=0.01,unsharp=5:5:0.8:5:5:0.0"
+  },
+  {
+   "src": "../media/stock/vg_storm_palms.mp4",
+   "in": 0.5,
+   "len": 1.86,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.0,
+    1.07
+   ],
+   "whip": true,
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01"
+  },
+  {
+   "src": "../media/stock/vg_wind_sea_shore.mp4",
+   "in": 1.0,
+   "len": 1.86,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.07,
+    1.0
+   ],
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01"
+  },
+  {
+   "src": "../media/client/oct_231645.mp4",
+   "in": 0.3,
+   "len": 1.7,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.0,
+    1.07
+   ],
+   "grade": "hqdn3d=1.2:1.2:4:4,eq=contrast=1.06:saturation=1.12:brightness=0.01,unsharp=5:5:0.8:5:5:0.0"
+  },
+  {
+   "src": "../media/client/dec_062038.mp4",
+   "in": 4.0,
+   "len": 1.56,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.07,
+    1.0
+   ],
+   "grade": "hqdn3d=1.2:1.2:4:4,eq=contrast=1.06:saturation=1.12:brightness=0.01,unsharp=5:5:0.8:5:5:0.0"
+  },
+  {
+   "src": "../media/stock/vg_tampa_drone_pullout.mp4",
+   "in": 3.0,
+   "len": 1.78,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.0,
+    1.07
+   ],
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01"
+  },
+  {
+   "src": "../media/client/oct_231354.mp4",
+   "in": 12.4,
+   "len": 1.64,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.07,
+    1.0
+   ],
+   "grade": "hqdn3d=1.2:1.2:4:4,eq=contrast=1.06:saturation=1.12:brightness=0.01,unsharp=5:5:0.8:5:5:0.0"
+  },
+  {
+   "src": "../media/client/dec_062030.mp4",
+   "in": 9.5,
+   "len": 1.6,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.0,
+    1.07
+   ],
+   "speed": 0.5,
+   "grade": "hqdn3d=1.2:1.2:4:4,eq=contrast=1.06:saturation=1.12:brightness=0.01,unsharp=5:5:0.8:5:5:0.0"
+  },
+  {
+   "src": "../media/client/oct_231236.mp4",
+   "in": 5.4,
+   "len": 1.62,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.07,
+    1.0
+   ],
+   "grade": "hqdn3d=1.2:1.2:4:4,eq=contrast=1.06:saturation=1.12:brightness=0.01,unsharp=5:5:0.8:5:5:0.0"
+  },
+  {
+   "src": "../media/client/dec_062035.mp4",
+   "in": 3.0,
+   "len": 2.24,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.0,
+    1.07
+   ],
+   "grade": "hqdn3d=1.2:1.2:4:4,eq=contrast=1.06:saturation=1.12:brightness=0.01,unsharp=5:5:0.8:5:5:0.0"
+  },
+  {
+   "src": "../media/stock/vg_couple_front_of_house.mp4",
+   "in": 5.5,
+   "len": 1.926,
+   "fx": 0.5,
+   "fy": 0.5,
+   "zoom": [
+    1.07,
+    1.0
+   ],
+   "grade": "eq=contrast=1.06:saturation=1.12:brightness=0.01"
+  }
+ ],
+ "images": {
+  "logo": "../brand/logo.png"
+ }
+}

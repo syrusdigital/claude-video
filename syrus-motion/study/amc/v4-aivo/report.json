@@ -1,0 +1,80 @@
+{
+ "label": "American Made Coatings | V4 | AI/VO | 4.06.26 + 6.17.26 relaunch (same file) | $8,819, 405 leads, $21.78 CPL",
+ "file": "/home/user/claude-video/syrus-motion/study/amc/v4-aivo/video.mp4",
+ "duration": 78.21,
+ "size": "720x1280",
+ "voice": {
+  "words": 243,
+  "wpm": 187.7,
+  "pitch_hz": 130.1,
+  "voice_guess": "male",
+  "first_word_at": 0.0,
+  "first_money_at": 0.0,
+  "first_money_word": "$1",
+  "hook_5s": "$1 ,995 for a concrete floor coating? That's crazy.",
+  "text": "$1 ,995 for a concrete floor coating? That's crazy. Garage floor coatings, patios, pool decks, or any other concrete floor coatings are like $7 ,000 to $12 ,000 usually. Right? Sort of. But not really. It has to do with the size, the prep work, and the materials. Thing is, there's a fair price. And there's pricing that's so insanely inflated, I don't know how some of these contractors sleep at night. At American Made Coatings, here's how we run our business. First and foremost, we do amazing work. We don't settle for anything less. No corner cutting, no cheap materials, and we've been doing this for 18 years. But there's more. Because we're a local company and we run things efficiently, we don't have a ton of overhead. Unlike the big companies with sales teams, offices, and ads everywhere, guess who pays for all of that? Yeah, you do. That's not how we do things. So we can do something really simple. We can install high -quality concrete floor coatings for garages, patios, pool decks, and more. That look great and actually last without charging you way more than it should cost. The best work. The right materials. At a fair price. So you don't just feel good about the result. You feel good about what you paid. Simple. Click Get Quote to book a quick phone consultation. We'll give you a fair, honest estimate that fits your budget without any pressure."
+ },
+ "music": {
+  "present": true,
+  "floor_rel_db": -12.1,
+  "after_vo_db": -48.4,
+  "bed_db_rel_voice": -8.8,
+  "voice_dbfs": -14.0,
+  "bed_dbfs": -22.8,
+  "tempo_bpm_rough": 85.7,
+  "tempo_confidence": 0.153
+ },
+ "sfx": {
+  "hits": [
+   13.65,
+   54.75,
+   71.15
+  ],
+  "hit_count": 3,
+  "hits_per_min": 2.3,
+  "hits_on_cuts": 0,
+  "swells": []
+ },
+ "picture": {
+  "cuts": 31,
+  "cut_times": [
+   4.87,
+   4.93,
+   5.0,
+   7.33,
+   8.13,
+   8.87,
+   10.17,
+   12.23,
+   14.87,
+   15.6,
+   16.2,
+   17.2,
+   18.1,
+   19.5,
+   20.43,
+   24.7,
+   24.77,
+   24.83,
+   26.37,
+   29.3,
+   30.17,
+   34.43,
+   38.33,
+   38.4,
+   38.47,
+   42.7,
+   46.87,
+   53.17,
+   59.37,
+   59.47,
+   74.07
+  ],
+  "avg_shot_s": 2.44,
+  "median_shot_s": 1.35
+ },
+ "loudness": {
+  "integrated_lufs": -14.2,
+  "lra": 2.3
+ }
+}

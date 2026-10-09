@@ -1,0 +1,21 @@
+{
+ "fps": 30,
+ "duration": 6.5,
+ "bg": "#000000",
+ "imageFiles": {
+  "p1": "../../ads/elite-craft/media/initial-images/IMG_3271.JPEG",
+  "p2": "../../ads/elite-craft/media/stacy/WhatsApp_Image_2025-10-12_at_19.07.30_7473dca4.jpg",
+  "p3": "../../ads/elite-craft/media/initial-images/IMG_4151.JPEG",
+  "p4": "../../ads/elite-craft/media/initial-images/IMG_3275.JPEG",
+  "p5": "../../ads/elite-craft/media/stills/northport-master-after.jpg"
+ },
+ "items": [
+  {
+   "tpl": "photoGallery",
+   "at": 0,
+   "cfg": {
+    "title": "RECENT BATHROOMS"
+   }
+  }
+ ]
+}

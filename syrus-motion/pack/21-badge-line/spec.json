@@ -1,0 +1,20 @@
+{
+ "fps": 30,
+ "duration": 3.0,
+ "items": [
+  {
+   "tpl": "badgeLine",
+   "at": 0,
+   "dur": 3.0,
+   "cfg": {
+    "items": [
+     "FREE IN-HOME ESTIMATE",
+     "NO PUSHY SALESMAN",
+     "ITEMIZED PRICING"
+    ],
+    "layout": "row",
+    "y": 290
+   }
+  }
+ ]
+}

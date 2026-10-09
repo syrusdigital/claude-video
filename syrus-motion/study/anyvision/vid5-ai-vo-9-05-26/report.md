@@ -1,0 +1,9 @@
+# Anyvision | VID 5 | AI/VO | 9.05.26 | $2,423.92, 25 leads, $96.96 CPL
+65.04s · 720x1280 · -14.3 LUFS
+- **Voice:** male (~124.0 Hz), 197.1 wpm, first word at 0.0s, first money at 2.84s ("$40")
+- **Hook (0-5s):** Snohomish and King County Homeowners. Why pay $40 ,000, $50 ,000 or even $60 ,000 for
+- **Music:** yes · floor -11.5 dB vs voice (≈ minus how far the music sits under the voice; VO-only reads below -30) · gap bed -7.1 dB · after VO -37.4 dBFS · tempo ~136.4 (conf 0.057)
+- **SFX:** 2 hits (1.8/min), 1 on cuts · swells []
+- **Picture:** 37 cuts, avg shot 1.71s (median 1.67s)
+
+Snohomish and King County Homeowners. Why pay $40 ,000, $50 ,000 or even $60 ,000 for a kitchen remodel when you can get a brand new kitchen starting at just $17 ,995 at any Vision Home Remodeling. We know most remodeling companies are overcharging you tens of thousands for the exact same kitchen. We don't do that and here's why. We import our own materials and we make your countertop ourselves so you're not paying somebody else's commission on top. With a full kitchen remodel you're going to get brand new cabinets, a brand new countertop, brand new flooring, a brand new sink and faucet and brand new lighting in the materials of your choice. And you're never picking the loan. You come into our showroom right here in Snohomish and King County and our in -house kitchen designer sits down with you in person. We've been remodeling kitchens for over 20 years, licensed, insured and backed by our 12 -month craftsmanship warranty plus the full manufacturer warranties. And we're going to take care of you. We'll get you the best possible price on premium materials so you end up with a kitchen you love without ever feeling like you overpaid for it. Click get quote to book your free design consultation.

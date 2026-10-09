@@ -1,0 +1,9 @@
+# Anyvision | VID 7 | AI/VO | 9.16.26 | $220.84, 1 lead, $220.84 CPL
+66.84s · 720x1280 · -14.3 LUFS
+- **Voice:** male (~120.3 Hz), 199.8 wpm, first word at 0.0s, first money at 25.02s ("$17")
+- **Hook (0-5s):** Here's something most homeowners never find out. The contractor remodeling your kitchen usually doesn't own
+- **Music:** yes · floor -12.2 dB vs voice (≈ minus how far the music sits under the voice; VO-only reads below -30) · gap bed -6.8 dB · after VO None dBFS · tempo ~136.4 (conf 0.05)
+- **SFX:** 2 hits (1.8/min), 0 on cuts · swells []
+- **Picture:** 40 cuts, avg shot 1.63s (median 1.53s)
+
+Here's something most homeowners never find out. The contractor remodeling your kitchen usually doesn't own a single thing that goes into it. They order your cabinets and countertop from a supplier and add their cut on top. You pay for it and you never see it on the quote. At Any Vision Home Remodeling, we skip that completely. We import our own materials directly and we make your countertop ourselves. That is a big part of how a full kitchen remodel with us starts at just $17 ,995 and a partial starts at $14 ,495. It also means you're not getting a few photos texted to you and being told to pick one. You come into our showroom right here in Snohomish in King County. You see everything in person and our in -house kitchen designer sits down and designs your kitchen with you. And if anything ever comes up after the job, you know exactly where to find us. That's not always true with a contractor working out of his truck. We've been remodeling kitchens here for over 20 years, licensed and insured, with a 12 -month craftsmanship warranty. We're going to take care of you and get you the best possible price on premium materials. Click Get Quote to book your free design consultation. Honest pricing and no pressure.
